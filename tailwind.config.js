@@ -18,12 +18,13 @@ module.exports = {
         xl: '1440px'
       },
       colors: {
-        azulOscuro: '#3C475B',
-        grisFondo: '#D9D9D9',
-        verde: '#03D0B6',
+        negro: '#1B1B1B',
+        yellowsec: '#EAC355',
+        sandclaro: '#F0EAE1',
+        sandoscuro: '#DBD8CE',
       },
       fontFamily: {
-        sans: ['Roboto Condensed', 'sans-serif'],
+        sans: ['Roboto', 'sans-serif'],
       },
     },
   },
