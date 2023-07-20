@@ -534,9 +534,100 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.fixed {
+  position: fixed;
+}
+
+.inset-x-0 {
+  left: 0px;
+  right: 0px;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.block {
+  display: block;
+}
+
+.flex {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+.h-\[35\.973px\] {
+  height: 35.973px;
+}
+
+.h-\[83\] {
+  height: 83;
+}
+
+.max-w-7xl {
+  max-width: 80rem;
+}
+
+.shrink-0 {
+  flex-shrink: 0;
+}
+
+.scale-50 {
+  --tw-scale-x: .5;
+  --tw-scale-y: .5;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.items-end {
+  align-items: flex-end;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-1 {
+  gap: 0.25rem;
+}
+
+.gap-14 {
+  gap: 3.5rem;
+}
+
 .bg-slate-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(71 85 105 / var(--tw-bg-opacity));
+}
+
+.bg-slate-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(51 65 85 / var(--tw-bg-opacity));
+}
+
+.px-\[46px\] {
+  padding-left: 46px;
+  padding-right: 46px;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 
 .text-4xl {
@@ -547,4 +638,106 @@ video {
 .text-red-500 {
   --tw-text-opacity: 1;
   color: rgb(239 68 68 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-300 {
+  transition-duration: 300ms;
+}
+
+/*menu movile*/
+
+label input[type = "checkbox"] {
+  display: none;
+  visibility: hidden;
+}
+
+.bar {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  width: 50px;
+  height: 40px;
+}
+
+.bar span {
+  position: absolute;
+  width: 55px;
+  height: 4px;
+  background: #f1faee;
+  display: inline-block;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  transition: 0.3s ease;
+  right: 0;
+}
+
+.bar span.top {
+  top: 0;
+}
+
+.bar span.middle {
+  top: 17px;
+  width:65px;
+}
+
+.bar span.bottom {
+  bottom: 0;
+}
+
+label input[type]:checked ~ span.top {
+  transform: rotate(45deg);
+  transform-origin: top left;
+  width: 50px;
+  left: 3px;
+  border-radius: 30px;
+}
+
+label input[type]:checked ~ span.bottom {
+  transform: rotate(-45deg);
+  transform-origin: top left;
+  width: 50px;
+  bottom: 1px;
+  box-shadow: 0 0 10px #495057;
+  border-radius: 30px;
+}
+
+label input[type]:checked ~ span.middle {
+  transform: translateX(-20px);
+  opacity: 0;
+}
+
+.group[open] .group-open\:-rotate-180 {
+  --tw-rotate: -180deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+@media (min-width: 976px) {
+  .lg\:block {
+    display: block;
+  }
+
+  .lg\:flex {
+    display: flex;
+  }
+
+  .lg\:hidden {
+    display: none;
+  }
+}
+
+.\[\&_summary\:\:-webkit-details-marker\]\:hidden summary::-webkit-details-marker {
+  display: none;
 }
