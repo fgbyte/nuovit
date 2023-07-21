@@ -1,58 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
-    <link rel="stylesheet" href="./css/main.css" />
-    <script src="./js/index.js"></script>
-  </head>
-  <body>
-    <div class="fixed h-[83] text-white inset-x-0 top-0 bg-slate-700">
-    <nav
-      class="max-w-7xl mx-auto flex py-3 justify-between items-end   px-[46px]"
-    >
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link rel="stylesheet" href="./css/main.css" />
+  <!-- Google Fonts -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,700&family=Roboto:wght@100;300;400;500;700&display=swap');
+  </style>
+  <script src="./js/index.js"></script>
+</head>
+
+<body>
+  <div class="fixed h-[83] text-white inset-x-0 top-0 bg-slate-700">
+    <nav class="max-w-7xl mx-auto flex py-3 justify-between items-end   px-[46px]">
       <div>
         <div>
-        <img
-          class="hidden lg:block h-[35.973px]"
-          src="./assets/icons/logo.svg"
-          alt="logo"
-        />
+          <img class="hidden lg:block h-[35.973px]" src="./assets/icons/logo.svg" alt="logo" />
         </div>
-        <img
-          class="lg:hidden h-[35.973px]"
-          src="./assets/icons/logo.svg"
-          alt="logo_nuovit"
-        />
+        <img class="lg:hidden h-[35.973px]" src="./assets/icons/logo.svg" alt="logo_nuovit" />
       </div>
 
       <div id="menu-pc" class="hidden lg:flex gap-14 group [&_summary::-webkit-details-marker]:hidden">
         <details class="group [&_summary::-webkit-details-marker]:hidden">
-          <summary
-            class="flex items-center cursor-pointer gap-1 "
-          >
+          <summary class="flex items-center cursor-pointer gap-1 ">
             <span class="">Proyectos</span>
 
-            <span
-              class="shrink-0 transition duration-300 group-open:-rotate-180"
-            >
-            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
-                <path d="M0.5 1.25L6 6.75L11.5 1.25" stroke="#EAC355" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
+            <span class="shrink-0 transition duration-300 group-open:-rotate-180">
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                <path d="M0.5 1.25L6 6.75L11.5 1.25" stroke="#EAC355" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
             </span>
           </summary>
           <ul class="fixed">
             <li>
-              <a
-                href=""
-                class="block ">
+              <a href="" class="block ">
                 Residenciales
               </a>
             </li>
             <li>
-              <a href="" class="block " >
+              <a href="" class="block ">
                 Comerciales
               </a>
             </li>
@@ -61,43 +51,64 @@
         <a href="">Inversores</a>
         <a href="">Sostenibilidad</a>
         <details class="group [&_summary::-webkit-details-marker]:hidden">
-            <summary
-              class="flex items-center cursor-pointer gap-1 "
-            >
-              <span class="">Conócenos</span>
-  
-              <span
-                class="shrink-0 transition duration-300 group-open:-rotate-180"
-              >
+          <summary class="flex items-center cursor-pointer gap-1 ">
+            <span class="">Conócenos</span>
+
+            <span class="shrink-0 transition duration-300 group-open:-rotate-180">
               <svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
-                  <path d="M0.5 1.25L6 6.75L11.5 1.25" stroke="#EAC355" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M0.5 1.25L6 6.75L11.5 1.25" stroke="#EAC355" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
-              </span>
-            </summary>
-            <ul class="fixed">
-              <li>
-                <a
-                  href=""
-                  class="block ">
-                  Residenciales
-                </a>
-              </li>
-              <li>
-                <a href="" class="block" >
-                  Comerciales
-                </a>
-              </li>
-            </ul>
-          </details>
+            </span>
+          </summary>
+          <ul class="fixed">
+            <li>
+              <a href="" class="block ">
+                Residenciales
+              </a>
+            </li>
+            <li>
+              <a href="" class="block">
+                Comerciales
+              </a>
+            </li>
+          </ul>
+        </details>
       </div>
       <label class="bar lg:hidden scale-50" for="menu-mobile">
         <input type="checkbox" id="menu-mobile">
-    
+
         <span class="top"></span>
         <span class="middle"></span>
         <span class="bottom"></span>
-    </label>
+      </label>
     </nav>
-    </div>
-  </body>
+  </div>
+
+
+  <!-- Typography-->
+  <!--! OJO HAY UN DIV CON MARGEN DE 10 -->
+  <!-- FIXME: el navbar se come el contenido -->
+  <div class="mt-32"></div>
+  <h1>Creamos <span> nuevos espacios</span></h1>
+  <script src="./js/index.js"></script>
+  <div class="mt-10"></div>
+  <!--? para poner la cursiva es dentro de un span y se especifica las clases de los extends, semibold=weight:600 secondary='Playfair Display' -->
+  <h2>Conoce <span class="font-semibold font-secondary">nuestros proyectos</span></h2>
+  <div class="mt-10"></div>
+  <!-- ? la fuente por defecto es primary='Roboto' -->
+  <p>En Nuovit investigamos e innovamos para crear espacios singulares, únicos y eficientes que permitan un desarrollo
+    óptimo.”</p>
+  <div class="mt-10"></div>
+  <blockquote>
+    “La necesidad
+    de disponer
+    de espacios
+    para el <span class="font-secondary"> desarrollo
+    de la actividad
+    humana
+    es universal”</span>
+  </blockquote>
+
+</body>
+
 </html>
