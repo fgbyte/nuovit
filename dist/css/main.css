@@ -483,7 +483,7 @@ p {
 
 /* Spaces */
 
-.content {
+.contenido {
   margin: 0 1.125rem;
 }
 
@@ -774,7 +774,7 @@ label input[type]:checked ~ span.middle {
 }
 
 @media (min-width: 976px) {
-  .lg\:content-lg {
+  .lg\:contenido-lg {
     margin: 0 35px;
   }
 }
