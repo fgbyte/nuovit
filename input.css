@@ -58,6 +58,10 @@
   .content {
     margin: 0 1.125rem;
   }
+
+  .content-lg {
+    margin: 0 35px;
+  }
 }
 
 /*menu movile*/
