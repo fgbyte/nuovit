@@ -775,7 +775,7 @@ label input[type]:checked ~ span.middle {
 
 @media (min-width: 976px) {
   .lg\:contenido-lg {
-    margin: 0 35px;
+    margin: 0 2.1875rem;
   }
 }
 
