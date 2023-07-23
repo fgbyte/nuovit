@@ -142,3 +142,12 @@ label input[type]:checked ~ span.middle {
   opacity: 0.550000011920929;
   mix-blend-mode: multiply;
 }
+
+#carrusel {
+  scrollbar-width: none; /* Para navegadores compatibles con la especificación reciente */
+  -ms-overflow-style: none; /* Para versiones más antiguas de Microsoft Edge */
+}
+
+#carrusel::-webkit-scrollbar {
+  display: none; /* Para navegadores basados en WebKit (Chrome, Safari, Opera) */
+}

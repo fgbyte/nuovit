@@ -11,6 +11,7 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,700&family=Roboto:wght@100;300;400;500;700&display=swap');
     </style>
+    
 </head>
 
 <body>
@@ -105,7 +106,7 @@
               </ul>
             </details>
           </div>
-          <label class="bar lg:hidden scale-50" for="menu-mobile">
+          <label class="bar lg:hidden scale-50 right-[-15px]" for="menu-mobile">
             <input type="checkbox" id="menu-mobile" />
   
             <span class="top"></span>
@@ -115,13 +116,55 @@
         </nav>
       </header>
       <!-- hero -->
-      <section class="relative flex justify-center items-center min-h-screen bg-cover bg-herohome z-10"  id="hero"> 
-        <div class="w-full h-full flex flex-col py-16 mt-16 max-w-7xl bg-slate-600 mx-[40px]">
-            <div class="bg-zinc-600 ">
-                asdasd
+      <section class="relative flex flex-col justify-center items-center min-h-screen bg-cover bg-herohome z-10"  id="hero"> 
+        <div class="relative min-h-screen w-full lg:max-w-7xl bg-fuchsia-500 bg-opacity-10 flex justify-center items-center">
+          <div> 
+            <h1>Titulo del home</h1>
+          
+          
+          </div>
+          <div class="absolute flex flex-col justify-center items-center w-7xl bottom-0 mb-20 right-0 pr-[35px] lg:pr-[80px]">
+            <div id="carrusel"
+              class="snap-proximity snap-x flex gap-10 lg:min-w-fit w-[130px] lg:w-auto overflow-x-auto scroll-snap-type-x">
+              <div id="card-1"
+                class="ml-5 sm:mr-8 lg:m-0 h-[30px] lg:w-[182px] snap-center min-w-[91%] lg:min-w-fit flex gap-2 border-t-[1px] border-white text-whiteTextFooter">
+                <div class="w-full flex flex-row justify-between items-end">
+                  <p>Octavia</p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+                    <path d="M1 0.5L11.2963 0.5L11.2963 10.5" stroke="#EAC355" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M1 11L11 1" stroke="#EAC355" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+              </div>
+              <div id="card-2"
+                class="snap-center min-w-[93%] h-[30px] lg:w-[182px] lg:min-w-fit flex gap-2 border-t-[1px] border-white text-whiteTextFooter">
+                <div class="w-full flex flex-row justify-between items-end">
+                  <p>Alegra</p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+                    <path d="M1 0.5L11.2963 0.5L11.2963 10.5" stroke="#EAC355" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M1 11L11 1" stroke="#EAC355" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+              </div>
+              <div id="card-3"
+                class="mr-5 sm:mr-8 lg:m-0 h-[30px] lg:w-[182px] snap-center min-w-[91%] lg:min-w-fit flex gap-2 border-t-[1px] border-white text-whiteTextFooter">
+                <div class="w-full flex flex-row justify-between items-end">
+                  <p>Limonar 20</p>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+                    <path d="M1 0.5L11.2963 0.5L11.2963 10.5" stroke="#EAC355" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M1 11L11 1" stroke="#EAC355" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+              </div>
             </div>
-        </div>    
-        <div class="absolute inset-0 w-full h-screen py-16 gradientdown -z-10"></div>
+          </div>
+        </div>
+        <div id="controles" class="lg:hidden absolute bottom-0 mb-10 flex gap-8 hover:[&>div]:cursor-pointer max-h-screen">
+          <div id="control-1" class="h-3 w-3 bg-gray-300 rounded-full"></div>
+          <div id="control-2" class="h-3 w-3 bg-gray-300 rounded-full"></div>
+          <div id="control-3" class="h-3 w-3 bg-gray-300 rounded-full"></div>
+        </div>
+        <!-- Gradiente --><div class="absolute inset-0 w-full h-screen py-16 gradientdown -z-10"></div><!-- Fin del Gradiente -->
       </section>
 
       <!-- En Nuovit investigamos e innovamos ” -->
@@ -226,6 +269,7 @@
         </div>
       </div>
       </footer>
+      <script src="./js/index.js"></script>
 </body>
 
 </html>
