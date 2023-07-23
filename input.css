@@ -125,7 +125,7 @@ label input[type]:checked ~ span.middle {
   opacity: 0;
 }
 
-.bg-img {
+.bg-herohome {
   position: relative;
   background: url(/dist/assets/home/homebanner.png);
   background-repeat: no-repeat;
