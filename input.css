@@ -124,3 +124,21 @@ label input[type]:checked ~ span.middle {
   transform: translateX(-20px);
   opacity: 0;
 }
+
+.bg-img {
+  position: relative;
+  background: url(/dist/assets/home/homebanner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.gradientdown {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.9) 26.04%,
+    rgba(34, 34, 34, 0) 100%
+  );
+  opacity: 0.550000011920929;
+  mix-blend-mode: multiply;
+}
