@@ -654,16 +654,6 @@ p {
   margin-right: auto;
 }
 
-.mx-40 {
-  margin-left: 10rem;
-  margin-right: 10rem;
-}
-
-.mx-\[40\] {
-  margin-left: 40;
-  margin-right: 40;
-}
-
 .mb-4 {
   margin-bottom: 1rem;
 }
@@ -745,13 +735,13 @@ p {
   width: 300px;
 }
 
-.w-full {
-  width: 100%;
-}
-
 .w-fit {
   width: -moz-fit-content;
   width: fit-content;
+}
+
+.w-full {
+  width: 100%;
 }
 
 .max-w-7xl {
@@ -910,18 +900,6 @@ p {
   background-size: cover;
 }
 
-.fill-sand {
-  fill: #F0EAE1;
-}
-
-.fill-white {
-  fill: #FFFFFF;
-}
-
-.stroke-sand {
-  stroke: #F0EAE1;
-}
-
 .px-\[18px\] {
   padding-left: 18px;
   padding-right: 18px;
@@ -980,10 +958,6 @@ p {
 
 .text-center {
   text-align: center;
-}
-
-.text-end {
-  text-align: end;
 }
 
 .font-secondary {
