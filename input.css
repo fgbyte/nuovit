@@ -139,10 +139,11 @@ label input[type]:checked ~ span.middle {
     rgba(0, 0, 0, 0.9) 26.04%,
     rgba(34, 34, 34, 0) 100%
   );
-  opacity: 0.550000011920929;
+  opacity: 0.70000011920929;
   mix-blend-mode: multiply;
 }
 
+/*Para que no se muestre el la barra de scroll tanto en Chrome como en Firefox y otros navegadores ;)*/
 #carrusel {
   scrollbar-width: none; /* Para navegadores compatibles con la especificación reciente */
   -ms-overflow-style: none; /* Para versiones más antiguas de Microsoft Edge */

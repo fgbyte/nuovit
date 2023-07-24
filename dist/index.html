@@ -18,7 +18,7 @@
     <!-- Navbar -->
     <header class="fixed h-[83] text-white inset-x-0 top-0 z-50">
         <nav
-          class="max-w-[1358px] mx-auto flex py-3 justify-between items-end px-[40px]"
+          class="max-w-[1358px] mx-auto flex py-3 justify-between items-end px-[40px] select-none"
         >
           <div>
             <div class="hidden lg:flex">
@@ -116,12 +116,33 @@
         </nav>
       </header>
       <!-- hero -->
-      <section class="relative flex flex-col justify-center items-center min-h-screen bg-cover bg-herohome z-10"  id="hero"> 
-        <div class="relative min-h-screen w-full lg:max-w-7xl bg-fuchsia-500 bg-opacity-10 flex justify-center items-center">
-          <div> 
-            <h1>Titulo del home</h1>
-          
-          
+      <section class="relative flex flex-col justify-center items-center min-h-[813px]  bg-cover bg-herohome z-10"  id="hero"> 
+        <div class="relative min-h-[813px]  w-full lg:max-w-7xl  flex justify-center items-center">
+          <div class=" flex flex-col">
+
+             <div class="lg:w-[616px] flex flex-col gap-[51px]">
+              <h1 class="flex flex-col text-sand text-[43px] lg:text-[55px]">Creamos<span>nuevos espacios</span></h1>
+              <p class="text-[20px] font-[300] text-whiteTextFooter">para el impulso <br>
+                de la actividad humana</p>
+             </div>
+
+             <div class="relative right-[-60%] lg:right-[-80%] mt-[59px]  lg:mt-[-37px] flex lg:flex-col flex-col-reverse text-white gap-[14px] w-fit">
+              
+              <div class="flex flex-col gap-[14px]">
+              <h1 class="text-[16px] lg:text-[24px] "><span>Somos</span></h1>
+              <p class="flex flex-col gap-2 text-[15px] font-[400]">
+              <span>Inversores </span>
+              <span>Gestores </span>
+              <span>Desarrolladores </span>  
+              </p>
+              <span class="absolute top-0 left-[-24px] h-[1px] mt-16 lg:mt-3 w-4 bg-white"></span>
+              </div>
+              
+              <button class="relative w-fit flex items-start gap-1 rounded-md py-3 px-[18px] text-[12px] bg-yellow font-medium text-negro">Contáctanos <img src="./assets/icons/arrow.svg" alt="arrow"></button>
+              
+              
+            </div>
+             
           </div>
           <div class="absolute flex flex-col justify-center items-center w-7xl bottom-0 mb-20 right-0 pr-[35px] lg:pr-[80px]">
             <div id="carrusel"
@@ -159,12 +180,12 @@
             </div>
           </div>
         </div>
-        <div id="controles" class="lg:hidden absolute bottom-0 mb-10 flex gap-8 hover:[&>div]:cursor-pointer max-h-screen">
+        <div id="controles" class="lg:hidden absolute bottom-0 mb-10 flex gap-8 hover:[&>div]:cursor-pointer max-h-[813px]">
           <div id="control-1" class="h-3 w-3 bg-gray-300 rounded-full"></div>
           <div id="control-2" class="h-3 w-3 bg-gray-300 rounded-full"></div>
           <div id="control-3" class="h-3 w-3 bg-gray-300 rounded-full"></div>
         </div>
-        <!-- Gradiente --><div class="absolute inset-0 w-full h-screen py-16 gradientdown -z-10"></div><!-- Fin del Gradiente -->
+        <!-- Gradiente --><div class="absolute inset-0 w-full h-[813px] py-16 gradientdown -z-10"></div><!-- Fin del Gradiente -->
       </section>
 
       <!-- En Nuovit investigamos e innovamos ” -->
@@ -269,7 +290,58 @@
         </div>
       </div>
       </footer>
-      <script src="./js/index.js"></script>
+      <!-- Logica del carrusel -->
+      <script >
+        const carousel = document.getElementById('carrusel');
+        const controls = document.getElementById('controles');
+        const control1 = document.getElementById('control-1');
+        const control2 = document.getElementById('control-2');
+        const control3 = document.getElementById('control-3');
+        
+        // Establecer color por defecto
+        carousel.classList.remove("bg-gray-300");
+        control1.classList.add("bg-gray-50");
+        
+        // Eventos
+        control1.addEventListener('click', () => {
+          carousel.scroll({ left: 0, behavior: 'smooth' });
+          control2.classList.remove("bg-gray-50");
+          control3.classList.remove("bg-gray-50");
+          control1.classList.add("bg-gray-50");
+        });
+        
+        control2.addEventListener('click', () => {
+          carousel.scroll({ left: carousel.offsetWidth, behavior: 'smooth' });
+          control1.classList.remove("bg-gray-50");
+          control3.classList.remove("bg-gray-50");
+          control2.classList.add("bg-gray-50");
+        });
+        
+        control3.addEventListener('click', () => {
+          carousel.scroll({ left: carousel.offsetWidth * 2, behavior: 'smooth' });
+          control1.classList.remove("bg-gray-50");
+          control2.classList.remove("bg-gray-50");
+          control3.classList.add("bg-gray-50");
+        });
+        // Nuevo evento para captar el scroll
+        carousel.addEventListener('scroll', () => {
+          const cardWidth = carousel.querySelector('.snap-center').offsetWidth;
+          const scrollPos = carousel.scrollLeft;
+          if (scrollPos < cardWidth / 2) {
+            control1.classList.add("bg-gray-50");
+            control2.classList.remove("bg-gray-50");
+            control3.classList.remove("bg-gray-50");
+          } else if (scrollPos < cardWidth * 1.5) {
+            control2.classList.add("bg-gray-50");
+            control1.classList.remove("bg-gray-50");
+            control3.classList.remove("bg-gray-50");
+          } else {
+            control3.classList.add("bg-gray-50");
+            control1.classList.remove("bg-gray-50");
+            control2.classList.remove("bg-gray-50");
+          }
+        });
+      </script>
 </body>
 
 </html>
