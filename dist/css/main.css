@@ -1271,7 +1271,7 @@ label input[type]:checked ~ span.middle {
     rgba(0, 0, 0, 0.9) 26.04%,
     rgba(34, 34, 34, 0) 100%
   );
-  opacity: 0.70000011920929;
+  opacity: 0.55000011920929;
   mix-blend-mode: multiply;
 }
 
