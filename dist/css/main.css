@@ -787,6 +787,10 @@ p {
   margin-top: auto;
 }
 
+.mb-\[1\.875rem\] {
+  margin-bottom: 1.875rem;
+}
+
 .block {
   display: block;
 }
@@ -856,6 +860,18 @@ p {
   height: fit-content;
 }
 
+.h-\[2\] {
+  height: 2;
+}
+
+.h-\[260px\] {
+  height: 260px;
+}
+
+.h-\[290px\] {
+  height: 290px;
+}
+
 .max-h-\[813px\] {
   max-height: 813px;
 }
@@ -915,6 +931,14 @@ p {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[\] {
+  width: ;
+}
+
+.w-\[330px\] {
+  width: 330px;
 }
 
 .min-w-\[100\%\] {
@@ -1126,6 +1150,45 @@ p {
   gap: 7.9375rem;
 }
 
+.gap-\[\] {
+  gap: ;
+}
+
+.gap-\[18px\] {
+  gap: 18px;
+}
+
+.gap-\[16px\] {
+  gap: 16px;
+}
+
+.gap-\[13px\] {
+  gap: 13px;
+}
+
+.gap-y-\[\] {
+  row-gap: ;
+}
+
+.gap-y-\[75px\] {
+  row-gap: 75px;
+}
+
+.gap-x-\[\] {
+  -moz-column-gap: ;
+       column-gap: ;
+}
+
+.gap-x-\[13px\] {
+  -moz-column-gap: 13px;
+       column-gap: 13px;
+}
+
+.gap-x-\[16px\] {
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+}
+
 .overflow-x-auto {
   overflow-x: auto;
 }
@@ -1154,6 +1217,14 @@ p {
   border-top-width: 1px;
 }
 
+.border-b-2 {
+  border-bottom-width: 2px;
+}
+
+.border-b-4 {
+  border-bottom-width: 4px;
+}
+
 .border-solid {
   border-style: solid;
 }
@@ -1176,6 +1247,11 @@ p {
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.border-yellow {
+  --tw-border-opacity: 1;
+  border-color: rgb(234 195 85 / var(--tw-border-opacity));
 }
 
 .bg-black {
@@ -1310,6 +1386,16 @@ p {
 .py-\[6px\] {
   padding-top: 6px;
   padding-bottom: 6px;
+}
+
+.py-\[\] {
+  padding-top: ;
+  padding-bottom: ;
+}
+
+.py-\[16px\] {
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .pb-0 {
@@ -1508,6 +1594,11 @@ p {
   color: rgb(233 233 233 / var(--tw-text-opacity));
 }
 
+.text-gray-500 {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
 .opacity-0 {
   opacity: 0;
 }
@@ -1626,6 +1717,14 @@ label input[type]:checked ~ span.middle {
 
 .hover\:cursor-pointer:hover {
   cursor: pointer;
+}
+
+.hover\:border:hover {
+  border-width: 1px;
+}
+
+.hover\:border-b-2:hover {
+  border-bottom-width: 2px;
 }
 
 .hover\:text-negro:hover {
@@ -1946,6 +2045,34 @@ label input[type]:checked ~ span.middle {
   .lg\:text-\[55px\] {
     font-size: 55px;
   }
+}
+
+.\[\&\>a\]\:text-gray-500>a {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
+.\[\&\>a\]\:text-gray-50>a {
+  --tw-text-opacity: 1;
+  color: rgb(249 250 251 / var(--tw-text-opacity));
+}
+
+.\[\&\>a\]\:hover\:border-b-2:hover>a {
+  border-bottom-width: 2px;
+}
+
+.\[\&\>a\]\:hover\:border-yellow:hover>a {
+  --tw-border-opacity: 1;
+  border-color: rgb(234 195 85 / var(--tw-border-opacity));
+}
+
+.\[\&\>a\]\:hover\:text-negro:hover>a {
+  --tw-text-opacity: 1;
+  color: rgb(27 27 27 / var(--tw-text-opacity));
+}
+
+.\[\&\>a\]\:hover\:underline:hover>a {
+  text-decoration-line: underline;
 }
 
 .\[\&\>div\>a\]\:text-xs>div>a {
