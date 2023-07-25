@@ -624,32 +624,32 @@ p {
   margin-top: 8rem;
 }
 
-.mt-\[\] {
-  margin-top: ;
-}
-
-.mt-\[190px\] {
-  margin-top: 190px;
-}
-
-.mt-\[220px\] {
-  margin-top: 220px;
-}
-
-.mt-\[250px\] {
-  margin-top: 250px;
-}
-
-.mt-\[2800px\] {
-  margin-top: 2800px;
-}
-
 .mt-\[280px\] {
   margin-top: 280px;
 }
 
+.ml-\[\] {
+  margin-left: ;
+}
+
+.ml-\[95px\] {
+  margin-left: 95px;
+}
+
+.ml-\[25px\] {
+  margin-left: 25px;
+}
+
+.ml-\[35px\] {
+  margin-left: 35px;
+}
+
 .block {
   display: block;
+}
+
+.inline {
+  display: inline;
 }
 
 .flex {
@@ -680,56 +680,16 @@ p {
   height: 90px;
 }
 
-.w-\[214px\] {
-  width: 214px;
-}
-
-.w-\[268px\] {
-  width: 268px;
-}
-
-.w-\[3\.3509rem\] {
-  width: 3.3509rem;
-}
-
-.w-\[325px\] {
-  width: 325px;
-}
-
-.w-full {
-  width: 100%;
-}
-
-.w-\[474\.5px\] {
-  width: 474.5px;
-}
-
 .w-\[100\%\] {
   width: 100%;
-}
-
-.w-\[75\%\] {
-  width: 75%;
-}
-
-.w-\[85\%\] {
-  width: 85%;
-}
-
-.w-\[90\%\] {
-  width: 90%;
 }
 
 .w-\[53\.6144px\] {
   width: 53.6144px;
 }
 
-.w-\[\] {
-  width: ;
-}
-
-.w-\[80\] {
-  width: 80;
+.w-\[70\%\] {
+  width: 70%;
 }
 
 .w-\[80\%\] {
@@ -786,18 +746,6 @@ p {
   gap: 0.67rem;
 }
 
-.gap-\[37px\] {
-  gap: 37px;
-}
-
-.rounded-md {
-  border-radius: 0.375rem;
-}
-
-.border {
-  border-width: 1px;
-}
-
 .bg-sand {
   --tw-bg-opacity: 1;
   background-color: rgb(240 234 225 / var(--tw-bg-opacity));
@@ -838,6 +786,14 @@ p {
   font-family: Playfair Display;
 }
 
+.font-\[\] {
+  font-family: ;
+}
+
+.text-\[25px\] {
+  font-size: 25px;
+}
+
 .font-\[0\.75rem\] {
   font-weight: 0.75rem;
 }
@@ -848,6 +804,18 @@ p {
 
 .font-semibold {
   font-weight: 600;
+}
+
+.font-\[5\] {
+  font-weight: 5;
+}
+
+.font-\[500\] {
+  font-weight: 500;
+}
+
+.font-medium {
+  font-weight: 500;
 }
 
 .text-\[\#363733\] {
@@ -863,6 +831,10 @@ p {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\] {
+  color: ;
 }
 
 .transition {
@@ -951,62 +923,28 @@ label input[type]:checked ~ span.middle {
 }
 
 @media (min-width: 976px) {
-  .lg\:top-\[\] {
-    top: ;
-  }
-
-  .lg\:top-\[355px\] {
-    top: 355px;
+  .lg\:left-\[45\%\] {
+    left: 45%;
   }
 
   .lg\:top-\[22\.1875rem\] {
     top: 22.1875rem;
   }
 
-  .lg\:left-\[\] {
-    left: ;
-  }
-
-  .lg\:right-\[\] {
-    right: ;
-  }
-
-  .lg\:right-\[274px\] {
-    right: 274px;
-  }
-
-  .lg\:right-\[50\%\] {
-    right: 50%;
-  }
-
-  .lg\:left-\[50\%\] {
-    left: 50%;
-  }
-
-  .lg\:left-\[45\%\] {
-    left: 45%;
-  }
-
-  .lg\:mx-\[\] {
-    margin-left: ;
-    margin-right: ;
-  }
-
-  .lg\:mx-\[35px\] {
-    margin-left: 35px;
-    margin-right: 35px;
-  }
-
-  .lg\:mt-\[128px\] {
-    margin-top: 128px;
-  }
-
   .lg\:mt-\[93px\] {
     margin-top: 93px;
   }
 
+  .lg\:ml-0 {
+    margin-left: 0px;
+  }
+
   .lg\:block {
     display: block;
+  }
+
+  .lg\:inline {
+    display: inline;
   }
 
   .lg\:flex {
@@ -1017,12 +955,8 @@ label input[type]:checked ~ span.middle {
     display: none;
   }
 
-  .lg\:h-full {
-    height: 100%;
-  }
-
-  .lg\:h-\[\] {
-    height: ;
+  .lg\:h-\[35px\] {
+    height: 35px;
   }
 
   .lg\:h-\[38\.125rem\] {
@@ -1033,95 +967,20 @@ label input[type]:checked ~ span.middle {
     height: 91px;
   }
 
-  .lg\:h-\[75\%\] {
-    height: 75%;
-  }
-
-  .lg\:h-\[70px\] {
-    height: 70px;
-  }
-
-  .lg\:h-\[50px\] {
-    height: 50px;
-  }
-
-  .lg\:h-\[0px\] {
-    height: 0px;
-  }
-
-  .lg\:h-\[45px\] {
-    height: 45px;
-  }
-
-  .lg\:h-\[35px\] {
-    height: 35px;
-  }
-
-  .lg\:w-\[287\] {
-    width: 287;
-  }
-
-  .lg\:w-\[\] {
-    width: ;
-  }
-
   .lg\:w-\[97px\] {
     width: 97px;
   }
 
-  .lg\:w-\[70\%\] {
-    width: 70%;
-  }
-
-  .lg\:w-\[30\%\] {
-    width: 30%;
-  }
-
-  .lg\:w-\[\%\] {
-    width: %;
-  }
-
-  .lg\:w-\[288px\] {
-    width: 288px;
-  }
-
-  .lg\:w-\[290px\] {
-    width: 290px;
-  }
-
-  .lg\:w-\[2px\] {
-    width: 2px;
-  }
-
-  .lg\:w-\[300px\] {
-    width: 300px;
-  }
-
-  .lg\:px-\[\] {
-    padding-left: ;
-    padding-right: ;
-  }
-
-  .lg\:px-\[3\] {
-    padding-left: 3;
-    padding-right: 3;
-  }
-
-  .lg\:px-\[35px\] {
-    padding-left: 35px;
-    padding-right: 35px;
-  }
-
-  .lg\:text-\[24px\] {
-    font-size: 24px;
+  .lg\:font-primary {
+    font-family: Roboto;
   }
 
   .lg\:text-\[14px\] {
     font-size: 14px;
   }
 
-  .lg\:text-\[\] {
-    color: ;
+  .lg\:text-\[24px\] {
+    font-size: 24px;
   }
 }
 
