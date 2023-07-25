@@ -804,6 +804,10 @@ p {
   height: fit-content;
 }
 
+.h-auto {
+  height: auto;
+}
+
 .max-h-\[813px\] {
   max-height: 813px;
 }
@@ -872,6 +876,50 @@ p {
 
 .min-w-full {
   min-width: 100%;
+}
+
+.min-w-\[488px\] {
+  min-width: 488px;
+}
+
+.min-w-\[308px\] {
+  min-width: 308px;
+}
+
+.min-w-\[90\%\] {
+  min-width: 90%;
+}
+
+.min-w-\[80\%\] {
+  min-width: 80%;
+}
+
+.min-w-\[20\%\] {
+  min-width: 20%;
+}
+
+.min-w-\[300\] {
+  min-width: 300;
+}
+
+.min-w-\[300px\] {
+  min-width: 300px;
+}
+
+.min-w-\[200px\] {
+  min-width: 200px;
+}
+
+.min-w-\[100px\] {
+  min-width: 100px;
+}
+
+.min-w-\[70px\] {
+  min-width: 70px;
+}
+
+.min-w-\[30px\] {
+  min-width: 30px;
 }
 
 .max-w-7xl {
@@ -1106,6 +1154,10 @@ p {
 
 .bg-cover {
   background-size: cover;
+}
+
+.bg-center {
+  background-position: center;
 }
 
 .p-4 {
@@ -1518,6 +1570,10 @@ label input[type]:checked ~ span.middle {
     margin-top: -37px;
   }
 
+  .lg\:mb-72 {
+    margin-bottom: 18rem;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -1528,6 +1584,10 @@ label input[type]:checked ~ span.middle {
 
   .lg\:hidden {
     display: none;
+  }
+
+  .lg\:h-\[682px\] {
+    height: 682px;
   }
 
   .lg\:w-36 {
