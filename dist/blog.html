@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <!-- Google Fonts -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,700&family=Roboto:wght@100;300;400;500;700&display=swap');
+    </style>
+    <script src="./js/index.js"></script>
+</head>
+
+<body>
+    <!-- Hero -->
+    <section class="relative h-[32.1875rem] bg-cover bg-center bg-no-repeat lg:contenido-lg lg:h-[38.125rem]"
+        style="background-image: url('./assets/img/blog-hero.jpg');">
+        <div class="absolute flex flex-col top-[22.1875rem] contenido  lg:top-[22.1875rem] lg:left-[45%]">
+            <div class="flex flex-col gap-[0.67rem] p-[20px] w-[80%] bg-sand">
+                <p class="font-[0.75rem] font-bold text-madera">12/03/23</p>
+                <h2 class="text-[#363733]"><span class="font-semibold lg:text-[24px]">Brutalismo en Madrid:</span>
+                    <br>
+                    una guía por la arquitectura más BRUTAL de la ciudad
+                </h2>
+            </div>
+            <div class="h-[90px] bg-sand w-[80%] lg:h-[35px]"></div>
+            <div class="flex flex-row justify-between p-[20px] bg-sand w-[100%]">
+                <div class="text-madera w-[70%] lg:text-[14px]">
+                    Estos edificios construidos en Madrid de los años 60 a los 80 para muchos rozan el feísmo mientras
+                    que otros los tienen como destino de peregrinaje arquitectónico. Así es el mejor brutalismo de la
+                    capital.
+                </div>
+                <div>
+                    <a href="#">
+                        <img class="w-[53.6144px] h-[3.1363rem] lg:w-[97px] lg:h-[91px]"
+                            src="assets/icons/blog-arrow.svg" alt="">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Artículos -->
+    <section class="mt-[280px] lg:mt-[93px] contenido lg:contenido-lg">
+        <div class="flex flex-row justify-between gap-[4.6875rem] lg:flex-col lg:gap-[2.8125rem]">
+            <h2 class="text-[25px] font-medium">Artículos <span
+                    class="font-secondary block ml-[35px] lg:inline lg:ml-0 lg:font-primary">Recientes</span></h2>
+
+            <!-- Search sm -->
+            <form class="mt-2 min-w-[130px] max-w-[200px] lg:hidden">
+                <label for="default-search"
+                    class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+                <div class="relative">
+                    <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                        <button type="submit">
+                            <img src="./assets/icons/lupa.svg" alt="lupa">
+                        </button>
+                    </div>
+                    <input type="search" id="default-search"
+                        class="block w-full px-[0.75rem] py-[0.5rem] pl-10 text-sm text-gray-900 border border-negro rounded-full bg-gray-50 focus:ring-blue-500 focus:border-blue-500 "
+                        placeholder="Buscar">
+
+                </div>
+            </form>
+            <!-- Search lg -->
+            <div class="hidden lg:block">
+                <div class="flex flex-row items-center gap-[7.9375rem]">
+                    <div class="flex flex-row justify-between">
+                        <ul class="flex flex-row justify-between gap-[2.4375rem]">
+                            <li class="text-negro hover:cursor-pointer">Mostrar todo</li>
+                            <li class="text-[#C4C4C4] hover:text-negro hover:cursor-pointer">Sostenibilidad</li>
+                            <li class="text-[#C4C4C4] hover:text-negro hover:cursor-pointer">Arquitectura</li>
+                            <li class="text-[#C4C4C4] hover:text-negro hover:cursor-pointer">Premios</li>
+                            <li class="text-[#C4C4C4] hover:text-negro hover:cursor-pointer">Innovación</li>
+                        </ul>
+                    </div>
+                    <form class="min-w-[130px] max-w-[288px]">
+                        <label for="default-search"
+                            class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+                        <div class="relative">
+                            <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                                <button type="submit">
+                                    <img src="./assets/icons/lupa.svg" alt="lupa">
+                                </button>
+                            </div>
+                            <input type="search" id="default-search"
+                                class="block w-full px-[0.75rem] py-[0.5rem] pl-10 text-sm text-gray-900 border border-negro rounded-full bg-gray-50 focus:ring-blue-500 focus:border-blue-500 "
+                                placeholder="Buscar">
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Articles -->
+        <div class="flex flex-col items-center mt-[2.375rem] lg:flex-row lg:gap-[76px] lg:items-start">
+            <div class="grid grid-cols-1 gap-[15px] lg:grid-cols-3 lg:gap-[35px]">
+                <!-- card -->
+                <div class="flex flex-col h-fit">
+                    <img class="rounded-md h-auto" src="./assets/img/blog-articles-1.jpg" alt="article-1">
+                    <p class="mt-[21px] font-[0.75rem] font-bold text-madera">12/03/23</p>
+                    <h3 class="mt-[15px] text-[20px]">¡Los edificios
+                        se reinventan !</h3>
+                    <p class="mt-[26px] font-ligh text-[#363733] text-[14px]">Este pasado 1 de junio, se llevó a cabo la
+                        ceremonia de entrega del VI Premio Europeo AHI .</p>
+                </div>
+                <!-- card -->
+                <div class="flex flex-col h-fit">
+                    <img class="rounded-md h-auto" src="./assets/img/blog-articles-2.jpg" alt="article-1">
+                    <p class="mt-[21px] font-[0.75rem] font-bold text-madera">12/03/23</p>
+                    <h3 class="mt-[15px] text-[20px]">¡Los edificios
+                        se reinventan !</h3>
+                    <p class="mt-[26px] font-ligh text-[#363733] text-[14px]">Este pasado 1 de junio, se llevó a cabo la
+                        ceremonia de entrega del VI Premio Europeo AHI .</p>
+                </div>
+
+                <!-- TODO: CTA blog -->
+                <div class="lg:hidden">
+                    CTA
+                </div>
+
+                <!-- card -->
+                <div class="flex flex-col h-fit">
+                    <img class="rounded-md h-auto" src="./assets/img/blog-articles-3.jpg" alt="article-1">
+                    <p class="mt-[21px] font-[0.75rem] font-bold text-madera">12/03/23</p>
+                    <h3 class="mt-[15px] text-[20px]">¡Los edificios
+                        se reinventan !</h3>
+                    <p class="mt-[26px] font-ligh text-[#363733] text-[14px]">Este pasado 1 de junio, se llevó a cabo la
+                        ceremonia de entrega del VI Premio Europeo AHI .</p>
+                </div>
+
+                <!-- card -->
+                <div class="flex flex-col h-fit">
+                    <img class="rounded-md h-auto" src="./assets/img/blog-articles-4.jpg" alt="article-1">
+                    <p class="mt-[21px] font-[0.75rem] font-bold text-madera">12/03/23</p>
+                    <h3 class="mt-[15px] text-[20px]">¡Los edificios
+                        se reinventan !</h3>
+                    <p class="mt-[26px] font-ligh text-[#363733] text-[14px]">Este pasado 1 de junio, se llevó a cabo la
+                        ceremonia de entrega del VI Premio Europeo AHI .</p>
+                </div>
+
+                <!-- card -->
+                <div class="flex flex-col h-fit">
+                    <img class="rounded-md h-auto" src="./assets/img/blog-articles-5.jpg" alt="article-1">
+                    <p class="mt-[21px] font-[0.75rem] font-bold text-madera">12/03/23</p>
+                    <h3 class="mt-[15px] text-[20px]">¡Los edificios
+                        se reinventan !</h3>
+                    <p class="mt-[26px] font-ligh text-[#363733] text-[14px]">Este pasado 1 de junio, se llevó a cabo la
+                        ceremonia de entrega del VI Premio Europeo AHI .</p>
+                </div>
+
+                <!-- card -->
+                <div class="flex flex-col h-fit">
+                    <img class="rounded-md h-auto" src="./assets/img/blog-articles-6.jpg" alt="article-1">
+                    <p class="mt-[21px] font-[0.75rem] font-bold text-madera">12/03/23</p>
+                    <h3 class="mt-[15px] text-[20px]">¡Los edificios
+                        se reinventan !</h3>
+                    <p class="mt-[26px] font-ligh text-[#363733] text-[14px]">Este pasado 1 de junio, se llevó a cabo la
+                        ceremonia de entrega del VI Premio Europeo AHI .</p>
+                </div>
+            </div>
+
+            <!-- CTA LG -->
+            <div class="hidden lg:block">
+                algo
+            </div>
+        </div>
+
+
+        <!-- Pagination -->
+        <div>
+            algo
+        </div>
+
+
+
+    </section>
+</body>
+
+</html>
