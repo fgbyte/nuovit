@@ -620,6 +620,10 @@ p {
   right: 0px;
 }
 
+.-bottom-1 {
+  bottom: -0.25rem;
+}
+
 .bottom-0 {
   bottom: 0px;
 }
@@ -650,6 +654,10 @@ p {
 
 .top-0 {
   top: 0px;
+}
+
+.top-12 {
+  top: 3rem;
 }
 
 .-z-10 {
@@ -697,6 +705,14 @@ p {
 
 .mb-4 {
   margin-bottom: 1rem;
+}
+
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
+
+.mb-\[30px\] {
+  margin-bottom: 30px;
 }
 
 .mb-auto {
@@ -783,6 +799,14 @@ p {
   height: 35.973px;
 }
 
+.h-\[500\.333px\] {
+  height: 500.333px;
+}
+
+.h-\[544\.333px\] {
+  height: 544.333px;
+}
+
 .h-\[813px\] {
   height: 813px;
 }
@@ -798,6 +822,18 @@ p {
 .h-fit {
   height: -moz-fit-content;
   height: fit-content;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.h-\[53px\] {
+  height: 53px;
+}
+
+.h-\[54px\] {
+  height: 54px;
 }
 
 .max-h-\[813px\] {
@@ -836,6 +872,18 @@ p {
   width: 318px;
 }
 
+.w-\[350px\] {
+  width: 350px;
+}
+
+.w-\[408\.25px\] {
+  width: 408.25px;
+}
+
+.w-\[458\.25px\] {
+  width: 458.25px;
+}
+
 .w-fit {
   width: -moz-fit-content;
   width: fit-content;
@@ -843,6 +891,14 @@ p {
 
 .w-full {
   width: 100%;
+}
+
+.w-screen {
+  width: 100vw;
+}
+
+.w-\[176px\] {
+  width: 176px;
 }
 
 .min-w-\[100\%\] {
@@ -994,6 +1050,10 @@ p {
   gap: 0.75rem;
 }
 
+.gap-4 {
+  gap: 1rem;
+}
+
 .gap-5 {
   gap: 1.25rem;
 }
@@ -1016,6 +1076,14 @@ p {
 
 .gap-\[51px\] {
   gap: 51px;
+}
+
+.gap-\[6px\] {
+  gap: 6px;
+}
+
+.self-end {
+  align-self: flex-end;
 }
 
 .overflow-x-auto {
@@ -1096,10 +1164,6 @@ p {
   background-color: rgb(234 195 85 / var(--tw-bg-opacity));
 }
 
-.bg-slate-800\/40 {
-  background-color: rgb(30 41 59 / 0.4);
-}
-
 .bg-opacity-70 {
   --tw-bg-opacity: 0.7;
 }
@@ -1137,6 +1201,11 @@ p {
   padding-right: 46px;
 }
 
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
 .py-16 {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -1167,14 +1236,14 @@ p {
   padding-bottom: 30px;
 }
 
+.py-\[36px\] {
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+
 .py-\[6px\] {
   padding-top: 6px;
   padding-bottom: 6px;
-}
-
-.py-2 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
 }
 
 .pb-0 {
@@ -1205,12 +1274,16 @@ p {
   padding-right: 35px;
 }
 
+.pt-2 {
+  padding-top: 0.5rem;
+}
+
 .pt-4 {
   padding-top: 1rem;
 }
 
-.pl-2 {
-  padding-left: 0.5rem;
+.pt-\[66px\] {
+  padding-top: 66px;
 }
 
 .text-center {
@@ -1219,6 +1292,14 @@ p {
 
 .font-secondary {
   font-family: Playfair Display;
+}
+
+.font-primary {
+  font-family: Roboto;
+}
+
+.text-\[100px\] {
+  font-size: 100px;
 }
 
 .text-\[12px\] {
@@ -1239,6 +1320,10 @@ p {
 
 .text-\[16px\] {
   font-size: 16px;
+}
+
+.text-\[18px\] {
+  font-size: 18px;
 }
 
 .text-\[20px\] {
@@ -1264,6 +1349,10 @@ p {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.font-\[100\] {
+  font-weight: 100;
 }
 
 .font-\[300\] {
@@ -1298,6 +1387,10 @@ p {
   font-style: italic;
 }
 
+.not-italic {
+  font-style: normal;
+}
+
 .text-\[\#AF917C\] {
   --tw-text-opacity: 1;
   color: rgb(175 145 124 / var(--tw-text-opacity));
@@ -1305,6 +1398,11 @@ p {
 
 .text-\[12\] {
   color: 12;
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .text-grayTextFooter {
@@ -1330,11 +1428,6 @@ p {
 .text-whiteTextFooter {
   --tw-text-opacity: 1;
   color: rgb(233 233 233 / var(--tw-text-opacity));
-}
-
-.text-yellow {
-  --tw-text-opacity: 1;
-  color: rgb(234 195 85 / var(--tw-text-opacity));
 }
 
 .opacity-0 {
@@ -1423,6 +1516,25 @@ label input[type]:checked ~ span.middle {
   background-position: center;
 }
 
+.bg-inversores {
+  position: relative;
+  background: url(../assets/home/inversores.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-inversores::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  /* Ajusta el valor de opacidad (0.5 en este caso) */
+}
+
 .gradientdown {
   background: linear-gradient(
     180deg,
@@ -1462,11 +1574,6 @@ label input[type]:checked ~ span.middle {
   color: rgb(234 195 85 / var(--tw-text-opacity));
 }
 
-.hover\:text-white:hover {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 .group[open] .group-open\:-rotate-180 {
   --tw-rotate: -180deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1481,6 +1588,10 @@ label input[type]:checked ~ span.middle {
 @media (min-width: 976px) {
   .lg\:absolute {
     position: absolute;
+  }
+
+  .lg\:relative {
+    position: relative;
   }
 
   .lg\:bottom-0 {
@@ -1499,8 +1610,8 @@ label input[type]:checked ~ span.middle {
     left: auto;
   }
 
-  .lg\:right-4 {
-    right: 1rem;
+  .lg\:right-3 {
+    right: 0.75rem;
   }
 
   .lg\:right-\[-80\%\] {
@@ -1511,12 +1622,16 @@ label input[type]:checked ~ span.middle {
     right: 6px;
   }
 
-  .lg\:right-16 {
-    right: 4rem;
+  .lg\:right-auto {
+    right: auto;
   }
 
-  .lg\:right-3 {
-    right: 0.75rem;
+  .lg\:top-12 {
+    top: 3rem;
+  }
+
+  .lg\:z-50 {
+    z-index: 50;
   }
 
   .lg\:m-0 {
@@ -1537,8 +1652,8 @@ label input[type]:checked ~ span.middle {
     margin-bottom: 18rem;
   }
 
-  .lg\:ml-\[153px\] {
-    margin-left: 153px;
+  .lg\:ml-\[190px\] {
+    margin-left: 190px;
   }
 
   .lg\:mt-10 {
@@ -1551,22 +1666,6 @@ label input[type]:checked ~ span.middle {
 
   .lg\:mt-\[-37px\] {
     margin-top: -37px;
-  }
-
-  .lg\:ml-\[157px\] {
-    margin-left: 157px;
-  }
-
-  .lg\:ml-\[170px\] {
-    margin-left: 170px;
-  }
-
-  .lg\:ml-\[180px\] {
-    margin-left: 180px;
-  }
-
-  .lg\:ml-\[190px\] {
-    margin-left: 190px;
   }
 
   .lg\:block {
@@ -1585,12 +1684,32 @@ label input[type]:checked ~ span.middle {
     height: 682px;
   }
 
+  .lg\:h-\[500\.333px\] {
+    height: 500.333px;
+  }
+
+  .lg\:h-\[544\.333px\] {
+    height: 544.333px;
+  }
+
+  .lg\:min-h-\[582px\] {
+    min-height: 582px;
+  }
+
   .lg\:w-36 {
     width: 9rem;
   }
 
   .lg\:w-\[182px\] {
     width: 182px;
+  }
+
+  .lg\:w-\[30\%\] {
+    width: 30%;
+  }
+
+  .lg\:w-\[328px\] {
+    width: 328px;
   }
 
   .lg\:w-\[488px\] {
@@ -1605,6 +1724,14 @@ label input[type]:checked ~ span.middle {
     width: auto;
   }
 
+  .lg\:w-\[458\.25px\] {
+    width: 458.25px;
+  }
+
+  .lg\:w-\[408\.25px\] {
+    width: 408.25px;
+  }
+
   .lg\:min-w-fit {
     min-width: -moz-fit-content;
     min-width: fit-content;
@@ -1612,6 +1739,10 @@ label input[type]:checked ~ span.middle {
 
   .lg\:max-w-7xl {
     max-width: 80rem;
+  }
+
+  .lg\:max-w-\[208px\] {
+    max-width: 208px;
   }
 
   .lg\:max-w-none {
@@ -1636,6 +1767,14 @@ label input[type]:checked ~ span.middle {
 
   .lg\:flex-col {
     flex-direction: column;
+  }
+
+  .lg\:items-start {
+    align-items: flex-start;
+  }
+
+  .lg\:items-end {
+    align-items: flex-end;
   }
 
   .lg\:items-center {
@@ -1670,6 +1809,10 @@ label input[type]:checked ~ span.middle {
     gap: 142px;
   }
 
+  .lg\:gap-2 {
+    gap: 0.5rem;
+  }
+
   .lg\:border-b-0 {
     border-bottom-width: 0px;
   }
@@ -1694,6 +1837,16 @@ label input[type]:checked ~ span.middle {
     padding: 0px;
   }
 
+  .lg\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .lg\:py-24 {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
   .lg\:py-7 {
     padding-top: 1.75rem;
     padding-bottom: 1.75rem;
@@ -1703,24 +1856,32 @@ label input[type]:checked ~ span.middle {
     padding-bottom: 0.5rem;
   }
 
-  .lg\:pr-\[80px\] {
-    padding-right: 80px;
-  }
-
-  .lg\:pl-2 {
-    padding-left: 0.5rem;
-  }
-
-  .lg\:pl-4 {
-    padding-left: 1rem;
-  }
-
   .lg\:pl-3 {
     padding-left: 0.75rem;
   }
 
+  .lg\:pl-5 {
+    padding-left: 1.25rem;
+  }
+
+  .lg\:pr-\[80px\] {
+    padding-right: 80px;
+  }
+
+  .lg\:pt-\[157px\] {
+    padding-top: 157px;
+  }
+
+  .lg\:font-secondary {
+    font-family: Playfair Display;
+  }
+
   .lg\:text-\[24px\] {
     font-size: 24px;
+  }
+
+  .lg\:text-\[30px\] {
+    font-size: 30px;
   }
 
   .lg\:text-\[54px\] {
@@ -1731,8 +1892,12 @@ label input[type]:checked ~ span.middle {
     font-size: 55px;
   }
 
-  .lg\:text-\[30px\] {
-    font-size: 30px;
+  .lg\:font-\[400\] {
+    font-weight: 400;
+  }
+
+  .lg\:italic {
+    font-style: italic;
   }
 }
 
