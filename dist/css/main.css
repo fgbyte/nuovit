@@ -1428,7 +1428,7 @@ label input[type]:checked ~ span.middle {
   /* Para versiones más antiguas de Microsoft Edge */
 }
 
-#carrusel::-webkit-scrollbar {
+#carrusel::-webkit-scrollbar , #cards-projects::-webkit-scrollbar {
   display: none;
   /* Para navegadores basados en WebKit (Chrome, Safari, Opera) */
 }
@@ -1609,6 +1609,10 @@ label input[type]:checked ~ span.middle {
 
   .lg\:gap-\[142px\] {
     gap: 142px;
+  }
+
+  .lg\:gap-10 {
+    gap: 2.5rem;
   }
 
   .lg\:border-b-0 {
