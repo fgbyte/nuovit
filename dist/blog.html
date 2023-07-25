@@ -17,32 +17,95 @@
 <body>
     <!-- Hero -->
     <section class="relative h-[32.1875rem] bg-cover bg-center bg-no-repeat lg:contenido-lg lg:h-[38.125rem]"
-    style="background-image: url('./assets/img/blog-hero.jpg');">
+        style="background-image: url('./assets/img/blog-hero.jpg');">
         <div class="absolute flex flex-col top-[22.1875rem] contenido  lg:top-[22.1875rem] lg:left-[45%]">
-                <div class="flex flex-col gap-[0.67rem] p-[20px] w-[80%] bg-sand">
-                    <p class="font-[0.75rem] font-bold text-madera">12/03/23</p>
-                    <h2 class="text-[#363733]"><span class="font-semibold lg:text-[24px]">Brutalismo en Madrid:</span> 
-                        <br>
-                        una guía por la arquitectura más BRUTAL de la ciudad</h2>
+            <div class="flex flex-col gap-[0.67rem] p-[20px] w-[80%] bg-sand">
+                <p class="font-[0.75rem] font-bold text-madera">12/03/23</p>
+                <h2 class="text-[#363733]"><span class="font-semibold lg:text-[24px]">Brutalismo en Madrid:</span>
+                    <br>
+                    una guía por la arquitectura más BRUTAL de la ciudad
+                </h2>
+            </div>
+            <div class="h-[90px] bg-sand w-[80%] lg:h-[35px]"></div>
+            <div class="flex flex-row justify-between p-[20px] bg-sand w-[100%]">
+                <!-- FIXME: wl with del campo de texto en md debe pegarse mas a la flecha -->
+                <div class="text-madera w-[70%] lg:text-[14px]">
+                    Estos edificios construidos en Madrid de los años 60 a los 80 para muchos rozan el feísmo mientras
+                    que otros los tienen como destino de peregrinaje arquitectónico. Así es el mejor brutalismo de la
+                    capital.
                 </div>
-                <div class="h-[90px] bg-sand w-[80%] lg:h-[35px]"></div>
-                <div class="flex flex-row justify-between p-[20px] bg-sand w-[100%]">
-                    <!-- FIXME: wl with del campo de texto en md debe pegarse mas a la flecha -->
-                    <div class="text-madera w-[70%] lg:text-[14px]">
-                        Estos edificios construidos en Madrid de los años 60 a los 80 para muchos rozan el feísmo mientras que otros los tienen como destino de peregrinaje arquitectónico. Así es el mejor brutalismo de la capital.
-                    </div>
-                    <div>
-                        <a href="#">
-                            <img class="w-[53.6144px] h-[3.1363rem] lg:w-[97px] lg:h-[91px]" src="assets/icons/blog-arrow.svg" alt="">
-                        </a>
-                    </div>
+                <div>
+                    <a href="#">
+                        <img class="w-[53.6144px] h-[3.1363rem] lg:w-[97px] lg:h-[91px]"
+                            src="assets/icons/blog-arrow.svg" alt="">
+                    </a>
                 </div>
+            </div>
 
         </div>
     </section>
     <!-- Artículos -->
     <section class="mt-[280px] lg:mt-[93px] contenido lg:contenido-lg">
-        <h2 class="text-[25px] font-medium">Artículos <span class="font-secondary block ml-[35px] lg:inline lg:ml-0 lg:font-primary">Recientes</span></h2>
+        <div class="flex flex-row justify-between gap-[4.6875rem] lg:flex-col lg:gap-[2.8125rem]">
+            <h2 class="text-[25px] font-medium">Artículos <span
+                    class="font-secondary block ml-[35px] lg:inline lg:ml-0 lg:font-primary">Recientes</span></h2>
+
+            <!-- Search sm -->
+            <form class="mt-2 min-w-[130px] max-w-[200px] lg:hidden">
+                <label for="default-search"
+                    class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+                <div class="relative">
+                    <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                        <button type="submit">
+                            <img src="./assets/icons/lupa.svg" alt="lupa">
+                        </button>
+                    </div>
+                    <input type="search" id="default-search"
+                        class="block w-full px-[0.75rem] py-[0.5rem] pl-10 text-sm text-gray-900 border border-negro rounded-full bg-gray-50 focus:ring-blue-500 focus:border-blue-500 "
+                        placeholder="Buscar">
+
+                </div>
+            </form>
+            <!-- Search lg -->
+            <div class="sm:hidden md:hidden lg:block">
+                <div class="flex flex-row items-center gap-[7.9375rem]">
+                    <div class="flex flex-row justify-between">
+                        <ul class="flex flex-row justify-between gap-[2.4375rem]">
+                            <li class="text-negro hover:cursor-pointer">Mostrar todo</li>
+                            <li class="text-[#C4C4C4] hover:text-negro hover:cursor-pointer">Sostenibilidad</li>
+                            <li class="text-[#C4C4C4] hover:text-negro hover:cursor-pointer">Arquitectura</li>
+                            <li class="text-[#C4C4C4] hover:text-negro hover:cursor-pointer">Premios</li>
+                            <li class="text-[#C4C4C4] hover:text-negro hover:cursor-pointer">Innovación</li>
+                        </ul>
+                    </div>
+                    <form class="min-w-[130px] max-w-[288px]">
+                        <label for="default-search"
+                            class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+                        <div class="relative">
+                            <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                                <button type="submit">
+                                    <img src="./assets/icons/lupa.svg" alt="lupa">
+                                </button>
+                            </div>
+                            <input type="search" id="default-search"
+                                class="block w-full px-[0.75rem] py-[0.5rem] pl-10 text-sm text-gray-900 border border-negro rounded-full bg-gray-50 focus:ring-blue-500 focus:border-blue-500 "
+                                placeholder="Buscar">
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Articles -->
+        <div class="flex flex-col gap-[15px] mt-[2.375rem]">
+            <!-- card -->
+            <div class="flex flex-col gap-[20px]">
+                <img src="" alt="">
+            </div>
+        </div>
+
+
 
 
     </section>
