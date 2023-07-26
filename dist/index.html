@@ -16,7 +16,7 @@
 
 <body>
   <!-- Navbar -->
-  <header class="fixed h-[83] text-white inset-x-0 top-0 z-50">
+  <header class="absolute h-[83] text-white inset-x-0 top-0 z-50">
     <nav class="max-w-[1358px] mx-auto flex py-3 justify-between items-end px-[40px] select-none">
       <div>
         <div class="hidden lg:flex">
@@ -36,7 +36,7 @@
               </svg>
             </span>
           </summary>
-          <ul class="flex flex-col gap-2 fixed mt-2">
+          <ul class="flex flex-col gap-2 absolute mt-2">
             <li>
               <a href="" class="block hover:text-yellow"> Residenciales </a>
             </li>
@@ -57,7 +57,7 @@
               </svg>
             </span>
           </summary>
-          <ul class="flex flex-col gap-2 fixed mt-2">
+          <ul class="flex flex-col gap-2 absolute mt-2">
             <li>
               <a href="" class="block hover:text-yellow"> Residenciales </a>
             </li>
@@ -114,7 +114,7 @@
         <div id="carrusel"
           class="snap-proximity snap-x flex gap-2 lg:gap-10 lg:min-w-fit w-[130px] lg:w-auto overflow-x-auto scroll-snap-type-x">
           <a href="" id="card-1"
-            class="ml-5 sm:mr-8 lg:m-0 h-[30px] lg:w-[182px] snap-center min-w-[91%] lg:min-w-fit flex gap-2 border-t-[1px] border-white text-whiteTextFooter">
+            class="ml-5 sm:mr-8 lg:m-0 h-[30px] lg:w-[182px] snap-center min-w-[91%] lg:min-w-fit flex gap-2 border-t-[1px] hover:border-t-[3px] border-white text-whiteTextFooter">
             <div class="w-full flex flex-row justify-between items-end">
               <p>Octavia</p>
               <svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
@@ -125,7 +125,7 @@
             </div>
           </a>
           <a href="" id="card-2"
-            class="snap-center min-w-[93%] h-[30px] lg:w-[182px] lg:min-w-fit flex gap-2 border-t-[1px] border-white text-whiteTextFooter">
+            class="snap-center min-w-[93%] h-[30px] lg:w-[182px] lg:min-w-fit flex gap-2 border-t-[1px] hover:border-t-[3px] border-white text-whiteTextFooter">
             <div class="w-full flex flex-row justify-between items-end">
               <p>Alegra</p>
               <svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
@@ -136,7 +136,7 @@
             </div>
           </a>
           <a href="" id="card-3"
-            class="mr-5 sm:mr-8 lg:m-0 h-[30px] lg:w-[182px] snap-center min-w-[91%] lg:min-w-fit flex gap-2 border-t-[1px] border-white text-whiteTextFooter">
+            class="mr-5 sm:mr-8 lg:m-0 h-[30px] lg:w-[182px] snap-center min-w-[91%] lg:min-w-fit flex gap-2 border-t-[1px] hover:border-t-[3px] border-white text-whiteTextFooter">
             <div class="w-full flex flex-row justify-between items-end">
               <p>Limonar 20</p>
               <svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
@@ -180,24 +180,27 @@
     </div>
   </section>
   <!-- Conoce nuestros proyectos -->
-  <section class="relative mx-auto max-w-7xl flex flex-col py-9">
+  <section class="relative mx-auto max-w-[1358px] flex flex-col py-9">
     <div class="relative lg:absolute px-5 lg:max-w-xl lg:mt-10">
-      <h1 class="text-[30px] border-b-[1px] border-black lg:border-none pb-4 mb-4 lg:p-0 ">Conoce nuestros <br><span>proyectos</span></h1>
+      <h1 class="text-[30px] border-b-[1px] border-black lg:border-none pb-4 mb-4 lg:p-0 ">Conoce nuestros
+        <br><span>proyectos</span>
+      </h1>
       <p class="text-[14px] pb-4">En Nuovit Corporate somos especialistas en <strong>gestionar activos
-        de forma integral</strong> convirtiendolos en nuevos espacios premium.</p>
+          de forma integral</strong> convirtiendolos en nuevos espacios premium.</p>
     </div>
-    <div id="cards-projects" class="flex lg:gap-0 snap-proximity snap-x lg:min-w-fit min-w-fit lg:w-auto overflow-x-auto scroll-snap-type-x">
+    <div id="cards-projects"
+      class="flex lg:gap-0 snap-proximity snap-x lg:min-w-fit min-w-fit lg:w-auto overflow-x-auto scroll-snap-type-x">
       <div class="flex-1 flex lg:justify-end lg:items-center min-w-full lg:min-w-fit">
-        
+
         <div id="cardnumero-1" class="relative mx-[19px] lg:mx-0">
-          <img class="min-w-[100%] h-auto lg:w-[488px] lg:h-[682px] rounded-md -z-10" src="./assets/home/Alzado exterior.jpg"
-            alt="Alzadoexterior">
-        
+          <img class="min-w-[100%] h-auto lg:w-[488px] lg:h-[682px] rounded-md -z-10"
+            src="./assets/home/Alzado exterior.jpg" alt="Alzadoexterior">
+
           <span
             class="absolute bg-negro bg-opacity-70 z-10 top-0 rounded-[8px] px-4 py-[6px] ml-3 mt-5 text-[14px] text-white font-[700]">Nueva
             promoción
           </span>
-        
+
           <div class="absolute flex flex-col bottom-0 left-0 mb-3 ml-3">
             <div class="w-[244px] h-fit bg-white pl-4 pt-4 flex flex-col gap-2">
               <p class="text-[12] font-[400]">Desde</p>
@@ -229,20 +232,22 @@
                     <path
                       d="M1.625 4.87492L6.5 1.08325L11.375 4.87492V10.8333C11.375 11.1206 11.2609 11.3961 11.0577 11.5993C10.8545 11.8024 10.579 11.9166 10.2917 11.9166H2.70833C2.42102 11.9166 2.14547 11.8024 1.9423 11.5993C1.73914 11.3961 1.625 11.1206 1.625 10.8333V4.87492Z"
                       stroke="#222222" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M4.875 11.9167V6.5H8.125V11.9167" stroke="#222222" stroke-width="0.5" stroke-linecap="round"
-                      stroke-linejoin="round" />
+                    <path d="M4.875 11.9167V6.5H8.125V11.9167" stroke="#222222" stroke-width="0.5"
+                      stroke-linecap="round" stroke-linejoin="round" />
                   </svg>
                   <p class="text-[13px] font-[300] ">Viviendas de 3 y 4 dormitorios</p>
                 </div>
                 <div class="flex gap-2 items-center">
                   <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
-                    <path d="M3.28881 8.31413L6.77797 2.83116C7.04653 2.40914 7.6998 2.59937 7.6998 3.0996V6.88257C7.6998 6.9378 7.74458 6.98257 7.7998 6.98257H10.2395C10.644 6.98257 10.8811 7.43791 10.6491 7.7693L7.20942 12.6831C6.92908 13.0836 6.2998 12.8852 6.2998 12.3964V9.18257C6.2998 9.12734 6.25503 9.08257 6.1998 9.08257H3.71064C3.3161 9.08257 3.07699 8.64699 3.28881 8.31413Z" stroke="black" stroke-width="0.5"/>
-                    </svg>
+                    <path
+                      d="M3.28881 8.31413L6.77797 2.83116C7.04653 2.40914 7.6998 2.59937 7.6998 3.0996V6.88257C7.6998 6.9378 7.74458 6.98257 7.7998 6.98257H10.2395C10.644 6.98257 10.8811 7.43791 10.6491 7.7693L7.20942 12.6831C6.92908 13.0836 6.2998 12.8852 6.2998 12.3964V9.18257C6.2998 9.12734 6.25503 9.08257 6.1998 9.08257H3.71064C3.3161 9.08257 3.07699 8.64699 3.28881 8.31413Z"
+                      stroke="black" stroke-width="0.5" />
+                  </svg>
                   <p class="text-[13px] font-[300] ">Calificación energética A</p>
                 </div>
               </div>
               <div class="flex flex-col gap-2">
-                <h1 class="flex gap-2 items-end text-[32px] font-[400]"><strong >Icon</strong> Limonar</h1>
+                <h1 class="flex gap-2 items-end text-[32px] font-[400]"><strong>Icon</strong> Limonar</h1>
                 <p class="text-[14px] font-[400]">4000 m2 de zonas verdes</p>
               </div>
             </div>
@@ -251,16 +256,16 @@
       </div>
 
       <div class="flex-1 flex lg:flex-col lg:items-center lg:gap-[142px] min-w-[200%] lg:min-w-fit">
-        
+
         <div id="cardnumero-2" class="relative mx-[19px] lg:mx-0">
-          <img class="min-w-[100%] h-auto lg:w-[488px] lg:h-[682px] rounded-md -z-10" src="./assets/home/01_Alzado exterior 2.jpg"
-            alt="Alzadoexterior">
-        
+          <img class="min-w-[100%] h-auto lg:w-[488px] lg:h-[682px] rounded-md -z-10"
+            src="./assets/home/01_Alzado exterior 2.jpg" alt="Alzadoexterior">
+
           <span
             class="absolute bg-negro bg-opacity-70 z-10 top-0 rounded-[8px] px-4 py-[6px] ml-3 mt-5 text-[14px] text-white font-[700]">Nueva
             promoción
           </span>
-        
+
           <div class="absolute flex flex-col bottom-0 left-0 mb-3 ml-3">
             <div class="w-[244px] h-fit bg-white pl-4 pt-4 flex flex-col gap-2">
               <p class="text-[12] font-[400]">Desde</p>
@@ -292,8 +297,8 @@
                     <path
                       d="M1.625 4.87492L6.5 1.08325L11.375 4.87492V10.8333C11.375 11.1206 11.2609 11.3961 11.0577 11.5993C10.8545 11.8024 10.579 11.9166 10.2917 11.9166H2.70833C2.42102 11.9166 2.14547 11.8024 1.9423 11.5993C1.73914 11.3961 1.625 11.1206 1.625 10.8333V4.87492Z"
                       stroke="#222222" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M4.875 11.9167V6.5H8.125V11.9167" stroke="#222222" stroke-width="0.5" stroke-linecap="round"
-                      stroke-linejoin="round" />
+                    <path d="M4.875 11.9167V6.5H8.125V11.9167" stroke="#222222" stroke-width="0.5"
+                      stroke-linecap="round" stroke-linejoin="round" />
                   </svg>
                   <p class="text-[13px] font-[300] ">Viviendas de 3 y 4 dormitorios</p>
                 </div>
@@ -307,14 +312,14 @@
         </div>
 
         <div id="cardnumero-3" class="relative mx-[19px] lg:mx-0">
-          <img class="min-w-[100%] h-auto lg:w-[488px] lg:h-[682px] rounded-md -z-10" src="./assets/home/01_Alzado exterior 2 (1).jpg"
-            alt="Alzadoexterior">
-        
+          <img class="min-w-[100%] h-auto lg:w-[488px] lg:h-[682px] rounded-md -z-10"
+            src="./assets/home/01_Alzado exterior 2 (1).jpg" alt="Alzadoexterior">
+
           <span
             class="absolute bg-negro bg-opacity-70 z-10 top-0 rounded-[8px] px-4 py-[6px] ml-3 mt-5 text-[14px] text-white font-[700]">Nueva
             promoción
           </span>
-        
+
           <div class="absolute flex flex-col bottom-0 left-0 mb-3 ml-3">
             <div class="w-[244px] h-fit bg-white pl-4 pt-4 flex flex-col gap-2">
               <p class="text-[12] font-[400]">Desde</p>
@@ -346,8 +351,8 @@
                     <path
                       d="M1.625 4.87492L6.5 1.08325L11.375 4.87492V10.8333C11.375 11.1206 11.2609 11.3961 11.0577 11.5993C10.8545 11.8024 10.579 11.9166 10.2917 11.9166H2.70833C2.42102 11.9166 2.14547 11.8024 1.9423 11.5993C1.73914 11.3961 1.625 11.1206 1.625 10.8333V4.87492Z"
                       stroke="#222222" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M4.875 11.9167V6.5H8.125V11.9167" stroke="#222222" stroke-width="0.5" stroke-linecap="round"
-                      stroke-linejoin="round" />
+                    <path d="M4.875 11.9167V6.5H8.125V11.9167" stroke="#222222" stroke-width="0.5"
+                      stroke-linecap="round" stroke-linejoin="round" />
                   </svg>
                   <p class="text-[13px] font-[300] ">Viviendas de 1 a 4 dormitorios</p>
                 </div>
@@ -362,16 +367,141 @@
       </div>
 
     </div>
-    
-    <button class="relative lg:absolute lg:bottom-0 lg:ml-[153px] lg:mb-72 w-fit flex gap-1 rounded-md py-3 px-[18px] text-[12px] font-medium text-sand bg-black m-5">
+
+    <button
+      class="relative lg:absolute lg:bottom-0 lg:ml-[190px] lg:mb-72 w-fit flex gap-1 rounded-md py-3 px-[18px] text-[12px] font-medium text-sand bg-black m-5">
       Ver todos los proyectos
       <svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
         <path d="M1 0.5L11.2963 0.5L11.2963 10.5" stroke="#EAC355" stroke-linecap="round" stroke-linejoin="round" />
         <path d="M1 11L11 1" stroke="#EAC355" stroke-linecap="round" stroke-linejoin="round" />
       </svg>
     </button>
- 
+
   </section>
+  <!-- Inversores. Cooperación, garantía de éxito -->
+  <section class="w-full bg-inversores">
+    <div class="max-w-[1358px] mx-auto pt-2 flex flex-col gap-4 lg:justify-end lg:items-start relative h-full">
+      <div class="px-5 text-white py-[36px] pt-[66px] lg:py-24 lg:pt-[157px]">
+        <h1 class="flex flex-col gap-1 lg:gap-2 text-[16px] lg:text-[30px] font-[300]">Inversores. Cooperación,
+          <span class="lg:italic font-primary lg:font-secondary not-italic lg:font-[400] lg:text-[30px]">garantíade
+            éxito</span>
+        </h1>
+      </div>
+
+      <div class="relative flex lg:flex-row lg:items-end flex-col-reverse w-full lg:pl-5">
+
+        <div class="bg-white lg:min-h-[582px] w-screen lg:w-[328px] flex lg:justify-center py-10">
+          <div class="lg:max-w-[208px] flex flex-col-reverse lg:flex-col gap-10 px-5 lg:px-0">
+            <p class="text-[14px] font-[400]">Puesto que cada inversor
+              es diferente, en Nuovit Corporate ofrecemos distintas opciones
+              en función de las características que son prioritarias al invertir
+              en un activo.</p>
+            <button
+              class="relative w-fit flex items-center gap-1 rounded-md py-3 px-[18px] text-[12px] font-medium text-black bg-sand">
+              Saber más
+              <img src="./assets/icons/arrow.svg" alt="arrow">
+            </button>
+          </div>
+        </div>
+        <div class="hidden relative lg:flex justify-end bg-white pb-0 w-[458.25px] h-[500.333px]">
+          <img class="absolute left-0 bottom-0 top-12 z-50 w-[408.25px] h-[544.333px]" src="./assets/home/Mask.png"
+            alt="Mask">
+        </div>
+
+        <div class="lg:hidden relative self-end bg-white pb-0 w-[176px] h-[54px]"></div>
+
+        <div class="flex flex-col items-start text-white w-[350px] lg:w-[30%] mb-[30px] ">
+          <a href="#" class="w-full flex gap-[6px] justify-end items-end border-b-[1px] border-white pb-5 mb-5">
+            <p class="text-[18px] font-[700]">Cadena <span class="font-[300]">de valor</span></p>
+            <h1 class="text-[100px] font-[100] -bottom-1 relative">01</h1>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M7 17L17 7" stroke="#EAC355" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M7 7L17 7L17 17" stroke="#EAC355" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a><a href="#" class="w-full flex gap-[6px] justify-end items-end border-b-[1px] border-white pb-5 mb-5">
+            <p class="text-[18px] font-[300]">Capacidades</p>
+            <h1 class="text-[100px] font-[100] -bottom-1 relative">02</h1>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M7 17L17 7" stroke="#EAC355" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M7 7L17 7L17 17" stroke="#EAC355" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a><a href="#" class="w-full flex gap-[6px] justify-end items-end border-b-[1px] border-white pb-5 mb-5">
+            <p class="text-[18px] font-[700]">Estrategia <span class="font-[300]">de inversión</span></p>
+            <h1 class="text-[100px] font-[100] -bottom-1 relative">03</h1>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M7 17L17 7" stroke="#EAC355" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M7 7L17 7L17 17" stroke="#EAC355" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a><a href="#" class="w-full flex gap-[6px] justify-end items-end">
+            <p class="text-[18px] font-[700]">Ventajas <span class="font-[300]">competitivas</span></p>
+            <h1 class="text-[100px] font-[100] -bottom-1 relative">04</h1>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M7 17L17 7" stroke="#EAC355" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M7 7L17 7L17 17" stroke="#EAC355" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <!-- Quiénes somos -->
+  <section class="flex justify-center items-center bg-sand w-full h-fit py-16">
+    <div class="max-w-[1358px] flex flex-col gap-6 lg:gap-4 lg:mt-48 justify-center items-center">
+      <img class="relative lg:hidden" src="./assets/home/bigarrow.svg" alt="bigarrow"/>
+       
+      </img>
+      <div class="">
+        <h1 class="relative flex flex-col text-[50px] lg:text-[100px] font-[500] lg:font-[600]">
+          Quiénes
+          <span class="relative left-24 lg:left-56 font-[400]">somos</span>
+        </h1>
+      </div>
+      <button
+            class="z-10 relative mb-6 lg:hidden flex justify-center items-center gap-1 rounded-md py-4 px-[18px] text-[12px] w-[115px] font-medium">
+            <img class="w-5  text-white fill-white" src="./assets/home/play.svg" alt="arrow">
+            <img class="absolute inset-0 h-full w-full -z-[1]" src="./assets/home/Rectangle.png" alt="Rectangle">
+      </button>
+      <div class="flex h-[281px] justify-start items-end px-5 gap-5 lg:gap-0">
+
+        <div class="relative flex-1 flex items-end h-full">
+          <img class="hidden lg:block lg:absolute w-[600px] h-auto -left-32 bottom-32" src="./assets/home/bigarrow.svg" alt="bigarrow"/>
+          <div class="flex flex-col-reverse h-full lg:h-fit justify-between items-center lg:items-start lg:flex-row ">
+
+            <div class="lg:flex-1 flex flex-col text-center lg:text-start gap-4">
+              <h1 class="text-[50px] lg:text-[100px] font-[100]">15</h1>
+              <p class="text-[16px] font-[300]">Años construyendo
+                espacios funcionales</p>
+            </div>
+            
+            <div class="lg:flex-1 flex flex-col text-center lg:text-start gap-4 ">
+              <h1 class="text-[50px] lg:text-[100px] font-[100]">120</h1>
+              <p class="text-[16px] font-[300]">Proyectos
+                terminados</p>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="flex-1 flex lg:flex-col flex-col-reverse justify-between h-full">
+          <button
+            class="relative flex gap-1 rounded-md py-3 px-[18px] text-[12px] w-fit bg-transparent border-[1px] border-solid border-black font-medium">Saber más
+            <img src="./assets/icons/arrow.svg" alt="arrow">
+          </button>
+          <p class="text-[16px] font-[400]">En Nuovit Corporate somos especialistas en gestionar activos de forma
+            integral afrontamos cada proyecto desde un prisma multidisciplinar controlando todas las fases de ejecución
+            y el correcto desarrollo en tiempo e inversión.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
   <!-- Footer -->
   <footer class=" bg-negro bottom-0 inset-x-0">
 
@@ -391,7 +521,7 @@
       <div
         class="lg:border-t-[1px] lg:border-solid border-graytext-grayTextFooter relative max-w-[300px] mx-auto lg:max-w-none py-4 flex flex-col gap-5 items-start lg:flex-row lg:justify-between [&>div]:flex [&>div]:flex-1 [&>div]:gap-6 [&>div]: [&>div]:items-center lg:[&>div]:gap-[67px] text-grayTextFooter [&>div>img]:w-4 [&>div>a]:text-xs">
         <div class=""><img src="./assets/footer/phone.svg" alt="phone"> <a>+34 952 220 261</a></div>
-        <div class="relative lg:right-4 lg:justify-center"><img src="./assets/footer/Campaign.svg"
+        <div class="relative lg:right-3 lg:justify-center"><img src="./assets/footer/Campaign.svg"
             alt="Campaign"><a>Suscríbete a nuestro newsletter</a></div>
         <div class="relative lg:right-[6px] lg:justify-center"><img src="./assets/footer/mail.svg" alt="mail">
           <a>info@nuovit.com</a>
@@ -423,7 +553,7 @@
           <div
             class="flex flex-col lg:flex-row border-b-[1px] border-solid border-graytext-grayTextFooter [&>div>div>p]:text-xs [&>div>div>h3]:text-base">
             <div
-              class="flex flex-row lg:flex-col flex-1 lg:gap-4 pb-0 lg:py-7 text-grayTextFooter border-b-[1px] lg:border-b-0 lg:border-r-[1px] border-graytext-grayTextFooter">
+              class="lg:pl-3 flex flex-row lg:flex-col flex-1 lg:gap-4 pb-0 lg:py-7 text-grayTextFooter border-b-[1px] lg:border-b-0 lg:border-r-[1px] border-graytext-grayTextFooter">
               <div class="flex flex-col gap-3 w-[300px] mx-auto mb-auto">
                 <h3
                   class="pb-[14.71px] border-b-[1px] border-solid mb-4 text-whiteTextFooter border-graytext-grayTextFooter">
@@ -445,7 +575,7 @@
                 <p class="opacity-0">.</p>
               </div>
             </div>
-            <div class="flex flex-row lg:flex-col flex-1 lg:gap-4 py-4 lg:py-7 text-grayTextFooter">
+            <div class="lg:pl-3 flex flex-row lg:flex-col flex-1 lg:gap-4 py-4 lg:py-7 text-grayTextFooter">
               <div class="flex flex-col gap-3 w-[300px] ml-auto mb-auto">
                 <h3
                   class="pb-[14.71px] border-b-[1px] border-solid mb-4 text-whiteTextFooter border-graytext-grayTextFooter">
