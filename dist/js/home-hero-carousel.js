@@ -47,3 +47,34 @@ carousel.addEventListener('scroll', () => {
     control2.classList.remove("bg-gray-50");
   }
 });
+
+
+// Logica de las cards
+
+function toggleContent(cardNumber) {
+  const content = document.querySelector(`.cards-bottom > div:nth-child(${cardNumber}) p`);
+  const button = document.querySelector(`.cards-bottom > div:nth-child(${cardNumber}) button`);
+
+  if (content.classList.contains('hidden')) {
+    content.classList.remove('hidden');
+    button.textContent = 'Leer menos';
+  } else {
+    content.classList.add('hidden');
+    button.textContent = 'Leer más';
+  }
+}
+let currentCard = 1;
+
+function showNextCard() {
+  const grid = document.querySelector('.cards-bottom');
+  const totalCards = grid.childElementCount;
+  const nextCard = (currentCard % totalCards) + 1;
+  const currentCardElement = document.querySelector(`.cards-bottom > div:nth-child(${currentCard})`);
+  const nextCardElement = document.querySelector(`.cards-bottom > div:nth-child(${nextCard})`);
+
+  currentCardElement.classList.add('hidden');
+  nextCardElement.classList.remove('hidden');
+  nextCardElement.classList.add('flex');
+
+  currentCard = nextCard;
+}
