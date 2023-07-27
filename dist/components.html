@@ -122,31 +122,58 @@
         </svg>
       </button>
 
+      <div class="mt-10"></div>
+
+
+
+      <!-- CTA -->
+      <div class="w-[21.25rem]" id="cta">
+        <div class="flex felx-col h-[545px]  rounded-md bg-cover bg-no-repeat"
+          style="background-image: url('./assets/img/blog-cta.jpg');">
+          <div class="flex flex-col self-end m-[14px]">
+            <div class="w-[248px] h-fit bg-white pl-4 pt-4">
+              <p class="text-[24px] font-[700] flex flex-col">Visita nuestras
+                <span class="font-[400]">promociones</span>
+              </p>
+            </div>
+            <div class="w-[310px] h-[135px] bg-white p-4 flex flex-col justify-end">
+              <button
+                class="w-fit flex items-start gap-1 rounded-md py-3 px-[18px] text-[12px] bg-yellow font-medium text-negro">Ver
+                promociones
+                <img src="./assets/icons/arrow.svg" alt="arrow">
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- CTA Form   -->
+        <div class="mt-[21px] p-[24px] bg-sand rounded-md">
+          <form class="flex flex-col gap-4" action="">
+            <label for="email" class="text-[24px]"><b class="block mb-3">Suscríbete</b> a nuestro Blog
+            </label>
+            <input type="email" id="email" aria-describedby="helper-text-explanation"
+            class="px-6 py-4 rounded-md border border-negro placeholder:text-[16px] placeholder:font-light"
+            placeholder="Tu correo electrónico">
+            <div class="flex items-center gap-2">
+              <input class="w-6 h-6" type="checkbox" name="
+              " id="checkbox-1" value="checked">
+              <label class="text-[14px] leading-[20px]" for="checkbox-1"><span class="text-gray-400">He leído y acepto</span></He> la Política de privacidad</label>
+            </div>
+            <button type="submit"
+                class="-mt-4 w-fit flex self-end gap-1 rounded-md py-3 px-[18px] text-[12px] bg-yellow font-medium text-negro">Enviar
+                <img src="./assets/icons/arrow.svg" alt="arrow">
+              </button>
+
+
+          </form>
+        </div>
+      </div>
+
+
+
     </div>
-
-
   </section>
 
-  <!-- Cards -->
-  <div id="blog-cta" class="relative max-w-[338px] h-auto mx-[19px] lg:mx-auto ">
-    <img class="w-full h-auto rounded-md -z-10" src="./assets/img/blog-cta.jpg" alt="blog-cta">
-    <div class="absolute flex flex-col bottom-0 w-full m-[14px]">
-      <div class="w-[248px] h-fit bg-white pl-4 pt-4">
-        <p class="text-[24px] font-[700]  flex flex-col">Visita nuestras
-          <span class="font-[400]">promociones</span>
-        </p>
-      </div>
-      <div class="w-[310px] h-[135px] bg-white p-4 flex flex-col justify-end">
-        <button
-          class="relative w-fit flex items-start gap-1 rounded-md py-3 px-[18px] text-[12px] bg-yellow font-medium text-negro">Ver
-          promociones
-          <img src="./assets/icons/arrow.svg" alt="arrow">
-        </button>
-      </div>
-    </div>
-  </div>
-  <!-- fin card -->
-  
+
   <script src="./js/index.js"></script>
 </body>
 
