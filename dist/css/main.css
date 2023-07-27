@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.3.2 | MIT License | https://tailwindcss.com
+! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -191,6 +191,10 @@ select,
 textarea {
   font-family: inherit;
   /* 1 */
+  font-feature-settings: inherit;
+  /* 1 */
+  font-variation-settings: inherit;
+  /* 1 */
   font-size: 100%;
   /* 1 */
   font-weight: inherit;
@@ -338,6 +342,14 @@ ul,
 menu {
   list-style: none;
   margin: 0;
+  padding: 0;
+}
+
+/*
+Reset default styling for dialogs.
+*/
+
+dialog {
   padding: 0;
 }
 
@@ -684,6 +696,54 @@ p {
   top: 22.1875rem;
 }
 
+.left-10 {
+  left: 2.5rem;
+}
+
+.-left-10 {
+  left: -2.5rem;
+}
+
+.-left-40 {
+  left: -10rem;
+}
+
+.-left-60 {
+  left: -15rem;
+}
+
+.-left-64 {
+  left: -16rem;
+}
+
+.-left-\[220px\] {
+  left: -220px;
+}
+
+.-left-\[210px\] {
+  left: -210px;
+}
+
+.-left-\[200px\] {
+  left: -200px;
+}
+
+.-left-\[100px\] {
+  left: -100px;
+}
+
+.-left-\[30px\] {
+  left: -30px;
+}
+
+.-left-\[50px\] {
+  left: -50px;
+}
+
+.-left-\[40px\] {
+  left: -40px;
+}
+
 .-z-10 {
   z-index: -10;
 }
@@ -968,6 +1028,10 @@ p {
   width: 244px;
 }
 
+.w-\[260px\] {
+  width: 260px;
+}
+
 .w-\[300px\] {
   width: 300px;
 }
@@ -1019,6 +1083,22 @@ p {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-\[248px\] {
+  width: 248px;
+}
+
+.w-\[268px\] {
+  width: 268px;
+}
+
+.w-\[278px\] {
+  width: 278px;
+}
+
+.w-\[308px\] {
+  width: 308px;
 }
 
 .min-w-\[100\%\] {
@@ -1074,8 +1154,20 @@ p {
   max-width: 570px;
 }
 
+.max-w-\[730px\] {
+  max-width: 730px;
+}
+
+.max-w-\[917px\] {
+  max-width: 917px;
+}
+
 .max-w-xs {
   max-width: 20rem;
+}
+
+.max-w-\[597px\] {
+  max-width: 597px;
 }
 
 .flex-1 {
@@ -1199,6 +1291,10 @@ p {
   gap: 1.5rem;
 }
 
+.gap-7 {
+  gap: 1.75rem;
+}
+
 .gap-8 {
   gap: 2rem;
 }
@@ -1251,6 +1347,10 @@ p {
   gap: 7.9375rem;
 }
 
+.gap-\[52px\] {
+  gap: 52px;
+}
+
 .gap-y-\[75px\] {
   row-gap: 75px;
 }
@@ -1273,6 +1373,10 @@ p {
 
 .rounded-md {
   border-radius: 0.375rem;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
 }
 
 .border {
@@ -1327,6 +1431,10 @@ p {
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.bg-fuchsia-600\/40 {
+  background-color: rgb(192 38 211 / 0.4);
 }
 
 .bg-gray-300 {
@@ -1970,6 +2078,10 @@ label input[type]:checked ~ span.middle {
     top: 22.1875rem;
   }
 
+  .lg\:-left-\[200px\] {
+    left: -200px;
+  }
+
   .lg\:m-0 {
     margin: 0px;
   }
@@ -2073,6 +2185,10 @@ label input[type]:checked ~ span.middle {
     width: 328px;
   }
 
+  .lg\:w-\[419px\] {
+    width: 419px;
+  }
+
   .lg\:w-\[488px\] {
     width: 488px;
   }
@@ -2087,6 +2203,10 @@ label input[type]:checked ~ span.middle {
 
   .lg\:w-auto {
     width: auto;
+  }
+
+  .lg\:w-full {
+    width: 100%;
   }
 
   .lg\:min-w-fit {
@@ -2187,6 +2307,14 @@ label input[type]:checked ~ span.middle {
     gap: 76px;
   }
 
+  .lg\:gap-\[52px\] {
+    gap: 52px;
+  }
+
+  .lg\:gap-\[40px\] {
+    gap: 40px;
+  }
+
   .lg\:border-b-0 {
     border-bottom-width: 0px;
   }
@@ -2266,12 +2394,20 @@ label input[type]:checked ~ span.middle {
     font-size: 14px;
   }
 
+  .lg\:text-\[16px\] {
+    font-size: 16px;
+  }
+
   .lg\:text-\[24px\] {
     font-size: 24px;
   }
 
   .lg\:text-\[30px\] {
     font-size: 30px;
+  }
+
+  .lg\:text-\[40px\] {
+    font-size: 40px;
   }
 
   .lg\:text-\[54px\] {
