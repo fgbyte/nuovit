@@ -100,9 +100,9 @@
         <div class="flex flex-col items-center mt-[2.375rem] lg:flex-row lg:gap-[76px] lg:items-start">
             <!-- Articles -->
             <div class="flex flex-col items-center gap-y-[75px]">
-                <div class="columns-1 gap-[15px] lg:columns-3 lg:gap-[35px] [&>div.h-fit]:mb-8">
+                <div class="columns-1 gap-[15px] lg:columns-3 lg:gap-[35px] [&>a.h-fit]:mb-8">
                     <!-- card -->
-                    <div class="flex flex-col h-fit">
+                    <a href="#" class="flex flex-col h-fit transition ease-in-out delay-100 hover:scale-105">
                         <img class="rounded-md h-auto" src="./assets/img/blog-articles-1.jpg" alt="article-1">
                         <p class="mt-[21px] text-[0.75rem] font-bold text-madera">12/03/23</p>
                         <h3 class="mt-[15px] text-[20px]">¡Los edificios
@@ -110,9 +110,9 @@
                         <p class="mt-[26px] font-ligh text-[#363733] text-[14px]">Este pasado 1 de junio, se llevó a
                             cabo la
                             ceremonia de entrega del VI Premio Europeo AHI .</p>
-                    </div>
+                    </a>
                     <!-- card -->
-                    <div class="flex flex-col h-fit">
+                    <a href="#" class="flex flex-col h-fit transition ease-in-out delay-100 hover:scale-105">
                         <img class="rounded-md h-auto" src="./assets/img/blog-articles-4.jpg" alt="article-4">
                         <p class="mt-[21px] text-[0.75rem] font-bold text-madera">12/03/23</p>
                         <h3 class="mt-[15px] text-[20px]">¡Los edificios
@@ -120,15 +120,56 @@
                         <p class="mt-[26px] font-ligh text-[#363733] text-[14px]">Este pasado 1 de junio, se llevó a
                             cabo la
                             ceremonia de entrega del VI Premio Europeo AHI .</p>
-                    </div>
+                    </a>
 
-                    <!-- TODO: CTA blog -->
-                    <div class="lg:hidden">
-                        CTA
+                    <!-- CTA SM -->
+                    <div class="lg:hidden mb-8">
+                        <div class="" id="cta">
+                            <div class="flex felx-col h-[545px]  rounded-md bg-cover bg-no-repeat"
+                                style="background-image: url('./assets/img/blog-cta.jpg');">
+                                <div class="flex flex-col self-end m-[14px]">
+                                    <div class="w-[248px] h-fit bg-white pl-4 pt-4">
+                                        <p class="text-[24px] font-[700] flex flex-col">Visita nuestras
+                                            <span class="font-[400]">promociones</span>
+                                        </p>
+                                    </div>
+                                    <div class="w-[310px] h-[135px] bg-white p-4 flex flex-col justify-end">
+                                        <button
+                                            class="w-fit flex items-start gap-1 rounded-md py-3 px-[18px] text-[12px] bg-yellow font-medium text-negro">Ver
+                                            promociones
+                                            <img src="./assets/icons/arrow.svg" alt="arrow">
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- CTA Form   -->
+                            <div class="mt-[21px] p-[24px] bg-sand rounded-md">
+                                <form class="flex flex-col gap-4" action="">
+                                    <label for="email" class="text-[24px]"><b class="block mb-3">Suscríbete</b> a
+                                        nuestro
+                                        Blog
+                                    </label>
+                                    <input type="email" id="email" aria-describedby="helper-text-explanation"
+                                        class="px-6 py-4 rounded-md border border-negro placeholder:text-[16px] placeholder:font-light"
+                                        placeholder="Tu correo electrónico">
+                                    <div class="flex items-center gap-2">
+                                        <input class="w-6 h-6" type="checkbox" name="
+                                  " id="checkbox-1" value="checked">
+                                        <label class="text-[14px] leading-[20px]" for="checkbox-1"><span
+                                                class="text-gray-400">He leído y acepto</span></He> la Política de
+                                            privacidad</label>
+                                    </div>
+                                    <button type="submit"
+                                        class="-mt-4 w-fit flex self-end gap-1 rounded-md py-3 px-[18px] text-[12px] bg-yellow font-medium text-negro">Enviar
+                                        <img src="./assets/icons/arrow.svg" alt="arrow">
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
                     </div>
 
                     <!-- card -->
-                    <div class="flex flex-col h-fit">
+                    <a href="#" class="flex flex-col h-fit transition ease-in-out delay-100 hover:scale-105">
                         <img class="rounded-md h-auto" src="./assets/img/blog-articles-2.jpg" alt="article-1">
                         <p class="mt-[21px] text-[0.75rem] font-bold text-madera">12/03/23</p>
                         <h3 class="mt-[15px] text-[20px]">¡Los edificios
@@ -136,10 +177,10 @@
                         <p class="mt-[26px] font-ligh text-[#363733] text-[14px]">Este pasado 1 de junio, se llevó a
                             cabo la
                             ceremonia de entrega del VI Premio Europeo AHI .</p>
-                    </div>
+                    </a>
 
                     <!-- card -->
-                    <div class="flex flex-col h-fit">
+                    <a href="#" class="flex flex-col h-fit transition ease-in-out delay-100 hover:scale-105">
                         <img class="rounded-md h-auto" src="./assets/img/blog-articles-5.jpg" alt="article-1">
                         <p class="mt-[21px] text-[0.75rem] font-bold text-madera">12/03/23</p>
                         <h3 class="mt-[15px] text-[20px]">¡Los edificios
@@ -147,10 +188,10 @@
                         <p class="mt-[26px] font-ligh text-[#363733] text-[14px]">Este pasado 1 de junio, se llevó a
                             cabo la
                             ceremonia de entrega del VI Premio Europeo AHI .</p>
-                    </div>
+                    </a>
 
                     <!-- card -->
-                    <div class="flex flex-col h-fit">
+                    <a href="#" class="flex flex-col h-fit transition ease-in-out delay-100 hover:scale-105">
                         <img class="rounded-md h-auto" src="./assets/img/blog-articles-3.jpg" alt="article-1">
                         <p class="mt-[21px] text-[0.75rem] font-bold text-madera">12/03/23</p>
                         <h3 class="mt-[15px] text-[20px]">¡Los edificios
@@ -158,10 +199,10 @@
                         <p class="mt-[26px] font-ligh text-[#363733] text-[14px]">Este pasado 1 de junio, se llevó a
                             cabo la
                             ceremonia de entrega del VI Premio Europeo AHI .</p>
-                    </div>
+                    </a>
 
                     <!-- card -->
-                    <div class="flex flex-col h-fit">
+                    <a href="#" class="flex flex-col h-fit transition ease-in-out delay-100 hover:scale-105">
                         <img class="rounded-md h-auto" src="./assets/img/blog-articles-6.jpg" alt="article-1">
                         <p class="mt-[21px] text-[0.75rem] font-bold text-madera">12/03/23</p>
                         <h3 class="mt-[15px] text-[20px]">¡Los edificios
@@ -169,7 +210,7 @@
                         <p class="mt-[26px] font-ligh text-[#363733] text-[14px]">Este pasado 1 de junio, se llevó a
                             cabo la
                             ceremonia de entrega del VI Premio Europeo AHI .</p>
-                    </div>
+                    </a>
                 </div>
                 <!-- Pagination LG -->
                 <div class="hidden lg:flex gap-[13px] font-semibold mb-[1.875rem]">
@@ -180,16 +221,55 @@
 
             </div>
 
-            <!-- TODO: CTA LG -->
             <div class="hidden lg:block">
-                CTA LG
+                <div class="w-[21.25rem]" id="cta">
+                    <div class="flex felx-col h-[545px]  rounded-md bg-cover bg-no-repeat"
+                        style="background-image: url('./assets/img/blog-cta.jpg');">
+                        <div class="flex flex-col self-end m-[14px]">
+                            <div class="w-[248px] h-fit bg-white pl-4 pt-4">
+                                <p class="text-[24px] font-[700] flex flex-col">Visita nuestras
+                                    <span class="font-[400]">promociones</span>
+                                </p>
+                            </div>
+                            <div class="w-[310px] h-[135px] bg-white p-4 flex flex-col justify-end">
+                                <button
+                                    class="w-fit flex items-start gap-1 rounded-md py-3 px-[18px] text-[12px] bg-yellow font-medium text-negro">Ver
+                                    promociones
+                                    <img src="./assets/icons/arrow.svg" alt="arrow">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- CTA Form   -->
+                    <div class="mt-[21px] p-[24px] bg-sand rounded-md">
+                        <form class="flex flex-col gap-4" action="">
+                            <label for="email" class="text-[24px]"><b class="block mb-3">Suscríbete</b> a nuestro Blog
+                            </label>
+                            <input type="email" id="email" aria-describedby="helper-text-explanation"
+                                class="px-6 py-4 rounded-md border border-negro placeholder:text-[16px] placeholder:font-light"
+                                placeholder="Tu correo electrónico">
+                            <div class="flex items-center gap-2">
+                                <input class="w-6 h-6" type="checkbox" name="
+                          " id="checkbox-1" value="checked">
+                                <label class="text-[14px] leading-[20px]" for="checkbox-1"><span
+                                        class="text-gray-400">He
+                                        leído y acepto</span></He> la Política de
+                                    privacidad</label>
+                            </div>
+                            <button type="submit"
+                                class="-mt-4 w-fit flex self-end gap-1 rounded-md py-3 px-[18px] text-[12px] bg-yellow font-medium text-negro">Enviar
+                                <img src="./assets/icons/arrow.svg" alt="arrow">
+                            </button>
+                        </form>
+                    </div>
+                </div>
             </div>
 
         </div>
 
 
         <!-- Pagination sm -->
-        <div>
+        <div class="mb-10">
             <button
                 class="w-fit flex gap-[18px] rounded-md py-[16px] px-[18px] text-[12px] font-medium text-negro bg-sand lg:hidden">
                 Leer más
