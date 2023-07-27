@@ -174,3 +174,66 @@ label input[type]:checked ~ span.middle {
 #carrusel::-webkit-scrollbar , #cards-projects::-webkit-scrollbar {
   display: none; /* Para navegadores basados en WebKit (Chrome, Safari, Opera) */
 }
+
+
+/*Español e Ingles*/
+#enes {
+  display: none;
+}
+
+.toggle-enes {
+  position: absolute;
+  right: 0px;
+  left: 0;
+  display: block;
+  width: 70px;
+  height: 35px;
+  margin: 0 auto;
+  transform: translateY(-50%);
+  transform: rotate(-90deg);
+  cursor: pointer;
+}
+
+.toggle-enes:before {
+  top: 4px;
+  left: 4px;
+  width: 30px;
+  height: 27px;
+  border: 1px solid rgb(255, 255, 255);
+}
+
+.toggle-enes:after {
+  top: 0;
+  right: 0;
+  width: 70px;
+  height: 35px;
+  border: 1px solid #ffffff;
+}
+
+.toggle-enes:before,
+.toggle-enes:after {
+  content: "";
+  position: absolute;
+  border-radius: 100px;
+  box-sizing: border-box;
+  transition: 0.5s ease top, 0.5s ease left, 0.5s ease right, 0.5s ease width,
+    0.5s ease height, 0.5s ease border-color;
+}
+
+#enes:checked + .toggle-enes:before {
+  top: 0;
+  left: 0;
+  width: 70px;
+  height: 34px;
+  border-color: #ffffff;
+  border: 1px solid #ffffff
+}
+
+#enes:checked + .toggle-enes:after {
+  top: 2.7px;
+  right: 2px;
+  width: 30px;
+  height: 30px;
+  border-color: rgb(255, 255, 255);
+  border: 1px solid rgb(255, 255, 255);
+}

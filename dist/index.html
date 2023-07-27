@@ -79,7 +79,25 @@
   <!-- hero -->
   <section class="relative flex flex-col justify-center items-center min-h-[813px]  bg-cover bg-herohome z-10"
     id="hero">
+
     <div class="relative min-h-[813px]  w-full lg:max-w-7xl  flex justify-center items-center">
+      <!-- Scroll -->
+      <div class="hidden absolute lg:flex flex-col  h-[800px] w-6 left-0 ml-6 mt-[800px] items-center">
+        <div class="relative">
+          <input id="enes" type="checkbox">
+          <label class="toggle-enes relative top-0" for="enes"></label>
+        </div>
+        <div class="py-10 text-white -rotate-90">scroll</div>
+        <div class=" h-full w-[1px] bg-white relative">
+          <div class="absolute bottom-0 h-[58%] w-full bg-gray-600"></div>
+        </div>
+        <div
+          class="relative w-8 h-10 border-[1px] bottom-3 right-[0.03px] border-gray-600 rounded-full flex justify-center items-center ">
+          <div class="absolute w-2 h-2 border-[1px] border-gray-600 rounded-full"></div>
+        </div>
+      </div>
+      <!--Fin Scroll -->
+
       <div class=" flex flex-col">
 
         <div class="lg:w-[616px] flex flex-col gap-[51px]">
@@ -531,7 +549,8 @@
   <section class="w-full bg-GettyImages">
     <div
       class="relative max-w-[1358px] mx-auto pt-2 flex flex-col gap-4 lg:justify-end lg:items-start h-[820px] lg:h-[900px]">
-      <button class="absolute bottom-0 mb-[300px] right-0 mr-24 lg:mr-40 w-fit flex gap-1 rounded-md py-4 px-[18px] text-[12px] font-medium text-negro bg-sand ">
+      <button
+        class="absolute bottom-0 mb-[300px] right-0 mr-24 lg:mr-40 w-fit flex gap-1 rounded-md py-4 px-[18px] text-[12px] font-medium text-negro bg-sand ">
         Ver todas las noticias
         <img src="./assets/icons/arrow.svg" alt="arrow">
       </button>
@@ -545,7 +564,8 @@
 
           <div class="cards-bottom flex w-full items-end">
 
-            <div class="bg-white p-10 w-full h-fit border-[1px] border-r-[0px] border-negro flex flex-col justify-end gap-4">
+            <div
+              class="bg-white p-10 w-full h-fit border-[1px] border-r-[0px] border-negro flex flex-col justify-end gap-4">
               <h3 class="text-[12px] font-[700] text-[#AF917C] ">12/03/23</h3>
               <h2 class="text-[20px] font-[300]">¡Los edificios se reinventan !</h2>
               <p class="mt-2 text-[14px] font-[400] hidden">Este pasado 1 de junio, se llevó a cabo la ceremonia de
@@ -563,7 +583,8 @@
                 onclick="toggleContent(2)">Leer más</button>
             </div>
 
-            <div class="bg-white p-10 w-full h-fit border-[1px] border-l-[0px] border-negro lg:flex flex-col justify-end gap-4 hidden">
+            <div
+              class="bg-white p-10 w-full h-fit border-[1px] border-l-[0px] border-negro lg:flex flex-col justify-end gap-4 hidden">
               <h3 class="text-[12px] font-[700] text-[#AF917C] ">12/03/23</h3>
               <h2 class="text-[20px] font-[300]">¡Los edificios se reinventan !</h2>
               <p class="mt-2 text-[14px] font-[400] hidden">Este pasado 1 de junio, se llevó a cabo la ceremonia de
@@ -573,8 +594,8 @@
             </div>
 
           </div>
-          <button class="lg:hidden mt-16 border-[1px] border-black bg-white px-4 py-5"
-            onclick="showNextCard()"><img src="./assets/home/nextcard.svg" alt="nextcard"></button>
+          <button class="lg:hidden mt-16 border-[1px] border-black bg-white px-4 py-5" onclick="showNextCard()"><img
+              src="./assets/home/nextcard.svg" alt="nextcard"></button>
         </div>
       </div>
     </div>
