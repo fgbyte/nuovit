@@ -648,20 +648,28 @@ p {
   left: -8rem;
 }
 
+.-left-7 {
+  left: -1.75rem;
+}
+
 .-left-\[40px\] {
   left: -40px;
+}
+
+.-top-12 {
+  top: -3rem;
 }
 
 .bottom-0 {
   bottom: 0px;
 }
 
-.bottom-3 {
-  bottom: 0.75rem;
-}
-
 .bottom-32 {
   bottom: 8rem;
+}
+
+.bottom-\[14px\] {
+  bottom: 14px;
 }
 
 .left-0 {
@@ -690,10 +698,6 @@ p {
 
 .right-\[-60\%\] {
   right: -60%;
-}
-
-.right-\[0\.03px\] {
-  right: 0.03px;
 }
 
 .top-0 {
@@ -807,8 +811,16 @@ p {
   margin-left: 35px;
 }
 
+.ml-\[8px\] {
+  margin-left: 8px;
+}
+
 .ml-auto {
   margin-left: auto;
+}
+
+.mr-2 {
+  margin-right: 0.5rem;
 }
 
 .mr-24 {
@@ -837,6 +849,10 @@ p {
 
 .mt-5 {
   margin-top: 1.25rem;
+}
+
+.mt-\[10px\] {
+  margin-top: 10px;
 }
 
 .mt-\[15px\] {
@@ -943,16 +959,16 @@ p {
   height: 500.333px;
 }
 
+.h-\[53\.6\%\] {
+  height: 53.6%;
+}
+
 .h-\[544\.333px\] {
   height: 544.333px;
 }
 
 .h-\[54px\] {
   height: 54px;
-}
-
-.h-\[58\%\] {
-  height: 58%;
 }
 
 .h-\[800px\] {
@@ -1179,9 +1195,20 @@ p {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.rotate-90 {
+  --tw-rotate: 90deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .scale-50 {
   --tw-scale-x: .5;
   --tw-scale-y: .5;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.scale-75 {
+  --tw-scale-x: .75;
+  --tw-scale-y: .75;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -2032,9 +2059,9 @@ label input[type]:checked ~ span.middle {
 .toggle-enes:before {
   top: 4px;
   left: 4px;
-  width: 30px;
+  width: 27px;
   height: 27px;
-  border: 1px solid rgb(255, 255, 255);
+  border: 2px solid rgb(255, 255, 255);
 }
 
 .toggle-enes:after {
@@ -2042,7 +2069,7 @@ label input[type]:checked ~ span.middle {
   right: 0;
   width: 70px;
   height: 35px;
-  border: 1px solid #ffffff;
+  border: 2px solid #ffffff;
 }
 
 .toggle-enes:before,
@@ -2059,18 +2086,18 @@ label input[type]:checked ~ span.middle {
   top: 0;
   left: 0;
   width: 70px;
-  height: 34px;
+  height: 35px;
   border-color: #ffffff;
-  border: 1px solid #ffffff
+  border: 2px solid #ffffff
 }
 
 #enes:checked + .toggle-enes:after {
-  top: 2.7px;
-  right: 2px;
-  width: 30px;
-  height: 30px;
+  top: 4px;
+  right: 4px;
+  width: 27px;
+  height: 27px;
   border-color: rgb(255, 255, 255);
-  border: 1px solid rgb(255, 255, 255);
+  border: 2px solid rgb(255, 255, 255);
 }
 
 @media (min-width: 976px) {
