@@ -1040,6 +1040,10 @@ p {
   height: 13rem;
 }
 
+.h-5 {
+  height: 1.25rem;
+}
+
 .max-h-\[813px\] {
   max-height: 813px;
 }
@@ -2394,6 +2398,34 @@ label input[type]:checked ~ span.middle {
 
   .lg\:mt-\[93px\] {
     margin-top: 93px;
+  }
+
+  .lg\:mb-\[280px\] {
+    margin-bottom: 280px;
+  }
+
+  .lg\:mb-\[200px\] {
+    margin-bottom: 200px;
+  }
+
+  .lg\:mb-\[250px\] {
+    margin-bottom: 250px;
+  }
+
+  .lg\:mr-\[300px\] {
+    margin-right: 300px;
+  }
+
+  .lg\:mr-\[280px\] {
+    margin-right: 280px;
+  }
+
+  .lg\:mr-\[290px\] {
+    margin-right: 290px;
+  }
+
+  .lg\:mr-\[285px\] {
+    margin-right: 285px;
   }
 
   .lg\:block {
