@@ -1036,6 +1036,10 @@ p {
   height: 100%;
 }
 
+.h-52 {
+  height: 13rem;
+}
+
 .max-h-\[813px\] {
   max-height: 813px;
 }
@@ -2433,6 +2437,14 @@ label input[type]:checked ~ span.middle {
     height: fit-content;
   }
 
+  .lg\:h-full {
+    height: 100%;
+  }
+
+  .lg\:h-\[281px\] {
+    height: 281px;
+  }
+
   .lg\:min-h-\[582px\] {
     min-height: 582px;
   }
@@ -2525,6 +2537,10 @@ label input[type]:checked ~ span.middle {
 
   .lg\:flex-col {
     flex-direction: column;
+  }
+
+  .lg\:flex-col-reverse {
+    flex-direction: column-reverse;
   }
 
   .lg\:items-start {
