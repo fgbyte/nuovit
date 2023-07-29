@@ -1650,6 +1650,38 @@ p {
   scroll-margin-inline-start: -1.25rem;
 }
 
+.-scroll-ms-\[18px\] {
+  scroll-margin-inline-start: -18px;
+}
+
+.-scroll-ms-\[17\.5px\] {
+  scroll-margin-inline-start: -17.5px;
+}
+
+.-scroll-ms-\[17px\] {
+  scroll-margin-inline-start: -17px;
+}
+
+.-scroll-ms-\[50px\] {
+  scroll-margin-inline-start: -50px;
+}
+
+.-scroll-ms-\[45px\] {
+  scroll-margin-inline-start: -45px;
+}
+
+.-scroll-ms-\[40px\] {
+  scroll-margin-inline-start: -40px;
+}
+
+.scroll-ms-10 {
+  scroll-margin-inline-start: 2.5rem;
+}
+
+.scroll-ms-9 {
+  scroll-margin-inline-start: 2.25rem;
+}
+
 .scroll-pr-96 {
   scroll-padding-right: 24rem;
 }
