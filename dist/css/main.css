@@ -760,6 +760,14 @@ p {
   left: -7rem;
 }
 
+.right-24 {
+  right: 6rem;
+}
+
+.-right-24 {
+  right: -6rem;
+}
+
 .-z-10 {
   z-index: -10;
 }
@@ -1000,6 +1008,26 @@ p {
 
 .mr-\[19px\] {
   margin-right: 19px;
+}
+
+.-mr-40 {
+  margin-right: -10rem;
+}
+
+.-mr-\[200px\] {
+  margin-right: -200px;
+}
+
+.mr-56 {
+  margin-right: 14rem;
+}
+
+.-mr-56 {
+  margin-right: -14rem;
+}
+
+.ml-8 {
+  margin-left: 2rem;
 }
 
 .block {
@@ -1308,6 +1336,42 @@ p {
   width: 180px;
 }
 
+.w-\[200px\] {
+  width: 200px;
+}
+
+.w-\[270px\] {
+  width: 270px;
+}
+
+.w-\[470px\] {
+  width: 470px;
+}
+
+.w-\[460px\] {
+  width: 460px;
+}
+
+.w-\[440px\] {
+  width: 440px;
+}
+
+.w-\[420px\] {
+  width: 420px;
+}
+
+.w-\[410px\] {
+  width: 410px;
+}
+
+.w-\[330px\] {
+  width: 330px;
+}
+
+.w-\[345px\] {
+  width: 345px;
+}
+
 .min-w-\[100\%\] {
   min-width: 100%;
 }
@@ -1351,6 +1415,18 @@ p {
 
 .min-w-\[732px\] {
   min-width: 732px;
+}
+
+.min-w-\[00\%\] {
+  min-width: 00%;
+}
+
+.min-w-\[90\%\] {
+  min-width: 90%;
+}
+
+.min-w-\[30\%\] {
+  min-width: 30%;
 }
 
 .max-w-7xl {
@@ -1470,12 +1546,36 @@ p {
   scroll-snap-type: x var(--tw-scroll-snap-strictness);
 }
 
+.snap-mandatory {
+  --tw-scroll-snap-strictness: mandatory;
+}
+
 .snap-proximity {
   --tw-scroll-snap-strictness: proximity;
 }
 
+.snap-start {
+  scroll-snap-align: start;
+}
+
+.snap-end {
+  scroll-snap-align: end;
+}
+
 .snap-center {
   scroll-snap-align: center;
+}
+
+.-scroll-mr-52 {
+  scroll-margin-right: -13rem;
+}
+
+.scroll-mr-52 {
+  scroll-margin-right: 13rem;
+}
+
+.scroll-mr-6 {
+  scroll-margin-right: 1.5rem;
 }
 
 .scroll-pr-96 {
@@ -2549,6 +2649,10 @@ label input[type]:checked ~ span.middle {
 
   .lg\:-left-0 {
     left: -0px;
+  }
+
+  .lg\:-left-full {
+    left: -100%;
   }
 
   .lg\:m-0 {
