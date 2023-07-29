@@ -213,58 +213,7 @@
                 <div id="control-2" class="h-3 w-3 bg-gray-300 rounded-full"></div>
                 <div id="control-3" class="h-3 w-3 bg-gray-300 rounded-full"></div>
             </div>
-            <!-- Carousel Script -->
-            <!-- <script>
-                const carousel = document.getElementById('carrusel');
-                const controls = document.getElementById('controles');
-                const control1 = document.getElementById('control-1');
-                const control2 = document.getElementById('control-2');
-                const control3 = document.getElementById('control-3');
 
-                // Establecer color por defecto
-                carousel.classList.remove("bg-gray-400");
-                control1.classList.add("bg-gray-600");
-
-                // Eventos
-                control1.addEventListener('click', () => {
-                    carousel.scroll({ left: 0, behavior: 'smooth' });
-                    control2.classList.remove("bg-gray-600");
-                    control3.classList.remove("bg-gray-600");
-                    control1.classList.add("bg-gray-600");
-                });
-
-                control2.addEventListener('click', () => {
-                    carousel.scroll({ left: carousel.offsetWidth, behavior: 'smooth' });
-                    control1.classList.remove("bg-gray-600");
-                    control3.classList.remove("bg-gray-600");
-                    control2.classList.add("bg-gray-600");
-                });
-
-                control3.addEventListener('click', () => {
-                    carousel.scroll({ left: carousel.offsetWidth * 2, behavior: 'smooth' });
-                    control1.classList.remove("bg-gray-600");
-                    control2.classList.remove("bg-gray-600");
-                    control3.classList.add("bg-gray-600");
-                });
-                // Nuevo evento para captar el scroll
-                carousel.addEventListener('scroll', () => {
-                    const cardWidth = carousel.querySelector('.snap-center').offsetWidth;
-                    const scrollPos = carousel.scrollLeft;
-                    if (scrollPos < cardWidth / 2) {
-                        control1.classList.add("bg-gray-600");
-                        control2.classList.remove("bg-gray-600");
-                        control3.classList.remove("bg-gray-600");
-                    } else if (scrollPos < cardWidth * 1.5) {
-                        control2.classList.add("bg-gray-600");
-                        control1.classList.remove("bg-gray-600");
-                        control3.classList.remove("bg-gray-600");
-                    } else {
-                        control3.classList.add("bg-gray-600");
-                        control1.classList.remove("bg-gray-600");
-                        control2.classList.remove("bg-gray-600");
-                    }
-                });
-            </script> -->
         </div>
 
         <article class="contenido lg:contenido-lg">
@@ -306,15 +255,14 @@
         <hr class="my-4 border-negro lg:my-[50px]">
     </section>
 
-    <section class="contenido lg:contenido-lg">
+    <section class="contenido lg:contenido-lg mb-9">
         <h2 class="text-[25px] font-medium">Artículos <span
                 class="font-secondary block ml-[35px] lg:inline lg:ml-0 lg:font-primary">Relacionados</span></h2>
 
+        <!-- Cards -->
         <div id="cards-projects"
-            class="mt-6 flex gap-4 lg:gap-0 snap-proximity snap-x lg:min-w-fit min-w-fit lg:w-auto overflow-x-auto scroll-snap-type-x">
-
-            <!-- Cards -->
-            <a href="#" class="flex flex-col h-fit w-50 transition ease-in-out delay-100 hover:scale-105">
+            class="mt-10 flex flex-row overflow-x-scroll gap-8 [&>a>img]:min-w-[200px] [&>a>img]:max-w-fit [&>a>img]:max-h-[272px]">
+            <a href="#" class="flex flex-col h-fit">
                 <img class="rounded-md h-auto" src="./assets/img/blog-articles-1.jpg" alt="article-1">
                 <p class="mt-[21px] text-[0.75rem] font-bold text-madera">12/03/23</p>
                 <h3 class="mt-[15px] text-[20px]">¡Los edificios
@@ -323,7 +271,7 @@
                     cabo la
                     ceremonia de entrega del VI Premio Europeo AHI .</p>
             </a>
-            <a href="#" class="flex flex-col h-fit transition ease-in-out delay-100 hover:scale-105">
+            <a href="#" class="flex flex-col h-fit">
                 <img class="rounded-md h-auto" src="./assets/img/blog-articles-1.jpg" alt="article-1">
                 <p class="mt-[21px] text-[0.75rem] font-bold text-madera">12/03/23</p>
                 <h3 class="mt-[15px] text-[20px]">¡Los edificios
@@ -332,16 +280,7 @@
                     cabo la
                     ceremonia de entrega del VI Premio Europeo AHI .</p>
             </a>
-            <a href="#" class="flex flex-col h-fit transition ease-in-out delay-100 hover:scale-105">
-                <img class="rounded-md h-auto" src="./assets/img/blog-articles-1.jpg" alt="article-1">
-                <p class="mt-[21px] text-[0.75rem] font-bold text-madera">12/03/23</p>
-                <h3 class="mt-[15px] text-[20px]">¡Los edificios
-                    se reinventan !</h3>
-                <p class="mt-[26px] font-ligh text-[#363733] text-[14px]">Este pasado 1 de junio, se llevó a
-                    cabo la
-                    ceremonia de entrega del VI Premio Europeo AHI .</p>
-            </a>
-            <a href="#" class="flex flex-col h-fit transition ease-in-out delay-100 hover:scale-105">
+            <a href="#" class="flex flex-col h-fit">
                 <img class="rounded-md h-auto" src="./assets/img/blog-articles-1.jpg" alt="article-1">
                 <p class="mt-[21px] text-[0.75rem] font-bold text-madera">12/03/23</p>
                 <h3 class="mt-[15px] text-[20px]">¡Los edificios
@@ -352,7 +291,6 @@
             </a>
         </div>
     </section>
-
 
 </body>
 

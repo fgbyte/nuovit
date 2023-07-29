@@ -780,6 +780,10 @@ p {
   margin-bottom: 2rem;
 }
 
+.mb-9 {
+  margin-bottom: 2.25rem;
+}
+
 .mb-\[1\.875rem\] {
   margin-bottom: 1.875rem;
 }
@@ -862,10 +866,6 @@ p {
 
 .mt-5 {
   margin-top: 1.25rem;
-}
-
-.mt-6 {
-  margin-top: 1.5rem;
 }
 
 .mt-9 {
@@ -1478,6 +1478,10 @@ p {
   overflow-x: auto;
 }
 
+.overflow-x-scroll {
+  overflow-x: scroll;
+}
+
 .scroll-smooth {
   scroll-behavior: smooth;
 }
@@ -1572,11 +1576,6 @@ p {
 .bg-gray-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(209 213 219 / var(--tw-bg-opacity));
-}
-
-.bg-gray-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
 }
 
 .bg-gray-50 {
@@ -2821,6 +2820,27 @@ label input[type]:checked ~ span.middle {
 
 .\[\&\>a\.h-fit\]\:mb-8>a.h-fit {
   margin-bottom: 2rem;
+}
+
+.\[\&\>a\>img\]\:max-h-\[272px\]>a>img {
+  max-height: 272px;
+}
+
+.\[\&\>a\>img\]\:min-w-\[200px\]>a>img {
+  min-width: 200px;
+}
+
+.\[\&\>a\>img\]\:max-w-\[fit\]>a>img {
+  max-width: fit;
+}
+
+.\[\&\>a\>img\]\:max-w-\[287px\]>a>img {
+  max-width: 287px;
+}
+
+.\[\&\>a\>img\]\:max-w-fit>a>img {
+  max-width: -moz-fit-content;
+  max-width: fit-content;
 }
 
 .\[\&\>div\>a\]\:text-xs>div>a {
