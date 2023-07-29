@@ -768,6 +768,18 @@ p {
   right: -6rem;
 }
 
+.-left-\[100px\] {
+  left: -100px;
+}
+
+.-left-\[110px\] {
+  left: -110px;
+}
+
+.-left-\[70px\] {
+  left: -70px;
+}
+
 .-z-10 {
   z-index: -10;
 }
@@ -1546,6 +1558,10 @@ p {
   scroll-snap-type: x var(--tw-scroll-snap-strictness);
 }
 
+.snap-both {
+  scroll-snap-type: both var(--tw-scroll-snap-strictness);
+}
+
 .snap-mandatory {
   --tw-scroll-snap-strictness: mandatory;
 }
@@ -1566,6 +1582,14 @@ p {
   scroll-snap-align: center;
 }
 
+.snap-always {
+  scroll-snap-stop: always;
+}
+
+.scroll-m-12 {
+  scroll-margin: 3rem;
+}
+
 .-scroll-mr-52 {
   scroll-margin-right: -13rem;
 }
@@ -1576,6 +1600,54 @@ p {
 
 .scroll-mr-6 {
   scroll-margin-right: 1.5rem;
+}
+
+.scroll-ml-12 {
+  scroll-margin-left: 3rem;
+}
+
+.scroll-ms-6 {
+  scroll-margin-inline-start: 1.5rem;
+}
+
+.scroll-ms-24 {
+  scroll-margin-inline-start: 6rem;
+}
+
+.scroll-ms-20 {
+  scroll-margin-inline-start: 5rem;
+}
+
+.scroll-ms-12 {
+  scroll-margin-inline-start: 3rem;
+}
+
+.scroll-ms-16 {
+  scroll-margin-inline-start: 4rem;
+}
+
+.-scroll-ms-24 {
+  scroll-margin-inline-start: -6rem;
+}
+
+.scroll-ms-14 {
+  scroll-margin-inline-start: 3.5rem;
+}
+
+.-scroll-ms-6 {
+  scroll-margin-inline-start: -1.5rem;
+}
+
+.-scroll-ms-14 {
+  scroll-margin-inline-start: -3.5rem;
+}
+
+.-scroll-ms-4 {
+  scroll-margin-inline-start: -1rem;
+}
+
+.-scroll-ms-5 {
+  scroll-margin-inline-start: -1.25rem;
 }
 
 .scroll-pr-96 {
@@ -1741,6 +1813,10 @@ p {
 
 .overflow-x-auto {
   overflow-x: auto;
+}
+
+.scroll-smooth {
+  scroll-behavior: smooth;
 }
 
 .rounded {
