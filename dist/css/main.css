@@ -780,6 +780,46 @@ p {
   left: -70px;
 }
 
+.-left-\[60px\] {
+  left: -60px;
+}
+
+.-left-\[120px\] {
+  left: -120px;
+}
+
+.-left-\[105px\] {
+  left: -105px;
+}
+
+.-left-\[108px\] {
+  left: -108px;
+}
+
+.-left-\[107px\] {
+  left: -107px;
+}
+
+.-left-\[106\.5px\] {
+  left: -106.5px;
+}
+
+.-left-\[106px\] {
+  left: -106px;
+}
+
+.-left-\[107\.3px\] {
+  left: -107.3px;
+}
+
+.-left-\[107\.7px\] {
+  left: -107.7px;
+}
+
+.-left-\[107\.9px\] {
+  left: -107.9px;
+}
+
 .-z-10 {
   z-index: -10;
 }
