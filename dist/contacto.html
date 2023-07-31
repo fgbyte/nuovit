@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <!-- Google Fonts -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,700&family=Roboto:wght@100;300;400;500;700&display=swap');
+  </style>
+
+</head>
+
+<body>
+
+  <!-- hablemos -->
+  <section class="bg-gradient-to-t from-sand from-80% to-black/30">
+    <div class="max-w-6xl py-16 mx-auto">
+      <div class="w-full flex flex-col items-center gap-9 mt-16 lg:mt-24">
+        <h1 class="lg:text-[100px] text-[40px]  font-[400] self-start px-5">Hablemos !</h1>
+        <div class="lg:self-center self-end">
+          <p class="lg:text-[18px] text-[16px] font-[300] max-w-[250px] lg:max-w-[400px] px-5 lg:px-0">Rellena el
+            siguiente formulario para
+            poder
+            contactarte y resolver
+            todas tus
+            dudas </p>
+        </div>
+        <div class="w-full flex flex-col lg:flex-row ">
+          <form class="flex flex-col  lg:w-1/2 gap-10 p-5 mt-10">
+            <div class="relative ">
+              <input
+                class="transition ease-out focus:outline-none active:outline-none bg-sand w-full border-b-[2px] focus:border-yellow pb-2 border-black peer text-[16px] font-[400]"
+                required id="Motivo" type="text">
+              <label
+                class="transition ease-out duration-200 absolute left-0 peer-valid:-translate-y-5 peer-focus:-translate-y-5 text-[16px] font-[400] select-none cursor-text "
+                required for="Motivo">Motivo de la comunicación *</label>
+            </div>
+            <div class="relative ">
+              <input
+                class="transition ease-out focus:outline-none active:outline-none bg-sand w-full border-b-[2px] focus:border-yellow pb-2 border-black peer text-[16px] font-[400]"
+                required id="nombre" type="text">
+              <label
+                class="transition ease-out duration-200 absolute left-0 peer-valid:-translate-y-5 peer-focus:-translate-y-5 text-[16px] font-[400] select-none cursor-text "
+                required for="nombre">Nombre*</label>
+            </div>
+            <div class="relative ">
+              <input
+                class="transition ease-out focus:outline-none active:outline-none bg-sand w-full border-b-[2px] focus:border-yellow pb-2 border-black peer text-[16px] font-[400] "
+                required id="Email" type="text">
+              <label
+                class="transition ease-out duration-200 absolute left-0 peer-valid:-translate-y-5 peer-focus:-translate-y-5 text-[16px] font-[400] select-none cursor-text "
+                required for="Email">Email*</label>
+            </div>
+            <div class="flex gap-7">
+              <div class="relative w-24">
+                <input
+                  class="transition ease-out focus:outline-none active:outline-none bg-sand w-full border-b-[2px] focus:border-yellow pb-2 border-black peer text-[16px] font-[400] "
+                  required id="ES" type="text">
+                <label
+                  class="transition ease-out duration-200 absolute left-0 peer-valid:-translate-y-5 peer-focus:-translate-y-5 text-[16px] font-[400] select-none cursor-text "
+                  required for="ES">ES</label>
+              </div>
+              <div class="relative grow">
+                <input
+                  class="transition ease-out focus:outline-none active:outline-none bg-sand w-full border-b-[2px] focus:border-yellow pb-2 border-black peer text-[16px] font-[400] "
+                  required id="Teléfono" type="text">
+                <label
+                  class="transition ease-out duration-200 absolute left-0 peer-valid:-translate-y-5 peer-focus:-translate-y-5 text-[16px] font-[400] select-none cursor-text "
+                  required for="Teléfono">Teléfono</label>
+              </div>
+            </div>
+            <div class="relative flex flex-col gap-2">
+              <label class="text-[16px] font-[400] select-none cursor-text" required for="Mensajea">Mensaje</label>
+              <textarea
+                class="h-[150px] max-h-[200px] border-2 border-black focus:border-yellow outline-none text-[16px] font-[400]"
+                required id="Mensajea"> </textarea>
+            </div>
+            <div class="flex justify-start items-center gap-2">
+              <input class="h-5 w-5 rounded-none" id="Política de privacidad" type="checkbox">
+              <label class="text-[15px] font-[400] select-none" for="Política de privacidad">
+                He leído y acepto la Política de privacidad y de Protección de datos
+              </label>
+            </div>
+            <button
+              class="relative self-end w-fit flex gap-1 rounded-md py-3 px-[18px] text-[12px] font-medium text-sand bg-black ">
+              Enviar
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+                <path d="M1 0.5L11.2963 0.5L11.2963 10.5" stroke="#EAC355" stroke-linecap="round"
+                  stroke-linejoin="round" />
+                <path d="M1 11L11 1" stroke="#EAC355" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+          </form>
+
+          <div class="flex justify-start items-start lg:pl-24 px-14 mt-10 lg:w-1/2">
+            <div class="mx-auto">
+              <p class="lg:text-[50px] text-[35px] font-[300]">En Nuovit investigamos e
+                innovamos para crear <span class="font-secondary font-[400]">espacios singulares, únicos
+                  y eficientes</span>
+                que permitan
+                un desarrollo óptimo.”</p>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+</body>
+
+</html>
