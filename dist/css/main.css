@@ -3290,6 +3290,11 @@ label input[type]:checked ~ span.middle {
     padding-bottom: 1.75rem;
   }
 
+  .lg\:px-3 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
   .lg\:pb-2 {
     padding-bottom: 0.5rem;
   }
