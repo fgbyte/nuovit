@@ -2456,6 +2456,10 @@ label input[type]:checked ~ span.middle {
     margin-top: 93px;
   }
 
+  .lg\:mb-9 {
+    margin-bottom: 2.25rem;
+  }
+
   .lg\:block {
     display: block;
   }
