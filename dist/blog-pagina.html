@@ -11,7 +11,6 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,700&family=Roboto:wght@100;300;400;500;700&display=swap');
     </style>
-    <script src="./js/index.js"></script>
 </head>
 
 <body>
@@ -188,75 +187,55 @@
 
         <!-- Carousel -->
         <div class="flex flex-col items-center gap-[27px] lg:gap-[35px] mt-[33px] lg:mt-[61px]">
-            FIXME: fula arreglar carousel
-            <div id="carrusel"
-                class="w-screen flex justify-center gap-[13px] lg:gap-[30px] lg:min-w-fit  lg:w-auto overflow-x-auto scroll-snap-type-x">
-                <div id="card-1" class="lg:min-w-fit flex flex-col items-center gap-2">
-                    <div class="flex flex-col lg:flex-row gap-2 justify-start items-start lg:items-center">
-                        <img src="./assets/img/blog-pagina-2.jpg" alt="image">
-                    </div>
-                </div>
-                <div id="card-2" class="lg:min-w-fit flex flex-col items-center gap-2">
-                    <div class="flex flex-col lg:flex-row gap-2 justify-start items-start lg:items-center">
-                        <img src="./assets/img/blog-pagina-2.jpg" alt="image">
-                    </div>
-                </div>
-                <div id="card-3" class="lg:min-w-fit flex flex-col items-center gap-2">
-                    <div class="flex flex-col lg:flex-row gap-2 justify-start items-start lg:items-center">
-                        <img src="./assets/img/blog-pagina-2.jpg" alt="image">
-                    </div>
-                </div>
-            </div>
-            <!-- INDICATORS -->
-            <div id="controles" class="flex gap-8 mt-4 hover:[&>div]:cursor-pointer lg:hidden">
-                <div id="control-1" class="h-3 w-3 bg-gray-300 rounded-full"></div>
-                <div id="control-2" class="h-3 w-3 bg-gray-300 rounded-full"></div>
-                <div id="control-3" class="h-3 w-3 bg-gray-300 rounded-full"></div>
-            </div>
+            TODO: Carousel de los cojones
+
 
         </div>
-
-        <article class="contenido lg:contenido-lg">
-            <p class="mt-[30px] text-[#6C757D] text-16[px] leading-[25px]">
-                Es interesante el trabajo del fotógrafo italiano Roberto Conte (@ilcontephotography),
-                especializado en arquitectura, que ha realizado una serie centrada en la estética brutalista
-                en
-                Madrid. Vale la pena visitar su website un proyecto de Alejandro García Alcántara, que está
-                detrás del perfil @madrid_brutalism y es autor también del libro 'Madrid brutal', con
-                fotografías de Luis Carrón y editado por Ediciones La Librería.
-            </p>
-        </article>
     </section>
 
-    <!-- Comparte esta publicacion -->
     <section class="mt-9 contenido lg:contenido-lg lg:mt-10">
-        <div class="flex flex-col gap-5 lg:flex-row">
-            <div class="flex flex-col gap-5 lg:gap-[30px] lg:pr-[75px] lg:border-r lg:border-negro">
-                <h3 class="mt-1 text-[18px] leading-[150%] text-[#141614]">Comparte esta publicación</h3>
-                <div class="flex gap-6">
-                    <a href="#" target="_blank"><img src="./assets/icons/uil_facebook-f.svg" alt=""></a>
-                    <a href="#" target="_blank"><img src="./assets/icons/mdi_twitter.svg" alt=""></a>
-                    <a href="#" target="_blank"><img src="./assets/icons/mdi_linkedin.svg" alt=""></a>
-                    <a href="#" target="_blank"><img src="./assets/icons/ri_whatsapp-fill.svg" alt=""></a>
+        <div class="flex flex-col lg:flex-row lg:gap-[76px]">
+            <div>
+                <article class="">
+                    <p class="mt-[30px] text-[#6C757D] text-16[px] leading-[25px]">
+                        Es interesante el trabajo del fotógrafo italiano Roberto Conte (@ilcontephotography),
+                        especializado en arquitectura, que ha realizado una serie centrada en la estética brutalista
+                        en
+                        Madrid. Vale la pena visitar su website un proyecto de Alejandro García Alcántara, que está
+                        detrás del perfil @madrid_brutalism y es autor también del libro 'Madrid brutal', con
+                        fotografías de Luis Carrón y editado por Ediciones La Librería.
+                    </p>
+                </article>
+                <div class="flex flex-col gap-5 lg:flex-row mt-[36px]">
+                    <div class="flex flex-col gap-5 lg:gap-[30px] lg:pr-[75px] lg:border-r lg:border-negro">
+                        <h3 class="mt-1 text-[18px] leading-[150%] text-[#141614]">Comparte esta publicación</h3>
+                        <div class="flex gap-6">
+                            <a href="#" target="_blank"><img src="./assets/icons/uil_facebook-f.svg" alt=""></a>
+                            <a href="#" target="_blank"><img src="./assets/icons/mdi_twitter.svg" alt=""></a>
+                            <a href="#" target="_blank"><img src="./assets/icons/mdi_linkedin.svg" alt=""></a>
+                            <a href="#" target="_blank"><img src="./assets/icons/ri_whatsapp-fill.svg" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-5 lg:gap-[30px] lg:pl-[40px]">
+                        <p class="uppercase text-[13px] text-madera leading-[185.5%] lg:mt-1">
+                            Artículo actualizado el 27 junio, 2023 | 00:24 h
+                        </p>
+                        <div class="flex gap-[2.4px]">
+                            <button class="px-5 py-2 border border-negro rounded-full">Arquitectura</button>
+                            <button class="px-5 py-2 border border-negro rounded-full">Brutalismo</button>
+                            <button class="px-5 py-2 border border-negro rounded-full">Tecnología</button>
+                        </div>
+                    </div>
                 </div>
+                <hr class="my-4 border-negro lg:my-[50px]">
             </div>
-            <div class="flex flex-col gap-5 lg:gap-[30px] lg:pl-[40px]">
-                <p class="uppercase text-[13px] text-madera leading-[185.5%] lg:mt-1">
-                    Artículo actualizado el 27 junio, 2023 | 00:24 h
-                </p>
-                <div class="flex gap-[2.4px]">
-                    <button class="px-5 py-2 border border-negro rounded-full">Arquitectura</button>
-                    <button class="px-5 py-2 border border-negro rounded-full">Brutalismo</button>
-                    <button class="px-5 py-2 border border-negro rounded-full">Tecnología</button>
-                </div>
+            <div class="hidden lg:block lg:w-[540px]">
             </div>
-
         </div>
-        <hr class="my-4 border-negro lg:my-[50px]">
     </section>
 
     <section class="contenido mb-9 lg:contenido-lg lg:mb-9">
-        <h2 class="text-[25px] font-medium">Artículos <span
+        <h2 class="text-[25px] font-medium mt-2">Artículos <span
                 class="font-secondary block ml-[35px] lg:inline lg:ml-0 lg:font-primary">Relacionados</span></h2>
 
         <!-- Cards -->
@@ -291,8 +270,8 @@
             </a>
         </div>
     </section>
-    FIXME: el width d la section debe ser como la del article de arriba, dejando un flex para la CTA, pero en esta se deja el espacio en blanco
 
+    <script src="./js/blog-pagina-carousel.js"></script>
 </body>
 
 </html>
