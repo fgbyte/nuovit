@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com
+! tailwindcss v3.3.2 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -191,10 +191,6 @@ select,
 textarea {
   font-family: inherit;
   /* 1 */
-  font-feature-settings: inherit;
-  /* 1 */
-  font-variation-settings: inherit;
-  /* 1 */
   font-size: 100%;
   /* 1 */
   font-weight: inherit;
@@ -342,14 +338,6 @@ ul,
 menu {
   list-style: none;
   margin: 0;
-  padding: 0;
-}
-
-/*
-Reset default styling for dialogs.
-*/
-
-dialog {
   padding: 0;
 }
 
@@ -676,6 +664,10 @@ p {
   bottom: 8rem;
 }
 
+.bottom-\[100px\] {
+  bottom: 100px;
+}
+
 .bottom-\[14px\] {
   bottom: 14px;
 }
@@ -690,6 +682,10 @@ p {
 
 .left-\[-24px\] {
   left: -24px;
+}
+
+.left-\[22px\] {
+  left: 22px;
 }
 
 .left-\[55px\] {
@@ -736,8 +732,16 @@ p {
   margin: 1.25rem;
 }
 
+.m-\[13px\] {
+  margin: 13px;
+}
+
 .m-\[14px\] {
   margin: 14px;
+}
+
+.m-\[16px\] {
+  margin: 16px;
 }
 
 .mx-\[19px\] {
@@ -802,6 +806,14 @@ p {
 
 .mb-\[10px\] {
   margin-bottom: 10px;
+}
+
+.mb-\[12px\] {
+  margin-bottom: 12px;
+}
+
+.mb-\[18px\] {
+  margin-bottom: 18px;
 }
 
 .mb-\[300px\] {
@@ -870,6 +882,10 @@ p {
 
 .mt-32 {
   margin-top: 8rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
 }
 
 .mt-5 {
@@ -972,6 +988,10 @@ p {
   height: 1.5rem;
 }
 
+.h-\[100vh\] {
+  height: 100vh;
+}
+
 .h-\[135px\] {
   height: 135px;
 }
@@ -1030,6 +1050,14 @@ p {
 
 .h-\[54px\] {
   height: 54px;
+}
+
+.h-\[618px\] {
+  height: 618px;
+}
+
+.h-\[65\.2\%\] {
+  height: 65.2%;
 }
 
 .h-\[800px\] {
@@ -1171,6 +1199,10 @@ p {
 
 .w-\[53\.6144px\] {
   width: 53.6144px;
+}
+
+.w-\[60\%\] {
+  width: 60%;
 }
 
 .w-\[600px\] {
@@ -1349,32 +1381,12 @@ p {
   scroll-snap-stop: always;
 }
 
-.scroll-m-8 {
-  scroll-margin: 2rem;
-}
-
-.scroll-m-2 {
-  scroll-margin: 0.5rem;
-}
-
-.scroll-m-3 {
-  scroll-margin: 0.75rem;
+.scroll-m-12 {
+  scroll-margin: 3rem;
 }
 
 .scroll-m-4 {
   scroll-margin: 1rem;
-}
-
-.scroll-m-20 {
-  scroll-margin: 5rem;
-}
-
-.scroll-m-16 {
-  scroll-margin: 4rem;
-}
-
-.scroll-m-12 {
-  scroll-margin: 3rem;
 }
 
 .-scroll-ms-\[17px\] {
@@ -1387,22 +1399,6 @@ p {
 
 .scroll-ms-9 {
   scroll-margin-inline-start: 2.25rem;
-}
-
-.scroll-mr-4 {
-  scroll-margin-right: 1rem;
-}
-
-.scroll-mr-40 {
-  scroll-margin-right: 10rem;
-}
-
-.scroll-mr-0 {
-  scroll-margin-right: 0px;
-}
-
-.scroll-ml-8 {
-  scroll-margin-left: 2rem;
 }
 
 .columns-1 {
@@ -1574,6 +1570,10 @@ p {
   align-self: flex-end;
 }
 
+.self-center {
+  align-self: center;
+}
+
 .overflow-x-auto {
   overflow-x: auto;
 }
@@ -1700,11 +1700,6 @@ p {
   background-color: rgb(75 85 99 / var(--tw-bg-opacity));
 }
 
-.bg-gray-900 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
-}
-
 .bg-negro {
   --tw-bg-opacity: 1;
   background-color: rgb(27 27 27 / var(--tw-bg-opacity));
@@ -1732,11 +1727,6 @@ p {
 .bg-yellow {
   --tw-bg-opacity: 1;
   background-color: rgb(234 195 85 / var(--tw-bg-opacity));
-}
-
-.bg-gray-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-70 {
@@ -2340,6 +2330,14 @@ label input[type]:checked ~ span.middle {
   mix-blend-mode: multiply;
 }
 
+.bg-landing-proyecto-hero {
+  position: relative;
+  background: url(../assets/img/landing-proyecto-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 /*Para que no se muestre el la barra de scroll tanto en Chrome como en Firefox y otros navegadores ;)*/
 
 #carrusel ,#cards-projects ,#carrusel-container {
@@ -2521,10 +2519,6 @@ label input[type]:checked ~ span.middle {
 }
 
 @media (min-width: 768px) {
-  .md\:snap-end {
-    scroll-snap-align: end;
-  }
-
   .md\:scroll-m-8 {
     scroll-margin: 2rem;
   }
@@ -2581,6 +2575,10 @@ label input[type]:checked ~ span.middle {
 
   .lg\:right-\[-80\%\] {
     right: -80%;
+  }
+
+  .lg\:right-\[250px\] {
+    right: 250px;
   }
 
   .lg\:right-\[6px\] {
@@ -2723,6 +2721,10 @@ label input[type]:checked ~ span.middle {
     height: fit-content;
   }
 
+  .lg\:max-h-\[900px\] {
+    max-height: 900px;
+  }
+
   .lg\:min-h-\[582px\] {
     min-height: 582px;
   }
@@ -2779,6 +2781,11 @@ label input[type]:checked ~ span.middle {
     width: auto;
   }
 
+  .lg\:w-fit {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+
   .lg\:w-full {
     width: 100%;
   }
@@ -2820,10 +2827,6 @@ label input[type]:checked ~ span.middle {
     --tw-scale-x: 1;
     --tw-scale-y: 1;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
-  .lg\:snap-end {
-    scroll-snap-align: end;
   }
 
   .lg\:columns-3 {
@@ -2897,6 +2900,10 @@ label input[type]:checked ~ span.middle {
 
   .lg\:gap-\[40px\] {
     gap: 40px;
+  }
+
+  .lg\:gap-\[51px\] {
+    gap: 51px;
   }
 
   .lg\:gap-\[76px\] {
@@ -2973,6 +2980,10 @@ label input[type]:checked ~ span.middle {
 
   .lg\:pl-\[40px\] {
     padding-left: 40px;
+  }
+
+  .lg\:pr-0 {
+    padding-right: 0px;
   }
 
   .lg\:pr-\[75px\] {
