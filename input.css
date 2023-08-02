@@ -165,6 +165,14 @@ label input[type]:checked ~ span.middle {
   mix-blend-mode: multiply;
 }
 
+.bg-landing-proyecto-hero {
+  position: relative;
+  background: url(../assets/img/landing-proyecto-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 /*Para que no se muestre el la barra de scroll tanto en Chrome como en Firefox y otros navegadores ;)*/
 #carrusel ,#cards-projects {
   scrollbar-width: none; /* Para navegadores compatibles con la especificación reciente */
