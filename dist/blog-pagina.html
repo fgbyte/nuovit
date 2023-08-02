@@ -209,14 +209,14 @@
             const controls = document.getElementById('guias');
             const controlItems = controls.querySelectorAll('div[data-index]');
 
-            controlItems[0].classList.add("bg-gray-900");
+            controlItems[0].classList.add("bg-gray-400");
 
             function setActiveControl(index) {
                 controlItems.forEach((item, i) => {
                     if (i === index) {
-                        item.classList.add("bg-gray-900");
+                        item.classList.add("bg-gray-400");
                     } else {
-                        item.classList.remove("bg-gray-900");
+                        item.classList.remove("bg-gray-400");
                     }
                 });
             }
