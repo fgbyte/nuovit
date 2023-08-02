@@ -166,12 +166,12 @@ label input[type]:checked ~ span.middle {
 }
 
 /*Para que no se muestre el la barra de scroll tanto en Chrome como en Firefox y otros navegadores ;)*/
-#carrusel ,#cards-projects {
+#carrusel ,#cards-projects ,#carrusel-container {
   scrollbar-width: none; /* Para navegadores compatibles con la especificación reciente */
   -ms-overflow-style: none; /* Para versiones más antiguas de Microsoft Edge */
 }
 
-#carrusel::-webkit-scrollbar , #cards-projects::-webkit-scrollbar {
+#carrusel::-webkit-scrollbar,#carrusel-container::-webkit-scrollbar , #cards-projects::-webkit-scrollbar {
   display: none; /* Para navegadores basados en WebKit (Chrome, Safari, Opera) */
 }
 

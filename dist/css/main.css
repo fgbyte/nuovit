@@ -1177,6 +1177,10 @@ p {
   width: 600px;
 }
 
+.w-\[605px\] {
+  width: 605px;
+}
+
 .w-\[70\%\] {
   width: 70%;
 }
@@ -1337,16 +1341,16 @@ p {
   scroll-snap-align: start;
 }
 
-.snap-end {
-  scroll-snap-align: end;
-}
-
 .snap-center {
   scroll-snap-align: center;
 }
 
 .snap-always {
   scroll-snap-stop: always;
+}
+
+.scroll-m-8 {
+  scroll-margin: 2rem;
 }
 
 .-scroll-ms-\[17px\] {
@@ -1492,10 +1496,6 @@ p {
 
 .gap-\[22px\] {
   gap: 22px;
-}
-
-.gap-\[27px\] {
-  gap: 27px;
 }
 
 .gap-\[4\.6875rem\] {
@@ -1660,6 +1660,11 @@ p {
   background-color: rgb(75 85 99 / var(--tw-bg-opacity));
 }
 
+.bg-gray-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+}
+
 .bg-negro {
   --tw-bg-opacity: 1;
   background-color: rgb(27 27 27 / var(--tw-bg-opacity));
@@ -1761,6 +1766,11 @@ p {
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+}
+
+.px-8 {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .px-\[0\.75rem\] {
@@ -1882,6 +1892,10 @@ p {
 
 .pr-\[35px\] {
   padding-right: 35px;
+}
+
+.pt-10 {
+  padding-top: 2.5rem;
 }
 
 .pt-2 {
@@ -2283,14 +2297,14 @@ label input[type]:checked ~ span.middle {
 
 /*Para que no se muestre el la barra de scroll tanto en Chrome como en Firefox y otros navegadores ;)*/
 
-#carrusel ,#cards-projects {
+#carrusel ,#cards-projects ,#carrusel-container {
   scrollbar-width: none;
   /* Para navegadores compatibles con la especificación reciente */
   -ms-overflow-style: none;
   /* Para versiones más antiguas de Microsoft Edge */
 }
 
-#carrusel::-webkit-scrollbar , #cards-projects::-webkit-scrollbar {
+#carrusel::-webkit-scrollbar,#carrusel-container::-webkit-scrollbar , #cards-projects::-webkit-scrollbar {
   display: none;
   /* Para navegadores basados en WebKit (Chrome, Safari, Opera) */
 }
