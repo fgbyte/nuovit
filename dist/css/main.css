@@ -1859,6 +1859,10 @@ p {
   padding: 24px;
 }
 
+.p-6 {
+  padding: 1.5rem;
+}
+
 .px-14 {
   padding-left: 3.5rem;
   padding-right: 3.5rem;
@@ -3259,6 +3263,14 @@ label input[type]:checked ~ span.middle {
   .lg\:\[\&\>div\]\:gap-\[67px\]>div {
     gap: 67px;
   }
+}
+
+.\[\&\>img\]\:h-auto>img {
+  height: auto;
+}
+
+.\[\&\>img\]\:w-6>img {
+  width: 1.5rem;
 }
 
 .\[\&\>p\]\:text-\[12px\]>p {
