@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.3.2 | MIT License | https://tailwindcss.com
+! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -191,6 +191,10 @@ select,
 textarea {
   font-family: inherit;
   /* 1 */
+  font-feature-settings: inherit;
+  /* 1 */
+  font-variation-settings: inherit;
+  /* 1 */
   font-size: 100%;
   /* 1 */
   font-weight: inherit;
@@ -338,6 +342,14 @@ ul,
 menu {
   list-style: none;
   margin: 0;
+  padding: 0;
+}
+
+/*
+Reset default styling for dialogs.
+*/
+
+dialog {
   padding: 0;
 }
 
@@ -948,6 +960,10 @@ p {
   margin-top: auto;
 }
 
+.mb-12 {
+  margin-bottom: 3rem;
+}
+
 .block {
   display: block;
 }
@@ -1093,6 +1109,22 @@ p {
   height: 100%;
 }
 
+.h-12 {
+  height: 3rem;
+}
+
+.h-32 {
+  height: 8rem;
+}
+
+.h-\[137\] {
+  height: 137;
+}
+
+.h-\[137px\] {
+  height: 137px;
+}
+
 .max-h-\[200px\] {
   max-height: 200px;
 }
@@ -1103,6 +1135,30 @@ p {
 
 .min-h-\[813px\] {
   min-height: 813px;
+}
+
+.min-h-\[613px\] {
+  min-height: 613px;
+}
+
+.min-h-\[513px\] {
+  min-height: 513px;
+}
+
+.min-h-\[713px\] {
+  min-height: 713px;
+}
+
+.min-h-\[70px\] {
+  min-height: 70px;
+}
+
+.min-h-\[700px\] {
+  min-height: 700px;
+}
+
+.min-h-screen {
+  min-height: 100vh;
 }
 
 .w-2 {
@@ -1238,6 +1294,18 @@ p {
   width: 100vw;
 }
 
+.w-40 {
+  width: 10rem;
+}
+
+.w-96 {
+  width: 24rem;
+}
+
+.w-72 {
+  width: 18rem;
+}
+
 .min-w-\[130px\] {
   min-width: 130px;
 }
@@ -1261,6 +1329,10 @@ p {
 
 .min-w-full {
   min-width: 100%;
+}
+
+.min-w-\[700px\] {
+  min-width: 700px;
 }
 
 .max-w-6xl {
@@ -1309,6 +1381,10 @@ p {
 
 .shrink-0 {
   flex-shrink: 0;
+}
+
+.flex-grow {
+  flex-grow: 1;
 }
 
 .grow {
@@ -1945,6 +2021,26 @@ p {
   padding-top: 66px;
 }
 
+.pb-24 {
+  padding-bottom: 6rem;
+}
+
+.pb-40 {
+  padding-bottom: 10rem;
+}
+
+.pb-52 {
+  padding-bottom: 13rem;
+}
+
+.pl-\[30PX\] {
+  padding-left: 30PX;
+}
+
+.pl-\[30px\] {
+  padding-left: 30px;
+}
+
 .text-center {
   text-align: center;
 }
@@ -2288,6 +2384,14 @@ label input[type]:checked ~ span.middle {
 .bg-herohome {
   position: relative;
   background: url(../assets/home/homebanner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.bg-heroproyectosdestacados {
+  position: relative;
+  background: url(../assets/proyectos-destacados/heroproyectosdestacados.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -2729,6 +2833,10 @@ label input[type]:checked ~ span.middle {
     min-height: 582px;
   }
 
+  .lg\:min-h-\[813px\] {
+    min-height: 813px;
+  }
+
   .lg\:w-1\/2 {
     width: 50%;
   }
@@ -2788,6 +2896,10 @@ label input[type]:checked ~ span.middle {
 
   .lg\:w-full {
     width: 100%;
+  }
+
+  .lg\:w-\[658px\] {
+    width: 658px;
   }
 
   .lg\:min-w-fit {
@@ -2996,6 +3108,14 @@ label input[type]:checked ~ span.middle {
 
   .lg\:pt-\[157px\] {
     padding-top: 157px;
+  }
+
+  .lg\:pb-24 {
+    padding-bottom: 6rem;
+  }
+
+  .lg\:pl-0 {
+    padding-left: 0px;
   }
 
   .lg\:text-start {

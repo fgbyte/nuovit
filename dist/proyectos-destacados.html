@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="./css/main.css">
+  <!-- Google Fonts -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,700&family=Roboto:wght@100;300;400;500;700&display=swap');
+  </style>
+
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header class="absolute h-[83] text-white inset-x-0 top-0 z-50">
+    <nav class="max-w-[1358px] mx-auto flex py-3 justify-between items-end px-[40px] select-none">
+      <div>
+        <div class="hidden lg:flex">
+          <img class="h-14" src="./assets/footer/logonuovit.png" alt="logo" />
+        </div>
+        <img class="lg:hidden h-[35.973px]" src="./assets/icons/logo.svg" alt="logo_nuovit" />
+      </div>
+
+      <div id="menu-pc" class="hidden lg:flex gap-14 group [&_summary::-webkit-details-marker]:hidden pb-2">
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary class="flex items-center cursor-pointer gap-1 hover:text-yellow">
+            <span>Proyectos</span>
+
+            <span class="shrink-0 transition duration-300 group-open:-rotate-180">
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                <path d="M0.5 1.25L6 6.75L11.5 1.25" stroke="#EAC355" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </span>
+          </summary>
+          <ul class="flex flex-col gap-2 absolute mt-2">
+            <li>
+              <a href="" class="block hover:text-yellow"> Residenciales </a>
+            </li>
+            <li>
+              <a href="" class="block hover:text-yellow"> Comerciales </a>
+            </li>
+          </ul>
+        </details>
+        <a class="block hover:text-yellow" href="">Inversores</a>
+        <a class="block hover:text-yellow" href="">Sostenibilidad</a>
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary class="flex items-center cursor-pointer gap-1 hover:text-yellow">
+            <span>Conócenos</span>
+
+            <span class="shrink-0 transition duration-300 group-open:-rotate-180">
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                <path d="M0.5 1.25L6 6.75L11.5 1.25" stroke="#EAC355" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </span>
+          </summary>
+          <ul class="flex flex-col gap-2 absolute mt-2">
+            <li>
+              <a href="" class="block hover:text-yellow"> Residenciales </a>
+            </li>
+            <li>
+              <a href="" class="block hover:text-yellow"> Comerciales </a>
+            </li>
+          </ul>
+        </details>
+      </div>
+      <label class="bar lg:hidden scale-50 right-[-15px]" for="menu-mobile">
+        <input type="checkbox" id="menu-mobile" />
+
+        <span class="top"></span>
+        <span class="middle"></span>
+        <span class="bottom"></span>
+      </label>
+    </nav>
+  </header>
+  <!-- hero -->
+  <section
+    class="relative flex flex-col justify-center items-center   bg-cover bg-heroproyectosdestacados z-10"
+    id="hero">
+
+    <div class="relative min-h-[700px] lg:min-h-[813px]  w-full max-w-[1358px] flex justify-start items-end">
+
+      <h1 class="flex flex-col text-sand text-[43px] lg:text-[55px] lg:pb-24 pb-52 pl-[30px] lg:pl-0">Proyectos
+        <span>Destacados</span>
+      </h1>
+
+      <div class="absolute flex flex-col justify-center items-center w-7xl bg-white h-[137px] w-72 lg:w-[658px] bottom-0  right-0 pr-[35px] lg:pr-[80px]">
+        cosas
+      </div>
+    </div>
+
+    <!-- Gradiente -->
+    <div class="absolute inset-0 w-full h-[813px] py-16 gradientdown -z-10"></div><!-- Fin del Gradiente -->
+  </section>
+
+
+  <!-- Footer -->
+  <footer class=" bg-negro bottom-0 inset-x-0">
+
+    <div class="max-w-[1358px] mx-auto px-[46px]">
+
+      <div
+        class="relative max-w-[300px] mx-auto lg:max-w-none flex flex-col lg:flex-row items-start lg:items-center justify-start gap-8 py-[30px]">
+        <h1
+          class="flex flex-col lg:items-center lg:justify-center lg:flex-row lg:gap-4 text-[40px] lg:text-[54px] text-sand">
+          Contacta <span class="relative left-[55px] lg:bottom-auto lg:pb-2 lg:left-auto font-secondary italic">con
+            nosotros</span></h1>
+        <button
+          class="relative flex gap-1 rounded-md py-3 px-[18px] text-[12px] bg-yellow font-medium left-[55px] lg:left-0">Contáctanos
+          <img src="./assets/icons/arrow.svg" alt="arrow"></button>
+      </div>
+
+      <div
+        class="lg:border-t-[1px] lg:border-solid border-graytext-grayTextFooter relative max-w-[300px] mx-auto lg:max-w-none py-4 flex flex-col gap-5 items-start lg:flex-row lg:justify-between [&>div]:flex [&>div]:flex-1 [&>div]:gap-6 [&>div]: [&>div]:items-center lg:[&>div]:gap-[67px] text-grayTextFooter [&>div>img]:w-4 [&>div>a]:text-xs">
+        <div class=""><img src="./assets/footer/phone.svg" alt="phone"> <a>+34 952 220 261</a></div>
+        <div class="relative lg:right-3 lg:justify-center"><img src="./assets/footer/Campaign.svg"
+            alt="Campaign"><a>Suscríbete a nuestro newsletter</a></div>
+        <div class="relative lg:right-[6px] lg:justify-center"><img src="./assets/footer/mail.svg" alt="mail">
+          <a>info@nuovit.com</a>
+        </div>
+      </div>
+
+      <div
+        class="flex border-t-[1px] border-solid border-graytext-grayTextFooter flex-col lg:flex-row relative max-w-[300px] mx-auto lg:max-w-none  ">
+
+        <div
+          class="flex flex-col items-start gap-6 lg:flex-[0.5] text-grayTextFooter lg:border-r-[1px] lg:border-solid border-graytext-grayTextFooter py-7">
+          <img class="h-14" src="./assets/footer/logonuovit.png" alt="logo">
+          <p class="text-[13px] max-w-[300px]">Dui viverra sollicitudin sed magna ac id molestie cursus malesuada. Ipsum
+            turpis in montes dictum sed eget viverra sollicitudin sed magna ac id molestie cursusm</p>
+          <div class="flex justify-between w-full lg:w-36 border-b-[1px] border-graytext-grayTextFooter pb-5">
+            <a href=""><img class="h-6" src="./assets/footer/insta.svg" alt="ins"></a>
+            <a href=""><img class="h-6" src="./assets/footer/linke.svg" alt="lin"></a>
+            <a href=""><img class="h-6" src="./assets/footer/twitt.svg" alt="twi"></a>
+            <a href=""><img class="h-6" src="./assets/footer/faceb.svg" alt="fac"></a>
+          </div>
+          <div class="flex gap-[22px] lg:gap-4 [&>p]:text-[12px]">
+            <p>España</p>
+            <p>Ecuador</p>
+            <p>Perú</p>
+          </div>
+        </div>
+
+        <div class="flex flex-col lg:flex-1">
+          <div
+            class="flex flex-col lg:flex-row border-b-[1px] border-solid border-graytext-grayTextFooter [&>div>div>p]:text-xs [&>div>div>h3]:text-base">
+            <div
+              class="lg:pl-3 flex flex-row lg:flex-col flex-1 lg:gap-4 pb-0 lg:py-7 text-grayTextFooter border-b-[1px] lg:border-b-0 lg:border-r-[1px] border-graytext-grayTextFooter">
+              <div class="flex flex-col gap-3 w-[300px] mx-auto mb-auto">
+                <h3
+                  class="pb-[14.71px] border-b-[1px] border-solid mb-4 text-whiteTextFooter border-graytext-grayTextFooter">
+                  Sostenibilidad</h3>
+                <p>Compromiso</p>
+                <p>Plan de sostenibilidad</p>
+                <p>Ética</p>
+                <p>Gobierno corporativo</p>
+              </div>
+              <div class="flex flex-col gap-3 w-[300px] lg:mx-auto mt-auto">
+                <h3
+                  class="pb-[14.71px] border-b-[1px] border-solid mb-4 text-whiteTextFooter border-graytext-grayTextFooter">
+                  Promociones</h3>
+                <p>En comercialización</p>
+                <p>Próximamente</p>
+                <p>Entregadas</p>
+                <p>Viviendas en el mar</p>
+                <p>Entrega inmediata</p>
+                <p class="opacity-0">.</p>
+              </div>
+            </div>
+            <div class="lg:pl-3 flex flex-row lg:flex-col flex-1 lg:gap-4 py-4 lg:py-7 text-grayTextFooter">
+              <div class="flex flex-col gap-3 w-[300px] ml-auto mb-auto">
+                <h3
+                  class="pb-[14.71px] border-b-[1px] border-solid mb-4 text-whiteTextFooter border-graytext-grayTextFooter">
+                  Innovación</h3>
+                <p>Industrialización</p>
+                <p>Nuovit Innovación</p>
+              </div>
+              <div class="flex flex-col gap-3 w-[300px] ml-auto mt-auto">
+                <h3
+                  class="pb-[14.71px] border-b-[1px] border-solid mb-4 text-whiteTextFooter border-graytext-grayTextFooter">
+                  Conócenos</h3>
+                <p>En Nuestro ADN</p>
+                <p>Nuestra historia</p>
+                <p>Gobierno corporativo</p>
+                <p>Noticias e Informes</p>
+                <p>Certificaciones</p>
+                <p>Inversores</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-wrap justify-center gap-3 text-xs text-grayTextFooter py-4 ">
+            <p>Copyright © 2023 Nuovit. Todos los derechos reservados.</p><br class="lg:hidden">
+            <p>Aviso legal</p>
+            <p>Política de privacidad</p>
+            <p>Política de cookies</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Logica del carrusel -->
+  <script src="./js/home-hero-carousel.js"></script>
+</body>
+
+</html>
