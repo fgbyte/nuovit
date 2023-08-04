@@ -760,10 +760,6 @@ p {
   margin: 14px;
 }
 
-.m-0 {
-  margin: 0px;
-}
-
 .mx-\[19px\] {
   margin-left: 19px;
   margin-right: 19px;
@@ -864,8 +860,8 @@ p {
   margin-left: 1.5rem;
 }
 
-.ml-\[13\%\] {
-  margin-left: 13%;
+.ml-\[\%\] {
+  margin-left: %;
 }
 
 .ml-\[35px\] {
@@ -890,6 +886,10 @@ p {
 
 .mr-5 {
   margin-right: 1.25rem;
+}
+
+.mr-\[\%\] {
+  margin-right: %;
 }
 
 .mt-1 {
@@ -974,30 +974,6 @@ p {
 
 .mt-auto {
   margin-top: auto;
-}
-
-.mr-\[2\] {
-  margin-right: 2;
-}
-
-.mr-\[240px\] {
-  margin-right: 240px;
-}
-
-.ml-\[240px\] {
-  margin-left: 240px;
-}
-
-.mr-\[\] {
-  margin-right: ;
-}
-
-.mr-\[\%\] {
-  margin-right: %;
-}
-
-.ml-\[\%\] {
-  margin-left: %;
 }
 
 .block {
@@ -1502,10 +1478,6 @@ p {
   flex-wrap: wrap;
 }
 
-.place-items-stretch {
-  place-items: stretch;
-}
-
 .items-start {
   align-items: flex-start;
 }
@@ -1516,10 +1488,6 @@ p {
 
 .items-center {
   align-items: center;
-}
-
-.justify-normal {
-  justify-content: normal;
 }
 
 .justify-start {
@@ -2711,6 +2679,11 @@ label input[type]:checked ~ span.middle {
     margin-right: auto;
   }
 
+  .lg\:my-10 {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+
   .lg\:my-\[50px\] {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -2885,8 +2858,8 @@ label input[type]:checked ~ span.middle {
     width: 66%;
   }
 
-  .lg\:w-\[80\%\] {
-    width: 80%;
+  .lg\:w-\[84\%\] {
+    width: 84%;
   }
 
   .lg\:w-\[97px\] {
@@ -2904,14 +2877,6 @@ label input[type]:checked ~ span.middle {
 
   .lg\:w-full {
     width: 100%;
-  }
-
-  .lg\:w-\[85\%\] {
-    width: 85%;
-  }
-
-  .lg\:w-\[84\%\] {
-    width: 84%;
   }
 
   .lg\:min-w-fit {
