@@ -104,11 +104,13 @@
         </div>
     </section>
 
-    <section class="contenido mt-4 lg:mt-10">
-        <div>
-            <div class="flex flex-col items-start justify-between h-[618px]  rounded-md bg-cover bg-no-repeat"
+    <section class="contenido mt-4 lg:mt-10 lg: flex flex-col gap-8 items-center">
+        <!-- card1 -->
+        <div class="lg:flex lg:justify-center lg:w-[80%]">
+            <div class="flex flex-col items-start justify-between h-[618px] p-4  rounded-md bg-cover bg-no-repeat lg:w-[66%] lg:h-850px lg:relative"
                 style="background-image: url('./assets/img/landing-proyecto-1.jpg');">
-                <button class="m-[13px] w-fit flex gap-1 rounded-md py-3 px-[18px] text-[12px] font-medium text-sand bg-black">
+                <button
+                    class="w-fit flex gap-1 rounded-md py-3 px-[18px] text-[12px] font-medium text-sand bg-black lg:hidden">
                     Ver todos los proyectos
                     <svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
                         <path d="M1 0.5L11.2963 0.5L11.2963 10.5" stroke="#EAC355" stroke-linecap="round"
@@ -116,24 +118,114 @@
                         <path d="M1 11L11 1" stroke="#EAC355" stroke-linecap="round" stroke-linejoin="round" />
                     </svg>
                 </button>
-                <!-- card -->
-                TODO: terminar card
-                <div class="flex flex-col m-[16px] self-center">
-                    <div class="w-[248px] h-fit bg-sand pl-4 pt-4">
-                        <p class="text-[24px] font-[700] flex flex-col">Visita nuestras
-                            <span class="font-[400]">promociones</span>
+                <!-- block sm -->
+                <div class="flex flex-col w-full self-center lg:justify-self-end lg:hidden">
+                    <div class="w-[64%] h-fit bg-sand px-4 pt-4 pb-[21%]">
+                        <p class="text-[14px]">Tortor eget orci in vitae pretium tempor.
                         </p>
                     </div>
-                    <div class="w-[310px] h-[135px] bg-sand p-4 flex flex-col justify-end">
-                        <button
-                            class="w-fit flex items-start gap-1 rounded-md py-3 px-[18px] text-[12px] bg-yellow font-medium text-negro">Ver
-                            promociones
-                            <img src="./assets/icons/arrow.svg" alt="arrow">
-                        </button>
+                    <div class="w-[100%] h-[90px] bg-sand p-4 flex flex-col items-end">
+                            <img src="assets/icons/arrow-landing-proyecto.svg" alt="">
+                    </div>
+                    <div class="w-[87%] bg-sand p-4 flex flex-col justify-end">
+                        <p class="text-[16px] mb-1">Proyectos <b>Residenciales</b></p>
+                        <p>Espacios eficientes y de vanguardia</p>
+                    </div>
+
+                </div>
+                <!-- block lg -->
+                <div class="hidden lg:block absolute w-fit h-fit bottom-[2%] right-[-28%]">
+                    <div class="flex flex-col w-[633px] h-[455px] self-center lg:justify-self-end">
+                        <div class="w-[370px] h-fit bg-sand p-8 pb-[100px]">
+                            <p class="text-[14px]">Tortor eget orci in vitae pretium tempor. Egestas at elementum nibh leo justo
+                            </p>
+                            
+                        </div>
+                        <div class="relative w-full h-[180px] bg-sand p-8">
+                            <button
+                                class="absolute  bottom-[-8px] w-fit flex gap-1 rounded-md py-3 px-[18px] text-[12px] font-medium text-sand bg-black">
+                                Ver todos los proyectos
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11"
+                                    fill="none">
+                                    <path d="M1 0.5L11.2963 0.5L11.2963 10.5" stroke="#EAC355" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M1 11L11 1" stroke="#EAC355" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                                <img class="absolute right-6 top-6 z-10" src="assets/icons/arrow-landing-proyecto-lg.svg" alt="">
+                        </div>
+
+                        <div class="w-[528px] bg-sand p-8 flex flex-col justify-end">
+                            
+                            <p class="text-[16px] mb-1">Proyectos <b>Residenciales</b></p>
+                            <p>Espacios eficientes y de vanguardia</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- card2 -->
+        <div class="lg:flex lg:justify-center lg:w-[80%]">
+            <div class="flex flex-col items-start justify-between h-[618px] p-4  rounded-md bg-cover bg-no-repeat bg-bottom lg:w-[66%] lg:h-850px lg:relative"
+                style="background-image: url('./assets/img/landing-proyecto-2.jpg');">
+                <button
+                    class="w-fit flex gap-1 rounded-md py-3 px-[18px] text-[12px] font-medium text-sand bg-black lg:hidden">
+                    Ver todos los proyectos
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+                        <path d="M1 0.5L11.2963 0.5L11.2963 10.5" stroke="#EAC355" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M1 11L11 1" stroke="#EAC355" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </button>
+                <!-- block sm -->
+                <div class="flex flex-col w-full self-center lg:justify-self-end lg:hidden">
+                    <div class="w-[64%] h-fit bg-sand px-4 pt-4 pb-[21%]">
+                        <p class="text-[14px]">Tortor eget orci in vitae pretium tempor.
+                        </p>
+                    </div>
+                    <div class="w-[100%] h-[90px] bg-sand p-4 flex flex-col items-end">
+                            <img src="assets/icons/arrow-landing-proyecto.svg" alt="">
+                    </div>
+                    <div class="w-[87%] bg-sand p-4 flex flex-col justify-end">
+                        <p class="text-[16px] mb-1">Proyectos <b>Residenciales</b></p>
+                        <p>Espacios eficientes y de vanguardia</p>
+                    </div>
+                </div>
+                <!-- block lg -->
+                <div class="hidden lg:block absolute w-fit h-fit bottom-[2%] left-[-28%]">
+                    <div class="flex flex-col w-[633px] h-[455px] self-center lg:justify-self-end">
+                        <div class="w-[370px] h-fit bg-sand p-8 pb-[100px]">
+                            <p class="text-[14px]">Tortor eget orci in vitae pretium tempor. Egestas at elementum nibh leo justo
+                            </p>
+                            
+                        </div>
+                        <div class="relative w-full h-[180px] bg-sand p-8">
+                            <button
+                                class="absolute  bottom-[-8px] w-fit flex gap-1 rounded-md py-3 px-[18px] text-[12px] font-medium text-sand bg-black">
+                                Ver todos los proyectos
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11"
+                                    fill="none">
+                                    <path d="M1 0.5L11.2963 0.5L11.2963 10.5" stroke="#EAC355" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M1 11L11 1" stroke="#EAC355" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                                <img class="absolute right-6 top-6 z-10" src="assets/icons/arrow-landing-proyecto-lg.svg" alt="">
+                        </div>
+
+                        <div class="w-[528px] bg-sand p-8 flex flex-col justify-end">
+                            
+                            <p class="text-[16px] mb-1">Proyectos <b>Residenciales</b></p>
+                            <p>Espacios eficientes y de vanguardia</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </section>
     <script src="./js/home-hero-carousel.js"></script>
 </body>
