@@ -131,6 +131,13 @@ label input[type]:checked ~ span.middle {
   background-size: cover;
   background-position: center;
 }
+.bg-heroabout {
+  position: relative;
+  background: url(../assets/about/heroaboutus.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 .bg-heroproyectosdestacados {
   position: relative;
   background: url(../assets/proyectos-destacados/heroproyectosdestacados.png);

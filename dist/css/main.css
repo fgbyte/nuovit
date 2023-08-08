@@ -945,6 +945,10 @@ p {
   margin-top: 0.5rem;
 }
 
+.mt-20 {
+  margin-top: 5rem;
+}
+
 .mt-32 {
   margin-top: 8rem;
 }
@@ -1418,6 +1422,10 @@ p {
 
 .max-w-\[730px\] {
   max-width: 730px;
+}
+
+.max-w-\[870px\] {
+  max-width: 870px;
 }
 
 .max-w-xs {
@@ -2462,6 +2470,14 @@ label input[type]:checked ~ span.middle {
   background-position: center;
 }
 
+.bg-heroabout {
+  position: relative;
+  background: url(../assets/about/heroaboutus.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .bg-heroproyectosdestacados {
   position: relative;
   background: url(../assets/proyectos-destacados/heroproyectosdestacados.png);
@@ -3306,6 +3322,10 @@ label input[type]:checked ~ span.middle {
 
   .lg\:text-\[35px\] {
     font-size: 35px;
+  }
+
+  .lg\:text-\[36px\] {
+    font-size: 36px;
   }
 
   .lg\:text-\[40px\] {
