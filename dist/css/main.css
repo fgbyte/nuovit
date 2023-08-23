@@ -486,6 +486,11 @@ p {
   margin: 0 1.125rem;
 }
 
+.map-card-position {
+  top: calc(50% - 208px);
+  right: calc(50% - 157.5px);
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -754,38 +759,6 @@ p {
 
 .top-\[400px\] {
   top: 400px;
-}
-
-.top-\[\] {
-  top: ;
-}
-
-.top-\[50\%\] {
-  top: 50%;
-}
-
-.top-\[50\%-137\.5px\] {
-  top: 50%-137.5px;
-}
-
-.top-\[calc50\%-137\.5px\] {
-  top: calc50%-137.5px;
-}
-
-.top-\[calc\(50\%-137\.5px\)\] {
-  top: calc(50% - 137.5px);
-}
-
-.left-\[\] {
-  left: ;
-}
-
-.left-\[25\%\] {
-  left: 25%;
-}
-
-.top-\[30\%\] {
-  top: 30%;
 }
 
 .-z-10 {
@@ -1125,6 +1098,10 @@ p {
   height: 1px;
 }
 
+.h-\[275px\] {
+  height: 275px;
+}
+
 .h-\[3\.1363rem\] {
   height: 3.1363rem;
 }
@@ -1212,10 +1189,6 @@ p {
 
 .h-full {
   height: 100%;
-}
-
-.h-\[275px\] {
-  height: 275px;
 }
 
 .max-h-\[200px\] {
@@ -1637,14 +1610,6 @@ p {
 
 .justify-around {
   justify-content: space-around;
-}
-
-.justify-evenly {
-  justify-content: space-evenly;
-}
-
-.justify-stretch {
-  justify-content: stretch;
 }
 
 .gap-1 {
@@ -2726,6 +2691,11 @@ label input[type]:checked ~ span.middle {
   .lg\:contenido-lg {
     margin: 0 2.1875rem;
   }
+
+  .lg\:map-card-position__lg {
+    top: calc(50% - 208px);
+    left: calc(50% - 147.5px);
+  }
 }
 
 .placeholder\:text-\[16px\]::-moz-placeholder {
@@ -3174,17 +3144,9 @@ label input[type]:checked ~ span.middle {
     width: 100%;
   }
 
-  .lg\:w-\[480px\] {
-    width: 480px;
-  }
-
   .lg\:min-w-fit {
     min-width: -moz-fit-content;
     min-width: fit-content;
-  }
-
-  .lg\:min-w-\[480px\] {
-    min-width: 480px;
   }
 
   .lg\:max-w-7xl {
@@ -3226,14 +3188,6 @@ label input[type]:checked ~ span.middle {
          columns: 3;
   }
 
-  .lg\:auto-cols-max {
-    grid-auto-columns: max-content;
-  }
-
-  .lg\:grid-flow-col {
-    grid-auto-flow: column;
-  }
-
   .lg\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -3272,10 +3226,6 @@ label input[type]:checked ~ span.middle {
 
   .lg\:justify-between {
     justify-content: space-between;
-  }
-
-  .lg\:justify-around {
-    justify-content: space-around;
   }
 
   .lg\:gap-0 {
@@ -3346,11 +3296,6 @@ label input[type]:checked ~ span.middle {
     justify-self: end;
   }
 
-  .lg\:border-x-0 {
-    border-left-width: 0px;
-    border-right-width: 0px;
-  }
-
   .lg\:border-x-2 {
     border-left-width: 2px;
     border-right-width: 2px;
@@ -3398,6 +3343,11 @@ label input[type]:checked ~ span.middle {
     padding-right: 0px;
   }
 
+  .lg\:px-2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
   .lg\:py-16 {
     padding-top: 4rem;
     padding-bottom: 4rem;
@@ -3411,11 +3361,6 @@ label input[type]:checked ~ span.middle {
   .lg\:py-7 {
     padding-top: 1.75rem;
     padding-bottom: 1.75rem;
-  }
-
-  .lg\:px-2 {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
   }
 
   .lg\:pb-16 {
@@ -3632,3 +3577,4 @@ label input[type]:checked ~ span.middle {
 .\[\&_summary\:\:-webkit-details-marker\]\:hidden summary::-webkit-details-marker {
   display: none;
 }
+

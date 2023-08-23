@@ -61,6 +61,16 @@
   .contenido-lg {
     margin: 0 2.1875rem;
   }
+
+  .map-card-position {
+    top: calc(50% - 208px);
+    right: calc(50% - 157.5px);
+  }
+
+  .map-card-position__lg {
+    top: calc(50% - 208px);
+    left: calc(50% - 147.5px);
+  }
 }
 
 /*menu movile*/
@@ -259,3 +269,4 @@ label input[type]:checked ~ span.middle {
   border-color: rgb(255, 255, 255);
   border: 2px solid rgb(255, 255, 255);
 }
+
