@@ -487,8 +487,8 @@ p {
 }
 
 .map-card-position {
-  top: calc(50% - 208px);
-  right: calc(50% - 157.5px);
+  top: calc(50% - 188.5px);
+  left: calc(50% - 155px);
 }
 
 *, ::before, ::after {
@@ -1189,6 +1189,14 @@ p {
 
 .h-full {
   height: 100%;
+}
+
+.h-\[80vh\] {
+  height: 80vh;
+}
+
+.h-\[255px\] {
+  height: 255px;
 }
 
 .max-h-\[200px\] {
@@ -2693,8 +2701,8 @@ label input[type]:checked ~ span.middle {
   }
 
   .lg\:map-card-position__lg {
-    top: calc(50% - 208px);
-    left: calc(50% - 147.5px);
+    top: calc(50% - 147.75px);
+    left: calc(50% - 199.5px);
   }
 }
 
