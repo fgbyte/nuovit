@@ -1098,8 +1098,8 @@ p {
   height: 1px;
 }
 
-.h-\[275px\] {
-  height: 275px;
+.h-\[255px\] {
+  height: 255px;
 }
 
 .h-\[3\.1363rem\] {
@@ -1189,14 +1189,6 @@ p {
 
 .h-full {
   height: 100%;
-}
-
-.h-\[80vh\] {
-  height: 80vh;
-}
-
-.h-\[255px\] {
-  height: 255px;
 }
 
 .max-h-\[200px\] {
@@ -1772,6 +1764,10 @@ p {
   scroll-behavior: smooth;
 }
 
+.whitespace-nowrap {
+  white-space: nowrap;
+}
+
 .rounded {
   border-radius: 0.25rem;
 }
@@ -1873,6 +1869,11 @@ p {
 .border-yellow {
   --tw-border-opacity: 1;
   border-color: rgb(234 195 85 / var(--tw-border-opacity));
+}
+
+.bg-\[\#F9F6F3\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 246 243 / var(--tw-bg-opacity));
 }
 
 .bg-black {
@@ -2363,6 +2364,10 @@ p {
 
 .leading-normal {
   line-height: 1.5;
+}
+
+.tracking-\[\.5px\] {
+  letter-spacing: .5px;
 }
 
 .text-\[\#141614\] {
@@ -3244,10 +3249,6 @@ label input[type]:checked ~ span.middle {
     gap: 2.5rem;
   }
 
-  .lg\:gap-12 {
-    gap: 3rem;
-  }
-
   .lg\:gap-2 {
     gap: 0.5rem;
   }
@@ -3258,6 +3259,10 @@ label input[type]:checked ~ span.middle {
 
   .lg\:gap-40 {
     gap: 10rem;
+  }
+
+  .lg\:gap-6 {
+    gap: 1.5rem;
   }
 
   .lg\:gap-\[142px\] {
