@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com
+! tailwindcss v3.3.2 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -191,10 +191,6 @@ select,
 textarea {
   font-family: inherit;
   /* 1 */
-  font-feature-settings: inherit;
-  /* 1 */
-  font-variation-settings: inherit;
-  /* 1 */
   font-size: 100%;
   /* 1 */
   font-weight: inherit;
@@ -342,14 +338,6 @@ ul,
 menu {
   list-style: none;
   margin: 0;
-  padding: 0;
-}
-
-/*
-Reset default styling for dialogs.
-*/
-
-dialog {
   padding: 0;
 }
 
@@ -1857,6 +1845,11 @@ p {
   border-color: rgb(234 195 85 / var(--tw-border-opacity));
 }
 
+.bg-\[\#F0EAE1\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(240 234 225 / var(--tw-bg-opacity));
+}
+
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
@@ -1900,6 +1893,11 @@ p {
 .bg-yellow {
   --tw-bg-opacity: 1;
   background-color: rgb(234 195 85 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#F9F6F3\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 246 243 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-70 {
@@ -2332,6 +2330,22 @@ p {
 
 .leading-normal {
   line-height: 1.5;
+}
+
+.tracking-\[\] {
+  letter-spacing: ;
+}
+
+.tracking-\[0\.\] {
+  letter-spacing: 0.;
+}
+
+.tracking-\[0\.5px\] {
+  letter-spacing: 0.5px;
+}
+
+.tracking-\[\.5px\] {
+  letter-spacing: .5px;
 }
 
 .text-\[\#141614\] {
@@ -3186,10 +3200,6 @@ label input[type]:checked ~ span.middle {
     gap: 2.5rem;
   }
 
-  .lg\:gap-12 {
-    gap: 3rem;
-  }
-
   .lg\:gap-2 {
     gap: 0.5rem;
   }
@@ -3200,6 +3210,10 @@ label input[type]:checked ~ span.middle {
 
   .lg\:gap-40 {
     gap: 10rem;
+  }
+
+  .lg\:gap-6 {
+    gap: 1.5rem;
   }
 
   .lg\:gap-\[142px\] {
@@ -3228,14 +3242,6 @@ label input[type]:checked ~ span.middle {
 
   .lg\:gap-\[76px\] {
     gap: 76px;
-  }
-
-  .lg\:gap-8 {
-    gap: 2rem;
-  }
-
-  .lg\:gap-6 {
-    gap: 1.5rem;
   }
 
   .lg\:self-start {
