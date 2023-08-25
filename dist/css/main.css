@@ -761,6 +761,22 @@ p {
   top: 400px;
 }
 
+.bottom-3 {
+  bottom: 0.75rem;
+}
+
+.left-4 {
+  left: 1rem;
+}
+
+.right-4 {
+  right: 1rem;
+}
+
+.-right-4 {
+  right: -1rem;
+}
+
 .-z-10 {
   z-index: -10;
 }
@@ -1026,6 +1042,14 @@ p {
   margin-top: auto;
 }
 
+.mt-\[-10px\] {
+  margin-top: -10px;
+}
+
+.-mt-2 {
+  margin-top: -0.5rem;
+}
+
 .block {
   display: block;
 }
@@ -1186,6 +1210,10 @@ p {
   height: 90px;
 }
 
+.h-\[90vh\] {
+  height: 90vh;
+}
+
 .h-auto {
   height: auto;
 }
@@ -1199,16 +1227,16 @@ p {
   height: 100%;
 }
 
-.h-\[100\%\] {
-  height: 100%;
+.h-\[165px\] {
+  height: 165px;
 }
 
-.h-\[80vh\] {
-  height: 80vh;
+.h-\[\] {
+  height: ;
 }
 
-.h-\[90vh\] {
-  height: 90vh;
+.h-\[116px\] {
+  height: 116px;
 }
 
 .max-h-\[200px\] {
@@ -1394,6 +1422,18 @@ p {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-\[25\] {
+  width: 25;
+}
+
+.w-\[253px\] {
+  width: 253px;
+}
+
+.w-\[74\%\] {
+  width: 74%;
 }
 
 .min-w-\[130px\] {
@@ -2036,6 +2076,18 @@ p {
   padding: 24px;
 }
 
+.p-3 {
+  padding: 0.75rem;
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.p-1 {
+  padding: 0.25rem;
+}
+
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -2164,6 +2216,16 @@ p {
 .py-\[8px\] {
   padding-top: 8px;
   padding-bottom: 8px;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
 .pb-0 {
@@ -2962,6 +3024,10 @@ label input[type]:checked ~ span.middle {
     top: 22.1875rem;
   }
 
+  .lg\:bottom-10 {
+    bottom: 2.5rem;
+  }
+
   .lg\:col-span-2 {
     grid-column: span 2 / span 2;
   }
@@ -3232,6 +3298,18 @@ label input[type]:checked ~ span.middle {
     width: 100%;
   }
 
+  .lg\:w-\[\] {
+    width: ;
+  }
+
+  .lg\:w-\[42\%\] {
+    width: 42%;
+  }
+
+  .lg\:w-\[34\%\] {
+    width: 34%;
+  }
+
   .lg\:min-w-fit {
     min-width: -moz-fit-content;
     min-width: fit-content;
@@ -3453,6 +3531,26 @@ label input[type]:checked ~ span.middle {
   .lg\:py-7 {
     padding-top: 1.75rem;
     padding-bottom: 1.75rem;
+  }
+
+  .lg\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .lg\:py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .lg\:px-\[34px\] {
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+
+  .lg\:px-20 {
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
 
   .lg\:pb-16 {

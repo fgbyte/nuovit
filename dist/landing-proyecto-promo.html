@@ -16,7 +16,7 @@
 <body>
     <!-- NAVBAR LANDING -->
     <header>
-        <nav class="bg-black border-gray-200">
+        <nav class="bg-black border-gray-200 lg:px-20">
             <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
                 <div class="flex items-center text-[#DBD8CE] py-2 gap-[115px]">
                     <a href="#" class="flex flex-col gap-1 ">
@@ -102,17 +102,40 @@
             </div>
         </div>
     </nav>
-    
+
     <!-- HERO -->
-    <section class="relative"
-    id="hero">
-    <!-- Gradiente -->
-    <div class="absolute inset-0 h-3 w-full py-16 gradientdown z-10 lg:hidden"></div>
-    <!-- hero content -->
-    <div class="relative h-[90vh] w-full lg:bg-cover bg-landing-proyecto-promo-hero">
+    <section class="relative" id="hero">
+        <!-- Gradiente -->
+        <div class="absolute inset-0 h-3 w-full py-16 gradientdown z-10 lg:hidden"></div>
+        <!-- hero content -->
+        <div class="relative h-[100vh] w-full lg:bg-cover bg-landing-proyecto-promo-hero">
             <!-- NAVBAR HOME MOBILE-ONLY -->
-            <div>Navbar</div>
-           
+            <div class="lg:hidden">Navbar</div>
+            <div class="absolute bottom-3 mx-auto px-4 flex flex-col w-[100%] lg:bottom-10 lg:px-[34px]">
+                <div class="px-3 py-4 bg-[#F0EAE1] w-[74%] h-[165px] lg:px-10 lg:py-6 lg:w-[42%]">
+                    <div class="flex flex-col gap-2">
+                        <span class="w-fit flex gap-1 rounded-md p-1 text-[12px] font-medium text-black bg-[#EAC355]">
+                            En construcción
+                        </span>
+                        <div>
+                            <p class="text-[20px] font-bold whitespace-nowrap">Icon<span class="font-[400]"> Limonar</span>
+                            </p>
+                            <p class="font-[400] text-[13px]">4000 m<sup>2</sup> de zonas verdes</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-3 py-4 bg-[#F0EAE1] h-[116px] flex flex-col gap-3 lg:px-10 lg:py-6 lg:w-[34%]">
+                    <button class="w-fit flex gap-1 rounded-md py-3 px-[18px] text-[12px] font-medium text-sand bg-black -mt-4">
+                        Me interesa
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+                          <path d="M1 0.5L11.2963 0.5L11.2963 10.5" stroke="#EAC355" stroke-linecap="round" stroke-linejoin="round" />
+                          <path d="M1 11L11 1" stroke="#EAC355" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </button>
+                      <p>Viviendas de 1 a 3 dormitorios,
+                        bajos con jardín y áticos con solarium</p>
+                </div>
+            </div>
         </div>
     </section>
 
