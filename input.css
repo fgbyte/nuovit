@@ -71,6 +71,10 @@
     top: calc(50% - 147.75px);
     left: calc(50% - 199.5px);
   }
+  .map-card-position__lg-landing {
+    top: calc(55% - 135px);
+    left: calc(50% - 106.05px);
+  }
 }
 
 /*menu movile*/
