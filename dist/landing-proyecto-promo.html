@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./css/main.css">
     <!-- Google Fonts -->
     <style>
-        /* @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,700&family=Roboto:wght@100;300;400;500;700&display=swap'); */
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,700&family=Roboto:wght@100;300;400;500;700&display=swap');
     </style>
 </head>
 
@@ -153,7 +153,8 @@
             Pisos de 1 a 3 dormitorios, bajos con jardín y áticos con solarium. Espacios abiertos y luminosos, amplias
             terrazas y calificación energética A.
         </p>
-        <button class="w-fit flex self-center gap-1 rounded-md py-3 px-[18px] text-[12px] font-medium text-black bg-[#EAC355]">
+        <button
+            class="w-fit flex self-center gap-1 rounded-md py-3 px-[18px] text-[12px] font-medium text-black bg-[#EAC355]">
             Saber más
             <svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
                 <path d="M1 0.5L11.2963 0.5L11.2963 10.5" stroke="black" stroke-linecap="round"
@@ -204,23 +205,165 @@
     <section class="relative mt-7 h-[100vh] w-full lg:h-[80vh]">
         <div id="map" class="w-full h-full bg-red-300">
         </div>
-        <div id="map-card-topMarked" class="absolute flex flex-col items-center justify-end z-100 bg-white w-[180px] h-[270px] right-[6%] top-[22%] lg:map-card-position__lg-landing">
+        <div id="map-card-topMarked"
+            class="absolute flex flex-col items-center justify-end z-100 bg-white w-[180px] h-[270px] right-[6%] top-[22%] lg:map-card-position__lg-landing">
             <i class="absolute top-0 -mt-4">
                 <img src="./assets/icons/black-marker.svg" alt="">
             </i>
-          <div class="flex flex-col justify-end self-end shadow-s200">
-            <div class="p-2 self-end flex flex-col gap-1">
-                <p class="text-[20px] font-bold whitespace-nowrap">Icon<span class="font-[400]"> Limonar</span>
-                </p>
-                <p class="pl-1 text-[13px] font-light">C/ Marqués de Larios, 29005
-                  Málaga, España</p>
+            <div class="flex flex-col justify-end self-end shadow-s200">
+                <div class="p-2 self-end flex flex-col gap-1">
+                    <p class="text-[20px] font-bold whitespace-nowrap">Icon<span class="font-[400]"> Limonar</span>
+                    </p>
+                    <p class="pl-1 text-[13px] font-light">C/ Marqués de Larios, 29005
+                        Málaga, España</p>
+                </div>
+                <div id="map-card-img">
+                    <img src="./assets/img/map-card-1.jpg" class="w-[100%]" alt="">
+                </div>
             </div>
-            <div id="map-card-img">
-              <img src="./assets/img/map-card-1.jpg" class="w-[100%]" alt="">
-            </div>
-          </div>
         </div>
-      </section>
+    </section>
+
+    <!-- Tipologías Section SM -->
+    <section class="px-4 py-7 bg-[#F0EAE1] lg:hidden">
+        <h2 class="text-[36px] font-[300]">Cuadro de
+            <span class="block font-secondary bold">tipologías</span>
+        </h2>
+        <!-- cards -->
+        <div class="mt-14 flex flex-col gap-7">
+            <div id="card-tipologia">
+                <div class="flex justify-between border-b-2 border-black pb-3">
+                    <p class="bold uppercase">1 DORMITORIO</p>
+                    <p class="">Hasta 100 m<sup>2</sup></p>
+                </div>
+                <div class="flex flex-col gap-1 pt-3">
+                    <p class="font-[400] text-[13px]">Desde</p>
+                    <p class="text-[20px] font-bold whitespace-nowrap">200.000<span class="font-[400] text-[13px]">€
+                            + IVA</span></p>
+                </div>
+            </div>
+            <div id="card-tipologia">
+                <div class="flex justify-between border-b-2 border-black pb-3">
+                    <p class="bold uppercase">2 DORMITORIOS</p>
+                    <p class="">Hasta 100 m<sup>2</sup></p>
+                </div>
+                <div class="flex flex-col gap-1 pt-3">
+                    <p class="font-[400] text-[13px]">Desde</p>
+                    <p class="text-[20px] font-bold whitespace-nowrap">300.000<span class="font-[400] text-[13px]">€
+                            + IVA</span></p>
+                </div>
+            </div>
+            <div id="card-tipologia">
+                <div class="flex justify-between border-b-2 border-black pb-3">
+                    <p class="bold uppercase">2 DORMITORIOS</p>
+                    <p class="">Hasta 100 m<sup>2</sup></p>
+                </div>
+                <div class="flex flex-col gap-1 pt-3">
+                    <p class="font-[400] text-[13px]">Desde</p>
+                    <p class="text-[20px] font-bold whitespace-nowrap">400.000<span class="font-[400] text-[13px]">€
+                            + IVA</span></p>
+                </div>
+            </div>
+            <div id="card-tipologia">
+                <div class="flex justify-between border-b-2 border-black pb-3">
+                    <p class="bold uppercase">4 DORMITORIOS</p>
+                    <p class="">Hasta 100 m<sup>2</sup></p>
+                </div>
+                <div class="flex flex-col gap-1 pt-3">
+                    <p class="font-[400] text-[13px]">Desde</p>
+                    <p class="text-[20px] font-bold whitespace-nowrap">550.000<span class="font-[400] text-[13px]">€
+                            + IVA</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="flex justify-center mt-7">
+            <button class="w-fit flex gap-1 rounded-md py-3 px-[18px] text-[12px] font-medium text-sand bg-black">
+                Solicitar información
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+                    <path d="M1 0.5L11.2963 0.5L11.2963 10.5" stroke="#EAC355" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                    <path d="M1 11L11 1" stroke="#EAC355" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+    </section>
+
+    <!-- Tipologías Section LG -->
+    <section class="hidden lg:flex lg:justify-center w-full lg:px-48 mt-7">
+        <!-- left card -->
+        <div class="mt-16 flex flex-col w-[50%]">
+            <h2 class="text-[36px] font-[300] self-start">Cuadro de
+                <span class="block font-secondary self-end ml-32 bold">tipologías</>
+            </h2>
+            <!-- cards -->
+            <div class="mt-7 flex flex-col py-20 pl-20 pr-32 bg-[#F0EAE1] rounded-md">
+                <div class="flex flex-col gap-7">
+                    <div id="card-tipologia">
+                        <div class="flex justify-between border-b-2 border-black pb-3">
+                            <p class="bold uppercase">1 DORMITORIO</p>
+                            <p class="">Hasta 100 m<sup>2</sup></p>
+                        </div>
+                        <div class="flex flex-col gap-1 pt-3">
+                            <p class="font-[400] text-[13px]">Desde</p>
+                            <p class="text-[20px] font-bold whitespace-nowrap">200.000<span class="font-[400] text-[13px]">€
+                                    + IVA</span></p>
+                        </div>
+                    </div>
+                    <div id="card-tipologia">
+                        <div class="flex justify-between border-b-2 border-black pb-3">
+                            <p class="bold uppercase">2 DORMITORIOS</p>
+                            <p class="">Hasta 100 m<sup>2</sup></p>
+                        </div>
+                        <div class="flex flex-col gap-1 pt-3">
+                            <p class="font-[400] text-[13px]">Desde</p>
+                            <p class="text-[20px] font-bold whitespace-nowrap">300.000<span class="font-[400] text-[13px]">€
+                                    + IVA</span></p>
+                        </div>
+                    </div>
+                    <div id="card-tipologia">
+                        <div class="flex justify-between border-b-2 border-black pb-3">
+                            <p class="bold uppercase">2 DORMITORIOS</p>
+                            <p class="">Hasta 100 m<sup>2</sup></p>
+                        </div>
+                        <div class="flex flex-col gap-1 pt-3">
+                            <p class="font-[400] text-[13px]">Desde</p>
+                            <p class="text-[20px] font-bold whitespace-nowrap">400.000<span class="font-[400] text-[13px]">€
+                                    + IVA</span></p>
+                        </div>
+                    </div>
+                    <div id="card-tipologia">
+                        <div class="flex justify-between border-b-2 border-black pb-3">
+                            <p class="bold uppercase">4 DORMITORIOS</p>
+                            <p class="">Hasta 100 m<sup>2</sup></p>
+                        </div>
+                        <div class="flex flex-col gap-1 pt-3">
+                            <p class="font-[400] text-[13px]">Desde</p>
+                            <p class="text-[20px] font-bold whitespace-nowrap">550.000<span class="font-[400] text-[13px]">€
+                                    + IVA</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center mt-7">
+                    <button class="w-fit flex gap-1 rounded-md py-3 px-[18px] text-[12px] font-medium text-sand bg-black">
+                        Solicitar información
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+                            <path d="M1 0.5L11.2963 0.5L11.2963 10.5" stroke="#EAC355" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M1 11L11 1" stroke="#EAC355" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- right card -->
+        <div class="flex flex-col w-[50%] max-w-[493px] h-full">
+            <div class="-ml-12">
+                <img class="rounded-md w-[493px] h-[690px]" src="./assets/img/blog-cta.jpg" alt="">
+            </div>
+            <p class="pl-10 pr-20 py-8">Pisos de 1 a 3 dormitorios, bajos con jardín y áticos con solarium. Espacios abiertos y luminosos, amplias terrazas y calificación energética A.</p>
+        </div>
+    </section>
+
 
 </body>
 
