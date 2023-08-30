@@ -1257,6 +1257,26 @@ p {
   height: 100%;
 }
 
+.h-1 {
+  height: 0.25rem;
+}
+
+.h-\[\] {
+  height: ;
+}
+
+.h-\[1\.5px\] {
+  height: 1.5px;
+}
+
+.h-\[2px\] {
+  height: 2px;
+}
+
+.h-\[5px\] {
+  height: 5px;
+}
+
 .max-h-\[200px\] {
   max-height: 200px;
 }
@@ -1456,6 +1476,10 @@ p {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-\[195px\] {
+  width: 195px;
 }
 
 .min-w-\[130px\] {
@@ -1935,6 +1959,10 @@ p {
 
 .border-t-\[1px\] {
   border-top-width: 1px;
+}
+
+.border-b {
+  border-bottom-width: 1px;
 }
 
 .border-solid {
@@ -3378,6 +3406,10 @@ label input[type]:checked ~ span.middle {
 
   .lg\:w-full {
     width: 100%;
+  }
+
+  .lg\:w-\[195px\] {
+    width: 195px;
   }
 
   .lg\:min-w-fit {
