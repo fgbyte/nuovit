@@ -1074,6 +1074,10 @@ p {
   margin-left: -9rem;
 }
 
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
 .block {
   display: block;
 }
@@ -1925,6 +1929,18 @@ p {
   gap: 20px;
 }
 
+.gap-20 {
+  gap: 5rem;
+}
+
+.gap-36 {
+  gap: 9rem;
+}
+
+.gap-16 {
+  gap: 4rem;
+}
+
 .gap-y-4 {
   row-gap: 1rem;
 }
@@ -2352,6 +2368,11 @@ p {
   padding-bottom: 2rem;
 }
 
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
 .pb-0 {
   padding-bottom: 0px;
 }
@@ -2540,6 +2561,10 @@ p {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-\[36px\] {
+  font-size: 36px;
 }
 
 .font-\[100\] {
@@ -3263,6 +3288,18 @@ label input[type]:checked ~ span.middle {
     margin-top: 93px;
   }
 
+  .lg\:ml-6 {
+    margin-left: 1.5rem;
+  }
+
+  .lg\:ml-16 {
+    margin-left: 4rem;
+  }
+
+  .lg\:ml-28 {
+    margin-left: 7rem;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -3445,6 +3482,10 @@ label input[type]:checked ~ span.middle {
     width: 100%;
   }
 
+  .lg\:w-10 {
+    width: 2.5rem;
+  }
+
   .lg\:min-w-fit {
     min-width: -moz-fit-content;
     min-width: fit-content;
@@ -3585,6 +3626,10 @@ label input[type]:checked ~ span.middle {
     gap: 0.25rem;
   }
 
+  .lg\:gap-36 {
+    gap: 9rem;
+  }
+
   .lg\:self-start {
     align-self: flex-start;
   }
@@ -3633,6 +3678,11 @@ label input[type]:checked ~ span.middle {
   .lg\:border-negro {
     --tw-border-opacity: 1;
     border-color: rgb(27 27 27 / var(--tw-border-opacity));
+  }
+
+  .lg\:bg-white {
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   }
 
   .lg\:p-0 {
