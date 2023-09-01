@@ -619,6 +619,10 @@ p {
   position: relative;
 }
 
+.sticky {
+  position: sticky;
+}
+
 .inset-0 {
   inset: 0px;
 }
@@ -791,6 +795,10 @@ p {
 
 .z-50 {
   z-index: 50;
+}
+
+.z-20 {
+  z-index: 20;
 }
 
 .m-5 {
@@ -1100,6 +1108,18 @@ p {
 
 .mt-auto {
   margin-top: auto;
+}
+
+.mt-24 {
+  margin-top: 6rem;
+}
+
+.mt-\[93px\] {
+  margin-top: 93px;
+}
+
+.mt-\[92px\] {
+  margin-top: 92px;
 }
 
 .block {
