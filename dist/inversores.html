@@ -46,9 +46,9 @@
               <p>Valoración Inicial de la <b>oportunidad</b></p>
             </div>
 
-            <div class="lg:hidden flex flex-row gap-[20px] lg:gap-6 lg:flex-wrap overflow-x-auto overflow-y-hidden snap-x snap-mandatory mt-20 ">
+            <div id="carrusel-container" class="lg:hidden flex flex-row gap-[20px] lg:gap-6 lg:flex-wrap overflow-x-auto overflow-y-hidden snap-x snap-mandatory mt-20 ">
 
-              <div class="min-w-[260px] h-auto flex flex-col py-8 gap-5 snap-start px-6 bg-white rounded border border-black/50">
+              <div data-index="0" class="min-w-[260px] h-auto flex flex-col py-8 gap-5 snap-start px-6 bg-white rounded border border-black/50">
                 <div class="-flex flex-col gap-6 mt-4">
                   <a class=" text-[75px] font-[100] flex items-end leading-[60px]">01 
                     <img class="w-8 h-8 mt-auto" src="./assets/inversores/arrow-down-right.svg" alt="down-right">
@@ -58,7 +58,7 @@
                 <span class="w-full h-[1px] bg-black"></span>
                 <p class="text-[14px] font-[400] mt-20">En Nuovit abarcamos la cadena de valor completa, gracias a nuestras capacidades internas y a la existosa colaboración con un estable y reconocido equipo de colaboradores técnicos, legales y financieros.</p>
               </div>
-              <div class="min-w-[260px] h-auto flex flex-col py-8 gap-5 snap-start px-6 bg-white rounded border border-black/50">
+              <div data-index="1" class="min-w-[260px] h-auto flex flex-col py-8 gap-5 snap-start px-6 bg-white rounded border border-black/50">
                 <div class="-flex flex-col gap-6 mt-4">
                   <a class=" text-[75px] font-[100] flex items-end leading-[60px]">01 
                     <img class="w-8 h-8 mt-auto" src="./assets/inversores/arrow-down-right.svg" alt="down-right">
@@ -68,7 +68,7 @@
                 <span class="w-full h-[1px] bg-black"></span>
                 <p class="text-[14px] font-[400] mt-20">En Nuovit abarcamos la cadena de valor completa, gracias a nuestras capacidades internas y a la existosa colaboración con un estable y reconocido equipo de colaboradores técnicos, legales y financieros.</p>
               </div>
-              <div class="min-w-[260px] h-auto flex flex-col py-8 gap-5 snap-start px-6 bg-white rounded border border-black/50">
+              <div data-index="2" class="min-w-[260px] h-auto flex flex-col py-8 gap-5 snap-start px-6 bg-white rounded border border-black/50">
                 <div class="-flex flex-col gap-6 mt-4">
                   <a class=" text-[75px] font-[100] flex items-end leading-[60px]">01 
                     <img class="w-8 h-8 mt-auto" src="./assets/inversores/arrow-down-right.svg" alt="down-right">
@@ -81,6 +81,11 @@
               
               
             </div>
+            <div id="guias" class="flex gap-8 hover:[&>div]:cursor-pointer mx-auto pt-10">
+              <div data-index="0" class="h-3 w-3 bg-gray-300 rounded-full"></div>
+              <div data-index="1" class="h-3 w-3 bg-gray-300 rounded-full"></div>
+              <div data-index="2" class="h-3 w-3 bg-gray-300 rounded-full"></div>
+            </div>
 
           </div>
          </div>
@@ -89,6 +94,7 @@
     </div>
 
   </section>
+  
 
   <!--  CAPACIDADES” -->
   <section class="relative flex flex-col justify-center items-center w-full h-fit py-16 gap-10">
@@ -145,8 +151,8 @@
 
     <!-- mobile mode -->
     
-    <article class="lg:hidden w-[90vw] flex flex-row gap-[20px] lg:gap-6 lg:flex-wrap overflow-x-auto overflow-y-hidden snap-x snap-mandatory">
-      <div class="min-w-[313px] min-h-[510px] h-auto flex flex-col justify-end p-4 snap-start rounded border border-black/50 bg-cover bg-center" style="background-image: url(./assets/inversores/LIMONAR\ 20\ -\ interior\ 1.png);">
+    <article id="carrusel-container2" class="lg:hidden w-[90vw] flex flex-row gap-[20px] lg:gap-6 lg:flex-wrap overflow-x-auto overflow-y-hidden snap-x snap-mandatory">
+      <div data-index="0" class="min-w-[313px] min-h-[510px] h-auto flex flex-col justify-end p-4 snap-start rounded border border-black/50 bg-cover bg-center" style="background-image: url(./assets/inversores/LIMONAR\ 20\ -\ interior\ 1.png);">
          <div class="w-full">
            <div class="w-1/2 bg-white flex flex-col justify-end h-20 px-5">
             <h2 class=" lg:text-[32px] font-[300] flex flex-col w-fit relative">Planificación
@@ -167,7 +173,7 @@
          </div>
       
       </div>   
-      <div class="min-w-[313px] min-h-[510px] h-auto flex flex-col justify-end p-4 snap-start rounded border border-black/50 bg-cover bg-center" style="background-image: url(./assets/inversores/LIMONAR\ 20\ -\ interior\ 2.png);">
+      <div data-index="1" class="min-w-[313px] min-h-[510px] h-auto flex flex-col justify-end p-4 snap-start rounded border border-black/50 bg-cover bg-center" style="background-image: url(./assets/inversores/LIMONAR\ 20\ -\ interior\ 2.png);">
         <div class="w-full">
           <div class="w-1/2 bg-white flex flex-col justify-end h-20 px-5">
            <h2 class=" lg:text-[32px] font-[300] flex flex-col w-fit relative">Planificación
@@ -186,11 +192,16 @@
           </div>
             
         </div>
+        
      
      </div>  
+     
       
     </article>
-
+    <div id="guias2" class="flex gap-8 hover:[&>div]:cursor-pointer pt-10">
+      <div data-index="0" class="h-3 w-3 bg-gray-300 rounded-full"></div>
+      <div data-index="1" class="h-3 w-3 bg-gray-300 rounded-full"></div>
+     </div>
     
   </section>
 
@@ -246,8 +257,8 @@
 
     <!-- mobile mode -->
     
-    <article class="lg:hidden w-[90vw] flex flex-row gap-[20px] lg:gap-6 lg:flex-wrap overflow-x-auto overflow-y-hidden snap-x snap-mandatory">
-      <div class="min-w-[313px] min-h-[510px] h-auto flex flex-col justify-end p-4 snap-start rounded border border-black/50 bg-cover bg-center" style="background-image: url(./assets/inversores/01_Alzado.png);">
+    <article id="carrusel-container3" class="lg:hidden w-[90vw] flex flex-row gap-[20px] lg:gap-6 lg:flex-wrap overflow-x-auto overflow-y-hidden snap-x snap-mandatory">
+      <div data-index="0" class="min-w-[313px] min-h-[510px] h-auto flex flex-col justify-end p-4 snap-start rounded border border-black/50 bg-cover bg-center" style="background-image: url(./assets/inversores/01_Alzado.png);">
          <div class="w-full">
            <div class="w-1/2 bg-white flex flex-col justify-end h-20 px-5">
             <h2 class=" lg:text-[32px] font-[300] flex flex-col w-fit relative">Primer
@@ -267,7 +278,7 @@
          </div>
       
       </div>   
-      <div class="min-w-[313px] min-h-[510px] h-auto flex flex-col justify-end p-4 snap-start rounded border border-black/50 bg-cover bg-center" style="background-image: url(./assets/inversores/LIMONAR\ 20\ -\ interior\ 2.png);">
+      <div data-index="1" class="min-w-[313px] min-h-[510px] h-auto flex flex-col justify-end p-4 snap-start rounded border border-black/50 bg-cover bg-center" style="background-image: url(./assets/inversores/LIMONAR\ 20\ -\ interior\ 2.png);">
         <div class="w-full">
           <div class="w-1/2 bg-white flex flex-col justify-end h-20 px-5">
            <h2 class=" lg:text-[32px] font-[300] flex flex-col w-fit relative">Planificación
@@ -290,7 +301,10 @@
      </div>  
       
     </article>
-
+    <div id="guias3" class="flex gap-8 hover:[&>div]:cursor-pointer pt-10">
+      <div data-index="0" class="h-3 w-3 bg-gray-300 rounded-full"></div>
+      <div data-index="1" class="h-3 w-3 bg-gray-300 rounded-full"></div>
+     </div>
     
   </section>
 
@@ -360,9 +374,9 @@
         </h2>
       </div>
 
-      <article class="flex gap-6 snap-x snap-mandatory w-[390px] lg:w-full overflow-x-auto">
+      <article id="carrusel-container4" class="flex gap-6 snap-x snap-mandatory w-full lg:w-full overflow-x-auto">
 
-        <div style="background-image: url(./assets/inversores/01_Alzado\ exterior\ 22.png);"
+        <div data-index="0" style="background-image: url(./assets/inversores/01_Alzado\ exterior\ 22.png);"
         class="bg-cover bg-center bg-no-repeat w-[380px] lg:w-[410px] rounded-md min-w-fit h-[599px] flex flex-col items-start justify-between snap-start">
         <div class="max-w-52 w-fit bg-negro bg-opacity-70 text-[14px] text-white font-[700] m-4 rounded-[8px] px-4 py-[6px]">Nueva promoción</div>
         <div class="w-[95%] m-2 flex items-end rounded-b h-60 lg:h-52">
@@ -419,7 +433,7 @@
           
         </div>
       </div>
-      <div style="background-image: url(./assets/inversores/01_Alzado\ exterior\ 3.png);"
+      <div data-index="1" style="background-image: url(./assets/inversores/01_Alzado\ exterior\ 3.png);"
         class="bg-cover bg-center bg-no-repeat w-[380px] lg:w-[410px] rounded-md min-w-fit h-[599px] flex flex-col items-start justify-between snap-start">
         <div class="max-w-52 w-fit bg-negro bg-opacity-70 text-[14px] text-white font-[700] m-4 rounded-[8px] px-4 py-[6px]">Nueva promoción</div>
         <div class="w-[95%] m-2 flex items-end rounded-b h-60 lg:h-52">
@@ -476,7 +490,7 @@
           
         </div>
       </div>
-      <div style="background-image: url(./assets/inversores/01_Alzado\ exterior\ 4.png);"
+      <div data-index="2" style="background-image: url(./assets/inversores/01_Alzado\ exterior\ 4.png);"
         class="bg-cover bg-center bg-no-repeat w-[380px] lg:w-[410px] rounded-md min-w-fit h-[599px] flex flex-col items-start justify-between snap-start">
         <div class="max-w-52 w-fit bg-negro bg-opacity-70 text-[14px] text-white font-[700] m-4 rounded-[8px] px-4 py-[6px]">Nueva promoción</div>
         <div class="w-[95%] m-2 flex items-end rounded-b h-60 lg:h-52">
@@ -535,8 +549,15 @@
       </div>
 
       </article>
+
+      <div id="guias4" class="flex gap-8 hover:[&>div]:cursor-pointer mt-10 w-fit mx-auto">
+        <div data-index="0" class="h-3 w-3 bg-gray-300 rounded-full"></div>
+        <div data-index="1" class="h-3 w-3 bg-gray-300 rounded-full"></div>
+        <div data-index="2" class="h-3 w-3 bg-gray-300 rounded-full"></div>
+      </div>
+
       <button 
-        class="mt-10 relative w-fit mx-auto flex items-center gap-1 rounded py-2 px-[18px] text-[12px] font-medium text-white bg-negro">
+        class="hidden mt-10 relative w-fit mx-auto lg:flex items-center gap-1 rounded py-2 px-[18px] text-[12px] font-medium text-white bg-negro">
        
         Planificación Urbanística
         <img class="fill-white" src="./assets/inversores/arrow-down-right.svg" alt="arrow">
@@ -546,7 +567,7 @@
 
      </section>
 
-    
+    <script src="./js/inversores-carousel.js"></script>
 
 </body>
 
