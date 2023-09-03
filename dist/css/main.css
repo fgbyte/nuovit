@@ -781,6 +781,26 @@ p {
   top: 55%;
 }
 
+.left-1 {
+  left: 0.25rem;
+}
+
+.left-\[1px\] {
+  left: 1px;
+}
+
+.left-\[1\.5px\] {
+  left: 1.5px;
+}
+
+.left-\[\.5px\] {
+  left: .5px;
+}
+
+.left-\[\.4px\] {
+  left: .4px;
+}
+
 .-z-10 {
   z-index: -10;
 }
@@ -1301,12 +1321,20 @@ p {
   height: 100%;
 }
 
+.h-\[425px\] {
+  height: 425px;
+}
+
 .max-h-\[200px\] {
   max-height: 200px;
 }
 
 .max-h-\[813px\] {
   max-height: 813px;
+}
+
+.max-h-\[300px\] {
+  max-height: 300px;
 }
 
 .min-h-\[290px\] {
@@ -1323,6 +1351,14 @@ p {
 
 .min-h-\[813px\] {
   min-height: 813px;
+}
+
+.min-h-\[\] {
+  min-height: ;
+}
+
+.min-h-\[425px\] {
+  min-height: 425px;
 }
 
 .w-2 {
@@ -1510,6 +1546,14 @@ p {
   width: 100vw;
 }
 
+.w-\[90\%\] {
+  width: 90%;
+}
+
+.w-\[93\%\] {
+  width: 93%;
+}
+
 .min-w-\[130px\] {
   min-width: 130px;
 }
@@ -1541,6 +1585,10 @@ p {
 
 .min-w-full {
   min-width: 100%;
+}
+
+.min-w-\[343px\] {
+  min-width: 343px;
 }
 
 .max-w-6xl {
@@ -1597,6 +1645,10 @@ p {
 
 .max-w-xs {
   max-width: 20rem;
+}
+
+.max-w-\[343px\] {
+  max-width: 343px;
 }
 
 .flex-1 {
@@ -1924,6 +1976,10 @@ p {
   overflow-x: auto;
 }
 
+.overflow-y-auto {
+  overflow-y: auto;
+}
+
 .overflow-y-hidden {
   overflow-y: hidden;
 }
@@ -2111,6 +2167,15 @@ p {
 .bg-yellow {
   --tw-bg-opacity: 1;
   background-color: rgb(234 195 85 / var(--tw-bg-opacity));
+}
+
+.bg-\[\] {
+  background-color: ;
+}
+
+.bg-\[\#F8F5F0\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 245 240 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-70 {
@@ -2339,6 +2404,11 @@ p {
 .py-\[8px\] {
   padding-top: 8px;
   padding-bottom: 8px;
+}
+
+.px-9 {
+  padding-left: 2.25rem;
+  padding-right: 2.25rem;
 }
 
 .pb-0 {
@@ -3066,6 +3136,11 @@ label input[type]:checked ~ span.middle {
   color: rgb(234 195 85 / var(--tw-text-opacity));
 }
 
+.hover\:text-gray-600:hover {
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
+}
+
 .hover\:underline:hover {
   text-decoration-line: underline;
 }
@@ -3095,8 +3170,22 @@ label input[type]:checked ~ span.middle {
   outline-offset: 2px;
 }
 
+.group[open] .group-open\:hidden {
+  display: none;
+}
+
 .group[open] .group-open\:-rotate-180 {
   --tw-rotate: -180deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.group[open] .group-open\:-rotate-90 {
+  --tw-rotate: -90deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.group[open] .group-open\:rotate-90 {
+  --tw-rotate: 90deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -3539,9 +3628,25 @@ label input[type]:checked ~ span.middle {
     width: 100%;
   }
 
+  .lg\:w-\[690px\] {
+    width: 690px;
+  }
+
+  .lg\:w-\[60\%\] {
+    width: 60%;
+  }
+
   .lg\:min-w-fit {
     min-width: -moz-fit-content;
     min-width: fit-content;
+  }
+
+  .lg\:min-w-\[\] {
+    min-width: ;
+  }
+
+  .lg\:min-w-\[690px\] {
+    min-width: 690px;
   }
 
   .lg\:max-w-7xl {
@@ -3689,6 +3794,10 @@ label input[type]:checked ~ span.middle {
 
   .lg\:gap-\[76px\] {
     gap: 76px;
+  }
+
+  .lg\:gap-\[180px\] {
+    gap: 180px;
   }
 
   .lg\:self-start {
