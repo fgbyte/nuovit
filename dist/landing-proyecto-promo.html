@@ -526,7 +526,7 @@
     </section>
 
     <!-- BAKPAK Section -->
-    <section>
+    <section class="relative">
         <!-- sm -->
         <div class="lg:hidden">
             <img class="w-full" src="./assets/img/landing-proyecto-promo-bakpak.jpg" alt="Architects">
@@ -553,7 +553,7 @@
                 <!-- right card -->
                 <div class="-ml-[8%] mt-16 flex flex-col w-[50%]">
                     <h2 class="text-[64px] font-[300] self-start ml-16">BAKPAK
-                        <span class="block font-secondary self-end ml-16 bold text-[40px]">Architects</>
+                        <span class="block font-secondary self-end ml-16 bold text-[40px]">Architects</span>
                     </h2>
                     <!-- card -->
                     <div class="mt-10 w-full">
@@ -597,6 +597,9 @@
             <hr class="hidden absolute bottom-20 w-[80%] h-[2px] bg-black lg:block">
 
         </div>
+        <div class="hidden lg:block lg:absolute right-0 top-0">
+            <img src="./assets/icons/semicircle.svg" alt="">
+        </div>
     </section>
 
     <!-- Quienes Somos Section -->
@@ -632,6 +635,52 @@
             TODO:Flecha agrupada
                 <img  src="" alt="">
 
+        </div>
+    </section>
+
+    <!-- Nuestros Clientes Section -->
+    <section class="px-4 py-8 flex flex-col gap-8 lg:gap-10 lg:items-center">
+        <div class="flex flex-col gap-4 lg:items-center">
+            <h3 class="text-[12px] font-[300] uppercase leading-[14.5px]">Nuestros Clientes Opinan </h3>
+            <h2 class="text-[32px] font-[300] self-start">¿Por qué han
+                <span class="block font-secondary self-end ml-20 bold">elegido Icon?</span>
+            </h2>
+        </div>
+        <!-- carousel -->
+        <div id="carousel" class="flex flex-col lg:mx-16">
+            <div class="flex flex-row overflow-x-auto gap-4 py-2 [&>div]:lg:border-none [&>div]:lg:relative [&>div>img]:lg:absolute [&>div>img]:lg:top-0 [&>div>img]:lg:-z-10 [&>div>p]:lg:ml-10">
+                <!-- card -->
+                <div class="p-8 border-2 min-w-[253px] border-black rounded-md">
+                    <img src="./assets/icons/blockquotes.svg" alt="blockquote">
+                    <p class="text-[16px] mt-2">Muy profesional en la toma de datos y un muy buen reportaje fotográfico. En todo momento han estado pendientes de las ofertas recibidas y asesorando con buen criterio</p>
+                    <p class="text-[16px] mt-4 font-[600]">
+                        Lora Smith
+                    </p>
+                        
+                </div>
+                <div class="p-8 border-2 min-w-[253px] border-black rounded-md">
+                    <img src="./assets/icons/blockquotes.svg" alt="blockquote">
+                    <p class="text-[16px] mt-2">En especial mi enhorabuena a Marga Lasa por su trabajo eres una gran persona y excelente profesional.Mil gracias por tu acompañamiento en el proceso y seguimiento del mismo.</p>
+                    <p class="text-[16px] mt-4 font-[600]">
+                        Miriam Gimenez
+                    </p>
+                </div>
+                <div class="p-8 border-2 min-w-[253px] border-black rounded-md">
+                    <img src="./assets/icons/blockquotes.svg" alt="blockquote">
+                    <p class="text-[16px] mt-2">Estamos encantados
+                        con el trato, como nos
+                        ha explicado todo, sus consejos. No ha dudado en enseñar la casa, cuando el posible comprador lo requería</p>
+                    <p class="text-[16px] mt-4 font-[600]">
+                        Miriam Gimenez
+                    </p>
+                </div>
+            </div>
+    
+            <div id="guias" class="flex gap-8 hover:[&>div]:cursor-pointer max-h-[813px] pt-10 self-center lg:hidden">
+                <div data-index="0" class="h-3 w-3 bg-gray-300 rounded-full"></div>
+                <div data-index="1" class="h-3 w-3 bg-gray-300 rounded-full"></div>
+                <div data-index="2" class="h-3 w-3 bg-gray-300 rounded-full"></div>
+            </div>
         </div>
     </section>
 

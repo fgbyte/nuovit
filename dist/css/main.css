@@ -781,10 +781,6 @@ p {
   top: 55%;
 }
 
-.top-\[\] {
-  top: ;
-}
-
 .-z-10 {
   z-index: -10;
 }
@@ -934,6 +930,10 @@ p {
 
 .ml-16 {
   margin-left: 4rem;
+}
+
+.ml-20 {
+  margin-left: 5rem;
 }
 
 .ml-3 {
@@ -1301,20 +1301,16 @@ p {
   height: 100%;
 }
 
-.h-\[253\] {
-  height: 253;
-}
-
-.h-\[253px\] {
-  height: 253px;
-}
-
 .max-h-\[200px\] {
   max-height: 200px;
 }
 
 .max-h-\[813px\] {
   max-height: 813px;
+}
+
+.min-h-\[290px\] {
+  min-height: 290px;
 }
 
 .min-h-\[600px\] {
@@ -1514,14 +1510,6 @@ p {
   width: 100vw;
 }
 
-.w-\[253\] {
-  width: 253;
-}
-
-.w-\[253px\] {
-  width: 253px;
-}
-
 .min-w-\[130px\] {
   min-width: 130px;
 }
@@ -1532,6 +1520,10 @@ p {
 
 .min-w-\[247px\] {
   min-width: 247px;
+}
+
+.min-w-\[253px\] {
+  min-width: 253px;
 }
 
 .min-w-\[91\%\] {
@@ -2631,6 +2623,10 @@ p {
   line-height: 2.25rem;
 }
 
+.leading-\[14\.5px\] {
+  line-height: 14.5px;
+}
+
 .leading-\[150\%\] {
   line-height: 150%;
 }
@@ -3231,6 +3227,11 @@ label input[type]:checked ~ span.middle {
     margin-right: 0px;
   }
 
+  .lg\:mx-16 {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+
   .lg\:mx-\[18\%\] {
     margin-left: 18%;
     margin-right: 18%;
@@ -3254,11 +3255,6 @@ label input[type]:checked ~ span.middle {
   .lg\:my-\[50px\] {
     margin-top: 50px;
     margin-bottom: 50px;
-  }
-
-  .lg\:mx-\[180px\] {
-    margin-left: 180px;
-    margin-right: 180px;
   }
 
   .lg\:-mt-0 {
@@ -3560,28 +3556,16 @@ label input[type]:checked ~ span.middle {
     max-width: 400px;
   }
 
+  .lg\:max-w-\[50\%\] {
+    max-width: 50%;
+  }
+
   .lg\:max-w-none {
     max-width: none;
   }
 
   .lg\:max-w-xl {
     max-width: 36rem;
-  }
-
-  .lg\:max-w-\[\] {
-    max-width: ;
-  }
-
-  .lg\:max-w-\[50\%\] {
-    max-width: 50%;
-  }
-
-  .lg\:max-w-\[70\%\] {
-    max-width: 70%;
-  }
-
-  .lg\:max-w-\[60\%\] {
-    max-width: 60%;
   }
 
   .lg\:flex-1 {
@@ -4008,6 +3992,52 @@ label input[type]:checked ~ span.middle {
   width: 1rem;
 }
 
+@media (min-width: 976px) {
+  .\[\&\>div\>img\]\:lg\:absolute>div>img {
+    position: absolute;
+  }
+
+  .\[\&\>div\>img\]\:lg\:-left-1>div>img {
+    left: -0.25rem;
+  }
+
+  .\[\&\>div\>img\]\:lg\:top-0>div>img {
+    top: 0px;
+  }
+
+  .\[\&\>div\>img\]\:lg\:-z-10>div>img {
+    z-index: -10;
+  }
+
+  .\[\&\>div\>p\]\:lg\:-left-1>div>p {
+    left: -0.25rem;
+  }
+
+  .\[\&\>div\>p\]\:lg\:mr-1>div>p {
+    margin-right: 0.25rem;
+  }
+
+  .\[\&\>div\>p\]\:lg\:ml-1>div>p {
+    margin-left: 0.25rem;
+  }
+
+  .\[\&\>div\>p\]\:lg\:ml-2>div>p {
+    margin-left: 0.5rem;
+  }
+
+  .\[\&\>div\>p\]\:lg\:ml-4>div>p {
+    margin-left: 1rem;
+  }
+
+  .\[\&\>div\>p\]\:lg\:ml-6>div>p {
+    margin-left: 1.5rem;
+  }
+
+  .\[\&\>div\>p\]\:lg\:ml-10>div>p {
+    margin-left: 2.5rem;
+  }
+}
+
 .\[\&\>div\]\:flex>div {
   display: flex;
 }
@@ -4033,8 +4063,16 @@ label input[type]:checked ~ span.middle {
 }
 
 @media (min-width: 976px) {
+  .\[\&\>div\]\:lg\:relative>div {
+    position: relative;
+  }
+
   .lg\:\[\&\>div\]\:gap-\[67px\]>div {
     gap: 67px;
+  }
+
+  .\[\&\>div\]\:lg\:border-none>div {
+    border-style: none;
   }
 }
 
