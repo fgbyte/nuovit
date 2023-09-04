@@ -4100,6 +4100,10 @@ label input[type]:checked ~ span.middle {
   .lg\:italic {
     font-style: italic;
   }
+
+  .lg\:text-\[\] {
+    color: ;
+  }
 }
 
 @media (min-width: 1250px) {
