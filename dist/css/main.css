@@ -1074,6 +1074,10 @@ p {
   display: grid;
 }
 
+.contents {
+  display: contents;
+}
+
 .hidden {
   display: none;
 }
@@ -2910,6 +2914,10 @@ label input[type]:checked ~ span.middle {
   border: 2px solid rgb(255, 255, 255);
 }
 
+.bg-gray-400{
+  background-color: #9ca3af;
+}
+
 @media (min-width: 976px) {
   .lg\:contenido-lg {
     margin: 0 2.1875rem;
@@ -3420,6 +3428,10 @@ label input[type]:checked ~ span.middle {
     max-width: 208px;
   }
 
+  .lg\:max-w-\[301px\] {
+    max-width: 301px;
+  }
+
   .lg\:max-w-\[400px\] {
     max-width: 400px;
   }
@@ -3430,10 +3442,6 @@ label input[type]:checked ~ span.middle {
 
   .lg\:max-w-xl {
     max-width: 36rem;
-  }
-
-  .lg\:max-w-\[301px\] {
-    max-width: 301px;
   }
 
   .lg\:flex-1 {
@@ -3856,6 +3864,10 @@ label input[type]:checked ~ span.middle {
   width: 1.5rem;
 }
 
+.\[\&\>img\]\:cursor-pointer>img {
+  cursor: pointer;
+}
+
 .\[\&\>p\]\:text-\[12px\]>p {
   font-size: 12px;
 }
@@ -3863,4 +3875,3 @@ label input[type]:checked ~ span.middle {
 .\[\&_summary\:\:-webkit-details-marker\]\:hidden summary::-webkit-details-marker {
   display: none;
 }
-
