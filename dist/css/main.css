@@ -3932,6 +3932,10 @@ label input[type]:checked ~ span.middle {
     gap: 2.5rem;
   }
 
+  .lg\:gap-11 {
+    gap: 2.75rem;
+  }
+
   .lg\:gap-12 {
     gap: 3rem;
   }
@@ -3990,10 +3994,6 @@ label input[type]:checked ~ span.middle {
 
   .lg\:gap-\[76px\] {
     gap: 76px;
-  }
-
-  .lg\:gap-11 {
-    gap: 2.75rem;
   }
 
   .lg\:self-start {
