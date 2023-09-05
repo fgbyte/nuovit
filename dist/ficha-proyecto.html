@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing</title>
+    <title>Ficha del Proyecto</title>
     <link rel="stylesheet" href="./css/main.css">
     <!-- Google Fonts -->
     <style>
@@ -125,12 +125,33 @@
     </section>
 
     <!-- Carousel Section -->
-    <section class="ml-4 mt-7">
-        TODO: CAROUSEL
+    <section class="px-4 py-7">
+        <div class="mx-auto mb-4 hidden lg:flex lg:justify-between lg:px-48 [&>img]:cursor-pointer">
+            <img src="./assets/inversores/Group 751.svg" alt="Group">
+            <img src="./assets/inversores/Group 755.svg" alt="Group">
+        </div>
+        <div class="relative flex flex-col items-center">
+            <article id="carrusel-container" class="flex overflow-x-auto gap-4">
+                <img data-index="0" class="w-[605px] h-auto" src="./assets/img/ficha-proyecto-carousel.jpg"
+                    alt="pagina">
+                <img data-index="1" class="w-[605px] h-auto"
+                    src="./assets/img/ficha-proyecto-carousel.jpg" alt=" pagina">
+                <img data-index="2" class="w-[605px] h-auto" src="./assets/img/ficha-proyecto-carousel.jpg"
+                    alt="pagina">
+                <img data-index="3" class="w-[605px] h-auto" src="./assets/img/ficha-proyecto-carousel.jpg"
+                    alt="pagina">
+            </article>
+            <div id="guias" class="flex gap-8 hover:[&>div]:cursor-pointer max-h-[813px] pt-10 lg:hidden">
+                <div data-index="0" class="h-3 w-3 bg-gray-300 rounded-full"></div>
+                <div data-index="1" class="h-3 w-3 bg-gray-300 rounded-full"></div>
+                <div data-index="2" class="h-3 w-3 bg-gray-300 rounded-full"></div>
+                <div data-index="3" class="h-3 w-3 bg-gray-300 rounded-full"></div>
+            </div>
+        </div>
     </section>
 
     <!-- Icons Section -->
-    <section class="mx-4 mt-7 flex flex-wrap justify-center items-center gap-4 lg:mx-[210px] lg:flex-nowrap">
+    <section class="mx-4 my-4 flex flex-wrap justify-center items-center gap-4 lg:mx-[210px] lg:flex-nowrap">
         <div id="icons-card" class="flex flex-col gap-3 items-center  mb-2">
             <div class="flex flex-col gap-3 items-center border-b-2 border-black w-[160px]">
                 <i><img src="./assets/icons/yellow-circle-marker.svg" alt=""></i>
