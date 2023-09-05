@@ -166,8 +166,26 @@
 
     <!-- Carousel Section -->
     <section class="ml-4 mt-7">
-        TODO: CAROUSEL
+        TODO: CAROUSEL TESTING EMBLACAROUSEL
+        <div class="embla h-20">
+            <div class="embla__container">
+                <div class="embla__slide">Slide 1</div>
+                <div class="embla__slide">Slide 2</div>
+                <div class="embla__slide">Slide 3</div>
+            </div>
+        </div>
+
+        <!-- SCRIPTS CDN -->
+        <script src="https://unpkg.com/embla-carousel/embla-carousel.umd.js"></script>
+        <script type="text/javascript">
+            var emblaNode = document.querySelector('.embla')
+            var options = { loop: false }
+
+            var embla = EmblaCarousel(emblaNode, options)
+        </script>
     </section>
+
+
 
     <!-- Icons Section -->
     <section class="mx-4 mt-7 flex flex-wrap justify-center items-center gap-4 lg:mx-[210px] lg:flex-nowrap">
