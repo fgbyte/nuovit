@@ -503,6 +503,21 @@ p {
   left: calc(50% - 155px);
 }
 
+/* EMBLA CAOUSEL */
+
+.embla {
+  overflow: hidden;
+}
+
+.embla__container {
+  display: flex;
+}
+
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -1158,6 +1173,10 @@ p {
 
 .mt-\[88px\] {
   margin-top: 88px;
+}
+
+.mt-\[89px\] {
+  margin-top: 89px;
 }
 
 .mt-\[92px\] {
@@ -3610,6 +3629,10 @@ label input[type]:checked ~ span.middle {
     margin-top: 62px;
   }
 
+  .lg\:mt-\[90px\] {
+    margin-top: 90px;
+  }
+
   .lg\:mt-\[93px\] {
     margin-top: 93px;
   }
@@ -3930,6 +3953,10 @@ label input[type]:checked ~ span.middle {
 
   .lg\:gap-10 {
     gap: 2.5rem;
+  }
+
+  .lg\:gap-11 {
+    gap: 2.75rem;
   }
 
   .lg\:gap-12 {
@@ -4256,6 +4283,10 @@ label input[type]:checked ~ span.middle {
 
   .lg\:text-\[55px\] {
     font-size: 55px;
+  }
+
+  .lg\:text-\[64px\] {
+    font-size: 64px;
   }
 
   .lg\:font-\[400\] {
