@@ -1148,40 +1148,16 @@ p {
   margin-top: 88px;
 }
 
+.mt-\[89px\] {
+  margin-top: 89px;
+}
+
 .mt-\[92px\] {
   margin-top: 92px;
 }
 
 .mt-auto {
   margin-top: auto;
-}
-
-.mt-\[180px\] {
-  margin-top: 180px;
-}
-
-.mt-\[\] {
-  margin-top: ;
-}
-
-.mt-\[82px\] {
-  margin-top: 82px;
-}
-
-.mt-\[89px\] {
-  margin-top: 89px;
-}
-
-.mt-\[90px\] {
-  margin-top: 90px;
-}
-
-.mt-\[99\.5px\] {
-  margin-top: 99.5px;
-}
-
-.mt-\[89\.5px\] {
-  margin-top: 89.5px;
 }
 
 .block {
@@ -2682,10 +2658,6 @@ p {
   padding-top: 86px;
 }
 
-.pt-\[89\.5px\] {
-  padding-top: 89.5px;
-}
-
 .text-center {
   text-align: center;
 }
@@ -3634,16 +3606,12 @@ label input[type]:checked ~ span.middle {
     margin-top: 62px;
   }
 
-  .lg\:mt-\[93px\] {
-    margin-top: 93px;
-  }
-
-  .lg\:mt-\[92px\] {
-    margin-top: 92px;
-  }
-
   .lg\:mt-\[90px\] {
     margin-top: 90px;
+  }
+
+  .lg\:mt-\[93px\] {
+    margin-top: 93px;
   }
 
   .lg\:block {
@@ -4024,6 +3992,10 @@ label input[type]:checked ~ span.middle {
     gap: 76px;
   }
 
+  .lg\:gap-11 {
+    gap: 2.75rem;
+  }
+
   .lg\:self-start {
     align-self: flex-start;
   }
@@ -4288,6 +4260,10 @@ label input[type]:checked ~ span.middle {
 
   .lg\:text-\[55px\] {
     font-size: 55px;
+  }
+
+  .lg\:text-\[64px\] {
+    font-size: 64px;
   }
 
   .lg\:font-\[400\] {
