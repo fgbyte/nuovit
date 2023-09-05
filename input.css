@@ -282,3 +282,6 @@ label input[type]:checked ~ span.middle {
   border: 2px solid rgb(255, 255, 255);
 }
 
+.bg-gray-400{
+  background-color: #9ca3af;
+}
