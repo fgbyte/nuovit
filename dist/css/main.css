@@ -1156,6 +1156,34 @@ p {
   margin-top: auto;
 }
 
+.mt-\[180px\] {
+  margin-top: 180px;
+}
+
+.mt-\[\] {
+  margin-top: ;
+}
+
+.mt-\[82px\] {
+  margin-top: 82px;
+}
+
+.mt-\[89px\] {
+  margin-top: 89px;
+}
+
+.mt-\[90px\] {
+  margin-top: 90px;
+}
+
+.mt-\[99\.5px\] {
+  margin-top: 99.5px;
+}
+
+.mt-\[89\.5px\] {
+  margin-top: 89.5px;
+}
+
 .block {
   display: block;
 }
@@ -2654,6 +2682,10 @@ p {
   padding-top: 86px;
 }
 
+.pt-\[89\.5px\] {
+  padding-top: 89.5px;
+}
+
 .text-center {
   text-align: center;
 }
@@ -3604,6 +3636,14 @@ label input[type]:checked ~ span.middle {
 
   .lg\:mt-\[93px\] {
     margin-top: 93px;
+  }
+
+  .lg\:mt-\[92px\] {
+    margin-top: 92px;
+  }
+
+  .lg\:mt-\[90px\] {
+    margin-top: 90px;
   }
 
   .lg\:block {

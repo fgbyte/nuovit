@@ -53,70 +53,30 @@
             </div>
         </nav>
     </header>
-    <!-- SUBNAV -->
-    <nav class="hidden bg-sand mt-[92px] lg:block">
-        <div class="max-w-screen-xl px-4 py-6 mx-auto">
-            <div class="flex items-center justify-center">
-                <ul class="flex flex-row font-medium mt-0 mr-6 space-x-8 text-sm">
-                    <li>
-                        <a href="#" class="text-gray-900 flex items-center gap-2 hover:underline" aria-current="page">
-                            <i>
-                                <img src="./assets/icons/map-pin.svg" alt="">
-                            </i>
-                            <p class="text-[16px] font-[400] leading-[24px]">Ubicación y alrededores</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="text-gray-900 flex items-center gap-2 hover:underline">
-                            <i>
-                                <img src="./assets/icons/carbon_plan.svg" alt="">
-                            </i>
-                            <p class="text-[16px] font-[400] leading-[24px]">El proyecto</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="text-gray-900 flex items-center gap-2 hover:underline">
-                            <i>
-                                <img src="./assets/icons/viviendas.svg" alt="">
-                            </i>
-                            <p class="text-[16px] font-[400] leading-[24px]">Viviendas</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="text-gray-900 flex items-center gap-2 hover:underline">
-                            <i>
-                                <img src="./assets/icons/eficiencia.svg" alt="">
-                            </i>
-                            <p class="text-[16px] font-[400] leading-[24px]">Eficiencia</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="text-gray-900 flex items-center gap-2 hover:underline">
-                            <i>
-                                <img src="./assets/icons/nuovit-logo-simple 1.svg" alt="">
-                            </i>
-                            <p class="text-[16px] font-[400] leading-[24px]">Quiénes somos</p>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+
 
     <!-- HERO -->
-    <section class="relative mt-[88px] lg:mt-0" id="hero">
+    <section class="relative mt-[89px] lg:mt-[90px]" id="hero">
         <!-- Gradiente -->
-        <div class="absolute inset-0 h-3 w-full py-16 gradientdown z-10 lg:hidden"></div>
+        <div class="absolute inset-0 h-3 w-full py-16 gradientdown z-10"></div>
         <!-- hero content -->
         <div class="relative h-[100vh] w-full lg:bg-cover bg-landing-proyecto-promo-hero">
-            <!-- NAVBAR HOME MOBILE-ONLY -->
-            <div class="lg:hidden">Navbar</div>
+            <!-- NAVBAR HOME -->
+            <div class="">TODO:Navbar Home</div>
             <div class="absolute bottom-3 mx-auto px-4 flex flex-col w-[100%] lg:bottom-10 lg:px-[34px]">
                 <div class="px-3 py-4 bg-sand w-[74%] h-[165px] lg:px-10 lg:py-6 lg:w-[42%]">
                     <div class="flex flex-col gap-2">
-                        <span class="w-fit flex gap-1 rounded-md p-1 text-[12px] font-medium text-black bg-[#EAC355]">
-                            En construcción
-                        </span>
+                        <div class="flex gap-8">
+                            <span
+                                class="w-fit flex gap-1 rounded-md p-1 text-[12px] font-medium text-black bg-[#EAC355]">
+                                En construcción
+                            </span>
+                            <span
+                                class="hidden w-fit lg:flex gap-1 rounded-md p-1 text-[12px] font-medium text-black bg-[#EAC355]">
+                                70% vendida
+                            </span>
+
+                        </div>
                         <div class="flex flex-col gap-1">
                             <p class="text-[20px] font-bold whitespace-nowrap">Icon<span class="font-[400]">
                                     Limonar</span>
@@ -198,29 +158,6 @@
                 <p class="mb-3">TIPOLOGÍA</p>
             </div>
             <p>Plurifamiliar</p>
-        </div>
-    </section>
-
-    <!-- Map Section -->
-    <section class="relative mt-7 h-[100vh] w-full lg:h-[80vh]">
-        <div id="map" class="w-full h-full bg-red-300">
-        </div>
-        <div id="map-card-topMarked"
-            class="absolute flex flex-col items-center justify-end z-100 bg-white w-[180px] h-[270px] right-[6%] top-[22%] lg:map-card-position__lg-landing">
-            <i class="absolute top-0 -mt-4">
-                <img src="./assets/icons/black-marker.svg" alt="">
-            </i>
-            <div class="flex flex-col justify-end self-end shadow-s200">
-                <div class="p-2 self-end flex flex-col gap-1">
-                    <p class="text-[20px] font-bold whitespace-nowrap">Icon<span class="font-[400]"> Limonar</span>
-                    </p>
-                    <p class="pl-1 text-[13px] font-light">C/ Marqués de Larios, 29005
-                        Málaga, España</p>
-                </div>
-                <div id="map-card-img">
-                    <img src="./assets/img/map-card-1.jpg" class="w-[100%]" alt="">
-                </div>
-            </div>
         </div>
     </section>
 
@@ -421,8 +358,31 @@
         </div>
     </section>
 
+    <!-- Map Section -->
+    <section class="relative mt-7 h-[100vh] w-full lg:h-[80vh]">
+        <div id="map" class="w-full h-full bg-red-300">
+        </div>
+        <div id="map-card-topMarked"
+            class="absolute flex flex-col items-center justify-end z-100 bg-white w-[180px] h-[270px] right-[6%] top-[22%] lg:map-card-position__lg-landing">
+            <i class="absolute top-0 -mt-4">
+                <img src="./assets/icons/black-marker.svg" alt="">
+            </i>
+            <div class="flex flex-col justify-end self-end shadow-s200">
+                <div class="p-2 self-end flex flex-col gap-1">
+                    <p class="text-[20px] font-bold whitespace-nowrap">Icon<span class="font-[400]"> Limonar</span>
+                    </p>
+                    <p class="pl-1 text-[13px] font-light">C/ Marqués de Larios, 29005
+                        Málaga, España</p>
+                </div>
+                <div id="map-card-img">
+                    <img src="./assets/img/map-card-1.jpg" class="w-[100%]" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Zero Energy Section -->
-    <section class="px-4 py-8 mt-16 bg-sand flex justify-center lg:px-[180px]">
+    <section class="px-4 py-8 mt-16 flex justify-center lg:px-[180px]">
         <!-- Content -->
         <div class="lg:flex gap-16">
             <div class="lg:w-[570px]">
@@ -490,7 +450,7 @@
         </div>
     </section>
     <!-- Zero Energy Icons -->
-    <section class="px-4 py-8 bg-sand lg:px-[150px]">
+    <section class="px-4 py-8 lg:px-[150px]">
         <div class="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
             <div class="flex gap-3 items-center">
                 <img class="w-[54px]" src="./assets/icons/yellow-circle-wind.svg" alt="">
@@ -521,293 +481,12 @@
         </div>
     </section>
     <!-- Zero Energy Logos -->
-    <section class="px-4 py-8 flex justify-center bg-sand lg:px-[150px]">
+    <section class="px-4 py-8 flex justify-center lg:px-[150px]">
         <img src="./assets/icons/logos-nuovit.svg" alt="">
     </section>
 
-    <!-- BAKPAK Section -->
-    <section class="relative">
-        <!-- sm -->
-        <div class="lg:hidden">
-            <img class="w-full" src="./assets/img/landing-proyecto-promo-bakpak.jpg" alt="Architects">
-            <div class="py-7 px-4">
-                <h2 class="text-[36px] font-[300]">BAKPAK
-                    <span class="block font-secondary bold">Architects</span>
-                </h2>
-                <p class="mt-8 font-[600] text-[14px] uppercase">UNFOLDED ARCHITECTURE</p>
-                <p class="mt-2">Una promoción con magníficas calidades y acabados que cuenta con diferentes tipologías
-                    de vivienda. Arquitectura de vanguardia donde priman los espacios para compartir experiencias. La
-                    cubierta del edificio se convierte en el principal punto de encuentro donde la piscina y el solarium
-                    adquieren el matiz protagonista.</p>
-            </div>
-
-        </div>
-        <!-- lg -->
-        <div class="hidden lg:block">
-            <div class="py-9 px-48 flex justify-center w-full">
-                <!-- left card -->
-                <div class="relative w-[50%] max-w-[493px] h-full">
-                    <img class="absolute z-10 rounded-md" src="./assets/img/landing-proyecto-promo-bakpak-lg.jpg"
-                        alt="">
-                </div>
-                <!-- right card -->
-                <div class="-ml-[8%] mt-16 flex flex-col w-[50%]">
-                    <h2 class="text-[64px] font-[300] self-start ml-16">BAKPAK
-                        <span class="block font-secondary self-end ml-16 bold text-[40px]">Architects</span>
-                    </h2>
-                    <!-- card -->
-                    <div class="mt-10 w-full">
-                        <div class="bg-sand w-[80%] pt-[86px]">
-                        </div>
-                        <div>
-                            <div class=" bg-sand lg:px-16 pb-14">
-                                <div class="flex flex-col items-start md:ml-6 lg:ml-2">
-                                    <p class="text-[14px] font-[600] uppercase">UNFOLDED
-                                        <span class="block mt-2">ARCHITECTURE</span>
-                                    </p>
-                                    <p class="text-[16px] mt-10">
-                                        Una promoción con magníficas calidades y acabados que cuenta con diferentes
-                                        tipologías de vivienda. Arquitectura de vanguardia donde priman los espacios
-                                        para compartir experiencias. La cubierta del edificio se convierte en el
-                                        principal punto de encuentro donde la piscina y el solarium adquieren el matiz
-                                        protagonista.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="py-9 flex flex-col px-10 gap-12 lg:flex-row lg:justify-center lg:gap-28 lg:relative">
-            <div class="flex flex-col items-center gap-2">
-                <h4 class="text-[36px] text-center font-[300]">Banco
-                    <p class="text-[36px] font-secondary bold">Financiador</p>
-                </h4>
-                <hr class="self-cente w-full h-[2px] bg-black lg:hidden">
-                <p class="uppercase text-[14px] lg:mt-12">CAIXA BANK</p>
-            </div>
-            <div class="flex flex-col items-center gap-2">
-                <h4 class="text-[36px] text-center font-[300]">Constructora
-                    <p class="text-[36px] font-secondary bold">encargada</p>
-                </h4>
-                <hr class="self-cente w-full h-[2px] bg-black lg:hidden">
-                <p class="uppercase text-[14px] lg:mt-12">Maximos st.</p>
-            </div>
-            <hr class="hidden absolute bottom-20 w-[80%] h-[2px] bg-black lg:block">
-
-        </div>
-        <div class="hidden lg:block lg:absolute right-0 top-0">
-            <img src="./assets/icons/semicircle.svg" alt="">
-        </div>
-    </section>
-
-    <!-- Quienes Somos Section -->
-    <section
-        class="relative px-4 py-8 bg-cover bg-right flex flex-col gap-3 lg:px-[180px] lg:py-12 lg:flex-row lg:gap-14 lg:bg-cover"
-        style="background-image: url(./assets/img/landing-proyecto-promo-quienes-somos.jpg);">
-        <div class="flex flex-col gap-6 text-white lg:max-w-[50%]">
-            <h2 class="text-[36px] font-[300">
-                Quiénes
-                <span class="block font-secondary bold">Somos</span>
-            </h2>
-            <p class="text-[16px]">En Nuovit Corporate somos especialistas en gestionar activos de forma integral
-                afrontamos cada proyecto controlando todas las fases de ejecución y el correcto desarrollo en tiempo e
-                inversión.</p>
-            <hr>
-            <i>
-                <img src="./assets/icons/Nuovit_Corporate_horizontal-300x108_blanco-300x108 3.svg" alt="">
-            </i>
-        </div>
-        <div class="flex flex-col mx-auto lg:mx-0 gap-4 text-white lg:items-start">
-            <div class="flex flex-col items-start gap-3 lg:flex-row lg:items-center">
-                <p class="text-[64px]">30</p>
-                <p class="text-16px">Años promoviendo sueños</p>
-
-            </div>
-            <div class="flex flex-col items-start gap-3 lg:flex-row lg:items-center">
-                <p class="text-[64px]">6.000</p>
-                <p class="text-16px">Kg de CO2/m2 reducidos al año
-                    <span class="text-[12px] block mt-1 lg:inline">*sobre valor promedio</span>
-                </p>
-            </div>
-            <div class="flex flex-col items-start gap-3 lg:flex-row lg:items-center">
-                <p class="text-[64px]">+100</p>
-                <p class="text-16px">Proyectos <span class="lg:block">terminados</span></p>
-            </div>
-        </div>
-        <div class="hidden text-white lg:block lg:absolute right-0 top-[55%]">
-            TODO:Flecha agrupada
-            <img src="" alt="">
-
-        </div>
-    </section>
-
-    <!-- Nuestros Clientes Section -->
-    <section class="px-4 py-8 flex flex-col gap-8 lg:gap-10 lg:items-center">
-        <div class="flex flex-col gap-4 lg:items-center">
-            <h3 class="text-[12px] font-[300] uppercase leading-[14.5px]">Nuestros Clientes Opinan </h3>
-            <h2 class="text-[32px] font-[300] self-start">¿Por qué han
-                <span class="block font-secondary self-end ml-20 bold">elegido Icon?</span>
-            </h2>
-        </div>
-        <!-- carousel -->
-        <div id="carousel" class="flex flex-col lg:mx-16">
-            <div
-                class="flex flex-row overflow-x-auto gap-4 py-2 [&>div]:lg:border-none [&>div]:lg:relative [&>div>img]:lg:absolute [&>div>img]:lg:top-0 [&>div>img]:lg:-z-10 [&>div>p]:lg:ml-10">
-                <!-- card -->
-                <div class="p-8 border-2 min-w-[253px] border-black rounded-md">
-                    <img src="./assets/icons/blockquotes.svg" alt="blockquote">
-                    <p class="text-[16px] mt-2">Muy profesional en la toma de datos y un muy buen reportaje fotográfico.
-                        En todo momento han estado pendientes de las ofertas recibidas y asesorando con buen criterio
-                    </p>
-                    <p class="text-[16px] mt-4 font-[600]">
-                        Lora Smith
-                    </p>
-
-                </div>
-                <div class="p-8 border-2 min-w-[253px] border-black rounded-md">
-                    <img src="./assets/icons/blockquotes.svg" alt="blockquote">
-                    <p class="text-[16px] mt-2">En especial mi enhorabuena a Marga Lasa por su trabajo eres una gran
-                        persona y excelente profesional.Mil gracias por tu acompañamiento en el proceso y seguimiento
-                        del mismo.</p>
-                    <p class="text-[16px] mt-4 font-[600]">
-                        Miriam Gimenez
-                    </p>
-                </div>
-                <div class="p-8 border-2 min-w-[253px] border-black rounded-md">
-                    <img src="./assets/icons/blockquotes.svg" alt="blockquote">
-                    <p class="text-[16px] mt-2">Estamos encantados
-                        con el trato, como nos
-                        ha explicado todo, sus consejos. No ha dudado en enseñar la casa, cuando el posible comprador lo
-                        requería</p>
-                    <p class="text-[16px] mt-4 font-[600]">
-                        Miriam Gimenez
-                    </p>
-                </div>
-            </div>
-
-            <div id="guias" class="flex gap-8 hover:[&>div]:cursor-pointer max-h-[813px] pt-10 self-center lg:hidden">
-                <div data-index="0" class="h-3 w-3 bg-gray-300 rounded-full"></div>
-                <div data-index="1" class="h-3 w-3 bg-gray-300 rounded-full"></div>
-                <div data-index="2" class="h-3 w-3 bg-gray-300 rounded-full"></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQs Section -->
-    <section class="px-4 py-8 bg-sand lg:px-[180px]">
-        <div class="flex flex-col items-center gap-8 lg:flex-row lg:justify-between">
-            <h2 class="text-[32px] font-[300] self-start">Preguntas
-                <span class="block font-secondary ml-16 bold">frecuentes</span>
-            </h2>
-            <div class="p-6 bg-[#F8F5F0] rounded-md w-[93%] lg:w-[60%] max-h-[300px] overflow-y-auto">
-                <div class="flex flex-col gap-6">
-                    <!-- cards -->
-                    <details open class="group [&_summary::-webkit-details-marker]:hidden">
-                        <summary class="flex justify-between items-center cursor-pointer w-full hover:text-gray-600">
-                            <span class="text-[16px] font-[600]">¿Qué horario de oficina tienen ?</span>
-
-                            <div class="transition duration-300 group-open:rotate-90 relative">
-                                <svg class="-rotate-90" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
-                                    viewBox="0 0 25 25" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M4.50635 12.7114C4.50635 12.1591 4.95406 11.7114 5.50635 11.7114H18.5063C19.0586 11.7114 19.5063 12.1591 19.5063 12.7114C19.5063 13.2637 19.0586 13.7114 18.5063 13.7114H5.50635C4.95406 13.7114 4.50635 13.2637 4.50635 12.7114Z"
-                                        fill="#3A4F39" />
-                                </svg>
-                                <svg class="group-open:hidden absolute top-0 left-[.4px]"
-                                    xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"
-                                    fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M4.50635 12.7114C4.50635 12.1591 4.95406 11.7114 5.50635 11.7114H18.5063C19.0586 11.7114 19.5063 12.1591 19.5063 12.7114C19.5063 13.2637 19.0586 13.7114 18.5063 13.7114H5.50635C4.95406 13.7114 4.50635 13.2637 4.50635 12.7114Z"
-                                        fill="#3A4F39" />
-                                </svg>
-
-                            </div>
-                        </summary>
-                        <p class="mt-2">Tenemos un horario de atención de 9 am a 3 pm. Los sábados y los domingos
-                            tenemos un teléfono de atención para urgencias</p>
-                    </details>
-                    <details class="group [&_summary::-webkit-details-marker]:hidden">
-                        <summary class="flex justify-between items-center cursor-pointer w-full hover:text-gray-600">
-                            <span class="text-[16px] font-[600]">¿Cuántos inmuebles tiene Icon Limonar?</span>
-
-                            <div class="transition duration-300 group-open:rotate-90 relative">
-                                <svg class="-rotate-90" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
-                                    viewBox="0 0 25 25" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M4.50635 12.7114C4.50635 12.1591 4.95406 11.7114 5.50635 11.7114H18.5063C19.0586 11.7114 19.5063 12.1591 19.5063 12.7114C19.5063 13.2637 19.0586 13.7114 18.5063 13.7114H5.50635C4.95406 13.7114 4.50635 13.2637 4.50635 12.7114Z"
-                                        fill="#3A4F39" />
-                                </svg>
-                                <svg class="group-open:hidden absolute top-0 left-[.4px]"
-                                    xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"
-                                    fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M4.50635 12.7114C4.50635 12.1591 4.95406 11.7114 5.50635 11.7114H18.5063C19.0586 11.7114 19.5063 12.1591 19.5063 12.7114C19.5063 13.2637 19.0586 13.7114 18.5063 13.7114H5.50635C4.95406 13.7114 4.50635 13.2637 4.50635 12.7114Z"
-                                        fill="#3A4F39" />
-                                </svg>
-
-                            </div>
-                        </summary>
-                        <p class="mt-2">Tenemos un horario de atención de 9 am a 3 pm. Los sábados y los domingos
-                            tenemos un teléfono de atención para urgencias</p>
-                    </details>
-                    <details class="group [&_summary::-webkit-details-marker]:hidden">
-                        <summary class="flex justify-between items-center cursor-pointer w-full hover:text-gray-600">
-                            <span class="text-[16px] font-[600]">¿Qué rango de precios tienen los pisos ?</span>
-
-                            <div class="transition duration-300 group-open:rotate-90 relative">
-                                <svg class="-rotate-90" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
-                                    viewBox="0 0 25 25" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M4.50635 12.7114C4.50635 12.1591 4.95406 11.7114 5.50635 11.7114H18.5063C19.0586 11.7114 19.5063 12.1591 19.5063 12.7114C19.5063 13.2637 19.0586 13.7114 18.5063 13.7114H5.50635C4.95406 13.7114 4.50635 13.2637 4.50635 12.7114Z"
-                                        fill="#3A4F39" />
-                                </svg>
-                                <svg class="group-open:hidden absolute top-0 left-[.4px]"
-                                    xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"
-                                    fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M4.50635 12.7114C4.50635 12.1591 4.95406 11.7114 5.50635 11.7114H18.5063C19.0586 11.7114 19.5063 12.1591 19.5063 12.7114C19.5063 13.2637 19.0586 13.7114 18.5063 13.7114H5.50635C4.95406 13.7114 4.50635 13.2637 4.50635 12.7114Z"
-                                        fill="#3A4F39" />
-                                </svg>
-
-                            </div>
-                        </summary>
-                        <p class="mt-2">Tenemos un horario de atención de 9 am a 3 pm. Los sábados y los domingos
-                            tenemos un teléfono de atención para urgencias</p>
-                    </details>
-                    <details class="group [&_summary::-webkit-details-marker]:hidden">
-                        <summary class="flex justify-between items-center cursor-pointer w-full hover:text-gray-600">
-                            <span class="text-[16px] font-[600]">¿Ya está disponible para la compra?</span>
-
-                            <div class="transition duration-300 group-open:rotate-90 relative">
-                                <svg class="-rotate-90" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
-                                    viewBox="0 0 25 25" fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M4.50635 12.7114C4.50635 12.1591 4.95406 11.7114 5.50635 11.7114H18.5063C19.0586 11.7114 19.5063 12.1591 19.5063 12.7114C19.5063 13.2637 19.0586 13.7114 18.5063 13.7114H5.50635C4.95406 13.7114 4.50635 13.2637 4.50635 12.7114Z"
-                                        fill="#3A4F39" />
-                                </svg>
-                                <svg class="group-open:hidden absolute top-0 left-[.4px]"
-                                    xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25"
-                                    fill="none">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M4.50635 12.7114C4.50635 12.1591 4.95406 11.7114 5.50635 11.7114H18.5063C19.0586 11.7114 19.5063 12.1591 19.5063 12.7114C19.5063 13.2637 19.0586 13.7114 18.5063 13.7114H5.50635C4.95406 13.7114 4.50635 13.2637 4.50635 12.7114Z"
-                                        fill="#3A4F39" />
-                                </svg>
-
-                            </div>
-                        </summary>
-                        <p class="mt-2">Tenemos un horario de atención de 9 am a 3 pm. Los sábados y los domingos
-                            tenemos un teléfono de atención para urgencias</p>
-                    </details>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Te interesa Section -->
-    <section class="px-4 py-7 lg:py-14 lg:px-[180px] relative">
+    <section class="px-4 py-7 bg-sand lg:py-14 lg:px-[180px] relative">
         <div class="flex flex-col gap-7 lg:flex-row lg:justify-between">
             <div class="flex flex-col gap-6 lg:gap-12">
                 <h2 class="text-[32px] font-[300] [text-wrap:balance]">¿Te interesa
@@ -829,7 +508,7 @@
                     <form class="flex flex-col gap-10">
                         <div class="relative ">
                             <input
-                                class="transition ease-out focus:outline-none active:outline-none w-full border-b-[2px] focus:border-yellow pb-2 border-black peer text-[16px] font-[400]"
+                                class="transition ease-out focus:outline-none active:outline-none w-full border-b-[2px] bg-sand focus:border-yellow pb-2 border-black peer text-[16px] font-[400]"
                                 required id="nombre" type="text">
                             <label
                                 class="transition ease-out duration-200 absolute left-0 peer-valid:-translate-y-5 peer-focus:-translate-y-5 text-[16px] font-[400] select-none cursor-text "
@@ -837,7 +516,7 @@
                         </div>
                         <div class="relative ">
                             <input
-                                class="transition ease-out focus:outline-none active:outline-none w-full border-b-[2px] focus:border-yellow pb-2 border-black peer text-[16px] font-[400] "
+                                class="transition ease-out focus:outline-none active:outline-none w-full border-b-[2px] bg-sand focus:border-yellow pb-2 border-black peer text-[16px] font-[400] "
                                 required id="Email" type="text">
                             <label
                                 class="transition ease-out duration-200 absolute left-0 peer-valid:-translate-y-5 peer-focus:-translate-y-5 text-[16px] font-[400] select-none cursor-text "
@@ -845,17 +524,13 @@
                         </div>
                         <div class="flex gap-7">
                             <div class="relative w-24">
-                                <input
-                                    class="transition ease-out focus:outline-none active:outline-none w-full border-b-[2px] focus:border-yellow pb-2 border-black peer text-[16px] font-[400] "
-                                    required id="ES" type="text">
+                                <input class="transition ease-out focus:outline-none active:outline-none w-full border-b-[2px] bg-sand focus:border-yellow pb-2 border-black peer text-[16px] font-[400] " required id="ES" type="text">
                                 <label
                                     class="transition ease-out duration-200 absolute left-0 peer-valid:-translate-y-5 peer-focus:-translate-y-5 text-[16px] font-[400] select-none cursor-text "
                                     required for="ES">ES</label>
                             </div>
                             <div class="relative grow">
-                                <input
-                                    class="transition ease-out focus:outline-none active:outline-none w-full border-b-[2px] focus:border-yellow pb-2 border-black peer text-[16px] font-[400] "
-                                    required id="Teléfono" type="text">
+                                <input class="transition ease-out focus:outline-none active:outline-none w-full border-b-[2px] bg-sand focus:border-yellow pb-2 border-black peer text-[16px] font-[400] " required id="Teléfono" type="text">
                                 <label
                                     class="transition ease-out duration-200 absolute left-0 peer-valid:-translate-y-5 peer-focus:-translate-y-5 text-[16px] font-[400] select-none cursor-text "
                                     required for="Teléfono">Teléfono</label>
