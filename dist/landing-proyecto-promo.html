@@ -11,12 +11,12 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,700&family=Roboto:wght@100;300;400;500;700&display=swap');
     </style>
-     <!-- MAP SCRIPTS -->
-  <script src="./js/map.js"></script>
-  <script
+    <!-- MAP SCRIPTS -->
+    <script src="./js/map.js"></script>
+    <!-- <script
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEjbmrpKS52fjJsX3u2lRE89YzmeF18YI&callback=initMap&v=weekly"
     defer
-  ></script>
+  ></script> -->
 </head>
 
 <body>
@@ -171,24 +171,35 @@
     </section>
 
     <!-- Carousel Section -->
-    <section class="ml-4 mt-7">
-        TODO: CAROUSEL TESTING EMBLACAROUSEL
-        <div class="embla h-20">
-            <div class="embla__container">
-                <div class="embla__slide">Slide 1</div>
-                <div class="embla__slide">Slide 2</div>
-                <div class="embla__slide">Slide 3</div>
-            </div>
+    <section class="relative px-4 py-8 lg:px-20 lg:py-11">
+        <img class="hidden lg:block absolute cursor-pointer top-[50%] left-4" src="./assets/inversores/Group 751.svg"
+            alt="Group">
+        <img class="hidden lg:block absolute cursor-pointer top-[50%] right-4" src="./assets/inversores/Group 755.svg"
+            alt="Group">
+        <!-- Carousel SM -->
+        <div
+            class="carousel-container lg:hidden flex flex-row gap-[20px] lg:gap-6 lg:flex-wrap overflow-x-auto overflow-y-hidden snap-x snap-mandatory">
+
+            <img data-index="0" class="w-[605px] snap-start h-auto" src="./assets/img/ficha-proyecto-carousel.jpg"
+                alt="pagina">
+            <img data-index="1" class="w-[605px] snap-start h-auto" src="./assets/img/ficha-proyecto-carousel.jpg"
+                alt=" pagina">
+            <img data-index="2" class="w-[605px] snap-start h-auto" src="./assets/img/ficha-proyecto-carousel.jpg"
+                alt="pagina">
+            <img data-index="3" class="w-[605px] snap-start h-auto" src="./assets/img/ficha-proyecto-carousel.jpg"
+                alt="pagina">
+            <img data-index="4" class="w-[605px] snap-start h-auto" src="./assets/img/ficha-proyecto-carousel.jpg"
+                alt="pagina">
+
         </div>
-
-        <!-- SCRIPTS CDN -->
-        <script src="https://unpkg.com/embla-carousel/embla-carousel.umd.js"></script>
-        <script type="text/javascript">
-            var emblaNode = document.querySelector('.embla')
-            var options = { loop: false }
-
-            var embla = EmblaCarousel(emblaNode, options)
-        </script>
+        <div class="guias flex justify-center gap-8 hover:[&>div]:cursor-pointer max-h-[813px] pt-10 lg:hidden">
+            <div data-index="0" class="h-3 w-3 bg-gray-300 rounded-full"></div>
+            <div data-index="1" class="h-3 w-3 bg-gray-300 rounded-full"></div>
+            <div data-index="2" class="h-3 w-3 bg-gray-300 rounded-full"></div>
+            <div data-index="3" class="h-3 w-3 bg-gray-300 rounded-full"></div>
+            <div data-index="4" class="h-3 w-3 bg-gray-300 rounded-full"></div>
+        </div>
+        </div>
     </section>
 
 
@@ -674,11 +685,11 @@
             </h2>
         </div>
         <!-- carousel -->
-        <div id="carousel" class="flex flex-col lg:mx-16">
+        <div class="flex flex-col lg:mx-16">
             <div
-                class="flex flex-row overflow-x-auto gap-4 py-2 [&>div]:lg:border-none [&>div]:lg:relative [&>div>img]:lg:absolute [&>div>img]:lg:top-0 [&>div>img]:lg:-z-10 [&>div>p]:lg:ml-10">
+                class="carousel-container flex flex-row overflow-x-auto gap-6 py-2 [&>div]:lg:border-none [&>div]:lg:relative [&>div>img]:lg:absolute [&>div>img]:lg:top-0 [&>div>img]:lg:-z-10 [&>div>p]:lg:ml-10">
                 <!-- card -->
-                <div class="p-8 border-2 min-w-[253px] border-black rounded-md">
+                <div data-index="0" class="p-8 border-2 min-w-[253px] border-black rounded-md snap-start">
                     <img src="./assets/icons/blockquotes.svg" alt="blockquote">
                     <p class="text-[16px] mt-2">Muy profesional en la toma de datos y un muy buen reportaje fotográfico.
                         En todo momento han estado pendientes de las ofertas recibidas y asesorando con buen criterio
@@ -688,7 +699,7 @@
                     </p>
 
                 </div>
-                <div class="p-8 border-2 min-w-[253px] border-black rounded-md">
+                <div data-index="1" class="p-8 border-2 min-w-[253px] border-black rounded-md snap-start">
                     <img src="./assets/icons/blockquotes.svg" alt="blockquote">
                     <p class="text-[16px] mt-2">En especial mi enhorabuena a Marga Lasa por su trabajo eres una gran
                         persona y excelente profesional.Mil gracias por tu acompañamiento en el proceso y seguimiento
@@ -697,7 +708,7 @@
                         Miriam Gimenez
                     </p>
                 </div>
-                <div class="p-8 border-2 min-w-[253px] border-black rounded-md">
+                <div data-index="2" class="p-8 border-2 min-w-[253px] border-black rounded-md snap-start">
                     <img src="./assets/icons/blockquotes.svg" alt="blockquote">
                     <p class="text-[16px] mt-2">Estamos encantados
                         con el trato, como nos
@@ -709,7 +720,7 @@
                 </div>
             </div>
 
-            <div id="guias" class="flex gap-8 hover:[&>div]:cursor-pointer max-h-[813px] pt-10 self-center lg:hidden">
+            <div class="guias flex gap-8 hover:[&>div]:cursor-pointer max-h-[813px] pt-10 self-center lg:hidden">
                 <div data-index="0" class="h-3 w-3 bg-gray-300 rounded-full"></div>
                 <div data-index="1" class="h-3 w-3 bg-gray-300 rounded-full"></div>
                 <div data-index="2" class="h-3 w-3 bg-gray-300 rounded-full"></div>
@@ -965,6 +976,7 @@
             </div>
         </div>
     </footer>
+    <script src="./js/simple-carousel.js"></script>
 
 </body>
 
