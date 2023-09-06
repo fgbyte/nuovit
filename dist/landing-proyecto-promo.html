@@ -11,6 +11,12 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,700&family=Roboto:wght@100;300;400;500;700&display=swap');
     </style>
+     <!-- MAP SCRIPTS -->
+  <script src="./js/map.js"></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEjbmrpKS52fjJsX3u2lRE89YzmeF18YI&callback=initMap&v=weekly"
+    defer
+  ></script>
 </head>
 
 <body>
@@ -624,7 +630,7 @@
     <section
         class="relative px-4 py-8 bg-cover bg-right flex flex-col gap-3 lg:px-[180px] lg:py-12 lg:flex-row lg:gap-14 lg:bg-cover"
         style="background-image: url(./assets/img/landing-proyecto-promo-quienes-somos.jpg);">
-        <div class="flex flex-col gap-6 text-white lg:max-w-[50%]">
+        <div class="flex flex-col gap-6 text-white lg:max-w-[40%]">
             <h2 class="text-[36px] font-[300">
                 Quiénes
                 <span class="block font-secondary bold">Somos</span>
@@ -654,10 +660,8 @@
                 <p class="text-16px">Proyectos <span class="lg:block">terminados</span></p>
             </div>
         </div>
-        <div class="hidden text-white lg:block lg:absolute right-0 top-[55%]">
-            TODO:Flecha agrupada
-            <img src="" alt="">
-
+        <div class="hidden text-white lg:block lg:absolute -right-16 top-[55%]">
+            <img src="./assets/icons/medium-arrow.svg" alt="">
         </div>
     </section>
 
@@ -916,8 +920,8 @@
                 </div>
             </div>
         </div>
-        <div class="hidden lg:block absolute bottom-0 left-0">
-            TODO: arrow group
+        <div class="hidden lg:block absolute -bottom-[100px] left-0">
+            <img src="./assets/icons/cta-arrow.svg" alt="">
         </div>
     </section>
 

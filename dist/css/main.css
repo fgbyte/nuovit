@@ -808,6 +808,30 @@ p {
   top: 55%;
 }
 
+.-bottom-7 {
+  bottom: -1.75rem;
+}
+
+.-bottom-\[80px\] {
+  bottom: -80px;
+}
+
+.-bottom-\[90px\] {
+  bottom: -90px;
+}
+
+.-bottom-\[100px\] {
+  bottom: -100px;
+}
+
+.-right-20 {
+  right: -5rem;
+}
+
+.-right-16 {
+  right: -4rem;
+}
+
 .-z-10 {
   z-index: -10;
 }
@@ -3870,6 +3894,10 @@ label input[type]:checked ~ span.middle {
 
   .lg\:max-w-xl {
     max-width: 36rem;
+  }
+
+  .lg\:max-w-\[40\%\] {
+    max-width: 40%;
   }
 
   .lg\:flex-1 {
