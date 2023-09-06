@@ -172,14 +172,8 @@
 
     <!-- Carousel Section -->
     <section class="relative px-4 py-8 lg:px-20 lg:py-11">
-        <img class="hidden lg:block absolute cursor-pointer top-[50%] left-4" src="./assets/inversores/Group 751.svg"
-            alt="Group">
-        <img class="hidden lg:block absolute cursor-pointer top-[50%] right-4" src="./assets/inversores/Group 755.svg"
-            alt="Group">
         <!-- Carousel SM -->
-        <div
-            class="carousel-container lg:hidden flex flex-row gap-[20px] lg:gap-6 lg:flex-wrap overflow-x-auto overflow-y-hidden snap-x snap-mandatory">
-
+        <div class="carousel-container lg:hidden flex flex-row gap-[20px] lg:gap-6 lg:flex-wrap overflow-x-auto overflow-y-hidden snap-x snap-mandatory">
             <img data-index="0" class="w-[605px] snap-start h-auto" src="./assets/img/ficha-proyecto-carousel.jpg"
                 alt="pagina">
             <img data-index="1" class="w-[605px] snap-start h-auto" src="./assets/img/ficha-proyecto-carousel.jpg"
@@ -190,7 +184,6 @@
                 alt="pagina">
             <img data-index="4" class="w-[605px] snap-start h-auto" src="./assets/img/ficha-proyecto-carousel.jpg"
                 alt="pagina">
-
         </div>
         <div class="guias flex justify-center gap-8 hover:[&>div]:cursor-pointer max-h-[813px] pt-10 lg:hidden">
             <div data-index="0" class="h-3 w-3 bg-gray-300 rounded-full"></div>
@@ -199,6 +192,46 @@
             <div data-index="3" class="h-3 w-3 bg-gray-300 rounded-full"></div>
             <div data-index="4" class="h-3 w-3 bg-gray-300 rounded-full"></div>
         </div>
+        </div>
+
+        <!-- Carousel LG -->
+        <div class="hidden lg:block">
+            <img class="absolute cursor-pointer top-[40%] left-4" src="./assets/inversores/Group 751.svg"
+                alt="Group">
+            <img class="absolute cursor-pointer top-[40%] right-4" src="./assets/inversores/Group 755.svg"
+                alt="Group">
+
+            <div id="carousel-thumbs">
+                <div class="carousel-container hidden lg:flex flex-row justify-start lg:gap-6 overflow-x-auto overflow-y-hidden snap-x snap-mandatory">
+                    <img data-index="0" class="w-full snap-start max-h-[545px]" src="./assets/img/ficha-proyecto-carousel.jpg"
+                        alt="pagina">
+                    <img data-index="1" class="w-full snap-start max-h-[545px]" src="./assets/img/ficha-proyecto-carousel.jpg"
+                        alt=" pagina">
+                    <img data-index="2" class="w-full snap-start max-h-[545px]" src="./assets/img/ficha-proyecto-carousel.jpg"
+                        alt="pagina">
+                    <img data-index="3" class="w-full snap-start max-h-[545px]" src="./assets/img/ficha-proyecto-carousel.jpg"
+                        alt="pagina">
+                    <img data-index="4" class="w-full snap-start max-h-[545px]" src="./assets/img/ficha-proyecto-carousel.jpg"
+                        alt="pagina">
+                </div>
+                <div class="guias hidden lg:flex justify-center gap-8 hover:[&>div]:cursor-pointer max-h-[813px] pt-10">
+                    <div data-index="0" class="brightness-125">
+                        <img class="rounded-md transition duration-300 hover:opacity-[50%]" src="./assets/img/ficha-proyecto-carousel.jpg" alt="">
+                    </div>
+                    <div data-index="1" class="brightness-125">
+                        <img class="rounded-md transition duration-300 hover:opacity-[50%]" src="./assets/img/ficha-proyecto-carousel.jpg" alt="">
+                    </div>
+                    <div data-index="2" class="brightness-125">
+                        <img class="rounded-md transition duration-300 hover:opacity-[50%]" src="./assets/img/ficha-proyecto-carousel.jpg" alt="">
+                    </div>
+                    <div data-index="3" class="brightness-125">
+                        <img class="rounded-md transition duration-300 hover:opacity-[50%]" src="./assets/img/ficha-proyecto-carousel.jpg" alt="">
+                    </div>
+                    <div data-index="4" class="brightness-125">
+                        <img class="rounded-md transition duration-300 hover:opacity-[50%]" src="./assets/img/ficha-proyecto-carousel.jpg" alt="">
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -632,8 +665,8 @@
             <hr class="hidden absolute bottom-20 w-[80%] h-[2px] bg-black lg:block">
 
         </div>
-        <div class="hidden lg:block lg:absolute right-0 top-0">
-            <img src="./assets/icons/semicircle.svg" alt="">
+        <div class="hidden lg:block lg:absolute right-0 -top-[60%] -z-10">
+            <img class="" src="./assets/icons/elipse.svg" alt="">
         </div>
     </section>
 
@@ -976,7 +1009,7 @@
             </div>
         </div>
     </footer>
-    <script src="./js/simple-carousel.js"></script>
+    <script src="./js/thumbs-carousel.js"></script>
 
 </body>
 
