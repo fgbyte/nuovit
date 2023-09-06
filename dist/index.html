@@ -24,7 +24,8 @@
         </div>
         <img class="lg:hidden h-[35.973px]" src="./assets/icons/logo.svg" alt="logo_nuovit" />
       </div>
-
+      
+     <!--  menu pc  -->
       <div id="menu-pc" class="hidden lg:flex gap-14 group [&_summary::-webkit-details-marker]:hidden pb-2">
         <details class="group [&_summary::-webkit-details-marker]:hidden">
           <summary class="flex items-center cursor-pointer gap-1 hover:text-yellow">
@@ -67,6 +68,8 @@
           </ul>
         </details>
       </div>
+
+      <!-- mobile menu -->
       <label class="bar lg:hidden scale-50 right-[-15px]" for="menu-mobile">
         <input type="checkbox" id="menu-mobile" />
 
@@ -74,8 +77,54 @@
         <span class="middle"></span>
         <span class="bottom"></span>
       </label>
+
+      <!-- Menu abierto -->
+      <div id="menu-items" class="hidden space-y-8 lg:hidden absolute top-16 right-0 mr-10 mt-2 z-50 bg-black/70 p-5">
+        <details class="group [&_summary::-webkit-details-marker]:hidden ">
+          <summary class="flex items-center cursor-pointer gap-1 hover:text-yellow">
+            <span>Proyectos</span>
+
+            <span class="shrink-0 transition duration-300 group-open:-rotate-180">
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                <path d="M0.5 1.25L6 6.75L11.5 1.25" stroke="#EAC355" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </span>
+          </summary>
+          <ul class="flex flex-col gap-2 relative mt-2">
+            <li>
+              <a href="" class="block hover:text-yellow"> Residenciales </a>
+            </li>
+            <li>
+              <a href="" class="block hover:text-yellow"> Comerciales </a>
+            </li>
+          </ul>
+        </details>
+        <a class="block hover:text-yellow" href="">Inversores</a>
+        <a class="block hover:text-yellow" href="">Sostenibilidad</a>
+        <details class="group [&_summary::-webkit-details-marker]:hidden">
+          <summary class="flex items-center cursor-pointer gap-1 hover:text-yellow">
+            <span>Conócenos</span>
+
+            <span class="shrink-0 transition duration-300 group-open:-rotate-180">
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                <path d="M0.5 1.25L6 6.75L11.5 1.25" stroke="#EAC355" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </span>
+          </summary>
+          <ul class="flex flex-col gap-2 relative mt-2">
+            <li>
+              <a href="" class="block hover:text-yellow"> Residenciales </a>
+            </li>
+            <li>
+              <a href="" class="block hover:text-yellow"> Comerciales </a>
+            </li>
+          </ul>
+        </details>
+      </div>
+      
     </nav>
   </header>
+  
   <!-- hero -->
   <section class="relative flex flex-col justify-center items-center min-h-[813px]  bg-cover bg-herohome z-10"
     id="hero">
