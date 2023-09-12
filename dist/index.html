@@ -16,8 +16,8 @@
 
 <body>
   <!-- Navbar -->
-  <header class="absolute h-[83] text-white inset-x-0 top-0 z-40">
-    <nav class="max-w-[1358px] mx-auto flex py-8 justify-between items-end px-[40px] select-none">
+  <header class="absolute h-[83] text-white inset-x-0 top-0 z-20">
+    <nav class="max-w-[1358px] mx-auto flex py-3 justify-between items-end px-[40px] select-none z-50">
       <div>
         <div class="hidden lg:flex">
           <img class="h-14" src="./assets/footer/logonuovit.png" alt="logo" />
@@ -72,59 +72,57 @@
       <!-- mobile menu -->
       <label class="bar lg:hidden scale-50 right-[-15px]" for="menu-mobile">
         <input type="checkbox" id="menu-mobile" />
-
+        
         <span class="top"></span>
         <span class="middle"></span>
         <span class="bottom"></span>
       </label>
-
-      <!-- Menu abierto -->
-      <div id="menu-items" class="hidden space-y-8 absolute top-16 right-0 mr-10 mt-2 z-50 bg-black/70 p-5 lg:hidden">
-        <details class="group [&_summary::-webkit-details-marker]:hidden min-w-[105px]">
-          <summary class="flex items-center cursor-pointer gap-1 hover:text-yellow">
-            <span>Proyectos</span>
-
-            <span class="shrink-0 transition duration-300 group-open:-rotate-180">
-              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
-                <path d="M0.5 1.25L6 6.75L11.5 1.25" stroke="#EAC355" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </span>
-          </summary>
-          <ul class="flex flex-col gap-3 relative mt-3 ml-3">
-            <li>
-              <a href="" class="block hover:text-yellow"> Residenciales </a>
-            </li>
-            <li>
-              <a href="" class="block hover:text-yellow"> Comerciales </a>
-            </li>
-          </ul>
-        </details>
-        <a class="block hover:text-yellow" href="">Inversores</a>
-        <a class="block hover:text-yellow" href="">Sostenibilidad</a>
-        <details class="group [&_summary::-webkit-details-marker]:hidden">
-          <summary class="flex items-center cursor-pointer gap-1 hover:text-yellow">
-            <span>Conócenos</span>
-
-            <span class="shrink-0 transition duration-300 group-open:-rotate-180">
-              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
-                <path d="M0.5 1.25L6 6.75L11.5 1.25" stroke="#EAC355" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </span>
-          </summary>
-          <ul class="flex flex-col gap-3 relative mt-3 ml-3">
-            <li>
-              <a href="" class="block hover:text-yellow"> Residenciales </a>
-            </li>
-            <li>
-              <a href="" class="block hover:text-yellow"> Comerciales </a>
-            </li>
-          </ul>
-        </details>
-      </div>
-      
     </nav>
+    <!-- Menu abierto -->
+    <div id="menu-items" class="hidden space-y-4 lg:hidden absolute top-0 py-8 pt-24 -z-10 bg-black/70 px-[40px] w-full">
+      <details class="group [&_summary::-webkit-details-marker]:hidden ">
+        <summary class="flex items-center cursor-pointer gap-1 hover:text-yellow">
+          <span>Proyectos</span>
+
+          <span class="shrink-0 transition duration-300 group-open:-rotate-180">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
+              <path d="M0.5 1.25L6 6.75L11.5 1.25" stroke="#EAC355" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </span>
+        </summary>
+        <ul class="flex flex-col gap-2 relative mt-2 ml-4">
+          <li>
+            <a href="" class="block hover:text-yellow"> Residenciales </a>
+          </li>
+          <li>
+            <a href="" class="block hover:text-yellow"> Comerciales </a>
+          </li>
+        </ul>
+      </details>
+      <a class="block hover:text-yellow" href="">Inversores</a>
+      <a class="block hover:text-yellow" href="">Sostenibilidad</a>
+      <details class="group [&_summary::-webkit-details-marker]:hidden">
+        <summary class="flex items-center cursor-pointer gap-1 hover:text-yellow">
+          <span>Conócenos</span>
+
+          <span class="shrink-0 transition duration-300 group-open:-rotate-180">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
+              <path d="M0.5 1.25L6 6.75L11.5 1.25" stroke="#EAC355" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </span>
+        </summary>
+        <ul class="flex flex-col gap-2 relative mt-2 ml-4">
+          <li>
+            <a href="" class="block hover:text-yellow"> Residenciales </a>
+          </li>
+          <li>
+            <a href="" class="block hover:text-yellow"> Comerciales </a>
+          </li>
+        </ul>
+      </details>
+    </div>
+
   </header>
-  
   <!-- hero -->
   <section class="relative flex flex-col justify-center items-center min-h-[813px]  bg-cover bg-herohome z-10"
     id="hero">
