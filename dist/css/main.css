@@ -4312,6 +4312,10 @@ label input[type]:checked ~ span.middle {
     padding-top: 157px;
   }
 
+  .lg\:pl-12 {
+    padding-left: 3rem;
+  }
+
   .lg\:text-start {
     text-align: start;
   }
