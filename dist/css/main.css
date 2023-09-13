@@ -1435,6 +1435,10 @@ p {
   height: 100%;
 }
 
+.h-4 {
+  height: 1rem;
+}
+
 .max-h-\[200px\] {
   max-height: 200px;
 }
@@ -1690,6 +1694,22 @@ p {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-\[14px\] {
+  width: 14px;
+}
+
+.w-\[16px\] {
+  width: 16px;
+}
+
+.w-auto {
+  width: auto;
+}
+
+.w-16 {
+  width: 4rem;
 }
 
 .min-w-\[105px\] {
@@ -2090,6 +2110,10 @@ p {
 
 .gap-\[7\.9375rem\] {
   gap: 7.9375rem;
+}
+
+.gap-48 {
+  gap: 12rem;
 }
 
 .gap-y-4 {
@@ -3041,6 +3065,10 @@ p {
 
 .opacity-0 {
   opacity: 0;
+}
+
+.opacity-50 {
+  opacity: 0.5;
 }
 
 .shadow-s200 {
@@ -4091,6 +4119,14 @@ label input[type]:checked ~ span.middle {
     gap: 76px;
   }
 
+  .lg\:gap-8 {
+    gap: 2rem;
+  }
+
+  .lg\:gap-7 {
+    gap: 1.75rem;
+  }
+
   .lg\:self-start {
     align-self: flex-start;
   }
@@ -4372,6 +4408,10 @@ label input[type]:checked ~ span.middle {
 
   .lg\:font-\[600\] {
     font-weight: 600;
+  }
+
+  .lg\:font-\[300\] {
+    font-weight: 300;
   }
 
   .lg\:italic {
