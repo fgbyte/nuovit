@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com
+! tailwindcss v3.3.2 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -191,10 +191,6 @@ select,
 textarea {
   font-family: inherit;
   /* 1 */
-  font-feature-settings: inherit;
-  /* 1 */
-  font-variation-settings: inherit;
-  /* 1 */
   font-size: 100%;
   /* 1 */
   font-weight: inherit;
@@ -342,14 +338,6 @@ ul,
 menu {
   list-style: none;
   margin: 0;
-  padding: 0;
-}
-
-/*
-Reset default styling for dialogs.
-*/
-
-dialog {
   padding: 0;
 }
 
@@ -1250,6 +1238,10 @@ p {
   height: 0.75rem;
 }
 
+.h-4 {
+  height: 1rem;
+}
+
 .h-5 {
   height: 1.25rem;
 }
@@ -1433,10 +1425,6 @@ p {
 
 .h-full {
   height: 100%;
-}
-
-.h-4 {
-  height: 1rem;
 }
 
 .max-h-\[200px\] {
@@ -1683,6 +1671,10 @@ p {
   width: 95%;
 }
 
+.w-auto {
+  width: auto;
+}
+
 .w-fit {
   width: -moz-fit-content;
   width: fit-content;
@@ -1694,22 +1686,6 @@ p {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-\[14px\] {
-  width: 14px;
-}
-
-.w-\[16px\] {
-  width: 16px;
-}
-
-.w-auto {
-  width: auto;
-}
-
-.w-16 {
-  width: 4rem;
 }
 
 .min-w-\[105px\] {
@@ -2110,10 +2086,6 @@ p {
 
 .gap-\[7\.9375rem\] {
   gap: 7.9375rem;
-}
-
-.gap-48 {
-  gap: 12rem;
 }
 
 .gap-y-4 {
@@ -2760,10 +2732,6 @@ p {
   text-align: center;
 }
 
-.font-\[\] {
-  font-family: ;
-}
-
 .font-primary {
   font-family: Roboto;
 }
@@ -2918,6 +2886,10 @@ p {
   font-style: normal;
 }
 
+.leading-4 {
+  line-height: 1rem;
+}
+
 .leading-6 {
   line-height: 1.5rem;
 }
@@ -2964,6 +2936,10 @@ p {
 
 .leading-normal {
   line-height: 1.5;
+}
+
+.leading-snug {
+  line-height: 1.375;
 }
 
 .tracking-\[\.5px\] {
@@ -3061,6 +3037,11 @@ p {
 .text-whiteTextFooter {
   --tw-text-opacity: 1;
   color: rgb(233 233 233 / var(--tw-text-opacity));
+}
+
+.text-\[\#93918A\] {
+  --tw-text-opacity: 1;
+  color: rgb(147 145 138 / var(--tw-text-opacity));
 }
 
 .opacity-0 {
@@ -4091,6 +4072,10 @@ label input[type]:checked ~ span.middle {
     gap: 1.5rem;
   }
 
+  .lg\:gap-7 {
+    gap: 1.75rem;
+  }
+
   .lg\:gap-\[142px\] {
     gap: 142px;
   }
@@ -4117,14 +4102,6 @@ label input[type]:checked ~ span.middle {
 
   .lg\:gap-\[76px\] {
     gap: 76px;
-  }
-
-  .lg\:gap-8 {
-    gap: 2rem;
-  }
-
-  .lg\:gap-7 {
-    gap: 1.75rem;
   }
 
   .lg\:self-start {
@@ -4192,6 +4169,10 @@ label input[type]:checked ~ span.middle {
 
   .lg\:p-16 {
     padding: 4rem;
+  }
+
+  .lg\:p-12 {
+    padding: 3rem;
   }
 
   .lg\:px-0 {
@@ -4272,6 +4253,11 @@ label input[type]:checked ~ span.middle {
   .lg\:py-7 {
     padding-top: 1.75rem;
     padding-bottom: 1.75rem;
+  }
+
+  .lg\:px-12 {
+    padding-left: 3rem;
+    padding-right: 3rem;
   }
 
   .lg\:pb-16 {
@@ -4402,16 +4388,16 @@ label input[type]:checked ~ span.middle {
     font-size: 64px;
   }
 
+  .lg\:font-\[300\] {
+    font-weight: 300;
+  }
+
   .lg\:font-\[400\] {
     font-weight: 400;
   }
 
   .lg\:font-\[600\] {
     font-weight: 600;
-  }
-
-  .lg\:font-\[300\] {
-    font-weight: 300;
   }
 
   .lg\:italic {
