@@ -2886,10 +2886,6 @@ p {
   font-style: normal;
 }
 
-.leading-4 {
-  line-height: 1rem;
-}
-
 .leading-6 {
   line-height: 1.5rem;
 }
@@ -2965,6 +2961,11 @@ p {
   color: rgb(108 117 125 / var(--tw-text-opacity));
 }
 
+.text-\[\#93918A\] {
+  --tw-text-opacity: 1;
+  color: rgb(147 145 138 / var(--tw-text-opacity));
+}
+
 .text-\[\#AF917C\] {
   --tw-text-opacity: 1;
   color: rgb(175 145 124 / var(--tw-text-opacity));
@@ -3037,11 +3038,6 @@ p {
 .text-whiteTextFooter {
   --tw-text-opacity: 1;
   color: rgb(233 233 233 / var(--tw-text-opacity));
-}
-
-.text-\[\#93918A\] {
-  --tw-text-opacity: 1;
-  color: rgb(147 145 138 / var(--tw-text-opacity));
 }
 
 .opacity-0 {
@@ -3710,6 +3706,10 @@ label input[type]:checked ~ span.middle {
     margin-top: 93px;
   }
 
+  .lg\:mt-11 {
+    margin-top: 2.75rem;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -4167,12 +4167,12 @@ label input[type]:checked ~ span.middle {
     padding: 0px;
   }
 
-  .lg\:p-16 {
-    padding: 4rem;
-  }
-
   .lg\:p-12 {
     padding: 3rem;
+  }
+
+  .lg\:p-16 {
+    padding: 4rem;
   }
 
   .lg\:px-0 {
@@ -4255,11 +4255,6 @@ label input[type]:checked ~ span.middle {
     padding-bottom: 1.75rem;
   }
 
-  .lg\:px-12 {
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
-
   .lg\:pb-16 {
     padding-bottom: 4rem;
   }
@@ -4274,6 +4269,10 @@ label input[type]:checked ~ span.middle {
 
   .lg\:pl-0 {
     padding-left: 0px;
+  }
+
+  .lg\:pl-12 {
+    padding-left: 3rem;
   }
 
   .lg\:pl-24 {
@@ -4312,8 +4311,16 @@ label input[type]:checked ~ span.middle {
     padding-top: 157px;
   }
 
-  .lg\:pl-12 {
-    padding-left: 3rem;
+  .lg\:pt-12 {
+    padding-top: 3rem;
+  }
+
+  .lg\:pt-11 {
+    padding-top: 2.75rem;
+  }
+
+  .lg\:pt-20 {
+    padding-top: 5rem;
   }
 
   .lg\:text-start {
