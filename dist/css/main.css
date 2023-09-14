@@ -1198,6 +1198,18 @@ p {
   margin-top: auto;
 }
 
+.mr-1 {
+  margin-right: 0.25rem;
+}
+
+.ml-1 {
+  margin-left: 0.25rem;
+}
+
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
 .block {
   display: block;
 }
@@ -2726,6 +2738,10 @@ p {
 
 .pt-\[86px\] {
   padding-top: 86px;
+}
+
+.pl-2 {
+  padding-left: 0.5rem;
 }
 
 .text-center {
