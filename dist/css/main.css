@@ -1198,6 +1198,14 @@ p {
   margin-top: auto;
 }
 
+.mt-\[77px\] {
+  margin-top: 77px;
+}
+
+.mt-\[73px\] {
+  margin-top: 73px;
+}
+
 .block {
   display: block;
 }
@@ -1443,6 +1451,10 @@ p {
   height: 88vh;
 }
 
+.h-\[80vh\] {
+  height: 80vh;
+}
+
 .max-h-\[200px\] {
   max-height: 200px;
 }
@@ -1467,6 +1479,10 @@ p {
   max-height: 641px;
 }
 
+.max-h-\[450px\] {
+  max-height: 450px;
+}
+
 .min-h-\[510px\] {
   min-height: 510px;
 }
@@ -1484,6 +1500,10 @@ p {
 }
 
 .min-h-screen {
+  min-height: 100vh;
+}
+
+.min-h-\[100vh\] {
   min-height: 100vh;
 }
 
@@ -1710,6 +1730,10 @@ p {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-\[100-vw\] {
+  width: 100-vw;
 }
 
 .min-w-\[105px\] {
@@ -3743,6 +3767,10 @@ label input[type]:checked ~ span.middle {
     margin-top: 93px;
   }
 
+  .lg\:mt-\[75px\] {
+    margin-top: 75px;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -3824,6 +3852,10 @@ label input[type]:checked ~ span.middle {
     height: 100%;
   }
 
+  .lg\:h-\[88vh\] {
+    height: 88vh;
+  }
+
   .lg\:max-h-\[900px\] {
     max-height: 900px;
   }
@@ -3838,6 +3870,10 @@ label input[type]:checked ~ span.middle {
 
   .lg\:min-h-\[813px\] {
     min-height: 813px;
+  }
+
+  .lg\:min-h-\[100vh\] {
+    min-height: 100vh;
   }
 
   .lg\:w-1\/2 {
@@ -3965,6 +4001,10 @@ label input[type]:checked ~ span.middle {
     width: 848px;
   }
 
+  .lg\:w-screen {
+    width: 100vw;
+  }
+
   .lg\:min-w-\[222px\] {
     min-width: 222px;
   }
@@ -3972,6 +4012,10 @@ label input[type]:checked ~ span.middle {
   .lg\:min-w-fit {
     min-width: -moz-fit-content;
     min-width: fit-content;
+  }
+
+  .lg\:min-w-full {
+    min-width: 100%;
   }
 
   .lg\:max-w-7xl {
@@ -4051,6 +4095,10 @@ label input[type]:checked ~ span.middle {
 
   .lg\:items-center {
     align-items: center;
+  }
+
+  .lg\:justify-start {
+    justify-content: flex-start;
   }
 
   .lg\:justify-end {
@@ -4290,6 +4338,11 @@ label input[type]:checked ~ span.middle {
   .lg\:py-7 {
     padding-top: 1.75rem;
     padding-bottom: 1.75rem;
+  }
+
+  .lg\:py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
 
   .lg\:pb-16 {

@@ -5,14 +5,14 @@ carousels.forEach((carousel, carouselIndex) => {
   const controls = controlsList[carouselIndex];
   const controlItems = controls.querySelectorAll("div[data-index]");
 
-  controlItems[0].classList.add("brightness-125");
+  controlItems[0].classList.add("brightness-150");
 
   function setActiveControl(index) {
     controlItems.forEach((item, i) => {
       if (i === index) {
-        item.classList.add("brightness-125");
+        item.classList.add("brightness-150");
       } else {
-        item.classList.remove("brightness-125");
+        item.classList.remove("brightness-150");
       }
     });
   }
