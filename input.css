@@ -165,6 +165,14 @@ label input[type]:checked ~ span.middle {
   background-size: cover;
   background-position: center;
 }
+
+.bg-sostenibilidad{
+  position: relative;
+  background: url(../assets/sostenibilidad/sostenibilidad.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+}
 .bg-heroproyectosdestacados {
   position: relative;
   background: url(../assets/proyectos-destacados/heroproyectosdestacados.png);
