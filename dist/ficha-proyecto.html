@@ -16,7 +16,7 @@
 <body>
     <!-- NAVBAR LANDING -->
     <header>
-        <nav class="bg-black border-gray-200 lg:px-20 fixed top-0 w-full z-20">
+        <nav class="bg-black border-gray-200 lg:px-20 fixed top-0 w-full z-50">
             <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
                 <div class="flex items-center text-[#DBD8CE] py-2 gap-[115px]">
                     <a href="#" class="flex flex-col gap-1 ">
@@ -60,9 +60,115 @@
         <!-- Gradiente -->
         <div class="absolute inset-0 h-3 w-full py-16 gradientdown z-10"></div>
         <!-- hero content -->
-        <div class="relative h-[100vh] w-full lg:bg-cover bg-landing-proyecto-promo-hero">
+        <div class="relative h-[88vh] w-full lg:bg-cover bg-landing-proyecto-promo-hero">
             <!-- NAVBAR HOME -->
-            <div class="">TODO:Navbar Home</div>
+            <header class="absolute h-[83] text-white inset-x-0 top-0 z-20">
+                <nav class="max-w-[1358px] mx-auto flex py-3 justify-between items-end px-[40px] select-none z-50">
+                  <div>
+                    <div class="hidden lg:flex">
+                      <img class="h-14" src="./assets/footer/logonuovit.png" alt="logo" />
+                    </div>
+                    <img class="lg:hidden h-[35.973px]" src="./assets/icons/logo.svg" alt="logo_nuovit" />
+                  </div>
+                  
+                 <!--  menu pc  -->
+                  <div id="menu-pc" class="hidden lg:flex gap-14 group [&_summary::-webkit-details-marker]:hidden pb-2">
+                    <details class="group [&_summary::-webkit-details-marker]:hidden">
+                      <summary class="flex items-center cursor-pointer gap-1 hover:text-yellow">
+                        <span>Proyectos</span>
+            
+                        <span class="shrink-0 transition duration-300 group-open:-rotate-180">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                            <path d="M0.5 1.25L6 6.75L11.5 1.25" stroke="#EAC355" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </span>
+                      </summary>
+                      <ul class="flex flex-col gap-2 absolute mt-2">
+                        <li>
+                          <a href="" class="block hover:text-yellow"> Residenciales </a>
+                        </li>
+                        <li>
+                          <a href="" class="block hover:text-yellow"> Comerciales </a>
+                        </li>
+                      </ul>
+                    </details>
+                    <a class="block hover:text-yellow" href="">Inversores</a>
+                    <a class="block hover:text-yellow" href="">Sostenibilidad</a>
+                    <details class="group [&_summary::-webkit-details-marker]:hidden">
+                      <summary class="flex items-center cursor-pointer gap-1 hover:text-yellow">
+                        <span>Conócenos</span>
+            
+                        <span class="shrink-0 transition duration-300 group-open:-rotate-180">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                            <path d="M0.5 1.25L6 6.75L11.5 1.25" stroke="#EAC355" stroke-linecap="round" stroke-linejoin="round" />
+                          </svg>
+                        </span>
+                      </summary>
+                      <ul class="flex flex-col gap-2 absolute mt-2">
+                        <li>
+                          <a href="" class="block hover:text-yellow"> Residenciales </a>
+                        </li>
+                        <li>
+                          <a href="" class="block hover:text-yellow"> Comerciales </a>
+                        </li>
+                      </ul>
+                    </details>
+                  </div>
+            
+                  <!-- mobile menu -->
+                  <label class="bar lg:hidden scale-50 right-[-15px]" for="menu-mobile">
+                    <input type="checkbox" id="menu-mobile" />
+                    
+                    <span class="top"></span>
+                    <span class="middle"></span>
+                    <span class="bottom"></span>
+                  </label>
+                </nav>
+                <!-- Menu abierto -->
+                <div id="menu-items" class="hidden space-y-4 lg:hidden absolute top-0 py-8 pt-24 -z-10 bg-black px-[40px] w-full">
+                  <details class="group [&_summary::-webkit-details-marker]:hidden ">
+                    <summary class="flex items-center cursor-pointer gap-1 hover:text-yellow">
+                      <span>Proyectos</span>
+            
+                      <span class="shrink-0 transition duration-300 group-open:-rotate-180">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                          <path d="M0.5 1.25L6 6.75L11.5 1.25" stroke="#EAC355" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </span>
+                    </summary>
+                    <ul class="flex flex-col gap-2 relative mt-2 ml-4">
+                      <li>
+                        <a href="" class="block hover:text-yellow"> Residenciales </a>
+                      </li>
+                      <li>
+                        <a href="" class="block hover:text-yellow"> Comerciales </a>
+                      </li>
+                    </ul>
+                  </details>
+                  <a class="block hover:text-yellow" href="">Inversores</a>
+                  <a class="block hover:text-yellow" href="">Sostenibilidad</a>
+                  <details class="group [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex items-center cursor-pointer gap-1 hover:text-yellow">
+                      <span>Conócenos</span>
+            
+                      <span class="shrink-0 transition duration-300 group-open:-rotate-180">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                          <path d="M0.5 1.25L6 6.75L11.5 1.25" stroke="#EAC355" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </span>
+                    </summary>
+                    <ul class="flex flex-col gap-2 relative mt-2 ml-4">
+                      <li>
+                        <a href="" class="block hover:text-yellow"> Residenciales </a>
+                      </li>
+                      <li>
+                        <a href="" class="block hover:text-yellow"> Comerciales </a>
+                      </li>
+                    </ul>
+                  </details>
+                </div>
+            
+              </header>
             <div class="absolute bottom-3 mx-auto px-4 flex flex-col w-[100%] lg:bottom-10 lg:px-[34px]">
                 <div class="px-3 py-4 bg-sand w-[74%] lg:px-10 lg:py-6 lg:w-[42%]">
                     <div class="flex flex-col gap-2">
@@ -104,7 +210,7 @@
 
     <!-- Blockquote Section -->
     <section class="mx-6 lg:mx-[210px] mt-7 flex flex-col gap-10">
-        <blockquote class="text-center">
+        <blockquote class="text-center lg:text-[45px] lg:w-[848px] leading-[46px]">
             Un residencial único que se ubica en el exclusivo barrio de<span class="font-secondary"> Colinas del
                 Limonar, </span>rodeado de parques y con increíbles vistas a la<span class="font-secondary"> bahía de
                 Málaga</span>
@@ -132,7 +238,7 @@
         </div>
         <div class="relative flex flex-col items-center">
             <div
-            class="carousel-container lg:hidden flex flex-row gap-[20px] lg:gap-6 lg:flex-wrap overflow-x-auto overflow-y-hidden snap-x snap-mandatory">
+            class="carousel-container flex flex-row gap-[20px] lg:gap-6 overflow-x-auto overflow-y-hidden snap-x snap-mandatory">
 
             <img data-index="0" class="w-[605px] snap-start h-auto" src="./assets/img/ficha-proyecto-carousel.jpg"
                 alt="pagina">
@@ -325,9 +431,9 @@
             </div>
         </div>
         <!-- right card -->
-        <div class="flex flex-col w-[50%] max-w-[493px] h-full">
+        <div class="flex flex-col w-[50%] max-w-[493px] max-h-[641px]">
             <div class="-ml-12">
-                <img class="rounded-md w-[493px] h-[690px]" src="./assets/img/blog-cta.jpg" alt="">
+                <img class="rounded-md w-[493px] h-[641px]" src="./assets/img/blog-cta.jpg" alt="">
             </div>
             <p class="pl-10 pr-20 py-8">Pisos de 1 a 3 dormitorios, bajos con jardín y áticos con solarium. Espacios
                 abiertos y luminosos, amplias terrazas y calificación energética A.</p>
@@ -626,7 +732,7 @@
             </div>
         </div>
 
-        <article id="carrusel-container4" class="flex gap-6 snap-x snap-mandatory w-full lg:w-full overflow-x-auto">
+        <article class="carousel-container flex gap-6 snap-x snap-mandatory w-full lg:w-full overflow-x-auto">
 
             <div data-index="0" style="background-image: url(./assets/inversores/01_Alzado\ exterior\ 22.png);"
                 class="bg-cover bg-center bg-no-repeat w-[380px] lg:w-[410px] rounded-md min-w-fit h-[599px] flex flex-col items-start justify-between snap-start">
@@ -827,18 +933,12 @@
 
         </article>
 
-        <div id="guias4" class="lg:hidden flex gap-8 hover:[&>div]:cursor-pointer mt-10 w-fit mx-auto">
+        <div class="guias lg:hidden flex gap-8 hover:[&>div]:cursor-pointer mt-10 w-fit mx-auto">
             <div data-index="0" class="h-3 w-3 bg-gray-300 rounded-full"></div>
             <div data-index="1" class="h-3 w-3 bg-gray-300 rounded-full"></div>
             <div data-index="2" class="h-3 w-3 bg-gray-300 rounded-full"></div>
         </div>
-
-        <button
-            class="hidden mt-10 relative w-fit mx-auto lg:flex items-center gap-1 rounded py-2 px-[18px] text-[12px] font-medium text-white bg-negro">
-
-            Planificación Urbanística
-            <img class="fill-white" src="./assets/inversores/arrow-down-right.svg" alt="arrow">
-        </button>
+        
     </section>
 
     <!-- Footer -->
@@ -956,6 +1056,7 @@
 
     </footer>
 <script src="./js/simple-carousel.js"></script>
+<script src="./js/menu-mobile.js"></script>
 </body>
 
 </html>

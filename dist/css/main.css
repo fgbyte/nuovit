@@ -1198,18 +1198,6 @@ p {
   margin-top: auto;
 }
 
-.mr-1 {
-  margin-right: 0.25rem;
-}
-
-.ml-1 {
-  margin-left: 0.25rem;
-}
-
-.ml-2 {
-  margin-left: 0.5rem;
-}
-
 .block {
   display: block;
 }
@@ -1439,6 +1427,22 @@ p {
   height: 100%;
 }
 
+.h-\[641px\] {
+  height: 641px;
+}
+
+.h-\[90vh\] {
+  height: 90vh;
+}
+
+.h-\[85vh\] {
+  height: 85vh;
+}
+
+.h-\[88vh\] {
+  height: 88vh;
+}
+
 .max-h-\[200px\] {
   max-height: 200px;
 }
@@ -1453,6 +1457,14 @@ p {
 
 .max-h-\[813px\] {
   max-height: 813px;
+}
+
+.max-h-\[690px\] {
+  max-height: 690px;
+}
+
+.max-h-\[641px\] {
+  max-height: 641px;
 }
 
 .min-h-\[510px\] {
@@ -2740,10 +2752,6 @@ p {
   padding-top: 86px;
 }
 
-.pl-2 {
-  padding-left: 0.5rem;
-}
-
 .text-center {
   text-align: center;
 }
@@ -2844,6 +2852,10 @@ p {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-\[45px\] {
+  font-size: 45px;
 }
 
 .font-\[100\] {
@@ -2954,6 +2966,10 @@ p {
   line-height: 1.375;
 }
 
+.leading-\[46px\] {
+  line-height: 46px;
+}
+
 .tracking-\[\.5px\] {
   letter-spacing: .5px;
 }
@@ -2980,6 +2996,11 @@ p {
 .text-\[\#93918A\] {
   --tw-text-opacity: 1;
   color: rgb(147 145 138 / var(--tw-text-opacity));
+}
+
+.text-\[\#9B9B99\] {
+  --tw-text-opacity: 1;
+  color: rgb(155 155 153 / var(--tw-text-opacity));
 }
 
 .text-\[\#AF917C\] {
@@ -3054,11 +3075,6 @@ p {
 .text-whiteTextFooter {
   --tw-text-opacity: 1;
   color: rgb(233 233 233 / var(--tw-text-opacity));
-}
-
-.text-\[\#9B9B99\] {
-  --tw-text-opacity: 1;
-  color: rgb(155 155 153 / var(--tw-text-opacity));
 }
 
 .opacity-0 {
@@ -3727,10 +3743,6 @@ label input[type]:checked ~ span.middle {
     margin-top: 93px;
   }
 
-  .lg\:mt-11 {
-    margin-top: 2.75rem;
-  }
-
   .lg\:block {
     display: block;
   }
@@ -3947,6 +3959,10 @@ label input[type]:checked ~ span.middle {
 
   .lg\:w-full {
     width: 100%;
+  }
+
+  .lg\:w-\[848px\] {
+    width: 848px;
   }
 
   .lg\:min-w-\[222px\] {
@@ -4324,24 +4340,16 @@ label input[type]:checked ~ span.middle {
     padding-right: 80px;
   }
 
+  .lg\:pt-20 {
+    padding-top: 5rem;
+  }
+
   .lg\:pt-6 {
     padding-top: 1.5rem;
   }
 
   .lg\:pt-\[157px\] {
     padding-top: 157px;
-  }
-
-  .lg\:pt-12 {
-    padding-top: 3rem;
-  }
-
-  .lg\:pt-11 {
-    padding-top: 2.75rem;
-  }
-
-  .lg\:pt-20 {
-    padding-top: 5rem;
   }
 
   .lg\:text-start {
