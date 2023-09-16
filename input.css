@@ -116,6 +116,10 @@ label input[type="checkbox"] {
   right: 0;
 }
 
+.blacky span {
+  background: #000;
+}
+
 .bar span.top {
   top: 0;
 }
