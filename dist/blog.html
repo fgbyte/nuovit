@@ -16,8 +16,8 @@
 
 <body>
     <!-- Navbar White-->
-  <header class="text-black inset-x-0 top-0 z-20">
-    <nav class="max-w-[1358px] mx-auto flex justify-between items-end px-[40px] py-9 select-none z-50">
+  <header class="relative text-black inset-x-0 top-0">
+    <nav class="max-w-[1358px] mx-auto flex justify-between items-end px-[40px] py-9 select-none z-40">
       <div>
         <div class="hidden lg:flex">
           <img class="h-14" src="./assets/icons/nuovit-logo-black.svg" alt="logo" />
@@ -33,7 +33,7 @@
 
             <span class="shrink-0 transition duration-300 group-open:-rotate-180">
               <svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
-                <path d="M0.5 1.25L6 6.75L11.5 1.25" stroke="#EAC355" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M0.5 1.25L6 6.75L11.5 1.25" stroke="#000" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
             </span>
           </summary>
@@ -46,15 +46,15 @@
             </li>
           </ul>
         </details>
-        <a class="block hover:text-yellow" href="">Inversores</a>
-        <a class="block hover:text-yellow" href="">Sostenibilidad</a>
+        <a class="block hover:text-yellow" href="#">Inversores</a>
+        <a class="block hover:text-yellow" href="#">Sostenibilidad</a>
         <details class="group [&_summary::-webkit-details-marker]:hidden z-50">
           <summary class="flex items-center cursor-pointer gap-1 hover:text-yellow">
             <span>Conócenos</span>
 
             <span class="shrink-0 transition duration-300 group-open:-rotate-180">
               <svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
-                <path d="M0.5 1.25L6 6.75L11.5 1.25" stroke="#EAC355" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M0.5 1.25L6 6.75L11.5 1.25" stroke="#000" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
             </span>
           </summary>
@@ -79,14 +79,14 @@
       </label>
     </nav>
     <!-- Menu abierto -->
-    <div id="menu-items" class="hidden space-y-4 lg:hidden absolute top-0 py-8 pt-24 -z-10 bg-white px-[40px] w-full">
+    <div id="menu-items" class="hidden space-y-4 lg:hidden absolute top-0 py-8 mt-24 z-10 bg-white px-[40px] w-full">
       <details class="group [&_summary::-webkit-details-marker]:hidden ">
         <summary class="flex items-center cursor-pointer gap-1 hover:text-yellow">
           <span>Proyectos</span>
 
           <span class="shrink-0 transition duration-300 group-open:-rotate-180">
             <svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
-              <path d="M0.5 1.25L6 6.75L11.5 1.25" stroke="#EAC355" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M0.5 1.25L6 6.75L11.5 1.25" stroke="#000" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
           </span>
         </summary>
@@ -107,7 +107,7 @@
 
           <span class="shrink-0 transition duration-300 group-open:-rotate-180">
             <svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
-              <path d="M0.5 1.25L6 6.75L11.5 1.25" stroke="#EAC355" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M0.5 1.25L6 6.75L11.5 1.25" stroke="#000" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
           </span>
         </summary>
@@ -122,12 +122,14 @@
       </details>
     </div>
 
+    <!-- Gradiente -->
+    <div class="hidden absolute inset-0 h-screen w-full py-16 gradientblog -z-10 lg:block"></div>
   </header>
 
     <!-- Hero -->
-    <section class="relative h-[32.1875rem] bg-cover bg-center bg-no-repeat lg:contenido-lg lg:h-[38.125rem]"
+    <section class="relative h-[32.1875rem] bg-cover bg-center bg-no-repeat lg:h-[38.125rem]"
         style="background-image: url('./assets/img/blog-hero.jpg');">
-        <div class="absolute flex flex-col top-[22.1875rem] contenido  lg:top-[22.1875rem] lg:left-[45%]">
+        <div class="absolute flex flex-col top-[22.1875rem] contenido  lg:top-[22.1875rem] lg:left-[45%] lg:max-w-[540px]">
             <div class="flex flex-col gap-[0.67rem] p-[20px] w-[80%] bg-sand lg:p-12">
                 <p class="text-[0.75rem] font-bold text-madera">12/03/23</p>
                 <h2 class="text-[#363733]"><span class="font-semibold lg:text-[24px]">Brutalismo en Madrid:</span>

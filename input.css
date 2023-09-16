@@ -210,6 +210,16 @@ label input[type]:checked ~ span.middle {
   mix-blend-mode: multiply;
 }
 
+.gradientblog {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.50) 0%,
+    rgba(34, 34, 34, 0.00) 95.5%
+  );
+  opacity: 0.55000011920929;
+  mix-blend-mode: multiply;
+}
+
 .bg-landing-proyecto-hero {
   position: relative;
   background: url(../assets/img/landing-proyecto-hero.jpg);

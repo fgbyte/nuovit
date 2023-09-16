@@ -827,20 +827,12 @@ p {
   z-index: 20;
 }
 
-.z-50 {
-  z-index: 50;
-}
-
 .z-40 {
   z-index: 40;
 }
 
-.z-30 {
-  z-index: 30;
-}
-
-.-z-50 {
-  z-index: -50;
+.z-50 {
+  z-index: 50;
 }
 
 .m-2 {
@@ -1413,6 +1405,10 @@ p {
 
 .h-full {
   height: 100%;
+}
+
+.h-screen {
+  height: 100vh;
 }
 
 .max-h-\[200px\] {
@@ -3210,6 +3206,16 @@ label input[type]:checked ~ span.middle {
   mix-blend-mode: multiply;
 }
 
+.gradientblog {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.50) 0%,
+    rgba(34, 34, 34, 0.00) 95.5%
+  );
+  opacity: 0.55000011920929;
+  mix-blend-mode: multiply;
+}
+
 .bg-landing-proyecto-hero {
   position: relative;
   background: url(../assets/img/landing-proyecto-hero.jpg);
@@ -3958,6 +3964,14 @@ label input[type]:checked ~ span.middle {
 
   .lg\:max-w-xl {
     max-width: 36rem;
+  }
+
+  .lg\:max-w-\[454px\] {
+    max-width: 454px;
+  }
+
+  .lg\:max-w-\[540px\] {
+    max-width: 540px;
   }
 
   .lg\:flex-1 {
