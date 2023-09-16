@@ -1302,6 +1302,10 @@ p {
   height: 3.1363rem;
 }
 
+.h-\[300px\] {
+  height: 300px;
+}
+
 .h-\[30px\] {
   height: 30px;
 }
@@ -1405,22 +1409,6 @@ p {
 
 .h-full {
   height: 100%;
-}
-
-.h-screen {
-  height: 100vh;
-}
-
-.h-\[278px\] {
-  height: 278px;
-}
-
-.h-\[340px\] {
-  height: 340px;
-}
-
-.h-\[300px\] {
-  height: 300px;
 }
 
 .max-h-\[200px\] {
@@ -3970,20 +3958,16 @@ label input[type]:checked ~ span.middle {
     max-width: 400px;
   }
 
+  .lg\:max-w-\[540px\] {
+    max-width: 540px;
+  }
+
   .lg\:max-w-none {
     max-width: none;
   }
 
   .lg\:max-w-xl {
     max-width: 36rem;
-  }
-
-  .lg\:max-w-\[454px\] {
-    max-width: 454px;
-  }
-
-  .lg\:max-w-\[540px\] {
-    max-width: 540px;
   }
 
   .lg\:flex-1 {
