@@ -1411,6 +1411,18 @@ p {
   height: 100vh;
 }
 
+.h-\[278px\] {
+  height: 278px;
+}
+
+.h-\[340px\] {
+  height: 340px;
+}
+
+.h-\[300px\] {
+  height: 300px;
+}
+
 .max-h-\[200px\] {
   max-height: 200px;
 }
