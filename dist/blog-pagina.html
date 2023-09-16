@@ -14,6 +14,123 @@
 </head>
 
 <body>
+    <!-- Navbar White-->
+    <header class="relative text-black inset-x-0 top-0">
+        <nav class="max-w-[1358px] mx-auto flex justify-between items-end px-[40px] py-9 select-none z-40">
+            <div>
+                <div class="hidden lg:flex">
+                    <img class="h-14" src="./assets/icons/nuovit-logo-black.svg" alt="logo" />
+                </div>
+                <img class="lg:hidden h-[35.973px]" src="./assets/icons/nuovit-logo-simple 1.svg" alt="logo_nuovit" />
+            </div>
+
+            <!--  menu pc  -->
+            <div id="menu-pc" class="hidden lg:flex gap-14 group [&_summary::-webkit-details-marker]:hidden pb-2">
+                <details class="group [&_summary::-webkit-details-marker]:hidden z-50">
+                    <summary class="flex items-center cursor-pointer gap-1 hover:text-yellow">
+                        <span>Proyectos</span>
+
+                        <span class="shrink-0 transition duration-300 group-open:-rotate-180">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8"
+                                fill="none">
+                                <path d="M0.5 1.25L6 6.75L11.5 1.25" stroke="#000" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                    </summary>
+                    <ul class="flex flex-col gap-2 absolute mt-2 bg-white p-4">
+                        <li>
+                            <a href="" class="block hover:text-yellow"> Residenciales </a>
+                        </li>
+                        <li>
+                            <a href="" class="block hover:text-yellow"> Comerciales </a>
+                        </li>
+                    </ul>
+                </details>
+                <a class="block hover:text-yellow" href="#">Inversores</a>
+                <a class="block hover:text-yellow" href="#">Sostenibilidad</a>
+                <details class="group [&_summary::-webkit-details-marker]:hidden z-50">
+                    <summary class="flex items-center cursor-pointer gap-1 hover:text-yellow">
+                        <span>Conócenos</span>
+
+                        <span class="shrink-0 transition duration-300 group-open:-rotate-180">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8"
+                                fill="none">
+                                <path d="M0.5 1.25L6 6.75L11.5 1.25" stroke="#000" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </span>
+                    </summary>
+                    <ul class="flex flex-col gap-2 absolute mt-2 bg-white p-4">
+                        <li>
+                            <a href="" class="block hover:text-yellow"> Residenciales </a>
+                        </li>
+                        <li>
+                            <a href="" class="block hover:text-yellow"> Comerciales </a>
+                        </li>
+                    </ul>
+                </details>
+            </div>
+
+            <!-- mobile menu -->
+            <label class="bar blacky lg:hidden scale-50 right-[-15px]" for="menu-mobile">
+                <input type="checkbox" id="menu-mobile" />
+
+                <span class="top"></span>
+                <span class="middle"></span>
+                <span class="bottom"></span>
+            </label>
+        </nav>
+        <!-- Menu abierto -->
+        <div id="menu-items"
+            class="hidden space-y-4 lg:hidden absolute top-0 py-8 mt-24 z-10 bg-white px-[40px] w-full">
+            <details class="group [&_summary::-webkit-details-marker]:hidden ">
+                <summary class="flex items-center cursor-pointer gap-1 hover:text-yellow">
+                    <span>Proyectos</span>
+
+                    <span class="shrink-0 transition duration-300 group-open:-rotate-180">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                            <path d="M0.5 1.25L6 6.75L11.5 1.25" stroke="#000" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </span>
+                </summary>
+                <ul class="flex flex-col gap-2 relative mt-2 ml-4">
+                    <li>
+                        <a href="" class="block hover:text-yellow"> Residenciales </a>
+                    </li>
+                    <li>
+                        <a href="" class="block hover:text-yellow"> Comerciales </a>
+                    </li>
+                </ul>
+            </details>
+            <a class="block hover:text-yellow" href="">Inversores</a>
+            <a class="block hover:text-yellow" href="">Sostenibilidad</a>
+            <details class="group [&_summary::-webkit-details-marker]:hidden">
+                <summary class="flex items-center cursor-pointer gap-1 hover:text-yellow">
+                    <span>Conócenos</span>
+
+                    <span class="shrink-0 transition duration-300 group-open:-rotate-180">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                            <path d="M0.5 1.25L6 6.75L11.5 1.25" stroke="#000" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </span>
+                </summary>
+                <ul class="flex flex-col gap-2 relative mt-2 ml-4">
+                    <li>
+                        <a href="" class="block hover:text-yellow"> Residenciales </a>
+                    </li>
+                    <li>
+                        <a href="" class="block hover:text-yellow"> Comerciales </a>
+                    </li>
+                </ul>
+            </details>
+        </div>
+
+        <!-- Gradiente -->
+        <div class="hidden absolute inset-0 h-screen w-full py-16 gradientblog -z-10 lg:block"></div>
+    </header>
     <!-- Article -->
     <section>
         <div class="flex flex-col lg:flex-row lg:gap-[76px]">
@@ -188,14 +305,14 @@
         <!-- Carousel -->
         <div class="relative flex flex-col items-center mt-[33px] lg:mt-[61px]">
             <article class="carousel-container snap-x snap-mandatory flex overflow-x-auto gap-8 px-8">
-                <img data-index="0" class="w-[605px] h-auto snap-start md:scroll-m-8 scroll-m-4" src="./assets/img/blog-pagina-2.jpg"
-                    alt="pagina">
-                <img data-index="1" class="w-[605px] h-auto snap-start md:scroll-m-8 scroll-m-4" src="./assets/img/blog-hero.jpg"
-                    alt="pagina">
-                <img data-index="2" class="w-[605px] h-auto snap-start md:scroll-m-8 scroll-m-4" src="./assets/img/blog-pagina-2.jpg"
-                    alt="pagina">
-                <img data-index="3" class="w-[605px] h-auto snap-start md:scroll-m-8 scroll-m-12" src="./assets/img/blog-hero.jpg"
-                    alt="pagina">
+                <img data-index="0" class="w-[605px] h-auto snap-start md:scroll-m-8 scroll-m-4"
+                    src="./assets/img/blog-pagina-2.jpg" alt="pagina">
+                <img data-index="1" class="w-[605px] h-auto snap-start md:scroll-m-8 scroll-m-4"
+                    src="./assets/img/blog-hero.jpg" alt="pagina">
+                <img data-index="2" class="w-[605px] h-auto snap-start md:scroll-m-8 scroll-m-4"
+                    src="./assets/img/blog-pagina-2.jpg" alt="pagina">
+                <img data-index="3" class="w-[605px] h-auto snap-start md:scroll-m-8 scroll-m-12"
+                    src="./assets/img/blog-hero.jpg" alt="pagina">
             </article>
             <div class="guias flex gap-8 hover:[&>div]:cursor-pointer max-h-[813px] pt-10">
                 <div data-index="0" class="h-3 w-3 bg-gray-300 rounded-full"></div>
@@ -285,6 +402,8 @@
     </section>
 
     <script src="./js/simple-carousel.js"></script>
+    <script src="./js/menu-mobile.js"></script>
+
 </body>
 
 </html>
