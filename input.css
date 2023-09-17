@@ -306,3 +306,8 @@ label input[type]:checked ~ span.middle {
 .bg-gray-400{
   background-color: #9ca3af;
 }
+
+/* Acordion */
+.max-h-active{
+  max-height: 1700px;
+}
