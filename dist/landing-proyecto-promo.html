@@ -177,38 +177,16 @@
 
     <!-- Carousel Section -->
     <section class="relative px-4 py-8 lg:px-20 lg:py-11">
-        <!-- Carousel SM -->
-        <div
-            class="carousel-container lg:hidden flex flex-row gap-[20px] lg:gap-6 lg:flex-wrap overflow-x-auto overflow-y-hidden snap-x snap-mandatory">
-            <img data-index="0" class="w-[605px] snap-start h-auto" src="./assets/img/ficha-proyecto-carousel.jpg"
-                alt="pagina">
-            <img data-index="1" class="w-[605px] snap-start h-auto" src="./assets/img/ficha-proyecto-carousel.jpg"
-                alt=" pagina">
-            <img data-index="2" class="w-[605px] snap-start h-auto" src="./assets/img/ficha-proyecto-carousel.jpg"
-                alt="pagina">
-            <img data-index="3" class="w-[605px] snap-start h-auto" src="./assets/img/ficha-proyecto-carousel.jpg"
-                alt="pagina">
-            <img data-index="4" class="w-[605px] snap-start h-auto" src="./assets/img/ficha-proyecto-carousel.jpg"
-                alt="pagina">
-        </div>
-        <div class="guias flex justify-center gap-8 hover:[&>div]:cursor-pointer max-h-[813px] pt-10 lg:hidden">
-            <div data-index="0" class="h-3 w-3 bg-gray-300 rounded-full"></div>
-            <div data-index="1" class="h-3 w-3 bg-gray-300 rounded-full"></div>
-            <div data-index="2" class="h-3 w-3 bg-gray-300 rounded-full"></div>
-            <div data-index="3" class="h-3 w-3 bg-gray-300 rounded-full"></div>
-            <div data-index="4" class="h-3 w-3 bg-gray-300 rounded-full"></div>
-        </div>
-        </div>
 
         <!-- Carousel LG -->
         <div class="hidden lg:block">
             <!-- arrows -->
-            <img class="absolute cursor-pointer top-[40%] left-4" src="./assets/inversores/Group 751.svg" alt="Group">
-            <img class="absolute cursor-pointer top-[40%] right-4" src="./assets/inversores/Group 755.svg" alt="Group">
+            <img id="carousel-left" class="absolute cursor-pointer top-[40%] left-4" src="./assets/inversores/Group 751.svg" alt="Group">
+            <img id="carousel-right" class="absolute cursor-pointer top-[40%] right-4" src="./assets/inversores/Group 755.svg" alt="Group">
 
-            <div id="carousel-thumbs" class="lg:min-w-fit">
+            <div id="carousel-thumbs snap-mandatory snap-x" class="lg:min-w-fit">
                 <div
-                    class="carousel-container hidden lg:flex lg:flex-row lg:items-center lg:justify-start lg:gap-6 overflow-x-auto overflow-y-hidden snap-mandatory">
+                    class="carousel-container hidden lg:flex lg:flex-row lg:items-center lg:justify-start lg:gap-6 overflow-x-auto overflow-y-hidden snap-x snap-mandatory">
                     <img data-index="0" class="min-w-fit snap-start max-h-[450px]"
                         src="./assets/img/ficha-proyecto-carousel.jpg" alt="pagina">
                     <img data-index="1" class="min-w-fit snap-start max-h-[450px]"
@@ -245,7 +223,28 @@
             </div>
         </div>
     </section>
-
+        <!-- Carousel SM -->
+        <div
+            class="carousel-container lg:hidden flex flex-row gap-[20px] lg:gap-6 lg:flex-wrap overflow-x-auto overflow-y-hidden snap-x snap-mandatory">
+            <img data-index="0" class="w-[605px] snap-start h-auto" src="./assets/img/ficha-proyecto-carousel.jpg"
+                alt="pagina">
+            <img data-index="1" class="w-[605px] snap-start h-auto" src="./assets/img/ficha-proyecto-carousel.jpg"
+                alt=" pagina">
+            <img data-index="2" class="w-[605px] snap-start h-auto" src="./assets/img/ficha-proyecto-carousel.jpg"
+                alt="pagina">
+            <img data-index="3" class="w-[605px] snap-start h-auto" src="./assets/img/ficha-proyecto-carousel.jpg"
+                alt="pagina">
+            <img data-index="4" class="w-[605px] snap-start h-auto" src="./assets/img/ficha-proyecto-carousel.jpg"
+                alt="pagina">
+        </div>
+        <div class="guias flex justify-center gap-8 hover:[&>div]:cursor-pointer max-h-[813px] pt-10 lg:hidden">
+            <div data-index="0" class="h-3 w-3 bg-gray-300 rounded-full"></div>
+            <div data-index="1" class="h-3 w-3 bg-gray-300 rounded-full"></div>
+            <div data-index="2" class="h-3 w-3 bg-gray-300 rounded-full"></div>
+            <div data-index="3" class="h-3 w-3 bg-gray-300 rounded-full"></div>
+            <div data-index="4" class="h-3 w-3 bg-gray-300 rounded-full"></div>
+        </div>
+        </div>
 
 
     <!-- Icons Section -->

@@ -320,6 +320,9 @@ label input[type]:checked ~ span.middle {
 .bg-gray-400{
   background-color: #9ca3af;
 }
+.brightness-150{
+  filter: brightness(1.5);
+}
 
 /* Acordion */
 .max-h-active{
