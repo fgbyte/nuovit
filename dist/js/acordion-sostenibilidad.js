@@ -83,3 +83,15 @@ reedLeesButton6.addEventListener('click', () => {
   content6.classList.toggle('max-h-active')
   toggleButton6.classList.toggle('rotate-180')
 });
+
+
+//Scroll suave entre #ids
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+      });
+  });
+});
