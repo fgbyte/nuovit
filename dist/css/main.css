@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com
+! tailwindcss v3.3.2 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -191,10 +191,6 @@ select,
 textarea {
   font-family: inherit;
   /* 1 */
-  font-feature-settings: inherit;
-  /* 1 */
-  font-variation-settings: inherit;
-  /* 1 */
   font-size: 100%;
   /* 1 */
   font-weight: inherit;
@@ -342,14 +338,6 @@ ul,
 menu {
   list-style: none;
   margin: 0;
-  padding: 0;
-}
-
-/*
-Reset default styling for dialogs.
-*/
-
-dialog {
   padding: 0;
 }
 
@@ -655,6 +643,10 @@ p {
   bottom: -100px;
 }
 
+.-bottom-\[50\%\] {
+  bottom: -50%;
+}
+
 .-bottom-\[900px\] {
   bottom: -900px;
 }
@@ -837,10 +829,6 @@ p {
 
 .top-\[55\%\] {
   top: 55%;
-}
-
-.-bottom-\[50\%\] {
-  bottom: -50%;
 }
 
 .-z-10 {
@@ -1218,6 +1206,10 @@ p {
   margin-top: 36px;
 }
 
+.mt-\[39px\] {
+  margin-top: 39px;
+}
+
 .mt-\[59px\] {
   margin-top: 59px;
 }
@@ -1240,14 +1232,6 @@ p {
 
 .mt-auto {
   margin-top: auto;
-}
-
-.mt-\[39px\] {
-  margin-top: 39px;
-}
-
-.mt-28 {
-  margin-top: 7rem;
 }
 
 .block {
@@ -1647,6 +1631,10 @@ p {
   width: 300px;
 }
 
+.w-\[30px\] {
+  width: 30px;
+}
+
 .w-\[310px\] {
   width: 310px;
 }
@@ -1778,10 +1766,6 @@ p {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-\[30px\] {
-  width: 30px;
 }
 
 .min-w-\[130px\] {
@@ -2566,14 +2550,14 @@ p {
   padding-right: 2.5rem;
 }
 
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
 .px-14 {
   padding-left: 3.5rem;
   padding-right: 3.5rem;
-}
-
-.px-16 {
-  padding-left: 4rem;
-  padding-right: 4rem;
 }
 
 .px-3 {
@@ -2656,11 +2640,6 @@ p {
   padding-bottom: 0.75rem;
 }
 
-.py-36 {
-  padding-top: 9rem;
-  padding-bottom: 9rem;
-}
-
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -2721,26 +2700,6 @@ p {
   padding-bottom: 8px;
 }
 
-.py-28 {
-  padding-top: 7rem;
-  padding-bottom: 7rem;
-}
-
-.px-12 {
-  padding-left: 3rem;
-  padding-right: 3rem;
-}
-
-.px-11 {
-  padding-left: 2.75rem;
-  padding-right: 2.75rem;
-}
-
-.py-44 {
-  padding-top: 11rem;
-  padding-bottom: 11rem;
-}
-
 .pb-0 {
   padding-bottom: 0px;
 }
@@ -2765,6 +2724,10 @@ p {
   padding-bottom: 1rem;
 }
 
+.pb-44 {
+  padding-bottom: 11rem;
+}
+
 .pb-5 {
   padding-bottom: 1.25rem;
 }
@@ -2787,6 +2750,10 @@ p {
 
 .pb-\[21\%\] {
   padding-bottom: 21%;
+}
+
+.pb-\[290px\] {
+  padding-bottom: 290px;
 }
 
 .pl-1 {
@@ -2849,6 +2816,10 @@ p {
   padding-top: 0.5rem;
 }
 
+.pt-20 {
+  padding-top: 5rem;
+}
+
 .pt-24 {
   padding-top: 6rem;
 }
@@ -2871,22 +2842,6 @@ p {
 
 .pt-\[86px\] {
   padding-top: 86px;
-}
-
-.pt-20 {
-  padding-top: 5rem;
-}
-
-.pb-36 {
-  padding-bottom: 9rem;
-}
-
-.pb-\[290px\] {
-  padding-bottom: 290px;
-}
-
-.pb-44 {
-  padding-bottom: 11rem;
 }
 
 .text-center {
@@ -3714,6 +3669,10 @@ label input[type]:checked ~ span.middle {
     position: relative;
   }
 
+  .lg\:-bottom-\[45\%\] {
+    bottom: -45%;
+  }
+
   .lg\:-bottom-\[500px\] {
     bottom: -500px;
   }
@@ -3736,6 +3695,10 @@ label input[type]:checked ~ span.middle {
 
   .lg\:bottom-4 {
     bottom: 1rem;
+  }
+
+  .lg\:bottom-\[181px\] {
+    bottom: 181px;
   }
 
   .lg\:bottom-auto {
@@ -3770,6 +3733,10 @@ label input[type]:checked ~ span.middle {
     right: -80%;
   }
 
+  .lg\:right-\[22\%\] {
+    right: 22%;
+  }
+
   .lg\:right-\[250px\] {
     right: 250px;
   }
@@ -3780,30 +3747,6 @@ label input[type]:checked ~ span.middle {
 
   .lg\:top-\[22\.1875rem\] {
     top: 22.1875rem;
-  }
-
-  .lg\:left-\[32\%\] {
-    left: 32%;
-  }
-
-  .lg\:right-\[32\%\] {
-    right: 32%;
-  }
-
-  .lg\:bottom-\[181px\] {
-    bottom: 181px;
-  }
-
-  .lg\:right-\[22\%\] {
-    right: 22%;
-  }
-
-  .lg\:-bottom-\[40\%\] {
-    bottom: -40%;
-  }
-
-  .lg\:-bottom-\[45\%\] {
-    bottom: -45%;
   }
 
   .lg\:col-span-2 {
@@ -3976,10 +3919,6 @@ label input[type]:checked ~ span.middle {
 
   .lg\:mt-\[93px\] {
     margin-top: 93px;
-  }
-
-  .lg\:mt-20 {
-    margin-top: 5rem;
   }
 
   .lg\:block {
@@ -4167,6 +4106,10 @@ label input[type]:checked ~ span.middle {
     width: 42%;
   }
 
+  .lg\:w-\[45px\] {
+    width: 45px;
+  }
+
   .lg\:w-\[488px\] {
     width: 488px;
   }
@@ -4230,10 +4173,6 @@ label input[type]:checked ~ span.middle {
 
   .lg\:w-full {
     width: 100%;
-  }
-
-  .lg\:w-\[45px\] {
-    width: 45px;
   }
 
   .lg\:min-w-\[222px\] {
@@ -4551,6 +4490,11 @@ label input[type]:checked ~ span.middle {
     padding-right: 180px;
   }
 
+  .lg\:px-\[296px\] {
+    padding-left: 296px;
+    padding-right: 296px;
+  }
+
   .lg\:px-\[34px\] {
     padding-left: 34px;
     padding-right: 34px;
@@ -4591,16 +4535,6 @@ label input[type]:checked ~ span.middle {
     padding-bottom: 1.75rem;
   }
 
-  .lg\:px-\[296px\] {
-    padding-left: 296px;
-    padding-right: 296px;
-  }
-
-  .lg\:py-\[300px\] {
-    padding-top: 300px;
-    padding-bottom: 300px;
-  }
-
   .lg\:pb-16 {
     padding-bottom: 4rem;
   }
@@ -4611,6 +4545,14 @@ label input[type]:checked ~ span.middle {
 
   .lg\:pb-24 {
     padding-bottom: 6rem;
+  }
+
+  .lg\:pb-\[284px\] {
+    padding-bottom: 284px;
+  }
+
+  .lg\:pb-\[300px\] {
+    padding-bottom: 300px;
   }
 
   .lg\:pl-0 {
@@ -4667,18 +4609,6 @@ label input[type]:checked ~ span.middle {
 
   .lg\:pt-\[157px\] {
     padding-top: 157px;
-  }
-
-  .lg\:pb-\[300px\] {
-    padding-bottom: 300px;
-  }
-
-  .lg\:pb-\[284\] {
-    padding-bottom: 284;
-  }
-
-  .lg\:pb-\[284px\] {
-    padding-bottom: 284px;
   }
 
   .lg\:text-center {
@@ -4902,10 +4832,6 @@ label input[type]:checked ~ span.middle {
 
 .\[\&\>p\]\:text-\[12px\]>p {
   font-size: 12px;
-}
-
-.\[\&\>p\]\:text-\[160px\]>p {
-  font-size: 160px;
 }
 
 .\[\&\>p\]\:text-\[16px\]>p {
