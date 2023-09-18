@@ -1230,6 +1230,14 @@ p {
   margin-top: auto;
 }
 
+.mt-\[39px\] {
+  margin-top: 39px;
+}
+
+.mt-28 {
+  margin-top: 7rem;
+}
+
 .block {
   display: block;
 }
@@ -1758,6 +1766,10 @@ p {
 
 .w-screen {
   width: 100vw;
+}
+
+.w-\[30px\] {
+  width: 30px;
 }
 
 .min-w-\[130px\] {
@@ -2707,6 +2719,16 @@ p {
   padding-right: 3rem;
 }
 
+.px-11 {
+  padding-left: 2.75rem;
+  padding-right: 2.75rem;
+}
+
+.py-44 {
+  padding-top: 11rem;
+  padding-bottom: 11rem;
+}
+
 .pb-0 {
   padding-bottom: 0px;
 }
@@ -2849,6 +2871,10 @@ p {
 
 .pb-\[290px\] {
   padding-bottom: 290px;
+}
+
+.pb-44 {
+  padding-bottom: 11rem;
 }
 
 .text-center {
@@ -3936,6 +3962,10 @@ label input[type]:checked ~ span.middle {
     margin-top: 93px;
   }
 
+  .lg\:mt-20 {
+    margin-top: 5rem;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -4184,6 +4214,10 @@ label input[type]:checked ~ span.middle {
 
   .lg\:w-full {
     width: 100%;
+  }
+
+  .lg\:w-\[45px\] {
+    width: 45px;
   }
 
   .lg\:min-w-\[222px\] {
@@ -4623,6 +4657,14 @@ label input[type]:checked ~ span.middle {
     padding-bottom: 300px;
   }
 
+  .lg\:pb-\[284\] {
+    padding-bottom: 284;
+  }
+
+  .lg\:pb-\[284px\] {
+    padding-bottom: 284px;
+  }
+
   .lg\:text-center {
     text-align: center;
   }
@@ -4844,6 +4886,14 @@ label input[type]:checked ~ span.middle {
 
 .\[\&\>p\]\:text-\[12px\]>p {
   font-size: 12px;
+}
+
+.\[\&\>p\]\:text-\[160px\]>p {
+  font-size: 160px;
+}
+
+.\[\&\>p\]\:text-\[16px\]>p {
+  font-size: 16px;
 }
 
 .\[\&_summary\:\:-webkit-details-marker\]\:hidden summary::-webkit-details-marker {
