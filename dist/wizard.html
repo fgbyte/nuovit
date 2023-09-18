@@ -15,7 +15,7 @@
 
 <body>
     <!-- Navbar White-->
-  <header class="relative text-black inset-x-0 top-0">
+  <header class="text-black inset-x-0 top-0">
     <nav class="max-w-[1358px] mx-auto flex justify-between items-end px-[40px] py-9 select-none z-40">
       <div>
         <div class="hidden lg:flex">
@@ -127,14 +127,23 @@
 
   <!-- Content -->
   <main>
-    <section class="relative px-16 py-36">
+    <section class="relative px-12 pt-20 pb-[290px] lg:px-[296px] lg:pb-[300px]">
         <div class="flex flex-col gap-24 lg:flex-row lg:gap-5">
-          <div class="flex flex-col gap-7">
+          <div class="flex flex-col gap-7 lg:max-w-[524px]">
             <h1 class="lg:text-[70px]">Tu casa<span> ideal</span></h1>
             <p class="text-[16px] lg:text-[24px]">Déjanos saber cómo te imaginas la casa de tus sueños. Te buscaremos la vivienda que mejor se adapte a tus deseos.</p>
           </div>
-          
+
+          <div class="flex gap-2 self-end items-end lg:absolute lg:right-[22%] lg:bottom-[181px]">
+            <p class="text-[16px] font-[500]">Empezar</p>
+            <a href="#">
+              <img src="./assets/icons/arrow-wizard.svg" alt="">
+            </a>
+          </div>
         </div>
+        <i class="absolute -z-10 -bottom-[50%] left-0 lg:-bottom-[45%]">
+          <img src="./assets/icons/elipse-wizard.svg"></img>
+        </i>
     </section>
   </main>
 

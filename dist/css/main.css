@@ -827,6 +827,10 @@ p {
   top: 55%;
 }
 
+.-bottom-\[50\%\] {
+  bottom: -50%;
+}
+
 .-z-10 {
   z-index: -10;
 }
@@ -2069,6 +2073,10 @@ p {
   gap: 0.5rem;
 }
 
+.gap-24 {
+  gap: 6rem;
+}
+
 .gap-3 {
   gap: 0.75rem;
 }
@@ -2175,10 +2183,6 @@ p {
 
 .gap-\[7\.9375rem\] {
   gap: 7.9375rem;
-}
-
-.gap-24 {
-  gap: 6rem;
 }
 
 .gap-y-4 {
@@ -2628,6 +2632,11 @@ p {
   padding-bottom: 0.75rem;
 }
 
+.py-36 {
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+}
+
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -2688,9 +2697,14 @@ p {
   padding-bottom: 8px;
 }
 
-.py-36 {
-  padding-top: 9rem;
-  padding-bottom: 9rem;
+.py-28 {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.px-12 {
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .pb-0 {
@@ -2809,10 +2823,6 @@ p {
   padding-top: 0.75rem;
 }
 
-.pt-36 {
-  padding-top: 9rem;
-}
-
 .pt-4 {
   padding-top: 1rem;
 }
@@ -2827,6 +2837,18 @@ p {
 
 .pt-\[86px\] {
   padding-top: 86px;
+}
+
+.pt-20 {
+  padding-top: 5rem;
+}
+
+.pb-36 {
+  padding-bottom: 9rem;
+}
+
+.pb-\[290px\] {
+  padding-bottom: 290px;
 }
 
 .text-center {
@@ -3718,6 +3740,30 @@ label input[type]:checked ~ span.middle {
     top: 22.1875rem;
   }
 
+  .lg\:left-\[32\%\] {
+    left: 32%;
+  }
+
+  .lg\:right-\[32\%\] {
+    right: 32%;
+  }
+
+  .lg\:bottom-\[181px\] {
+    bottom: 181px;
+  }
+
+  .lg\:right-\[22\%\] {
+    right: 22%;
+  }
+
+  .lg\:-bottom-\[40\%\] {
+    bottom: -40%;
+  }
+
+  .lg\:-bottom-\[45\%\] {
+    bottom: -45%;
+  }
+
   .lg\:col-span-2 {
     grid-column: span 2 / span 2;
   }
@@ -4169,6 +4215,10 @@ label input[type]:checked ~ span.middle {
     max-width: 400px;
   }
 
+  .lg\:max-w-\[524px\] {
+    max-width: 524px;
+  }
+
   .lg\:max-w-\[540px\] {
     max-width: 540px;
   }
@@ -4296,6 +4346,10 @@ label input[type]:checked ~ span.middle {
     gap: 10rem;
   }
 
+  .lg\:gap-5 {
+    gap: 1.25rem;
+  }
+
   .lg\:gap-6 {
     gap: 1.5rem;
   }
@@ -4334,10 +4388,6 @@ label input[type]:checked ~ span.middle {
 
   .lg\:gap-\[76px\] {
     gap: 76px;
-  }
-
-  .lg\:gap-5 {
-    gap: 1.25rem;
   }
 
   .lg\:self-start {
@@ -4491,6 +4541,16 @@ label input[type]:checked ~ span.middle {
     padding-bottom: 1.75rem;
   }
 
+  .lg\:px-\[296px\] {
+    padding-left: 296px;
+    padding-right: 296px;
+  }
+
+  .lg\:py-\[300px\] {
+    padding-top: 300px;
+    padding-bottom: 300px;
+  }
+
   .lg\:pb-16 {
     padding-bottom: 4rem;
   }
@@ -4557,6 +4617,10 @@ label input[type]:checked ~ span.middle {
 
   .lg\:pt-\[157px\] {
     padding-top: 157px;
+  }
+
+  .lg\:pb-\[300px\] {
+    padding-bottom: 300px;
   }
 
   .lg\:text-center {
