@@ -2177,6 +2177,10 @@ p {
   gap: 7.9375rem;
 }
 
+.gap-24 {
+  gap: 6rem;
+}
+
 .gap-y-4 {
   row-gap: 1rem;
 }
@@ -2539,6 +2543,11 @@ p {
   padding-right: 3.5rem;
 }
 
+.px-16 {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -2679,6 +2688,11 @@ p {
   padding-bottom: 8px;
 }
 
+.py-36 {
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+}
+
 .pb-0 {
   padding-bottom: 0px;
 }
@@ -2793,6 +2807,10 @@ p {
 
 .pt-3 {
   padding-top: 0.75rem;
+}
+
+.pt-36 {
+  padding-top: 9rem;
 }
 
 .pt-4 {
@@ -3900,6 +3918,10 @@ label input[type]:checked ~ span.middle {
     height: 13rem;
   }
 
+  .lg\:h-\[100vh\] {
+    height: 100vh;
+  }
+
   .lg\:h-\[184px\] {
     height: 184px;
   }
@@ -3959,10 +3981,6 @@ label input[type]:checked ~ span.middle {
 
   .lg\:h-full {
     height: 100%;
-  }
-
-  .lg\:h-\[100vh\] {
-    height: 100vh;
   }
 
   .lg\:max-h-\[900px\] {
@@ -4316,6 +4334,10 @@ label input[type]:checked ~ span.middle {
 
   .lg\:gap-\[76px\] {
     gap: 76px;
+  }
+
+  .lg\:gap-5 {
+    gap: 1.25rem;
   }
 
   .lg\:self-start {
