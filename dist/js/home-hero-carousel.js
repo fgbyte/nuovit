@@ -86,21 +86,23 @@ const elemento1 = document.querySelector('.animation1');
 const elemento2 = document.querySelector('.animation2');
 const elemento3 = document.querySelector('.animation3');
 
+const delay = 5000
+
 function animarElemento1() {
   document.styleSheets[0].addRule(".animation3:after", 'animation: no-animation;');
   document.styleSheets[0].addRule(".animation1:after", 'animation: animation1 5s linear infinite;');
-  setTimeout(animarElemento2, 5000); 
+  setTimeout(animarElemento2, delay);
 }
 
 function animarElemento2() {
   document.styleSheets[0].addRule(".animation1:after", 'animation: no-animation;');
   document.styleSheets[0].addRule(".animation2:after", 'animation: animation2 5s linear infinite;');
-  setTimeout(animarElemento3, 5000);
+  setTimeout(animarElemento3, delay);
 }
 
 function animarElemento3() {
   document.styleSheets[0].addRule(".animation2:after", 'animation: no-animation;');
   document.styleSheets[0].addRule(".animation3:after", 'animation: animation3 5s linear infinite;');
-  setTimeout(animarElemento1, 5000); 
+  setTimeout(animarElemento1, delay);
 }
 animarElemento1();
