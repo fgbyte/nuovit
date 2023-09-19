@@ -1246,6 +1246,10 @@ p {
   margin-top: auto;
 }
 
+.mt-\[50px\] {
+  margin-top: 50px;
+}
+
 .block {
   display: block;
 }
@@ -1780,6 +1784,10 @@ p {
   width: 100vw;
 }
 
+.min-w-\[122px\] {
+  min-width: 122px;
+}
+
 .min-w-\[130px\] {
   min-width: 130px;
 }
@@ -2009,8 +2017,32 @@ p {
        columns: 1;
 }
 
+.grid-flow-col {
+  grid-auto-flow: column;
+}
+
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.grid-rows-4 {
+  grid-template-rows: repeat(4, minmax(0, 1fr));
+}
+
+.grid-rows-2 {
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+}
+
+.grid-rows-1 {
+  grid-template-rows: repeat(1, minmax(0, 1fr));
+}
+
+.grid-rows-3 {
+  grid-template-rows: repeat(3, minmax(0, 1fr));
+}
+
+.grid-rows-5 {
+  grid-template-rows: repeat(5, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -2063,6 +2095,10 @@ p {
 
 .justify-around {
   justify-content: space-around;
+}
+
+.justify-items-center {
+  justify-items: center;
 }
 
 .gap-0 {
@@ -2348,6 +2384,10 @@ p {
   border-top-width: 1px;
 }
 
+.border-b-0 {
+  border-bottom-width: 0px;
+}
+
 .border-solid {
   border-style: solid;
 }
@@ -2389,6 +2429,11 @@ p {
 .border-yellow {
   --tw-border-opacity: 1;
   border-color: rgb(234 195 85 / var(--tw-border-opacity));
+}
+
+.bg-\[\#1B1B1B\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(27 27 27 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#EAC355\] {
@@ -2697,6 +2742,11 @@ p {
   padding-bottom: 30px;
 }
 
+.py-\[35px\] {
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
 .py-\[36px\] {
   padding-top: 36px;
   padding-bottom: 36px;
@@ -2854,6 +2904,10 @@ p {
 
 .pt-\[86px\] {
   padding-top: 86px;
+}
+
+.pt-\[50px\] {
+  padding-top: 50px;
 }
 
 .text-center {
@@ -4013,6 +4067,10 @@ label input[type]:checked ~ span.middle {
     margin-top: 93px;
   }
 
+  .lg\:ml-\[50px\] {
+    margin-left: 50px;
+  }
+
   .lg\:block {
     display: block;
   }
@@ -4271,6 +4329,10 @@ label input[type]:checked ~ span.middle {
     min-width: 222px;
   }
 
+  .lg\:min-w-\[252px\] {
+    min-width: 252px;
+  }
+
   .lg\:min-w-fit {
     min-width: -moz-fit-content;
     min-width: fit-content;
@@ -4310,6 +4372,10 @@ label input[type]:checked ~ span.middle {
 
   .lg\:max-w-xl {
     max-width: 36rem;
+  }
+
+  .lg\:max-w-\[252px\] {
+    max-width: 252px;
   }
 
   .lg\:flex-1 {
@@ -4675,12 +4741,20 @@ label input[type]:checked ~ span.middle {
     padding-left: 40px;
   }
 
+  .lg\:pl-\[62px\] {
+    padding-left: 62px;
+  }
+
   .lg\:pr-0 {
     padding-right: 0px;
   }
 
   .lg\:pr-4 {
     padding-right: 1rem;
+  }
+
+  .lg\:pr-\[148px\] {
+    padding-right: 148px;
   }
 
   .lg\:pr-\[75px\] {
@@ -4701,6 +4775,14 @@ label input[type]:checked ~ span.middle {
 
   .lg\:pt-\[157px\] {
     padding-top: 157px;
+  }
+
+  .lg\:pr-20 {
+    padding-right: 5rem;
+  }
+
+  .lg\:pl-20 {
+    padding-left: 5rem;
   }
 
   .lg\:text-center {
@@ -4822,6 +4904,10 @@ label input[type]:checked ~ span.middle {
   margin-bottom: 2rem;
 }
 
+.\[\&\>a\>h3\]\:pr-28>a>h3 {
+  padding-right: 7rem;
+}
+
 .\[\&\>a\>img\]\:max-h-\[272px\]>a>img {
   max-height: 272px;
 }
@@ -4835,9 +4921,62 @@ label input[type]:checked ~ span.middle {
   max-width: fit-content;
 }
 
+.\[\&\>a\]\:w-5>a {
+  width: 1.25rem;
+}
+
+.\[\&\>a\]\:w-full>a {
+  width: 100%;
+}
+
+.\[\&\>a\]\:text-grayTextFooter>a {
+  --tw-text-opacity: 1;
+  color: rgb(144 144 144 / var(--tw-text-opacity));
+}
+
+@media (min-width: 976px) {
+  .lg\:\[\&\>a\]\:ml-\[64px\]>a {
+    margin-left: 64px;
+  }
+
+  .lg\:\[\&\>a\]\:ml-\[50px\]>a {
+    margin-left: 50px;
+  }
+
+  .lg\:\[\&\>a\]\:max-w-\[252px\]>a {
+    max-width: 252px;
+  }
+
+  .lg\:\[\&\>a\]\:border-r-\[1px\]>a {
+    border-right-width: 1px;
+  }
+
+  .lg\:\[\&\>a\]\:pl-\[64px\]>a {
+    padding-left: 64px;
+  }
+}
+
+.\[\&\>div\>a\]\:mt-2>div>a {
+  margin-top: 0.5rem;
+}
+
+.\[\&\>div\>a\]\:w-full>div>a {
+  width: 100%;
+}
+
 .\[\&\>div\>a\]\:text-xs>div>a {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+@media (min-width: 976px) {
+  .lg\:\[\&\>div\>a\]\:ml-\[50px\]>div>a {
+    margin-left: 50px;
+  }
+
+  .lg\:\[\&\>div\>a\]\:max-w-\[252px\]>div>a {
+    max-width: 252px;
+  }
 }
 
 .\[\&\>div\>div\>h3\]\:text-base>div>div>h3 {
