@@ -3523,7 +3523,87 @@ label input[type]:checked ~ span.middle {
   max-height: 1700px;
 }
 
-@media (min-width: 976px) {
+/* home animation */
+
+.animation1,.animation2,.animation3{
+  position: relative;
+}
+
+.animation1::before,.animation2::before,.animation3::before{
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+  background: #FFF;
+  width: 182px ;
+  height: 1px;
+  top: 2px;
+  left: 0;
+}
+
+.animation1::after {
+  content: '';
+  width: 0;
+  height: 4.8px;
+  background: #ffffff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: '';
+}
+
+.animation2::after {
+  content: '';
+  width: 0;
+  height: 4.8px;
+  background: #FFF;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: '';
+}
+
+.animation3::after {
+  content: '';
+  width: 0;
+  height: 4.8px;
+  background: #FFF;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: '';
+}
+
+@media (min-width: 976px){
+  @keyframes animation1 {
+    0% {
+      width: 0;
+    }
+
+    100% {
+      width: 182px;
+    }
+  }
+
+  @keyframes animation2 {
+    0% {
+      width: 0;
+    }
+
+    100% {
+      width: 182px;
+    }
+  }
+
+  @keyframes animation3 {
+    0% {
+      width: 0;
+    }
+
+    100% {
+      width: 182px;
+    }
+  }
+
   .lg\:contenido-lg {
     margin: 0 2.1875rem;
   }
