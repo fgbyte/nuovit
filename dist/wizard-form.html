@@ -2,19 +2,19 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wizard</title>
-    <link rel="stylesheet" href="./css/main.css" />
-    <!-- Google Fonts -->
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,700&family=Roboto:wght@100;300;400;500;700&display=swap');
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wizard</title>
+  <link rel="stylesheet" href="./css/main.css" />
+  <!-- Google Fonts -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,700&family=Roboto:wght@100;300;400;500;700&display=swap');
+  </style>
 </head>
 
 <body>
-    <!-- Navbar White-->
+  <!-- Navbar White-->
   <header class="text-black inset-x-0 top-0">
     <nav class="max-w-[1358px] mx-auto flex justify-between items-end px-[40px] py-9 select-none z-40">
       <div>
@@ -23,8 +23,8 @@
         </div>
         <img class="lg:hidden h-[35.973px]" src="./assets/icons/nuovit-logo-simple 1.svg" alt="logo_nuovit" />
       </div>
-      
-     <!--  menu pc  -->
+
+      <!--  menu pc  -->
       <div id="menu-pc" class="hidden lg:flex gap-14 group [&_summary::-webkit-details-marker]:hidden pb-2">
         <details class="group [&_summary::-webkit-details-marker]:hidden z-50">
           <summary class="flex items-center cursor-pointer gap-1 hover:text-yellow">
@@ -71,7 +71,7 @@
       <!-- mobile menu -->
       <label class="bar blacky lg:hidden scale-50 right-[-15px]" for="menu-mobile">
         <input type="checkbox" id="menu-mobile" />
-        
+
         <span class="top"></span>
         <span class="middle"></span>
         <span class="bottom"></span>
@@ -128,30 +128,247 @@
   <!-- Content -->
   <main>
     <section class="relative px-12 py-20 pb-44 lg:px-[296px] lg:pb-[284px]">
-        <div class="flex flex-col gap-5 items-center">
-            <h1 class="text-[32px] lg:text-[24px]">Tu casa<span> ideal</span></h1>
-            <hr class="border-black w-full">
+      <div class="flex flex-col gap-5 items-center">
+        <h1 class="text-[32px] lg:text-[24px]">Tu casa<span> ideal</span></h1>
+        <hr class="border-black w-full">
+      </div>
+      <!-- indicadores -->
+      <div class="mt-[39px] flex flex-row justify-between items-center">
+        <img class="w-[30px] cursor-pointer lg:w-[45px]" src="./assets/inversores/Group 751.svg" alt="Group">
+        <div class="flex items-end gap-1 [&>p]:text-[16px]">
+          <p>01</p>
+          <i>
+            <img src="./assets/icons/wizard-numbers-separator.svg" alt="">
+          </i>
+          <p>14</p>
         </div>
-        <!-- indicadores -->
-        <div class="mt-[39px] flex flex-row justify-between items-center">
-            <img class="w-[30px] cursor-pointer lg:w-[45px]" src="./assets/inversores/Group 751.svg" alt="Group">
-            <div class="flex items-end gap-1 [&>p]:text-[16px]">
-                <p>01</p>
-                <i>
-                    <img src="./assets/icons/wizard-numbers-separator.svg" alt="">
-                </i>
-                <p>14</p>
-            </div>
-            <img class="w-[30px] cursor-pointer lg:w-[45px]" src="./assets/inversores/Group 755.svg" alt="Group">
+        <img class="w-[30px] cursor-pointer lg:w-[45px]" src="./assets/inversores/Group 755.svg" alt="Group">
 
-        </div>
-        <!-- inputs -->
+      </div>
+      <!-- inputs -->
+      <form>
+        <!-- card 1 -->
         <div class="mt-20">
-            <div class="flex flex-col gap-8 items-center">
-                <label class="text-[24px]" for="">¿Cuál es tu género?</label>
-                <input type="text">Inputs
-            </div>
+          <div class="flex flex-col gap-8 items-center">
+            <label class="text-[24px] text-center leading-normal lg:text-[40px]" for="rooms">¿Qué edad tienes?</label>
+            <input id="rooms" class="w-full" type="range" min="18" max="100" value="18" step="1"
+              oninput="updateValue(this.value)">
+            <p class="-mt-5 text-[16px]" id="slider-value">18</p>
+            <script>
+              function updateValue(val) {
+                document.getElementById('slider-value').textContent = val;
+              }
+            </script>
+          </div>
         </div>
+
+        <!-- card 2 -->
+        <div class="mt-20">
+          <div class="flex flex-col gap-8 items-center">
+            <label class="text-[24px] text-center leading-normal lg:text-[40px]" for="genres">¿Cuál es tu género?</label>
+
+            <select id="genres"
+              class="bg-[#FAFAFA] border border-gray-300 text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-[80%] p-3 text-[16px] lg:w-[360px]">
+              <option value="mujer">Mujer</option>
+              <option value="hombre">Hombre</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- card 3 -->
+        <div class="mt-20">
+          <div class="flex flex-col gap-8 items-center">
+            <label class="text-[24px] text-center leading-normal lg:text-[40px]" for="postal-code">¿Cuál es tu Código Postal?</label>
+            <input class="bg-[#FAFAFA] border border-gray-300 text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-[80%] p-3 text-[16px] lg:w-[360px]" type="text" id="postal-code" name="postal-code" required>
+          </div>
+        </div>
+
+         <!-- card 4 -->
+         <div class="mt-20">
+          <div class="flex flex-col gap-8 items-center">
+            <label class="text-[24px] text-center leading-normal lg:text-[40px]" for="childrens">¿Cuántos hijos tienes?</label>
+
+            <select id="childrens"
+              class="bg-[#FAFAFA] border border-gray-300 text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-[80%] p-3 text-[16px] lg:w-[360px]">
+              <option value="ninguno">Ninguno</option>
+              <option value="option1">option1</option>
+              <option value="option2">option2</option>
+              <option value="option3">option3</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- card 5 -->
+        <div class="mt-20">
+          <div class="flex flex-col gap-8 items-center">
+            <label class="text-[24px] text-center leading-normal lg:text-[40px]" for="house">¿Qué tipo de vivienda prefieres?</label>
+
+            <select id="house"
+              class="bg-[#FAFAFA] border border-gray-300 text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-[80%] p-3 text-[16px] lg:w-[360px]">
+              <option value="ninguno">Piso</option>
+              <option value="option1">option1</option>
+              <option value="option2">option2</option>
+              <option value="option3">option3</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- card 6 -->
+        <div class="mt-20">
+          <div class="flex flex-col gap-8 items-center">
+            <label class="text-[24px] text-center leading-normal lg:text-[40px]" for="age">¿Cuántos dormitorios te gustaría tener?</label>
+            <input id="rooms" class="w-full" type="range" min="1" max="10" value="1" step="1"
+              oninput="updateValue2(this.value)">
+            <p class="-mt-5 text-[16px]" id="slider-value2">1</p>
+            <script>
+              function updateValue2(val) {
+                document.getElementById('slider-value2').textContent = val;
+              }
+            </script>
+          </div>
+        </div>
+
+        <!-- card 7 -->
+        <div class="mt-20">
+          <div class="flex flex-col gap-8 items-center">
+            <label class="text-[24px] text-center leading-normal lg:text-[40px]" for="">¿Qué más te gustaría tener en tu casa?</label>
+            <div class="grid grid-rows-3 grid-flow-col gap-y-5 gap-x-10 lg:grid-rows-2 lg:gap-x-16">
+              <div class="flex items-center gap-2">
+                <input class="h-4 w-4 rounded-lg" id="Piscina" type="checkbox">
+                  <label class="text-[16px] font-[400] select-none" for="Piscina">
+                    Piscina
+                  </label>
+              </div>
+              <div class="flex items-center gap-2">
+                <input class="h-4 w-4 rounded-lg" id="Gimnasio" type="checkbox">
+                  <label class="text-[16px] font-[400] select-none" for="Gimnasio">
+                    Gimnasio
+                  </label>
+              </div>
+              <div class="flex items-center gap-2">
+                <input class="h-4 w-4 rounded-lg" id="Co-Working" type="checkbox">
+                  <label class="text-[16px] font-[400] select-none" for="Co-Working">
+                    Co-Working
+                  </label>
+              </div>
+              <div class="flex items-center gap-2">
+                <input class="h-4 w-4 rounded-lg" id="Zona-Infantil" type="checkbox">
+                  <label class="text-[16px] font-[400] select-none" for="Zona-Infantil">
+                    Zona Infantil
+                  </label>
+              </div>
+              <div class="flex items-center gap-2">
+                <input class="h-4 w-4 rounded-lg" id="Plaza-Garaje" type="checkbox">
+                  <label class="text-[16px] font-[400] select-none" for="Plaza-Garaje">
+                    Plaza Garaje
+                  </label>
+              </div>
+              <div class="flex items-center gap-2">
+                <input class="h-4 w-4 rounded-lg" id="Trastero" type="checkbox">
+                  <label class="text-[16px] font-[400] select-none" for="Trastero">
+                    Trastero
+                  </label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 8 -->
+        <div class="mt-20">
+          <div class="flex flex-col gap-8 items-center">
+            <label class="text-[24px] text-center leading-normal lg:text-[40px]" for="energy">¿Estarías dispuesto a pagar más por tu vivienda si tuviese la máxima certificación energética (A)?</label>
+
+            <select id="energy"
+              class="bg-[#FAFAFA] border border-gray-300 text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-[80%] p-3 text-[16px] lg:w-[360px]">
+              <option value="si">Si</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- card 9 -->
+        <div class="mt-20">
+          <div class="flex flex-col gap-8 items-center">
+            <label class="text-[24px] text-center leading-normal lg:text-[40px]" for="age">¿Cuántos m<sup>2</sup> tiene tu casa ideal?</label>
+            <input id="rooms" class="w-full" type="range" min="30" max="100" value="30" step="10"
+              oninput="updateValue3(this.value)">
+            <p class="-mt-5 text-[16px]" id="slider-value3">30<span>m<sup>2</sup></span></p>
+            <script>
+              function updateValue3(val) {
+                var meters = '<span>m<sup>2</sup></span>'
+                document.getElementById('slider-value3').innerHTML = val + meters;
+              }
+            </script>
+          </div>
+        </div>
+
+        <!-- card 10 -->
+        <div class="mt-20">
+          <div class="flex flex-col gap-8 items-center">
+            <label class="text-[24px] text-center leading-normal lg:text-[40px]" for="age">¿Qué presupuesto tienes?</label>
+            <input id="rooms" class="w-full" type="range" min="100" max="2000" value="100" step="50"
+              oninput="updateValue4(this.value)">
+            <p class="-mt-5 text-[16px]" id="slider-value4">100<span>.000€</span></p>
+            <script>
+              function updateValue4(val) {
+                var euros = '<span>.000€</span>'
+                document.getElementById('slider-value4').innerHTML = val + euros;
+              }
+            </script>
+          </div>
+        </div>
+
+        <!-- card 11 -->
+        <div class="mt-20">
+          <div class="flex flex-col gap-8 items-center">
+            <label class="text-[24px] text-center leading-normal lg:text-[40px]" for="use">¿Qué uso le darás a la vivienda?</label>
+
+            <select id="use"
+              class="bg-[#FAFAFA] border border-gray-300 text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-[80%] p-3 text-[16px] lg:w-[360px]">
+              <option value="Residencia-Habitual">Residencia Habitual</option>
+              <option value="option2">option2</option>
+              <option value="option3">option3</option>
+              <option value="option4">option4</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- card 12 -->
+        <div class="mt-20">
+          <div class="flex flex-col gap-8 items-center">
+            <label class="text-[24px] text-center leading-normal lg:text-[40px]" for="message">Cuéntanos algo de tu casa ideal</label>
+            <textarea id="message" rows="8" class="block p-2.5 w-full text-[16px] text-gray-900 bg-[#FAFAFA] rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 md:w-full lg:max-w-[420px]" placeholder="Describe tu casa ideal..."></textarea>
+
+          </div>
+        </div>
+
+        <!-- card 13 -->
+        <div class="mt-20">
+          <div class="flex flex-col gap-8 items-center">
+            <label class="text-[24px] text-center leading-normal lg:text-[40px]" for="email">¡Ya terminamos! ¿cuál es tu email?</label>
+            <input class="bg-[#FAFAFA] border border-gray-300 text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-[80%] p-3 text-[16px] lg:w-[360px]" type="email" id="email" name="email" required placeholder="Email">
+          </div>
+        </div>
+
+        <!-- card 14 -->
+        <div class="mt-20">
+          <div class="flex flex-col gap-8 items-center">
+            <label class="text-[24px] text-center leading-normal lg:text-[40px]">¡Gracias por contarnos cómo es <span class="font-secondary font-[500] lg:block">la casa de tus sueños!</span></label>
+            <p class="text-[16px] text-center lg:text-[24px] lg:w-[500px] leading-tight">Te enviaremos un correo con la casa
+              que mejor se adapte a tus necesidades</p>
+
+              <button class="w-fit mt-[38px] flex gap-1 rounded-md py-3 px-[18px] text-[12px] font-medium bg-yellow lg:mt-[25px]" type="submit">
+                Entendido
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+                  <path d="M1 0.5L11.2963 0.5L11.2963 10.5" stroke="#000" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M1 11L11 1" stroke="#000" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+          </div>
+        </div>
+
+      </form>
     </section>
   </main>
 
@@ -159,40 +376,39 @@
   <!-- Footer -->
   <footer class=" bg-negro px-4 py-12 lg:px-20">
     <div class="flex flex-col gap-7">
-        <div class="flex flex-col items-center gap-7 lg:flex-row lg:items-center">
-            <h2 class="text-[40px] self-start text-white font-secondary font-[400] [text-wrap:balance] lg:hidden">
-                Contacta <span class="block ml-24">con nosotros</span></h2>
-                <h2 class="hidden text-[40px] text-white font-secondary font-[400] [text-wrap:balance] lg:block">Contacta con nosotros
-                </h2>
-            
-            <button class="w-fit flex gap-1 rounded-md py-3 px-[18px] text-[12px] font-medium bg-yellow">
-                Contáctanos
-                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
-                    <path d="M1 0.5L11.2963 0.5L11.2963 10.5" stroke="#000" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                    <path d="M1 11L11 1" stroke="#000" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-            </button>
-        </div>
+      <div class="flex flex-col items-center gap-7 lg:flex-row lg:items-center">
+        <h2 class="text-[40px] self-start text-white font-secondary font-[400] [text-wrap:balance] lg:hidden">
+          Contacta <span class="block ml-24">con nosotros</span></h2>
+        <h2 class="hidden text-[40px] text-white font-secondary font-[400] [text-wrap:balance] lg:block">Contacta con
+          nosotros
+        </h2>
 
-        <hr class="bg-white w-full">
-        <div class="flex flex-col gap-7 lg:flex-row lg:justify-between">
-            <a class="self-start" href="#">
-                <img src="./assets/icons/Nuovit_Corporate_horizontal-300x108_blanco-300x108 3.svg" alt="">
-            </a>
-            <hr class="bg-white w-full lg:hidden">
-            <div class="flex flex-wrap justify-center gap-3 text-xs text-grayTextFooter py-4 ">
-                <p class="text-center">Copyright © 2023 Nuovit. Todos los derechos reservados.</p><br
-                    class="lg:hidden">
-                <div class="flex gap-3 flex-wrap">
-                    <a href="#">Aviso legal</a>
-                    <a href="#">Política de privacidad</a>
-                    <a href="#">Política de cookies</a>
-                </div>
-            </div>
+        <button class="w-fit flex gap-1 rounded-md py-3 px-[18px] text-[12px] font-medium bg-yellow">
+          Contáctanos
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+            <path d="M1 0.5L11.2963 0.5L11.2963 10.5" stroke="#000" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M1 11L11 1" stroke="#000" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+      </div>
+
+      <hr class="bg-white w-full">
+      <div class="flex flex-col gap-7 lg:flex-row lg:justify-between">
+        <a class="self-start" href="#">
+          <img src="./assets/icons/Nuovit_Corporate_horizontal-300x108_blanco-300x108 3.svg" alt="">
+        </a>
+        <hr class="bg-white w-full lg:hidden">
+        <div class="flex flex-wrap justify-center gap-3 text-xs text-grayTextFooter py-4 ">
+          <p class="text-center">Copyright © 2023 Nuovit. Todos los derechos reservados.</p><br class="lg:hidden">
+          <div class="flex gap-3 flex-wrap">
+            <a href="#">Aviso legal</a>
+            <a href="#">Política de privacidad</a>
+            <a href="#">Política de cookies</a>
+          </div>
         </div>
+      </div>
     </div>
-</footer>
+  </footer>
   <script src="./js/menu-mobile.js"></script>
 </body>
 
