@@ -146,12 +146,12 @@
 
       </div>
       <!-- inputs -->
-      <form>
+      <form id="wizard-form">
         <!-- card 1 -->
         <div class="mt-20">
           <div class="flex flex-col gap-8 items-center">
-            <label class="text-[24px] text-center leading-normal lg:text-[40px]" for="rooms">¿Qué edad tienes?</label>
-            <input id="rooms" class="w-full" type="range" min="18" max="100" value="18" step="1"
+            <label class="text-[24px] text-center leading-normal lg:text-[40px]" for="age">¿Qué edad tienes?</label>
+            <input id="age" class="w-full" type="range" min="18" max="100" value="18" step="1"
               oninput="updateValue(this.value)">
             <p class="-mt-5 text-[16px]" id="slider-value">18</p>
             <script>
@@ -165,9 +165,9 @@
         <!-- card 2 -->
         <div class="mt-20">
           <div class="flex flex-col gap-8 items-center">
-            <label class="text-[24px] text-center leading-normal lg:text-[40px]" for="genres">¿Cuál es tu género?</label>
+            <label class="text-[24px] text-center leading-normal lg:text-[40px]" for="genre">¿Cuál es tu género?</label>
 
-            <select id="genres"
+            <select id="genre"
               class="bg-[#FAFAFA] border border-gray-300 text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-[80%] p-3 text-[16px] lg:w-[360px]">
               <option value="mujer">Mujer</option>
               <option value="hombre">Hombre</option>
@@ -206,7 +206,7 @@
 
             <select id="house"
               class="bg-[#FAFAFA] border border-gray-300 text-gray-900 rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-[80%] p-3 text-[16px] lg:w-[360px]">
-              <option value="ninguno">Piso</option>
+              <option value="Piso">Piso</option>
               <option value="option1">option1</option>
               <option value="option2">option2</option>
               <option value="option3">option3</option>
@@ -290,8 +290,8 @@
         <!-- card 9 -->
         <div class="mt-20">
           <div class="flex flex-col gap-8 items-center">
-            <label class="text-[24px] text-center leading-normal lg:text-[40px]" for="age">¿Cuántos m<sup>2</sup> tiene tu casa ideal?</label>
-            <input id="rooms" class="w-full" type="range" min="30" max="100" value="30" step="10"
+            <label class="text-[24px] text-center leading-normal lg:text-[40px]" for="meters">¿Cuántos m<sup>2</sup> tiene tu casa ideal?</label>
+            <input id="meters" class="w-full" type="range" min="30" max="100" value="30" step="10"
               oninput="updateValue3(this.value)">
             <p class="-mt-5 text-[16px]" id="slider-value3">30<span>m<sup>2</sup></span></p>
             <script>
@@ -306,8 +306,8 @@
         <!-- card 10 -->
         <div class="mt-20">
           <div class="flex flex-col gap-8 items-center">
-            <label class="text-[24px] text-center leading-normal lg:text-[40px]" for="age">¿Qué presupuesto tienes?</label>
-            <input id="rooms" class="w-full" type="range" min="100" max="2000" value="100" step="50"
+            <label class="text-[24px] text-center leading-normal lg:text-[40px]" for="budget">¿Qué presupuesto tienes?</label>
+            <input id="budget" class="w-full" type="range" min="100" max="2000" value="100" step="50"
               oninput="updateValue4(this.value)">
             <p class="-mt-5 text-[16px]" id="slider-value4">100<span>.000€</span></p>
             <script>
@@ -410,6 +410,7 @@
     </div>
   </footer>
   <script src="./js/menu-mobile.js"></script>
+  <script src="./js/form.js"></script>
 </body>
 
 </html>
