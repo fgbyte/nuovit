@@ -5,8 +5,8 @@ const content = document.getElementById('content1');
 toggleButton.addEventListener('click', () => {
 content.classList.toggle('max-h-active')
 toggleButton.classList.toggle('rotate-180')
-
 });
+
 reedLeesButton.addEventListener('click', () => {
   content.classList.toggle('max-h-active')
   toggleButton.classList.toggle('rotate-180')
