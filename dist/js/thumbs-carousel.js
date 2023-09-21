@@ -40,7 +40,7 @@ const nextCard = document.getElementById("carousel-right");
 
 function scrollNext() {
   const currentPosition = carrusel.scrollLeft;
-  const cardWidth = 455;
+  const cardWidth = 755;
 
   const newPosition = currentPosition + cardWidth;
 
@@ -53,7 +53,7 @@ function scrollNext() {
 
 function scrollBack() {
   const currentPosition = carrusel.scrollLeft;
-  const cardWidth = 455;
+  const cardWidth = 755;
 
   const newPosition = currentPosition - cardWidth;
 
