@@ -1118,10 +1118,6 @@ p {
   margin-bottom: 30px;
 }
 
-.mb-auto {
-  margin-bottom: auto;
-}
-
 .ml-12 {
   margin-left: 3rem;
 }
@@ -1180,10 +1176,6 @@ p {
 
 .ml-\[8px\] {
   margin-left: 8px;
-}
-
-.ml-auto {
-  margin-left: auto;
 }
 
 .mr-2 {
@@ -3300,10 +3292,6 @@ p {
   line-height: 1.25;
 }
 
-.leading-8 {
-  line-height: 2rem;
-}
-
 .tracking-\[\.5px\] {
   letter-spacing: .5px;
 }
@@ -3422,10 +3410,6 @@ p {
 .text-whiteTextFooter {
   --tw-text-opacity: 1;
   color: rgb(233 233 233 / var(--tw-text-opacity));
-}
-
-.opacity-0 {
-  opacity: 0;
 }
 
 .opacity-50 {
@@ -4153,11 +4137,6 @@ select {
   .lg\:mx-\[210px\] {
     margin-left: 210px;
     margin-right: 210px;
-  }
-
-  .lg\:mx-auto {
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .lg\:my-10 {
@@ -4942,11 +4921,6 @@ select {
     padding-bottom: 1.5rem;
   }
 
-  .lg\:py-7 {
-    padding-top: 1.75rem;
-    padding-bottom: 1.75rem;
-  }
-
   .lg\:pb-0 {
     padding-bottom: 0px;
   }
@@ -4985,10 +4959,6 @@ select {
 
   .lg\:pl-28 {
     padding-left: 7rem;
-  }
-
-  .lg\:pl-3 {
-    padding-left: 0.75rem;
   }
 
   .lg\:pl-5 {
