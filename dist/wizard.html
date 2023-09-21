@@ -2,15 +2,15 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wizard</title>
-    <link rel="stylesheet" href="./css/main.css" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wizard</title>
+  <link rel="stylesheet" href="./css/main.css" />
 </head>
 
 <body>
-    <!-- Navbar White-->
+  <!-- Navbar White-->
   <header class="text-black inset-x-0 top-0">
     <nav class="max-w-[1358px] mx-auto flex justify-between items-end px-[40px] py-9 select-none z-40">
       <div>
@@ -19,8 +19,8 @@
         </div>
         <img class="lg:hidden h-[35.973px]" src="./assets/icons/nuovit-logo-simple 1.svg" alt="logo_nuovit" />
       </div>
-      
-     <!--  menu pc  -->
+
+      <!--  menu pc  -->
       <div id="menu-pc" class="hidden lg:flex gap-14 group [&_summary::-webkit-details-marker]:hidden pb-2">
         <details class="group [&_summary::-webkit-details-marker]:hidden z-50">
           <summary class="flex items-center cursor-pointer gap-1 hover:text-yellow">
@@ -77,7 +77,7 @@
       <!-- mobile menu -->
       <label class="bar blacky lg:hidden scale-50 right-[-15px]" for="menu-mobile">
         <input type="checkbox" id="menu-mobile" />
-        
+
         <span class="top"></span>
         <span class="middle"></span>
         <span class="bottom"></span>
@@ -144,22 +144,21 @@
   <!-- Content -->
   <main>
     <section class="relative px-12 pt-20 pb-[290px] lg:px-[296px] lg:pb-[300px]">
-        <div class="flex flex-col gap-24 lg:flex-row lg:gap-5">
-          <div class="flex flex-col gap-7 lg:max-w-[524px]">
-            <h1 class="lg:text-[70px]">Tu casa<span> ideal</span></h1>
-            <p class="text-[16px] lg:text-[24px]">Déjanos saber cómo te imaginas la casa de tus sueños. Te buscaremos la vivienda que mejor se adapte a tus deseos.</p>
-          </div>
-
-          <div class="flex gap-2 self-end items-end lg:absolute lg:right-[22%] lg:bottom-[181px]">
-            <p class="text-[16px] font-[500]">Empezar</p>
-            <a href="./wizard-form.html">
-              <img src="./assets/icons/arrow-wizard.svg" alt="">
-            </a>
-          </div>
+      <div class="flex flex-col gap-24 lg:flex-row lg:gap-5">
+        <div class="flex flex-col gap-7 lg:max-w-[524px]">
+          <h1 class="lg:text-[70px]">Tu casa<span> ideal</span></h1>
+          <p class="text-[16px] lg:text-[24px]">Déjanos saber cómo te imaginas la casa de tus sueños. Te buscaremos la
+            vivienda que mejor se adapte a tus deseos.</p>
         </div>
-        <i class="absolute -z-10 -bottom-[50%] left-0 lg:-bottom-[45%]">
-          <img src="./assets/icons/elipse-wizard.svg"></img>
-        </i>
+
+          <a class="flex gap-2 self-end items-end lg:absolute lg:right-[22%] lg:bottom-[181px]" href="./wizard-form.html">
+            <p class="text-[16px] font-[500]">Empezar</p>
+            <img src="./assets/icons/arrow-wizard.svg" alt="">
+          </a>
+      </div>
+      <i class="absolute -z-10 -bottom-[50%] left-0 lg:-bottom-[45%]">
+        <img src="./assets/icons/elipse-wizard.svg"></img>
+      </i>
     </section>
   </main>
 
@@ -167,40 +166,39 @@
   <!-- Footer -->
   <footer class=" bg-negro px-4 py-12 lg:px-20">
     <div class="flex flex-col gap-7">
-        <div class="flex flex-col items-center gap-7 lg:flex-row lg:items-center">
-            <h2 class="text-[40px] self-start text-white font-secondary font-[400] [text-wrap:balance] lg:hidden">
-                Contacta <span class="block ml-24">con nosotros</span></h2>
-                <h2 class="hidden text-[40px] text-white font-secondary font-[400] [text-wrap:balance] lg:block">Contacta con nosotros
-                </h2>
-            
-            <button class="w-fit flex gap-1 rounded-md py-3 px-[18px] text-[12px] font-medium bg-yellow">
-                Contáctanos
-                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
-                    <path d="M1 0.5L11.2963 0.5L11.2963 10.5" stroke="#000" stroke-linecap="round"
-                        stroke-linejoin="round" />
-                    <path d="M1 11L11 1" stroke="#000" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-            </button>
-        </div>
+      <div class="flex flex-col items-center gap-7 lg:flex-row lg:items-center">
+        <h2 class="text-[40px] self-start text-white font-secondary font-[400] [text-wrap:balance] lg:hidden">
+          Contacta <span class="block ml-24">con nosotros</span></h2>
+        <h2 class="hidden text-[40px] text-white font-secondary font-[400] [text-wrap:balance] lg:block">Contacta con
+          nosotros
+        </h2>
 
-        <hr class="bg-white w-full">
-        <div class="flex flex-col gap-7 lg:flex-row lg:justify-between">
-            <a class="self-start" href="#">
-                <img src="./assets/icons/Nuovit_Corporate_horizontal-300x108_blanco-300x108 3.svg" alt="">
-            </a>
-            <hr class="bg-white w-full lg:hidden">
-            <div class="flex flex-wrap justify-center gap-3 text-xs text-grayTextFooter py-4 ">
-                <p class="text-center">Copyright © 2023 Nuovit. Todos los derechos reservados.</p><br
-                    class="lg:hidden">
-                <div class="flex gap-3 flex-wrap">
-                    <a href="#">Aviso legal</a>
-                    <a href="#">Política de privacidad</a>
-                    <a href="#">Política de cookies</a>
-                </div>
-            </div>
+        <button class="w-fit flex gap-1 rounded-md py-3 px-[18px] text-[12px] font-medium bg-yellow">
+          Contáctanos
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+            <path d="M1 0.5L11.2963 0.5L11.2963 10.5" stroke="#000" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M1 11L11 1" stroke="#000" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+      </div>
+
+      <hr class="bg-white w-full">
+      <div class="flex flex-col gap-7 lg:flex-row lg:justify-between">
+        <a class="self-start" href="#">
+          <img src="./assets/icons/Nuovit_Corporate_horizontal-300x108_blanco-300x108 3.svg" alt="">
+        </a>
+        <hr class="bg-white w-full lg:hidden">
+        <div class="flex flex-wrap justify-center gap-3 text-xs text-grayTextFooter py-4 ">
+          <p class="text-center">Copyright © 2023 Nuovit. Todos los derechos reservados.</p><br class="lg:hidden">
+          <div class="flex gap-3 flex-wrap">
+            <a href="#">Aviso legal</a>
+            <a href="#">Política de privacidad</a>
+            <a href="#">Política de cookies</a>
+          </div>
         </div>
+      </div>
     </div>
-</footer>
+  </footer>
   <script src="./js/menu-mobile.js"></script>
 </body>
 

@@ -150,7 +150,7 @@
       </div>
       <!-- indicadores -->
       <div class="mt-[39px] flex flex-row justify-between items-center">
-        <img class="w-[30px] cursor-pointer lg:w-[45px]" src="./assets/inversores/Group 751.svg" alt="Group">
+        <img id="carousel-left" class="w-[30px] cursor-pointer lg:w-[45px]" src="./assets/inversores/Group 751.svg" alt="Group">
         <div class="flex items-end gap-1 [&>p]:text-[16px]">
           <p>01</p>
           <i>
@@ -158,7 +158,7 @@
           </i>
           <p>14</p>
         </div>
-        <img class="w-[30px] cursor-pointer lg:w-[45px]" src="./assets/inversores/Group 755.svg" alt="Group">
+        <img id="carousel-right" class="w-[30px] cursor-pointer lg:w-[45px]" src="./assets/inversores/Group 755.svg" alt="Group">
 
       </div>
       <!-- inputs -->
@@ -169,7 +169,7 @@
             
 
             <!-- card 1 -->
-        <div class="mt-20 min-w-full snap-start px-4">
+        <div data-index="0" class="mt-20 min-w-full snap-start px-4">
           <div class="flex flex-col gap-8 items-center">
             <label class="text-[24px] text-center leading-normal lg:text-[40px]" for="age">¿Qué edad tienes?</label>
             <input id="age" class="w-full" type="range" min="18" max="100" value="18" step="1"
@@ -184,7 +184,7 @@
         </div>
 
         <!-- card 2 -->
-        <div class="mt-20 min-w-full snap-start">
+        <div data-index="1" class="mt-20 min-w-full snap-start">
           <div class="flex flex-col gap-8 items-center">
             <label class="text-[24px] text-center leading-normal lg:text-[40px]" for="genre">¿Cuál es tu género?</label>
 
@@ -198,7 +198,7 @@
         </div>
 
         <!-- card 3 -->
-        <div class="mt-20 min-w-full snap-start">
+        <div data-index="2" class="mt-20 min-w-full snap-start">
           <div class="flex flex-col gap-8 items-center">
             <label class="text-[24px] text-center leading-normal lg:text-[40px]" for="postal-code">¿Cuál es tu Código
               Postal?</label>
@@ -209,7 +209,7 @@
         </div>
 
         <!-- card 4 -->
-        <div class="mt-20 min-w-full snap-start">
+        <div data-index="3" class="mt-20 min-w-full snap-start">
           <div class="flex flex-col gap-8 items-center">
             <label class="text-[24px] text-center leading-normal lg:text-[40px]" for="childrens">¿Cuántos hijos
               tienes?</label>
@@ -225,7 +225,7 @@
         </div>
 
         <!-- card 5 -->
-        <div class="mt-20 min-w-full snap-start">
+        <div data-index="4" class="mt-20 min-w-full snap-start">
           <div class="flex flex-col gap-8 items-center">
             <label class="text-[24px] text-center leading-normal lg:text-[40px]" for="house">¿Qué tipo de vivienda
               prefieres?</label>
@@ -241,7 +241,7 @@
         </div>
 
         <!-- card 6 -->
-        <div class="mt-20 min-w-full snap-start">
+        <div data-index="5" class="mt-20 min-w-full snap-start">
           <div class="flex flex-col gap-8 items-center">
             <label class="text-[24px] text-center leading-normal lg:text-[40px]" for="rooms">¿Cuántos dormitorios te
               gustaría tener?</label>
@@ -257,7 +257,7 @@
         </div>
 
         <!-- card 7 -->
-        <div class="mt-20 min-w-full snap-start">
+        <div data-index="6" class="mt-20 min-w-full snap-start">
           <div class="flex flex-col gap-8 items-center">
             <label class="text-[24px] text-center leading-normal lg:text-[40px]" for="">¿Qué más te gustaría tener en tu
               casa?</label>
@@ -303,7 +303,7 @@
         </div>
 
         <!-- card 8 -->
-        <div class="mt-20 min-w-full snap-start">
+        <div data-index="7" class="mt-20 min-w-full snap-start">
           <div class="flex flex-col gap-8 items-center">
             <label class="text-[24px] text-center leading-normal lg:text-[40px]" for="energy">¿Estarías dispuesto a
               pagar más por tu vivienda si tuviese la máxima certificación energética (A)?</label>
@@ -317,7 +317,7 @@
         </div>
 
         <!-- card 9 -->
-        <div class="mt-20 min-w-full snap-start">
+        <div data-index="8" class="mt-20 min-w-full snap-start">
           <div class="flex flex-col gap-8 items-center">
             <label class="text-[24px] text-center leading-normal lg:text-[40px]" for="meters">¿Cuántos m<sup>2</sup>
               tiene tu casa ideal?</label>
@@ -334,7 +334,7 @@
         </div>
 
         <!-- card 10 -->
-        <div class="mt-20 min-w-full snap-start">
+        <div data-index="9" class="mt-20 min-w-full snap-start">
           <div class="flex flex-col gap-8 items-center">
             <label class="text-[24px] text-center leading-normal lg:text-[40px]" for="budget">¿Qué presupuesto
               tienes?</label>
@@ -351,7 +351,7 @@
         </div>
 
         <!-- card 11 -->
-        <div class="mt-20 min-w-full snap-start">
+        <div data-index="10" class="mt-20 min-w-full snap-start">
           <div class="flex flex-col gap-8 items-center">
             <label class="text-[24px] text-center leading-normal lg:text-[40px]" for="use">¿Qué uso le darás a la
               vivienda?</label>
@@ -367,7 +367,7 @@
         </div>
 
         <!-- card 12 -->
-        <div class="mt-20 min-w-full snap-start">
+        <div data-index="11" class="mt-20 min-w-full snap-start">
           <div class="flex flex-col gap-8 items-center">
             <label class="text-[24px] text-center leading-normal lg:text-[40px]" for="message">Cuéntanos algo de tu casa
               ideal</label>
@@ -379,7 +379,7 @@
         </div>
 
         <!-- card 13 -->
-        <div class="mt-20 min-w-full snap-start">
+        <div data-index="12" class="mt-20 min-w-full snap-start">
           <div class="flex flex-col gap-8 items-center">
             <label class="text-[24px] text-center leading-normal lg:text-[40px]" for="email">¡Ya terminamos! ¿cuál es tu
               email?</label>
@@ -390,7 +390,7 @@
         </div>
 
         <!-- card 14 -->
-        <div class="mt-20 min-w-full snap-start">
+        <div data-index="13" class="mt-20 min-w-full snap-start">
           <div class="flex flex-col gap-8 items-center">
             <label class="text-[24px] text-center leading-normal lg:text-[40px]">¡Gracias por contarnos cómo es <span
                 class="font-secondary font-[500] lg:block">la casa de tus sueños!</span></label>

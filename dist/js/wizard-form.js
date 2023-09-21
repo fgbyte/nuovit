@@ -53,6 +53,42 @@ form.addEventListener("submit", function (event) {
         },
         
     }
+    //para desarrollo
     console.log(formData)
 
 });
+
+
+// Lógica de los Sliders
+const carrusel = document.querySelector(".carousel-container");
+const previousCard = document.getElementById("carousel-left");
+const nextCard = document.getElementById("carousel-right");
+
+function scrollNext() {
+  const currentPosition = carrusel.scrollLeft;
+  const cardWidth = 755;
+
+  const newPosition = currentPosition + cardWidth;
+
+  if (newPosition + carrusel.clientWidth > carrusel.scrollWidth) {
+    carrusel.scrollTo({ left: 0, behavior: "smooth" });
+  } else {
+    carrusel.scrollTo({ left: newPosition, behavior: "smooth" });
+  }
+}
+
+function scrollBack() {
+  const currentPosition = carrusel.scrollLeft;
+  const cardWidth = 755;
+
+  const newPosition = currentPosition - cardWidth;
+
+  if (newPosition < 0) {
+    carrusel.scrollTo({ left: carrusel.scrollWidth, behavior: "smooth" });
+  } else {
+    carrusel.scrollTo({ left: newPosition, behavior: "smooth" });
+  }
+}
+
+nextCard.addEventListener("click", scrollNext);
+previousCard.addEventListener("click", scrollBack);
