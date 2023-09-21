@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.3.2 | MIT License | https://tailwindcss.com
+! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -191,6 +191,10 @@ select,
 textarea {
   font-family: inherit;
   /* 1 */
+  font-feature-settings: inherit;
+  /* 1 */
+  font-variation-settings: inherit;
+  /* 1 */
   font-size: 100%;
   /* 1 */
   font-weight: inherit;
@@ -338,6 +342,14 @@ ul,
 menu {
   list-style: none;
   margin: 0;
+  padding: 0;
+}
+
+/*
+Reset default styling for dialogs.
+*/
+
+dialog {
   padding: 0;
 }
 
@@ -3716,6 +3728,144 @@ label input[type]:checked ~ span.middle {
   border-color: rgb(255, 255, 255);
   border: 2px solid rgb(255, 255, 255);
 }
+
+/* numero2 */
+
+#enes1 {
+  display: none;
+}
+
+.toggle-enes1 {
+  position: absolute;
+  right: 0px;
+  left: 0;
+  display: block;
+  width: 70px;
+  height: 35px;
+  margin: 0 auto;
+  transform: translateY(-50%);
+  transform: rotate(-90deg);
+  cursor: pointer;
+}
+
+.toggle-horizontal {
+  margin: 0 0;
+  transform: rotate(0deg);
+}
+
+.toggle-enes1:before {
+  top: 4px;
+  left: 4px;
+  width: 27px;
+  height: 27px;
+  border: 2px solid rgb(255, 255, 255);
+}
+
+.toggle-enes1:after {
+  top: 0;
+  right: 0;
+  width: 70px;
+  height: 35px;
+  border: 2px solid #ffffff;
+}
+
+.toggle-enes1:before,
+.toggle-enes1:after {
+  content: "";
+  position: absolute;
+  border-radius: 100px;
+  box-sizing: border-box;
+  transition: 0.5s ease top, 0.5s ease left, 0.5s ease right, 0.5s ease width,
+    0.5s ease height, 0.5s ease border-color;
+}
+
+#enes1:checked + .toggle-enes1:before {
+  top: 0;
+  left: 0;
+  width: 70px;
+  height: 35px;
+  border-color: #ffffff;
+  border: 2px solid #ffffff
+}
+
+#enes1:checked + .toggle-enes1:after {
+  top: 4px;
+  right: 4px;
+  width: 27px;
+  height: 27px;
+  border-color: rgb(255, 255, 255);
+  border: 2px solid rgb(255, 255, 255);
+}
+
+/* numero3 */
+
+#enes2 {
+  display: none;
+}
+
+.toggle-enes2 {
+  position: absolute;
+  right: 0px;
+  left: 0;
+  display: block;
+  width: 70px;
+  height: 35px;
+  margin: 0 auto;
+  transform: translateY(-50%);
+  transform: rotate(-90deg);
+  cursor: pointer;
+}
+
+.toggle-horizontal {
+  margin: 0 0;
+  transform: rotate(0deg);
+}
+
+.toggle-enes2:before {
+  top: 4px;
+  left: 4px;
+  width: 27px;
+  height: 27px;
+  border: 2px solid rgb(255, 255, 255);
+}
+
+.toggle-enes2:after {
+  top: 0;
+  right: 0;
+  width: 70px;
+  height: 35px;
+  border: 2px solid #ffffff;
+}
+
+.toggle-enes2:before,
+.toggle-enes2:after {
+  content: "";
+  position: absolute;
+  border-radius: 100px;
+  box-sizing: border-box;
+  transition: 0.5s ease top, 0.5s ease left, 0.5s ease right, 0.5s ease width,
+    0.5s ease height, 0.5s ease border-color;
+}
+
+#enes2:checked + .toggle-enes2:before {
+  top: 0;
+  left: 0;
+  width: 70px;
+  height: 35px;
+  border-color: #ffffff;
+  border: 2px solid #ffffff
+}
+
+#enes2:checked + .toggle-enes2:after {
+  top: 4px;
+  right: 4px;
+  width: 27px;
+  height: 27px;
+  border-color: rgb(255, 255, 255);
+  border: 2px solid rgb(255, 255, 255);
+}
+
+/* fin enes */
 
 .bg-gray-400{
   background-color: #9ca3af;
