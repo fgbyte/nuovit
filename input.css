@@ -563,7 +563,7 @@ label input[type]:checked ~ span.middle {
   position: absolute;
   box-sizing: border-box;
   background: #FFF;
-  width: 182px ;
+  width: 100% ;
   height: 1px;
   top: 2px;
   left: 0;
@@ -579,7 +579,6 @@ label input[type]:checked ~ span.middle {
   left: 0;
   animation: '';
 }
-
 
 .animation2::after {
   content: '';  
@@ -602,13 +601,13 @@ label input[type]:checked ~ span.middle {
   left: 0;
   animation: '';
 }
-@media (min-width: 976px){
+
   @keyframes animation1 {
     0% {
       width: 0;
     }
     100% {
-      width: 182px;
+      width: 100%;
     }
   }
   @keyframes animation2 {
@@ -616,7 +615,7 @@ label input[type]:checked ~ span.middle {
       width: 0;
     }
     100% {
-      width: 182px;
+      width: 100%;
     }
   }
   @keyframes animation3 {
@@ -624,10 +623,10 @@ label input[type]:checked ~ span.middle {
       width: 0;
     }
     100% {
-      width: 182px;
+      width: 100%;
     }
   }
-}
+
 
 
 /* Wizard */

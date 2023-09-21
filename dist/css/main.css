@@ -3892,7 +3892,7 @@ label input[type]:checked ~ span.middle {
   position: absolute;
   box-sizing: border-box;
   background: #FFF;
-  width: 182px ;
+  width: 100% ;
   height: 1px;
   top: 2px;
   left: 0;
@@ -3931,35 +3931,33 @@ label input[type]:checked ~ span.middle {
   animation: '';
 }
 
-@media (min-width: 976px){
-  @keyframes animation1 {
-    0% {
-      width: 0;
-    }
-
-    100% {
-      width: 182px;
-    }
+@keyframes animation1 {
+  0% {
+    width: 0;
   }
 
-  @keyframes animation2 {
-    0% {
-      width: 0;
-    }
+  100% {
+    width: 100%;
+  }
+}
 
-    100% {
-      width: 182px;
-    }
+@keyframes animation2 {
+  0% {
+    width: 0;
   }
 
-  @keyframes animation3 {
-    0% {
-      width: 0;
-    }
+  100% {
+    width: 100%;
+  }
+}
 
-    100% {
-      width: 182px;
-    }
+@keyframes animation3 {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
   }
 }
 
@@ -4058,10 +4056,6 @@ select {
 
 .hover\:border-b-2:hover {
   border-bottom-width: 2px;
-}
-
-.hover\:border-t-\[3px\]:hover {
-  border-top-width: 3px;
 }
 
 .hover\:text-gray-600:hover {
