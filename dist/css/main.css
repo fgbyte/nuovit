@@ -424,6 +424,114 @@ video {
 
 /* Typography */
 
+/* Fuente Roboto - Peso 100 */
+
+@font-face {
+  font-family: 'Roboto';
+
+  src: url('../assets/fonts/Roboto-Thin.woff') format('woff');
+
+  font-weight: 100;
+
+  font-style: normal;
+}
+
+/* Fuente Roboto - Peso 300 */
+
+@font-face {
+  font-family: 'Roboto';
+
+  src: url('../assets/fonts/Roboto-Light.woff') format('woff');
+
+  font-weight: 300;
+
+  font-style: normal;
+}
+
+/* Fuente Roboto - Peso 400 */
+
+@font-face {
+  font-family: 'Roboto';
+
+  src: url('../assets/fonts/Roboto-Regular.woff') format('woff');
+
+  font-weight: 400;
+
+  font-style: normal;
+}
+
+/* Fuente Roboto - Peso 500 */
+
+@font-face {
+  font-family: 'Roboto';
+
+  src: url('../assets/fonts/Roboto-Medium.woff') format('woff');
+
+  font-weight: 500;
+
+  font-style: normal;
+}
+
+/* Fuente Roboto - Peso 700 */
+
+@font-face {
+  font-family: 'Roboto';
+
+  src: url('../assets/fonts/Roboto-Bold.woff') format('woff');
+
+  font-weight: 700;
+
+  font-style: normal;
+}
+
+/* Fuente Playfair Display - Peso 400, Itálica */
+
+@font-face {
+  font-family: 'Playfair Display';
+
+  src: url('../assets/fonts/PlayfairDisplay-Italic.woff') format('woff');
+
+  font-weight: 400;
+
+  font-style: italic;
+}
+
+/* Fuente Playfair Display - Peso 500, Itálica */
+
+@font-face {
+  font-family: 'Playfair Display';
+
+  src: url('../assets/fonts/PlayfairDisplay-MediumItalic.woff') format('woff');
+
+  font-weight: 500;
+
+  font-style: italic;
+}
+
+/* Fuente Playfair Display - Peso 600, Itálica */
+
+@font-face {
+  font-family: 'Playfair Display';
+
+  src: url('../assets/fonts/PlayfairDisplay-SemiBoldItalic.woff') format('woff');
+
+  font-weight: 600;
+
+  font-style: italic;
+}
+
+/* Fuente Playfair Display - Peso 700, Itálica */
+
+@font-face {
+  font-family: 'Playfair Display';
+
+  src: url('../assets/fonts/PlayfairDisplay-BoldItalic.woff') format('woff');
+
+  font-weight: 700;
+
+  font-style: italic;
+}
+
 body {
   font-family: Roboto;
   font-size: 0.875rem;
@@ -3190,6 +3298,10 @@ p {
 
 .leading-tight {
   line-height: 1.25;
+}
+
+.leading-8 {
+  line-height: 2rem;
 }
 
 .tracking-\[\.5px\] {

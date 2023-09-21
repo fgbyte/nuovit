@@ -7,15 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing</title>
     <link rel="stylesheet" href="./css/main.css">
-    <!-- Google Fonts -->
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400;1,700&family=Roboto:wght@100;300;400;500;700&display=swap');
-    </style>
-    <!-- MAP SCRIPTS -->
-    <script src="./js/map.js"></script>
-    <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEjbmrpKS52fjJsX3u2lRE89YzmeF18YI&callback=initMap&v=weekly"
-        defer></script>
 </head>
 
 <body>
@@ -31,14 +22,16 @@
                     </a>
                     <div class="hidden lg:flex flex-col gap-1">
                         <p class="font-normal text-[13px]">Desde</p>
-                        <p class="text-[20px] font-bold whitespace-nowrap">320.000<span class="font-normal text-[13px]">€
+                        <p class="text-[20px] font-bold whitespace-nowrap">320.000<span
+                                class="font-normal text-[13px]">€
                                 + IVA</span></p>
                     </div>
                 </div>
 
                 <div class="flex gap-6 items-center">
                     <button
-                        class="w-fit flex gap-1 rounded-md py-3 px-[18px] text-[12px] font-medium text-black bg-[#EAC355]" onclick="enviado.showModal()">
+                        class="w-fit flex gap-1 rounded-md py-3 px-[18px] text-[12px] font-medium text-black bg-[#EAC355]"
+                        onclick="enviado.showModal()">
                         Me interesa
                         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
                             <path d="M1 0.5L11.2963 0.5L11.2963 10.5" stroke="black" stroke-linecap="round"
@@ -138,7 +131,8 @@
                 </div>
                 <div class="px-3 py-4 bg-sand flex flex-col gap-3 lg:px-10 lg:py-6 lg:pt-20 lg:w-[34%]">
                     <button
-                        class="w-fit flex gap-1 rounded-md py-3 px-[18px] text-[12px] font-medium text-sand bg-black -mt-4" onclick="me_interesa.showModal()">
+                        class="w-fit flex gap-1 rounded-md py-3 px-[18px] text-[12px] font-medium text-sand bg-black -mt-4"
+                        onclick="me_interesa.showModal()">
                         Me interesa
                         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
                             <path d="M1 0.5L11.2963 0.5L11.2963 10.5" stroke="#EAC355" stroke-linecap="round"
@@ -154,14 +148,17 @@
                                 <h2 class="text-[40px] font-[300]">
                                     Deseo recibir <br><span class="font-normal font-secondary">información</span>
                                 </h2>
-                                <button onclick="me_interesa.close()"><img class="w-6 h-auto" src="./assets/icons/x.svg" alt="x"></button>
-                              </div>
-                              <p class="text-[12px] font-normal">Contacta sin compromiso, no te quedes sin tu vivienda. Te enviaremos por email o Whatsapp más información y la documentación de la promoción.</p>
-                              
-                              <div class="space-y-2 backdrop:bg-black ">
+                                <button onclick="me_interesa.close()"><img class="w-6 h-auto" src="./assets/icons/x.svg"
+                                        alt="x"></button>
+                            </div>
+                            <p class="text-[12px] font-normal">Contacta sin compromiso, no te quedes sin tu vivienda. Te
+                                enviaremos por email o Whatsapp más información y la documentación de la promoción.</p>
+
+                            <div class="space-y-2 backdrop:bg-black ">
                                 <span class="text-xs font-normal">Puedes llamarnos gratis a </span>
-                                <a href="#" class="flex gap-2"><img src="./assets/icons/phone-outgoing.svg" alt="phone">+34 952 220 661</a>
-                              </div>
+                                <a href="#" class="flex gap-2"><img src="./assets/icons/phone-outgoing.svg"
+                                        alt="phone">+34 952 220 661</a>
+                            </div>
                         </div>
 
                         <div class="flex flex-col lg:flex-row gap-3 px-5 py-6 border border-black">
@@ -171,99 +168,108 @@
                             </div>
                             <div>
                                 <p class="text-base font-normal">Desde</p>
-                                <h3 class="flex items-end text-4xl font-medium">300.000<p class="text-sm font-[500]">€ + IVA</p></h1>
+                                <h3 class="flex items-end text-4xl font-medium">300.000<p class="text-sm font-[500]">€ +
+                                        IVA</p>
+                                    </h1>
                             </div>
                         </div>
 
                         <form class="flex flex-col gap-10 mt-10">
-                            
+
                             <div class="relative ">
-                              <input
-                                class="transition ease-out focus:outline-none active:outline-none w-full border-b-[2px] focus:border-yellow pb-2 border-black peer text-[16px] font-normal"
-                                required id="nombre" type="text">
-                              <label
-                                class="transition ease-out duration-200 absolute left-0 peer-valid:-translate-y-5 peer-focus:-translate-y-5 text-[16px] font-normal select-none cursor-text  "
-                                required for="nombre">Nombre*</label>
+                                <input
+                                    class="transition ease-out focus:outline-none active:outline-none w-full border-b-[2px] focus:border-yellow pb-2 border-black peer text-[16px] font-normal"
+                                    required id="nombre" type="text">
+                                <label
+                                    class="transition ease-out duration-200 absolute left-0 peer-valid:-translate-y-5 peer-focus:-translate-y-5 text-[16px] font-normal select-none cursor-text  "
+                                    required for="nombre">Nombre*</label>
                             </div>
                             <div class="relative ">
-                              <input
-                                class="transition ease-out focus:outline-none active:outline-none w-full border-b-[2px] focus:border-yellow pb-2 border-black peer text-[16px] font-normal "
-                                required id="Email" type="text">
-                              <label
-                                class="transition ease-out duration-200 absolute left-0 peer-valid:-translate-y-5 peer-focus:-translate-y-5 text-[16px] font-normal select-none cursor-text  "
-                                required for="Email">Email*</label>
+                                <input
+                                    class="transition ease-out focus:outline-none active:outline-none w-full border-b-[2px] focus:border-yellow pb-2 border-black peer text-[16px] font-normal "
+                                    required id="Email" type="text">
+                                <label
+                                    class="transition ease-out duration-200 absolute left-0 peer-valid:-translate-y-5 peer-focus:-translate-y-5 text-[16px] font-normal select-none cursor-text  "
+                                    required for="Email">Email*</label>
                             </div>
                             <div class="flex gap-7">
-                              <div class="relative w-24">
-                                <input
-                                  class="transition ease-out focus:outline-none active:outline-none w-full border-b-[2px] focus:border-yellow pb-2 border-black peer text-[16px] font-normal "
-                                  required id="ES" type="text">
-                                <label
-                                  class="transition ease-out duration-200 absolute left-0 peer-valid:-translate-y-5 peer-focus:-translate-y-5 text-[16px] font-normal select-none cursor-text"
-                                  required for="ES">ES</label>
-                              </div>
-                              <div class="relative grow">
-                                <input
-                                  class="transition ease-out focus:outline-none active:outline-none w-full border-b-[2px] focus:border-yellow pb-2 border-black peer text-[16px] font-normal"
-                                  required id="Teléfono" type="text">
-                                <label
-                                  class="transition ease-out duration-200 absolute left-0 peer-valid:-translate-y-5 peer-focus:-translate-y-5 text-[16px] font-normal select-none cursor-text "
-                                  required for="Teléfono">Teléfono</label>
-                              </div>
+                                <div class="relative w-24">
+                                    <input
+                                        class="transition ease-out focus:outline-none active:outline-none w-full border-b-[2px] focus:border-yellow pb-2 border-black peer text-[16px] font-normal "
+                                        required id="ES" type="text">
+                                    <label
+                                        class="transition ease-out duration-200 absolute left-0 peer-valid:-translate-y-5 peer-focus:-translate-y-5 text-[16px] font-normal select-none cursor-text"
+                                        required for="ES">ES</label>
+                                </div>
+                                <div class="relative grow">
+                                    <input
+                                        class="transition ease-out focus:outline-none active:outline-none w-full border-b-[2px] focus:border-yellow pb-2 border-black peer text-[16px] font-normal"
+                                        required id="Teléfono" type="text">
+                                    <label
+                                        class="transition ease-out duration-200 absolute left-0 peer-valid:-translate-y-5 peer-focus:-translate-y-5 text-[16px] font-normal select-none cursor-text "
+                                        required for="Teléfono">Teléfono</label>
+                                </div>
                             </div>
-                            
+
                             <div class="space-y-2">
                                 <div class="flex justify-start items-center gap-2">
                                     <input class="h-5 w-5 rounded-none" id="Política de privacidad" type="checkbox">
                                     <label class="text-sm font-normal select-none" for="Política de privacidad">
-                                      He leído y acepto la Política de privacidad y de Protección de datos
+                                        He leído y acepto la Política de privacidad y de Protección de datos
                                     </label>
-                                  </div>
-                                  <div class="flex justify-start items-center gap-2">
-                                      <input class="h-5 w-5 rounded-none" id="comerciales" type="checkbox">
-                                      <label class="text-sm font-normal select-none" for="comerciales">
+                                </div>
+                                <div class="flex justify-start items-center gap-2">
+                                    <input class="h-5 w-5 rounded-none" id="comerciales" type="checkbox">
+                                    <label class="text-sm font-normal select-none" for="comerciales">
                                         Deseo recibir comunicaciones comerciales de Nuovit
-                                      </label>
-                                  </div>
+                                    </label>
+                                </div>
                             </div>
-                            
+
 
                             <button type="button"
-                              class="flex justify-center items-end gap-1 w-full rounded-md py-3 px-[18px] text-sm font-medium text-sand bg-black">
-                              Enviar
-                              <img class="w-5 h-auto" src="./assets/icons/arrow-down-right(1).svg" alt="arrow">
+                                class="flex justify-center items-end gap-1 w-full rounded-md py-3 px-[18px] text-sm font-medium text-sand bg-black">
+                                Enviar
+                                <img class="w-5 h-auto" src="./assets/icons/arrow-down-right(1).svg" alt="arrow">
                             </button>
-                          </form>
+                        </form>
                     </dialog>
 
-                    <dialog id="enviado" class="w-[617px] bg-white px-6 lg:px-16 py-6 lg:pb-0 lg:pt-16 space-y-11 lg:space-y-32">
+                    <dialog id="enviado"
+                        class="w-[617px] bg-white px-6 lg:px-16 py-6 lg:pb-0 lg:pt-16 space-y-11 lg:space-y-32">
                         <div class="flex flex-col gap-6">
                             <div class="flex justify-between items-start">
                                 <h2 class="text-[40px] font-[300]">
                                     Deseo recibir <br><span class="font-normal font-secondary">información</span>
                                 </h2>
-                                <button onclick="enviado.close()"><img class="w-6 h-auto" src="./assets/icons/x.svg" alt="x"></button>
+                                <button onclick="enviado.close()"><img class="w-6 h-auto" src="./assets/icons/x.svg"
+                                        alt="x"></button>
                             </div>
                         </div>
 
                         <div class="space-y-4">
-                            <p class="text-xl font-light">Hemos enviado la documentación de <b>Icon</b> Limonar a tu correo electrónico.</p>
-                            <p class="text-xl font-light">Leo molestie fusce feugiat feugiat duis pretium arcu quis. Lacus mollis ultricies tincidunt pretium aliquam eu. Nulla etiam aliquam nunc risus viverra sit. Non.</p>
+                            <p class="text-xl font-light">Hemos enviado la documentación de <b>Icon</b> Limonar a tu
+                                correo electrónico.</p>
+                            <p class="text-xl font-light">Leo molestie fusce feugiat feugiat duis pretium arcu quis.
+                                Lacus mollis ultricies tincidunt pretium aliquam eu. Nulla etiam aliquam nunc risus
+                                viverra sit. Non.</p>
                         </div>
-                        
+
                         <div class="flex items-end">
                             <div class="space-y-2 backdrop:bg-black self-center">
                                 <span class="text-xs font-normal">Puedes llamarnos gratis a </span>
-                                <a href="#" class="flex gap-2"><img src="./assets/icons/phone-outgoing.svg" alt="phone">+34 952 220 661</a>
+                                <a href="#" class="flex gap-2"><img src="./assets/icons/phone-outgoing.svg"
+                                        alt="phone">+34 952 220 661</a>
                             </div>
-                            <img  class="hidden lg:block right-0 bottom-0 w-80" src="./assets/icons/arrowtoprounded.svg" alt="arrowtoprounded">
+                            <img class="hidden lg:block right-0 bottom-0 w-80" src="./assets/icons/arrowtoprounded.svg"
+                                alt="arrowtoprounded">
                         </div>
                     </dialog>
-                        
+
                     <p>Viviendas de 1 a 3 dormitorios,
                         bajos con jardín y áticos con solarium</p>
                 </div>
-                
+
             </div>
         </div>
     </section>
@@ -296,8 +302,10 @@
         <!-- Carousel LG -->
         <div class="hidden lg:block">
             <!-- arrows -->
-            <img id="carousel-left" class="absolute cursor-pointer top-[40%] left-4" src="./assets/inversores/Group 751.svg" alt="Group">
-            <img id="carousel-right" class="absolute cursor-pointer top-[40%] right-4" src="./assets/inversores/Group 755.svg" alt="Group">
+            <img id="carousel-left" class="absolute cursor-pointer top-[40%] left-4"
+                src="./assets/inversores/Group 751.svg" alt="Group">
+            <img id="carousel-right" class="absolute cursor-pointer top-[40%] right-4"
+                src="./assets/inversores/Group 755.svg" alt="Group">
 
             <div id="carousel-thumbs" class="">
                 <div
@@ -338,28 +346,28 @@
             </div>
         </div>
     </section>
-        <!-- Carousel SM -->
-        <div
-            class="carousel-container lg:hidden flex flex-row gap-[20px] lg:gap-6 lg:flex-wrap overflow-x-auto overflow-y-hidden snap-x snap-mandatory">
-            <img data-index="0" class="w-[605px] snap-start h-auto" src="./assets/img/ficha-proyecto-carousel.jpg"
-                alt="pagina">
-            <img data-index="1" class="w-[605px] snap-start h-auto" src="./assets/img/ficha-proyecto-carousel.jpg"
-                alt=" pagina">
-            <img data-index="2" class="w-[605px] snap-start h-auto" src="./assets/img/ficha-proyecto-carousel.jpg"
-                alt="pagina">
-            <img data-index="3" class="w-[605px] snap-start h-auto" src="./assets/img/ficha-proyecto-carousel.jpg"
-                alt="pagina">
-            <img data-index="4" class="w-[605px] snap-start h-auto" src="./assets/img/ficha-proyecto-carousel.jpg"
-                alt="pagina">
-        </div>
-        <div class="guias flex justify-center gap-8 hover:[&>div]:cursor-pointer max-h-[813px] pt-10 lg:hidden">
-            <div data-index="0" class="h-3 w-3 bg-gray-300 rounded-full"></div>
-            <div data-index="1" class="h-3 w-3 bg-gray-300 rounded-full"></div>
-            <div data-index="2" class="h-3 w-3 bg-gray-300 rounded-full"></div>
-            <div data-index="3" class="h-3 w-3 bg-gray-300 rounded-full"></div>
-            <div data-index="4" class="h-3 w-3 bg-gray-300 rounded-full"></div>
-        </div>
-        </div>
+    <!-- Carousel SM -->
+    <div
+        class="carousel-container lg:hidden flex flex-row gap-[20px] lg:gap-6 lg:flex-wrap overflow-x-auto overflow-y-hidden snap-x snap-mandatory">
+        <img data-index="0" class="w-[605px] snap-start h-auto" src="./assets/img/ficha-proyecto-carousel.jpg"
+            alt="pagina">
+        <img data-index="1" class="w-[605px] snap-start h-auto" src="./assets/img/ficha-proyecto-carousel.jpg"
+            alt=" pagina">
+        <img data-index="2" class="w-[605px] snap-start h-auto" src="./assets/img/ficha-proyecto-carousel.jpg"
+            alt="pagina">
+        <img data-index="3" class="w-[605px] snap-start h-auto" src="./assets/img/ficha-proyecto-carousel.jpg"
+            alt="pagina">
+        <img data-index="4" class="w-[605px] snap-start h-auto" src="./assets/img/ficha-proyecto-carousel.jpg"
+            alt="pagina">
+    </div>
+    <div class="guias flex justify-center gap-8 hover:[&>div]:cursor-pointer max-h-[813px] pt-10 lg:hidden">
+        <div data-index="0" class="h-3 w-3 bg-gray-300 rounded-full"></div>
+        <div data-index="1" class="h-3 w-3 bg-gray-300 rounded-full"></div>
+        <div data-index="2" class="h-3 w-3 bg-gray-300 rounded-full"></div>
+        <div data-index="3" class="h-3 w-3 bg-gray-300 rounded-full"></div>
+        <div data-index="4" class="h-3 w-3 bg-gray-300 rounded-full"></div>
+    </div>
+    </div>
 
 
     <!-- Icons Section -->
@@ -626,8 +634,10 @@
                 </h2>
                 <blockquote class="mt-6 pr-10 text-[30px] font-[300] leading-9">
                     El consumo inteligente de la energía a través de una <span
-                        class="font-secondary font-normal">construcción sostenible.</span> Utilizar los recursos de forma
-                    correcta es una <span class="font-secondary font-normal">necesidad del</span> para seguir disfrutando
+                        class="font-secondary font-normal">construcción sostenible.</span> Utilizar los recursos de
+                    forma
+                    correcta es una <span class="font-secondary font-normal">necesidad del</span> para seguir
+                    disfrutando
                     de ellos en el futuro.
                 </blockquote>
             </div>
@@ -1102,7 +1112,8 @@
                 <h2 class="text-[40px] self-start text-white font-secondary font-normal [text-wrap:balance] lg:hidden">
                     Descarga <span class="block ml-24">el Dossier</span></h2>
                 <div class="hidden lg:flex gap-6 items-center">
-                    <h2 class="text-[40px] text-white font-secondary font-normal [text-wrap:balance]">Descarga el Dossier
+                    <h2 class="text-[40px] text-white font-secondary font-normal [text-wrap:balance]">Descarga el
+                        Dossier
                     </h2>
                     <p class="text-grayTextFooter text-[13px] font-[300]">Descárgate el Dossier de esta promoción con
                         más información de interés </p>
@@ -1135,6 +1146,11 @@
             </div>
         </div>
     </footer>
+    <!-- MAP SCRIPTS -->
+    <script src="./js/map.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCEjbmrpKS52fjJsX3u2lRE89YzmeF18YI&callback=initMap&v=weekly"
+        defer></script>
     <script src="./js/thumbs-carousel.js"></script>
     <script src="./js/menu-mobile.js"></script>
 </body>
