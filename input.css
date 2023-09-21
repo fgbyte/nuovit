@@ -431,6 +431,7 @@ label input[type]:checked ~ span.middle {
   border: 2px solid rgb(255, 255, 255);
 }
 
+
 .toggle-enes1:after {
   top: 0;
   right: 0;
@@ -534,10 +535,6 @@ label input[type]:checked ~ span.middle {
   border-color: rgb(255, 255, 255);
   border: 2px solid rgb(255, 255, 255);
 }
-
-
-
-
 /* fin enes */
 
 .bg-gray-400{
