@@ -63,32 +63,56 @@ form.addEventListener("submit", function (event) {
 const carrusel = document.querySelector(".carousel-container");
 const previousCard = document.getElementById("carousel-left");
 const nextCard = document.getElementById("carousel-right");
+const currentPage = document.getElementById("currentPage")
 
 function scrollNext() {
   const currentPosition = carrusel.scrollLeft;
-  const cardWidth = 755;
-
+  const cardWidth = carrusel.querySelector("[data-index='0']").clientWidth;
   const newPosition = currentPosition + cardWidth;
-
-  if (newPosition + carrusel.clientWidth > carrusel.scrollWidth) {
-    carrusel.scrollTo({ left: 0, behavior: "smooth" });
-  } else {
-    carrusel.scrollTo({ left: newPosition, behavior: "smooth" });
-  }
+  carrusel.scrollTo({ left: newPosition, behavior: "smooth" });
 }
 
 function scrollBack() {
   const currentPosition = carrusel.scrollLeft;
-  const cardWidth = 755;
-
+  const cardWidth = carrusel.querySelector("[data-index='0']").clientWidth;
   const newPosition = currentPosition - cardWidth;
-
-  if (newPosition < 0) {
-    carrusel.scrollTo({ left: carrusel.scrollWidth, behavior: "smooth" });
-  } else {
-    carrusel.scrollTo({ left: newPosition, behavior: "smooth" });
-  }
+  carrusel.scrollTo({ left: newPosition, behavior: "smooth" });
 }
+
+function updateCurrentPage() {
+    const currentPosition = carrusel.scrollLeft;
+    const cardWidth = carrusel.querySelector("[data-index='0']").clientWidth;
+    const currentPageNumber = Math.floor(currentPosition / cardWidth) + 1;
+    currentPage.innerText = formatearNumero(currentPageNumber);
+
+    if (currentPageNumber === 1) {
+        previousCard.style.opacity = "0";
+        previousCard.style.cursor = 'auto';
+      } else {
+        previousCard.style.opacity = "1";
+        previousCard.style.cursor = 'pointer';
+      }
+    
+      if (currentPageNumber === 14) {
+        nextCard.style.opacity = "0";
+        nextCard.style.cursor = 'auto';
+      } else {
+        nextCard.style.opacity = "1";
+        nextCard.style.cursor = 'pointer';
+    }
+    
+  }
+
+function formatearNumero(num) {
+    if (num < 10) {
+      return "0" + num.toString();
+    } else {
+      return num.toString();
+    }
+  }
 
 nextCard.addEventListener("click", scrollNext);
 previousCard.addEventListener("click", scrollBack);
+carrusel.addEventListener("scroll", updateCurrentPage);
+
+updateCurrentPage();
