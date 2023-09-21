@@ -3,6 +3,7 @@ const form = document.getElementById("wizard-form");
 form.addEventListener("submit", function (event) {
     event.preventDefault();
 
+    //Objeto editable con los valores del Form
     const formData = {
         "edad": {
             value: document.getElementById("age").value,
