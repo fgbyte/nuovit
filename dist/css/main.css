@@ -3193,6 +3193,11 @@ p {
   line-height: 1rem;
 }
 
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .font-\[100\] {
   font-weight: 100;
 }
@@ -5253,6 +5258,10 @@ select {
 
   .lg\:font-\[600\] {
     font-weight: 600;
+  }
+
+  .lg\:font-normal {
+    font-weight: 400;
   }
 
   .lg\:italic {
