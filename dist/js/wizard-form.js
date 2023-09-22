@@ -119,6 +119,7 @@ updateCurrentPage();
 
 
 //evitar scroll horizontal
-const slider = document.querySelector(".carousel-container");
+/* const slider = document.querySelector(".carousel-container");
 slider.style.overflowX = "hidden"
 slider.style.overflowY = "block"
+ */
