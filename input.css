@@ -667,3 +667,48 @@ select {
   background-position-x: calc(100% - 10px);
   padding-right: 10px;
 }
+
+
+
+.dark-mode{
+  color: white;
+  background: #00000000;
+}
+
+.dark-mode div details ul{
+  background: #000;
+}
+.dark-mode #menu-items{
+  background: #000;
+}
+.dark-mode #menu-items datalist summary span svg{
+  stroke: #EAC355;
+}
+
+.dark-mode datalist summary span .arrow{
+  stroke: #EAC355;
+  fill: red;
+}
+
+.dark-mode nav #menu--lg #en-es--lg {
+  filter: invert(0%);
+}
+.dark-mode #menu-items #en-es{
+  filter: invert(0%);
+}
+
+.dark-mode nav div a img {
+  filter: invert(100%);
+}
+.dark-mode {
+  background: #000;
+}
+.dark-mode nav #menu{
+  filter: invert(100%);
+}
+
+@media (min-width: 976px) {
+     .dark-mode {
+  background: #ffffff00;
+}
+} 

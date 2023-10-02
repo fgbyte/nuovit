@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.3.2 | MIT License | https://tailwindcss.com
+! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -191,6 +191,10 @@ select,
 textarea {
   font-family: inherit;
   /* 1 */
+  font-feature-settings: inherit;
+  /* 1 */
+  font-variation-settings: inherit;
+  /* 1 */
   font-size: 100%;
   /* 1 */
   font-weight: inherit;
@@ -338,6 +342,14 @@ ul,
 menu {
   list-style: none;
   margin: 0;
+  padding: 0;
+}
+
+/*
+Reset default styling for dialogs.
+*/
+
+dialog {
   padding: 0;
 }
 
@@ -4010,7 +4022,53 @@ select {
   padding-right: 10px;
 }
 
+.dark-mode{
+  color: white;
+  background: #00000000;
+}
+
+.dark-mode div details ul{
+  background: #000;
+}
+
+.dark-mode #menu-items{
+  background: #000;
+}
+
+.dark-mode #menu-items datalist summary span svg{
+  stroke: #EAC355;
+}
+
+.dark-mode datalist summary span .arrow{
+  stroke: #EAC355;
+  fill: red;
+}
+
+.dark-mode nav #menu--lg #en-es--lg {
+  filter: invert(0%);
+}
+
+.dark-mode #menu-items #en-es{
+  filter: invert(0%);
+}
+
+.dark-mode nav div a img {
+  filter: invert(100%);
+}
+
+.dark-mode {
+  background: #000;
+}
+
+.dark-mode nav #menu{
+  filter: invert(100%);
+}
+
 @media (min-width: 976px) {
+  .dark-mode {
+    background: #ffffff00;
+  }
+
   .lg\:contenido-lg {
     margin: 0 2.1875rem;
   }
@@ -5383,4 +5441,4 @@ select {
 
 .\[\&_summary\:\:-webkit-details-marker\]\:hidden summary::-webkit-details-marker {
   display: none;
-}
+} 
