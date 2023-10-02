@@ -669,7 +669,6 @@ select {
 }
 
 
-
 .dark-mode{
   color: white;
   background: #00000000;
@@ -678,16 +677,17 @@ select {
 .dark-mode div details ul{
   background: #000;
 }
+
+
 .dark-mode #menu-items{
   background: #000;
 }
-.dark-mode #menu-items datalist summary span svg{
+.dark-mode div details summary span .arrow{
   stroke: #EAC355;
 }
 
-.dark-mode datalist summary span .arrow{
+.dark-mode nav div summary span .arrow{
   stroke: #EAC355;
-  fill: red;
 }
 
 .dark-mode nav #menu--lg #en-es--lg {
@@ -712,3 +712,7 @@ select {
   background: #ffffff00;
 }
 } 
+
+
+
+
