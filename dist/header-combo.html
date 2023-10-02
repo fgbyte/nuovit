@@ -1,0 +1,275 @@
+<!--
+README:
+
+Tenemos 3 piezas: ficha-proyecto, landing-proyecto-promo y header
+
+ficha-proyecto: es la ficha que aparece en la parte superior de la página (fixed), con el nombre del proyecto, el precio, etc.
+landing-proyecto-promo: es la info que aparece debajo de la ficha-proyecto, con info de la promo.
+header: es la barra de navegación que aparece debajo de ficha-proyecto y landing-proyecto-promo (si estas existen), con el logo, el menú, etc. Si no se muestra ficha-proyecto ni landing-proyecto-promo, el header aparece siempre.
+
+El header tendrá un condicional en PHP, si este PHP define dark: todos los elementos se muestran oscuros. Y si el PHP define light: todos los elementos se muestran claros.
+
+Por favor, cambiar las clases correspondientes para que se puedan hacer las 3 combinaciones posibles(puedes hacer una prueba en HTML, tan solo comentas una pieza u otra y ves si aparecen correctos los elementos y no se rompen en desktop o mobile):
+- ficha-proyecto + landing-proyecto-promo + header
+- ficha-proyecto + landing-proyecto-promo + header
+- landing-proyecto-promo + header
+- landing-proyecto-promo + header
+- header dark o light
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+
+
+  <!-- ficha-proyecto -->
+  <div class="bg-black w-full border-gray-200  lg:px-20 fixed top-0  z-50">
+    <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl py-5 px-4">
+      <div class="flex items-center text-[#DBD8CE] gap-[115px]">
+        <a href="#" class="flex flex-col gap-1 ">
+          <p class="text-[20px] font-bold whitespace-nowrap">Icon<span class="font-[400]"> Limonar</span>
+          </p>
+          <p class="font-[400] text-[13px]">4000 m<sup>2</sup> de zonas verdes</p>
+        </a>
+        <div class="hidden lg:flex flex-col gap-1">
+          <p class="font-[400] text-[13px]">Desde</p>
+          <p class="text-[20px] font-bold whitespace-nowrap">320.000<span class="font-[400] text-[13px]">€
+              + IVA</span></p>
+        </div>
+      </div>
+
+      <div class="flex gap-6 items-center">
+        <button class="w-fit flex gap-1 rounded-md py-3 px-[18px] text-[12px] font-medium text-black bg-[#EAC355]">
+          Me interesa
+          <svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11" fill="none">
+            <path d="M1 0.5L11.2963 0.5L11.2963 10.5" stroke="black" stroke-linecap="round" stroke-linejoin="round">
+            </path>
+            <path d="M1 11L11 1" stroke="black" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+        <div class="hidden lg:flex gap-6">
+          <a href="#">
+            <img src="./assets/icons/share-2.svg" alt="">
+          </a>
+          <a href="#">
+            <img src="./assets/icons/download-header.svg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- */ ficha-proyecto -->
+
+  <!-- landing-proyecto-promo -->
+  <div class="hidden bg-sand mt-[77px] lg:block">
+    <div class="max-w-screen-xl px-4 py-6 mx-auto">
+      <div class="flex items-center justify-center">
+        <ul class="flex flex-row font-medium mt-0 mr-6 space-x-8 text-sm">
+          <li>
+            <a href="#" class="text-gray-900 flex items-center gap-2 hover:underline" aria-current="page">
+              <i>
+                <img src="./assets/icons/map-pin.svg" alt="">
+              </i>
+              <p class="text-[16px] font-normal leading-[24px]">Ubicación y alrededores</p>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="text-gray-900 flex items-center gap-2 hover:underline">
+              <i>
+                <img src="./assets/icons/carbon_plan.svg" alt="">
+              </i>
+              <p class="text-[16px] font-normal leading-[24px]">El proyecto</p>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="text-gray-900 flex items-center gap-2 hover:underline">
+              <i>
+                <img src="./assets/icons/viviendas.svg" alt="">
+              </i>
+              <p class="text-[16px] font-normal leading-[24px]">Viviendas</p>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="text-gray-900 flex items-center gap-2 hover:underline">
+              <i>
+                <img src="./assets/icons/eficiencia.svg" alt="">
+              </i>
+              <p class="text-[16px] font-normal leading-[24px]">Eficiencia</p>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="text-gray-900 flex items-center gap-2 hover:underline">
+              <i>
+                <img src="./assets/icons/nuovit-logo-simple 1.svg" alt="">
+              </i>
+              <p class="text-[16px] font-normal leading-[24px]">Quiénes somos</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- */ landing-proyecto-promo -->
+
+
+
+
+  <div id="header-container" class="mt-20 relative">
+    <!-- el header-container siempre debe estar en relative, el margin es opcional -->
+
+
+    <!-- header -->
+    <header class="text-black inset-x-0 top-0">
+      <nav class="max-w-[1358px] mx-auto flex justify-between items-end px-[40px] py-9 select-none z-40">
+        <div>
+          <div class="hidden lg:block">
+            <a href="#">
+              <img class="h-14" src="./assets/icons/nuovit-logo-black.svg" alt="logo">
+            </a>
+          </div>
+          <a href="#">
+            <img class="lg:hidden h-[35.973px]" src="./assets/icons/nuovit-logo-simple 1.svg" alt="logo_nuovit">
+          </a>
+        </div>
+  
+        <!--  menu lg  -->
+        <div id="menu--lg" class="hidden lg:flex gap-14 group [&amp;_summary::-webkit-details-marker]:hidden pb-2">
+          <details class="group [&amp;_summary::-webkit-details-marker]:hidden z-50">
+            <summary class="flex items-center cursor-pointer gap-1 hover:text-yellow">
+              <span>Proyectos</span>
+  
+              <span class="shrink-0 transition duration-300 group-open:-rotate-180">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                  <path d="M0.5 1.25L6 6.75L11.5 1.25" stroke="#000" stroke-linecap="round" stroke-linejoin="round">
+                  </path>
+                </svg>
+              </span>
+            </summary>
+            <ul class="flex flex-col gap-2 absolute mt-2 bg-white p-4">
+              <li>
+                <a href="" class="block hover:text-yellow"> Residenciales </a>
+              </li>
+              <li>
+                <a href="" class="block hover:text-yellow"> Comerciales </a>
+              </li>
+            </ul>
+          </details>
+          <a class="block hover:text-yellow" href="#">Inversores</a>
+          <a class="block hover:text-yellow" href="#">Sostenibilidad</a>
+          <details class="group [&amp;_summary::-webkit-details-marker]:hidden z-50">
+            <summary class="flex items-center cursor-pointer gap-1 hover:text-yellow">
+              <span>Conócenos</span>
+  
+              <span class="shrink-0 transition duration-300 group-open:-rotate-180">
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                  <path d="M0.5 1.25L6 6.75L11.5 1.25" stroke="#000" stroke-linecap="round" stroke-linejoin="round">
+                  </path>
+                </svg>
+              </span>
+            </summary>
+            <ul class="flex flex-col gap-2 absolute mt-2 bg-white p-4">
+              <li>
+                <a href="" class="block hover:text-yellow"> Residenciales </a>
+              </li>
+              <li>
+                <a href="" class="block hover:text-yellow"> Comerciales </a>
+              </li>
+            </ul>
+          </details>
+          <!-- EN/ES, para ocultarlo => 'lg:hidden' -->
+          <div id="en-es--lg" class="relative -mt-1 w-10 invert-[70%]">
+            <div class="scale-75 absolute top-0 left-0">
+              <input id="enes1" type="checkbox">
+              <label class="toggle-enes1 toggle-horizontal relative" for="enes1">
+                <span class="absolute right-0 mt-[10px] mr-2 rotate-0 text-white">EN</span>
+                <span class="absolute left-0 rotate-0 ml-[8px] mt-[10px] text-white">ES</span>
+              </label>
+            </div>
+          </div>
+        </div>
+  
+        <!-- menu mobile -->
+        <label id="menu" class="bar blacky lg:hidden scale-50 right-[-15px]" for="menu-mobile">
+          <input type="checkbox" id="menu-mobile">
+          <span class="top"></span>
+          <span class="middle"></span>
+          <span class="bottom"></span>
+        </label>
+      </nav>
+      <!-- Menu abierto -->
+      <div id="menu-items" class="hidden space-y-4 lg:hidden absolute top-0 py-8 mt-24 z-10 bg-white px-[40px] w-full">
+        <details class="group [&amp;_summary::-webkit-details-marker]:hidden ">
+          <summary class="flex items-center cursor-pointer gap-1 hover:text-yellow">
+            <span>Proyectos</span>
+  
+            <span class="shrink-0 transition duration-300 group-open:-rotate-180">
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                <path d="M0.5 1.25L6 6.75L11.5 1.25" stroke="#000" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </span>
+          </summary>
+          <ul class="flex flex-col gap-2 relative mt-2 ml-4">
+            <li>
+              <a href="" class="block hover:text-yellow"> Residenciales </a>
+            </li>
+            <li>
+              <a href="" class="block hover:text-yellow"> Comerciales </a>
+            </li>
+          </ul>
+        </details>
+        <a class="block hover:text-yellow" href="">Inversores</a>
+        <a class="block hover:text-yellow" href="">Sostenibilidad</a>
+        <details class="group [&amp;_summary::-webkit-details-marker]:hidden">
+          <summary class="flex items-center cursor-pointer gap-1 hover:text-yellow">
+            <span>Conócenos</span>
+  
+            <span class="shrink-0 transition duration-300 group-open:-rotate-180">
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="8" viewBox="0 0 12 8" fill="none">
+                <path d="M0.5 1.25L6 6.75L11.5 1.25" stroke="#000" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </span>
+          </summary>
+          <ul class="flex flex-col gap-2 relative mt-2 ml-4">
+            <li>
+              <a href="" class="block hover:text-yellow"> Residenciales </a>
+            </li>
+            <li>
+              <a href="" class="block hover:text-yellow"> Comerciales </a>
+            </li>
+          </ul>
+        </details>
+        <!-- EN/ES Mobile -->
+        <div id="en-es" class="relative -mt-1 w-10 pb-5 invert-[70%]">
+          <div class="scale-75 absolute top-0 left-0">
+            <input id="enes2" type="checkbox">
+            <label class="toggle-enes2 toggle-horizontal relative" for="enes2">
+              <span class="absolute right-0 mt-[10px] mr-2 rotate-0 text-white">EN</span>
+              <span class="absolute left-0 rotate-0 ml-[8px] mt-[10px] text-white">ES</span>
+            </label>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Gradiente -->
+      <div class="hidden absolute inset-0 h-[300px] w-full py-16 gradientblog -z-10 lg:block"></div>
+    </header>
+  </div>
+
+  <!-- */ landing-proyecto-promo -->
+
+
+  <!-- SCRIPTS -->
+  <script src="./js/menu-mobile.js"></script>
+</body>
+
+</html>
